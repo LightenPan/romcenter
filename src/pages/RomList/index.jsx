@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import IceContainer from '@icedesign/container';
 // import ContainerTitle from '@/components/ContainerTitle';
-import { Grid, Pagination, Button, Dialog, Input } from '@alifd/next';
+import { Grid, Pagination, Button, Dialog, Input, Upload } from '@alifd/next';
 import { FilePicker } from 'react-file-picker'
 
 import SingleItem from './SingleItem';
@@ -179,13 +179,23 @@ export default class RomList extends Component {
           <Row wrap gutter={20}>
             <div className={styles.cenGroup}>
               <span>
-                <FilePicker
-                  extensions={['xml']}
-                  onChange={FileObject => this.onClickLoadXml(FileObject)}
-                // onError={errMsg => (/* do something with err msg string */)
+                <Upload
+                  action=""
+                  accept="application/xml"
+                  onChange={(files) => {
+                    const file = files[files.length - 1];
+                    this.onClickLoadXml(file.originFileObj);
+                  }}
                 >
                   <Button type="primary">选择XML文件</Button>
-                </FilePicker>
+                </Upload>
+
+                {/* <FilePicker
+                  extensions={['xml']}
+                  onChange={FileObject => this.onClickLoadXml(FileObject)}
+                >
+                  <Button type="primary">选择XML文件</Button>
+                </FilePicker> */}
               </span>
               <span>选定文件：{this.state.selectFile}</span>
 
