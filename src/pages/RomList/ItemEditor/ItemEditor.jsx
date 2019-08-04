@@ -1,19 +1,12 @@
 import React, { Component } from 'react';
 import IceImg from '@icedesign/img';
-import { Button, Form, Field, Input, Select } from '@alifd/next';
+import { Button, Form, Field, Input, Select, Upload } from '@alifd/next';
 import IceNotification from '@icedesign/notification';
-import { FilePicker } from 'react-file-picker'
+// import { FilePicker } from 'react-file-picker'
 
 import GameUtils from '../../../utils/GameUtils';
 
 import styles from './ItemEditor.module.scss';
-
-function lpad(s, len, chr) {
-  const L = len - s.length
-  const C = chr || " ";
-  if (L <= 0) return s;
-  return new Array(L + 1).join(C) + s;
-}
 
 const noIntroImageDict = {
   WSC: 'Official No-Intro Bandai WonderSwan Color',
@@ -131,14 +124,19 @@ export default class ItemEditor extends Component {
         let count = 0;
         zip.forEach((_, file) => {  // 2) print entries
           count++;
-          if (count >= 1) {
+          if (count > 1) {
             return;
           }
           const romSize = file._data.uncompressedSize; // eslint-disable-line no-underscore-dangle
           const crc32 = file._data.crc32; // eslint-disable-line no-underscore-dangle
-          const hexCrc32 = lpad((crc32 >>> 0).toString(16), 8, '0'); // eslint-disable-line no-bitwise
+          const hexCrc32 = GameUtils.lpad((crc32 >>> 0).toString(16), 8, '0'); // eslint-disable-line no-bitwise
           this.field.setValue('crc32', hexCrc32.toUpperCase());
           this.field.setValue('romSize', romSize);
+          this.field.setValue('title', fileObj.name);
+          if (!this.field.getValue('imageNumber')) {
+            const releaseNumber = this.field.getValue('releaseNumber');
+            this.field.setValue('imageNumber', releaseNumber);
+          }
         });
       });
   }
@@ -157,16 +155,16 @@ export default class ItemEditor extends Component {
     const config = this.props.config;
     const context = this.props.context;
     const imgObj = this.genImageObj(imageNumber, config, context);
-    this.setState({ scrapyObj: imgObj });
+    this.setState({ imgObj });
   }
 
-  genScrapyImageObj = (type, scrapyImageNumber) => {
+  genScrapyImageObj = (type, scrapyImageNumber, imageNumber) => {
     if (!noIntroImageDict[type]) {
       return null;
     }
     const name = noIntroImageDict[type];
     const imgUrl = `http://nointro.free.fr/imgs/${name}`;
-    return GameUtils.genImageObj(scrapyImageNumber, imgUrl, null, null);
+    return GameUtils.genImageObj(scrapyImageNumber, imgUrl, null, null, imageNumber);
   }
 
   onImageScrapyChange = (text) => {
@@ -304,10 +302,13 @@ export default class ItemEditor extends Component {
           </Form.Item>
         }
         <Form.Item label="rom文件">
-          <FilePicker
-            extensions={['zip']}
-            onChange={FileObject => this.onReadRomFile(FileObject)}
-          // onError={errMsg => (/* do something with err msg string */)
+          <Upload
+            action=""
+            accept="application/zip"
+            onChange={(files) => {
+              const file = files[files.length - 1];
+              this.onReadRomFile(file.originFileObj);
+            }}
           >
             <div className={styles.cenGroup}>
               <span>用来计算crc32和尺寸</span>
@@ -315,7 +316,18 @@ export default class ItemEditor extends Component {
                 <Button type="primary">选择文件</Button>
               </span>
             </div>
-          </FilePicker>
+          </Upload>
+          {/* <FilePicker
+            extensions={['zip']}
+            onChange={FileObject => this.onReadRomFile(FileObject)}
+          >
+            <div className={styles.cenGroup}>
+              <span>用来计算crc32和尺寸</span>
+              <span>
+                <Button type="primary">选择文件</Button>
+              </span>
+            </div>
+          </FilePicker> */}
         </Form.Item>
         <Form.Item label="crc32：">
           <Input {...init('crc32')} disabled />

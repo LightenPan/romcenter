@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import IceContainer from '@icedesign/container';
 // import ContainerTitle from '@/components/ContainerTitle';
-import { Grid, Pagination, Button, Dialog, Input, Upload } from '@alifd/next';
-import { FilePicker } from 'react-file-picker'
+import { Grid, Pagination, Button, Dialog, Input, Upload, Loading } from '@alifd/next';
+import Files from 'react-files'
+import GameUtils from '@/utils/GameUtils';
 
 import SingleItem from './SingleItem';
 import ItemEditor from './ItemEditor';
 
 import styles from './index.module.scss';
-import { PassThrough } from 'stream';
 
 const { Row, Col } = Grid;
 
@@ -33,6 +33,7 @@ export default class RomList extends Component {
       },
       gameImgsPathInput: 'http://localhost/imgs',
       showAddDialog: false,
+      showLoading: false,
     };
   }
 
@@ -76,6 +77,41 @@ export default class RomList extends Component {
     });
   }
 
+  saveGameList = (isModify, game) => {
+    const {xmlData} =  this.state;
+    let {showGameList, allGameList} =  this.state;
+
+    if (isModify) {
+      const indexShowGame = showGameList.indexOf(game);
+      if (indexShowGame < 0) {
+        return;
+      }
+      showGameList[indexShowGame] = game;
+
+      const indexAllGame = allGameList.indexOf(game);
+      if (indexAllGame < 0) {
+        return;
+      }
+      allGameList[indexAllGame] = game;
+
+      const indexXmlGames = xmlData.dat.games.game.indexOf(game);
+      if (indexXmlGames < 0) {
+        return;
+      }
+      xmlData.dat.games.game[indexXmlGames] = game;
+    } else {
+      xmlData.dat.games.game.push(game);
+      allGameList = xmlData.dat.games.game;
+      const {context} = this.state;
+      const start = (context.pageIndex - 1) * context.pageCount;
+      const end = Math.min(start + context.pageCount, allGameList.length);
+      showGameList = allGameList.slice(start, end);
+    }
+    localStorage.setItem("xmldata", JSON.stringify(xmlData));
+    localStorage.setItem("context", JSON.stringify(this.state.context));
+    this.setState({ showAddDialog: false, allGameList, showGameList, xmlData });
+  }
+
   onClickLoadXml = (fileObj) => {
     console.log('xml data file: ', fileObj);
     const reader = new FileReader();
@@ -86,6 +122,9 @@ export default class RomList extends Component {
       const parser = new xml2js.Parser({ explicitArray: false });
       parser.parseString(event.target.result, (error, res) => {
         if (error) throw error;
+        const {context} = this.state;
+        context.pageIndex = 1;
+        this.setState({context});
         this.initGameList(fileObj.name, res);
         localStorage.setItem("filename", fileObj.name);
         localStorage.setItem("xmldata", JSON.stringify(res));
@@ -99,7 +138,7 @@ export default class RomList extends Component {
     if (downLoadDom) {
       // 使用 createObjectURL 生成地址，格式为 blob:null/fd95b806-db11-4f98-b2ce-5eb16b38ba36
       const xml2js = require('xml2js');
-      const builder = new xml2js.Builder({ explicitArray: false }); // 用于把json对象解析为xml
+      const builder = new xml2js.Builder({ explicitArray: false, explicitChildren: true }); // 用于把json对象解析为xml
       const outxml = builder.buildObject(this.state.xmlData);
       const myBlob = new Blob([outxml], { type: "application/xml" });
       const url = window.URL.createObjectURL(myBlob);
@@ -123,27 +162,7 @@ export default class RomList extends Component {
 
   onUpdateGame = (game) => {
     console.log('onUpdateGame. game: %s', game);
-    const { allGameList, showGameList, xmlData } = this.state;
-
-    const indexShowGame = showGameList.indexOf(game);
-    if (indexShowGame < 0) {
-      return;
-    }
-    showGameList[indexShowGame] = game;
-
-    const indexAllGame = allGameList.indexOf(game);
-    if (indexAllGame < 0) {
-      return;
-    }
-    allGameList[indexAllGame] = game;
-
-    const indexXmlGames = xmlData.dat.games.game.indexOf(game);
-    if (indexXmlGames < 0) {
-      return;
-    }
-    xmlData.dat.games.game[indexXmlGames] = game;
-
-    this.setState({ allGameList, showGameList, xmlData });
+    this.saveGameList(true, game);
   }
 
   onAddGame = (values) => {
@@ -163,8 +182,57 @@ export default class RomList extends Component {
     keyList.map((key) => {
       return game[key] = values[key];
     });
-    game.files.romCRC._ = values.crc32;
-    this.setState({ showAddDialog: false });
+    const config = this.state.xmlData.dat.configuration;
+    game.files = {
+      romCRC: {
+        _: values.crc32,
+        $: {
+          extension: config.canOpen.extension,
+        },
+      },
+    };
+    this.saveGameList(false, game);
+  }
+
+  onBtAddGameFromFiles = async (files) => {
+    const {xmlData, context} = this.state;
+    const config = this.state.xmlData.dat.configuration;
+    let allGameList = xmlData.dat.games.game;
+    const tmpList = [];
+    this.setState({showLoading: true});
+    // 这里同步读取，保证添加顺序
+    for (let index = 0; index < files.length; ++index) {
+      const file = files[index];
+      const info = await GameUtils.loadGameFromZipFile(file); // eslint-disable-line no-await-in-loop
+      const releaseNumber = allGameList.length + index + 1;
+      const game = {
+        title: info.name,
+        releaseNumber,
+        imageNumber: releaseNumber,
+        romSize: info.size,
+        files: {
+          romCRC: {
+            _: info.crc32,
+            $: {
+              extension: config.canOpen.extension,
+            },
+          },
+        },
+      }
+      const newGame = GameUtils.newXmlGameInfo(config, game);
+      tmpList.push(newGame);
+    }
+    // 清空文件，避免再次添加时，重复读取文件
+    files.splice(0, files.length);
+
+    xmlData.dat.games.game = xmlData.dat.games.game.concat(tmpList);
+    allGameList = xmlData.dat.games.game;
+    const start = (context.pageIndex - 1) * context.pageCount;
+    const end = Math.min(start + context.pageCount, allGameList.length);
+    const showGameList = allGameList.slice(start, end);
+    this.setState({ showLoading: false, allGameList, showGameList, xmlData });
+    localStorage.setItem("xmldata", JSON.stringify(xmlData));
+    localStorage.setItem("context", JSON.stringify(this.state.context));
   }
 
   render() {
@@ -263,6 +331,58 @@ export default class RomList extends Component {
                 );
               })
             }
+          </Row>
+
+          <Row wrap gutter={20}>
+            <div className={styles.cenGroup}>
+              {
+                (this.state.selectFile) &&
+                <span>
+                  <Button type="primary" onClick={() => this.setState({ showAddDialog: true })}>
+                    新增Rom
+                </Button>
+                  <Dialog
+                    isFullScreen
+                    title="增加Rom信息"
+                    visible={this.state.showAddDialog}
+                    onOk={() => {
+                      const values = this.romAddEditor.onSubmit();
+                      if (values) {
+                        this.onAddGame(values);
+                      }
+                    }}
+                    onCancel={() => this.setState({ showAddDialog: false })}
+                    onClose={() => this.setState({ showAddDialog: false })}
+                  >
+                    <ItemEditor
+                      ref={(c) => { this.romAddEditor = c; }}
+                      {...{
+                        isModify: false,
+                        releaseNumber: this.state.allGameList.length + 1,
+                        game: null,
+                        config: this.props.config,
+                        context: this.props.context,
+                      }} />
+                  </Dialog>
+                </span>
+              }
+
+              <span>
+                <Files
+                  // className='files-dropzone'
+                  onChange={async files => await this.onBtAddGameFromFiles(files)}
+                  accepts={['.zip']}
+                  multiple
+                  clickable
+                >
+                  <Button type="primary">批量从zip文件添加记录</Button>
+                </Files>
+                <Loading
+                  visible={this.state.showLoading}
+                  fullScreen
+                  shape="fusion-reactor" />
+              </span>
+            </div>
           </Row>
 
           {

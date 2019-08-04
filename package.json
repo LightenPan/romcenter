@@ -33,6 +33,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-file-picker": "^0.0.6",
+    "react-files": "^2.4.8",
     "react-router-dom": "^4.2.2",
     "xml2js": "^0.4.19"
   },
