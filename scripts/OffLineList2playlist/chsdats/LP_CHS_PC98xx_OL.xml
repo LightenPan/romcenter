@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- Pictures by : money_114 -->
+<!-- OL Datter : money_114 -->
+
+<dat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="datas.xsd">
+	<configuration>
+		<datName>LP_CHS_PC98xx_OL</datName>
+		<imFolder>LP_CHS_PC98xx_OL</imFolder>
+		<datVersion>20140923</datVersion>
+		<system>PC98xx</system>
+		<screenshotsWidth>280</screenshotsWidth>
+		<screenshotsHeight>350</screenshotsHeight>
+		<infos>
+			<title visible="false" inNamingOption="true" default="false"></title>
+			<location visible="true" inNamingOption="true" default="true"></location>
+			<publisher visible="true" inNamingOption="true" default="true"></publisher>
+			<sourceRom visible="true" inNamingOption="true" default="true"></sourceRom>
+			<saveType visible="true" inNamingOption="true" default="true"></saveType>
+			<romSize visible="true" inNamingOption="true" default="true"></romSize>
+			<releaseNumber visible="true" inNamingOption="true" default="false"></releaseNumber>
+			<imageNumber visible="false" inNamingOption="false" default="false"></imageNumber>
+			<languageNumber visible="true" inNamingOption="false" default="false"></languageNumber>
+			<comment visible="true" inNamingOption="true" default="true"></comment>
+			<romCRC visible="true" inNamingOption="true" default="true"></romCRC>
+			<im1CRC visible="true" inNamingOption="true" default="false"></im1CRC>
+			<im2CRC visible="true" inNamingOption="true" default="false"></im2CRC>
+			<languages visible="true" inNamingOption="true" default="true"></languages>
+		</infos>
+		<canOpen>
+			<extension>.hdi</extension>
+			<extension>.fdi</extension>
+		</canOpen>
+		<newDat>
+			<datVersionURL>http://ol.emu618.org:81/version/PC98xx%20-%20Chinese%20Games.ver</datVersionURL>
+			<datURL fileName="PC98xx - Chinese Games.zip">http://ol.emu618.org:81/dat/PC98xx%20-%20Chinese%20Games.zip</datURL>
+			<imURL>http://ol.emu618.org:81/img/PC98xx%20-%20Chinese%20Games/</imURL>
+		</newDat>
+		<search>
+			<to value="location" default="false" auto="true"></to>
+			<to value="publisher" default="true" auto="true"></to>
+			<to value="sourceRom" default="true" auto="true"></to>
+			<to value="languages" default="false" auto="true"></to>
+			<to value="saveType" default="true" auto="true"></to>
+			<to value="romSize" default="false" auto="false">
+				<find operation="=" value="2531328">19 MBits</find>
+				<find operation="=" value="5062656">39 MBits</find>
+				<find operation="=" value="5330944">41 MBits</find>
+				<find operation="=" value="6096896">46 MBits</find>
+				<find operation="=" value="7106560">54 MBits</find>
+				<find operation="=" value="8359936">64 MBits</find>
+				<find operation="=" value="8568832">65 MBits</find>
+				<find operation="=" value="10657792">81 MBits</find>
+				<find operation="=" value="10817536">82 MBits</find>
+				<find operation="=" value="11145216">85 MBits</find>
+				<find operation="=" value="31177216">237 MBits</find>
+			</to>
+		</search>
+		<romTitle>%n (%g)</romTitle>
+	</configuration>
+	<games>
+		<game>
+			<imageNumber>1</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Sangoku Bushou Souha (C)</title>
+			<saveType>1995</saveType>
+			<romSize>11145216</romSize>
+			<publisher>Imagineer</publisher>
+			<location>7</location>
+			<sourceRom>Panda Entertainment</sourceRom>
+			<language>4</language>
+			<files>
+				<romCRC extension=".hdi">C1</romCRC>
+			</files>
+			<im1CRC>535977E1</im1CRC>
+			<im2CRC>7B3F9FAA</im2CRC>
+			<comment>三国武将争霸</comment>
+			<duplicateID>0</duplicateID>
+		</game>
+		<game>
+			<imageNumber>2</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>First Queen 4 (C)</title>
+			<saveType>1994</saveType>
+			<romSize>8568832</romSize>
+			<publisher>KSK</publisher>
+			<location>7</location>
+			<sourceRom>Zgh3000</sourceRom>
+			<language>4</language>
+			<files>
+				<romCRC extension=".hdi">C2</romCRC>
+			</files>
+			<im1CRC>1E3C47E6</im1CRC>
+			<im2CRC>A7276B64</im2CRC>
+			<comment>魔域传说4</comment>
+			<duplicateID>0</duplicateID>
+		</game>
+		<game>
+			<imageNumber>3</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Monzetsu Fighter (C)</title>
+			<saveType>1995</saveType>
+			<romSize>7106560</romSize>
+			<publisher>Trush</publisher>
+			<location>7</location>
+			<sourceRom>Sonny</sourceRom>
+			<language>4</language>
+			<files>
+				<romCRC extension=".hdi">C3</romCRC>
+			</files>
+			<im1CRC>DE5E8EEF</im1CRC>
+			<im2CRC>DB53E3AC</im2CRC>
+			<comment>闷绝性技王</comment>
+			<duplicateID>0</duplicateID>
+		</game>
+		<game>
+			<imageNumber>4</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>High Reward (C)</title>
+			<saveType>1994</saveType>
+			<romSize>5330944</romSize>
+			<publisher>Imagineer</publisher>
+			<location>7</location>
+			<sourceRom>Caowei258</sourceRom>
+			<language>4</language>
+			<files>
+				<romCRC extension=".hdi">C4</romCRC>
+			</files>
+			<im1CRC>94A5D02F</im1CRC>
+			<im2CRC>AAD78FC6</im2CRC>
+			<comment>高报酬战将</comment>
+			<duplicateID>0</duplicateID>
+		</game>
+		<game>
+			<imageNumber>5</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Meisou Toshi (Runaway City) (C)</title>
+			<saveType>1995</saveType>
+			<romSize>6096896</romSize>
+			<publisher>Tiare</publisher>
+			<location>7</location>
+			<sourceRom>Sonny</sourceRom>
+			<language>4</language>
+			<files>
+				<romCRC extension=".hdi">C5</romCRC>
+			</files>
+			<im1CRC>BDC3F9CD</im1CRC>
+			<im2CRC>B9222DD6</im2CRC>
+			<comment>迷走都市</comment>
+			<duplicateID>0</duplicateID>
+		</game>
+		<game>
+			<imageNumber>6</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Block Quest V (C)</title>
+			<saveType>1993</saveType>
+			<romSize>5330944</romSize>
+			<publisher>WIZ</publisher>
+			<location>7</location>
+			<sourceRom>PC98world</sourceRom>
+			<language>4</language>
+			<files>
+				<romCRC extension=".hdi">C6</romCRC>
+			</files>
+			<im1CRC>DE750692</im1CRC>
+			<im2CRC>75FA5825</im2CRC>
+			<comment>方块大战 5</comment>
+			<duplicateID>0</duplicateID>
+		</game>
+		<game>
+			<imageNumber>7</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>AI Shougi (C) [B]</title>
+			<saveType>1993</saveType>
+			<romSize>5330944</romSize>
+			<publisher>Something Good</publisher>
+			<location>7</location>
+			<sourceRom>Lgkang</sourceRom>
+			<language>4</language>
+			<files>
+				<romCRC extension=".hdi">C7</romCRC>
+			</files>
+			<im1CRC>6ABDCD2D</im1CRC>
+			<im2CRC>2286FFCC</im2CRC>
+			<comment>AI将棋</comment>
+			<duplicateID>0</duplicateID>
+		</game>
+		<game>
+			<imageNumber>8</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Onnanoko No Shikumi (C)</title>
+			<saveType>1996</saveType>
+			<romSize>8359936</romSize>
+			<publisher>Libido</publisher>
+			<location>7</location>
+			<sourceRom>Superarhow</sourceRom>
+			<language>4</language>
+			<files>
+				<romCRC extension=".hdi">C8</romCRC>
+			</files>
+			<im1CRC>C52B3019</im1CRC>
+			<im2CRC>83C842D6</im2CRC>
+			<comment>女体构造</comment>
+			<duplicateID>0</duplicateID>
+		</game>
+		<game>
+			<imageNumber>9</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Tokyo Fuuzoku Kikou (C)</title>
+			<saveType>1994</saveType>
+			<romSize>10657792</romSize>
+			<publisher>Inter Heart</publisher>
+			<location>7</location>
+			<sourceRom>Superarhow</sourceRom>
+			<language>4</language>
+			<files>
+				<romCRC extension=".hdi">C9</romCRC>
+			</files>
+			<im1CRC>FDFF58C0</im1CRC>
+			<im2CRC>A4898872</im2CRC>
+			<comment>东京风俗纪行</comment>
+			<duplicateID>0</duplicateID>
+		</game>
+		<game>
+			<imageNumber>10</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Doukyuusei 2 (C) [B]</title>
+			<saveType>1995</saveType>
+			<romSize>31177216</romSize>
+			<publisher>Elf</publisher>
+			<location>7</location>
+			<sourceRom>Waxixixi</sourceRom>
+			<language>4</language>
+			<files>
+				<romCRC extension=".hdi">CA</romCRC>
+			</files>
+			<im1CRC>30438D77</im1CRC>
+			<im2CRC>EC677634</im2CRC>
+			<comment>同级生2</comment>
+			<duplicateID>0</duplicateID>
+		</game>
+		<game>
+			<imageNumber>11</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Daisenryaku 4 &amp; Daisenryaku 4 Option Disk (C) [B]</title>
+			<saveType>1992</saveType>
+			<romSize>2531328</romSize>
+			<publisher>System Soft</publisher>
+			<location>7</location>
+			<sourceRom>Saisi</sourceRom>
+			<language>4</language>
+			<files>
+				<romCRC extension=".fdi">CB</romCRC>
+			</files>
+			<im1CRC>53213DD4</im1CRC>
+			<im2CRC>6A8CEC10</im2CRC>
+			<comment>大战略4</comment>
+			<duplicateID>0</duplicateID>
+		</game>
+		<game>
+			<imageNumber>12</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Touhou Huumaroku - The Story of Eastern Wonderland (C)</title>
+			<saveType>1997</saveType>
+			<romSize>11145216</romSize>
+			<publisher>Zun</publisher>
+			<location>7</location>
+			<sourceRom>Thproject</sourceRom>
+			<language>4</language>
+			<files>
+				<romCRC extension=".hdi">CC</romCRC>
+			</files>
+			<im1CRC>871EB5CC</im1CRC>
+			<im2CRC>9FDEE4FE</im2CRC>
+			<comment>东方2 - 东方封魔录</comment>
+			<duplicateID>0</duplicateID>
+		</game>
+		<game>
+			<imageNumber>13</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Touhou Gensoukyou - Lotus Land Story (C)</title>
+			<saveType>1998</saveType>
+			<romSize>11145216</romSize>
+			<publisher>Zun</publisher>
+			<location>7</location>
+			<sourceRom>Thproject</sourceRom>
+			<language>4</language>
+			<files>
+				<romCRC extension=".hdi">CD</romCRC>
+			</files>
+			<im1CRC>1A004B38</im1CRC>
+			<im2CRC>702BFD5D</im2CRC>
+			<comment>东方4 - 东方幻想乡</comment>
+			<duplicateID>0</duplicateID>
+		</game>
+		<game>
+			<imageNumber>14</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Dragon Master Silk - Episode 2 (C) [B]</title>
+			<saveType>1992</saveType>
+			<romSize>10817536</romSize>
+			<publisher>Gimmick House</publisher>
+			<location>7</location>
+			<sourceRom>PC98world</sourceRom>
+			<language>4</language>
+			<files>
+				<romCRC extension=".hdi">CE</romCRC>
+			</files>
+			<im1CRC>D682DC44</im1CRC>
+			<im2CRC>B3417867</im2CRC>
+			<comment>龙召还娘 - 续篇2</comment>
+			<duplicateID>0</duplicateID>
+		</game>
+		<game>
+			<imageNumber>15</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Macross 1 - Remember Me (C) [B]</title>
+			<saveType>1991</saveType>
+			<romSize>5062656</romSize>
+			<publisher>Family Soft</publisher>
+			<location>7</location>
+			<sourceRom>PC98world</sourceRom>
+			<language>4</language>
+			<files>
+				<romCRC extension=".hdi">CF</romCRC>
+			</files>
+			<im1CRC>87A87265</im1CRC>
+			<im2CRC>FC70B9FC</im2CRC>
+			<comment>超时空要塞 - 记住我</comment>
+			<duplicateID>0</duplicateID>
+		</game>
+		<game>
+			<imageNumber>16</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Touhou Kaikidan - Mystic Square (C)</title>
+			<saveType>1998</saveType>
+			<romSize>11145216</romSize>
+			<publisher>Zun</publisher>
+			<location>7</location>
+			<sourceRom>Thproject</sourceRom>
+			<language>4</language>
+			<files>
+				<romCRC extension=".hdi">D0</romCRC>
+			</files>
+			<im1CRC>7ACBEC01</im1CRC>
+			<im2CRC>F6689936</im2CRC>
+			<comment>东方5 - 东方怪绮谈</comment>
+			<duplicateID>0</duplicateID>
+		</game>
+		<game>
+			<imageNumber>17</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Tamashii no Kado (C) [B]</title>
+			<saveType>1992</saveType>
+			<romSize>11145216</romSize>
+			<publisher>KOEI</publisher>
+			<location>7</location>
+			<sourceRom>Fire Light</sourceRom>
+			<language>4</language>
+			<files>
+				<romCRC extension=".hdi">D1</romCRC>
+			</files>
+			<im1CRC>A77E0BAD</im1CRC>
+			<im2CRC>7CD38AC4</im2CRC>
+			<comment>魂之门 - 但丁神曲</comment>
+			<duplicateID>0</duplicateID>
+		</game>
+		<game>
+			<imageNumber>18</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Touhou Yumejikuu - The Phantasmagoria of Dim.Dream (C)</title>
+			<saveType>1997</saveType>
+			<romSize>11145216</romSize>
+			<publisher>Zun</publisher>
+			<location>7</location>
+			<sourceRom>Thproject</sourceRom>
+			<language>4</language>
+			<files>
+				<romCRC extension=".hdi">D2</romCRC>
+			</files>
+			<im1CRC>8465E327</im1CRC>
+			<im2CRC>E67450AB</im2CRC>
+			<comment>东方3 - 东方梦时空</comment>
+			<duplicateID>0</duplicateID>
+		</game>
+	</games>
+	<gui>
+		<images width="570" height="350">
+			<image x="0" y="0" width="280" height="350"></image>
+			<image x="285" y="0" width="280" height="350"></image>
+		</images>
+	</gui>
+</dat>

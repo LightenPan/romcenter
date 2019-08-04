@@ -6,7 +6,7 @@ const asideMenuConfig = [
   {
     name: 'Rom列表',
     path: '/romlist',
-    icon: 'cascades',
+    // icon: 'cascades',
   },
   {
     name: '反馈',

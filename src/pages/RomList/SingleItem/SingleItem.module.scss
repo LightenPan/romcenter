@@ -3,7 +3,8 @@
 }
 
 .game {
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
+  margin-bottom: 10px;
   background: $color-white;
   border: 1px solid $color-line1-1;
   border-radius: 4px;
@@ -19,7 +20,7 @@
 
 .item {
   display: flex;
-  padding: 2px 0;
+  padding-bottom: 4px;
 }
 
 .label {
@@ -37,7 +38,7 @@
 }
 
 .body {
-  padding: 20px;
+  padding: 10px;
 }
 
 .icon {
@@ -74,4 +75,21 @@
 .button2 {
   composes: button;
   background: $color-notice-3;
+}
+
+.imgGroup {
+  display: flex;
+  padding: 2px 0;
+}
+
+.imgItem {
+  width: 50%;
+  padding: 0px 3px;
+}
+
+img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
 }

@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import { Grid, Pagination, Form, Button, Upload, Dialog } from '@alifd/next';
+import { Grid, Pagination, Button, Upload, Dialog, Input } from '@alifd/next';
 import SingleItem from './SingleItem';
 import ItemEditor from './ItemEditor';
 
 import styles from './RomList.module.scss';
-import './RomList.css'
 
 const { Row, Col } = Grid;
 
@@ -24,15 +23,21 @@ export default class RomList extends Component {
       showGameList: [],
       pageIndex: 1,
       pageCount: 100,
+      gameImgsPath: '',
+      gameImgsPathInput: 'http://localhost/imgs',
     };
   }
 
-  readDatFile = (path) => {
+  onClickLoadXml = (files) => {
+    const file = files[files.length - 1];
+    console.log('xml data file: ', file);
+
     const reader = new FileReader();
-    reader.readAsText(path, 'UTF-8');
+    reader.readAsText(file.originFileObj, 'UTF-8');
     reader.onload = (event) => {
       const xml2js = require('xml2js');
-      const parser = new xml2js.Parser({ explicitArray: false }); // 用于解析xml为json对象
+      // 解析xml为json对象
+      const parser = new xml2js.Parser({ explicitArray: false });
       parser.parseString(event.target.result, (error, res) => {
         if (error) throw error;
         console.log(res);
@@ -40,7 +45,14 @@ export default class RomList extends Component {
         const start = (this.state.pageIndex - 1) * this.state.pageCount;
         const end = Math.min(start + this.state.pageCount, allGameList.length);
         const showGameList = allGameList.slice(start, end);
-        this.setState({ xmlData: res, allGameList, showGameList });
+        const imgsPath = this.state.gameImgsPathInput;
+        this.setState({
+          selectFile: file.name,
+          xmlData: res,
+          allGameList,
+          showGameList,
+          gameImgsPath: imgsPath,
+        });
       });
     };
   }
@@ -51,86 +63,109 @@ export default class RomList extends Component {
 
   onAddRomDialog = () => {
     const config = this.state.xmlData.dat.configuration;
+    const releaseNumber = this.state.allGameList.length + 1;
     Dialog.confirm({
-      title: 'Confirm',
-      content: <ItemEditor {...{innerSubmit: this.onAddRomSubmit, config}}/>,
+      title: '新增Rom信息',
+      content: <ItemEditor {...{ isModify: false, releaseNumber, innerSubmit: this.onAddRomSubmit, config }} />,
       footerActions: [],
+      isFullScreen: true,
       // onOk: () => console.log('ok'),
       // onCancel: () => console.log('cancel')
     });
+  }
+
+  onClickSaveNewXml = () => {
+    const downLoadDom = document.getElementById("Download");
+    if (downLoadDom) {
+      // 使用 createObjectURL 生成地址，格式为 blob:null/fd95b806-db11-4f98-b2ce-5eb16b38ba36
+      const xml2js = require('xml2js');
+      const builder = new xml2js.Builder({ explicitArray: false }); // 用于把json对象解析为xml
+      const outxml = builder.buildObject(this.state.xmlData);
+      const myBlob = new Blob([outxml], { type: "application/xml" });
+      const url = window.URL.createObjectURL(myBlob);
+      console.log('下载文件已就绪: ', url);
+      // 模拟a标签点击进行下载
+      downLoadDom.href = url
+      downLoadDom.download = this.state.selectFile;
+      downLoadDom.click();
+    }
+  }
+
+  onClickPageChange = (current) => {
+    const { allGameList } = this.state;
+    const start = (current - 1) * this.state.pageCount;
+    const end = Math.min(start + this.state.pageCount, allGameList.length);
+    const showGameList = allGameList.slice(start, end);
+    console.log('page change showGameList. start: %s, end: %s', start, end);
+    this.setState({ pageIndex: current, showGameList });
+  }
+
+  onUpdateGame = (game) => {
+    console.log('onUpdateGame. game: %s', game);
+    const { allGameList, showGameList } = this.state;
+    const index = allGameList.indexOf(game);
+    if (index < 0) {
+      return;
+    }
+    allGameList[index] = game;
+
+    const indexShowGame = showGameList.indexOf(game);
+    if (index < 0) {
+      return;
+    }
+    showGameList[indexShowGame] = game;
+    this.setState({ allGameList, showGameList });
   }
 
   render() {
     return (
       <div className={styles.body}>
         <Row wrap gutter={20}>
-          <Form inline>
-            <Form.Item label="">
-              <div className={styles.fileSelect}>
-                <div className={styles.fileSelectButton}>
-                  <Upload
-                    accept=".xml"
-                    onChange={(files) => {
-                      const file = files[files.length - 1];
-                      console.log('xml data file: ', file);
-                      this.setState({ selectFile: file.name });
-                      this.readDatFile(file.originFileObj);
-                    }}
-                  >
-                    <Button type="primary">选择XML文件</Button>
-                  </Upload>
-                </div>
-                <div className={styles.fileSelectLabel}>选定文件：{this.state.selectFile}</div>
-              </div>
-            </Form.Item>
+          <div className={styles.cenGroup}>
+            <span>
+              <Upload accept=".xml" onChange={(files) => this.onClickLoadXml(files)}>
+                <Button type="primary">选择XML文件</Button>
+              </Upload>
+            </span>
+            <span>选定文件：{this.state.selectFile}</span>
 
             {
               (this.state.selectFile) &&
-              <Form.Item label="">
-                <Button type="primary" onClick={() => {
-                  const downLoadDom = document.getElementById("Download");
-                  if (downLoadDom) {
-                    // 使用 createObjectURL 生成地址，格式为 blob:null/fd95b806-db11-4f98-b2ce-5eb16b38ba36
-                    const xml2js = require('xml2js');
-                    const builder = new xml2js.Builder({ explicitArray: false }); // 用于把json对象解析为xml
-                    const outxml = builder.buildObject(this.state.xmlData);
-                    const myBlob = new Blob([outxml], { type: "application/xml" });
-                    const url = window.URL.createObjectURL(myBlob);
-                    console.log('下载文件已就绪: ', url);
-                    // 模拟a标签点击进行下载
-                    downLoadDom.href = url
-                    downLoadDom.download = this.state.selectFile;
-                    downLoadDom.click();
-                    // 下载后告诉浏览器不再需要保持这个文件的引用了
-                    // window.URL.revokeObjectURL(url);
-                  }
-                }}>
+              <span>
+                <Button type="primary" onClick={() => this.onClickSaveNewXml()}>
                   保存修改文件
                 </Button>
                 <a id="Download" target="_blank" style={{ display: "none" }}>下载</a>
-              </Form.Item>
+              </span>
             }
 
             {
               (this.state.selectFile) &&
-              <Form.Item label="">
-                <Button
-                  onClick={() => {
-                    this.onAddRomDialog();
-                  }}
-                  type="primary">新增Rom</Button>
-              </Form.Item>
+              <span>
+                <Button type="primary" onClick={() => this.onAddRomDialog()}>
+                  新增Rom
+                </Button>
+              </span>
             }
-          </Form>
+            <span>游戏封面图-主目录：</span>
+            <span>
+              <Input value={this.state.gameImgsPathInput} onChange={(text) => {
+                this.setState({gameImgsPathInput: text});
+              }} />
+            </span>
+          </div>
         </Row>
 
         <Row wrap gutter={20}>
           {
             this.state.showGameList.map((item, index) => {
               const config = this.state.xmlData.dat.configuration;
+              const context = {
+                gameImgsPath: this.state.gameImgsPath,
+              }
               return (
-                <Col l={4} s={6} xs={8} key={index}>
-                  <SingleItem {...{ item, config }} />
+                <Col l={6} s={6} xs={8} key={index}>
+                  <SingleItem {...{ item, config, context, onUpdateGame: this.onUpdateGame }} />
                 </Col>
               );
             })
@@ -144,23 +179,8 @@ export default class RomList extends Component {
               current={this.state.pageIndex}
               pageSize={this.state.pageCount}
               total={this.state.allGameList.length}
-              // pageSizeSelector="dropdown"
-              // pageSizeList={[20, 40, 60, 80, 100]}
-              // onPageSizeChange={(pageSize) => {
-              //   const { allGameList } = this.state;
-              //   const start = 0;
-              //   const end = Math.min(start + this.state.pageCount, allGameList.length);
-              //   const showGameList = allGameList.slice(start, end);
-              //   this.setState({ page: { index: 0, count: pageSize }, showGameList });
-              // }}
-              onChange={(current) => {
-                const { allGameList } = this.state;
-                const start = (current - 1) * this.state.pageCount;
-                const end = Math.min(start + this.state.pageCount, allGameList.length);
-                const showGameList = allGameList.slice(start, end);
-                console.log('page change showGameList. start: %s, end: %s', start, end);
-                this.setState({ pageIndex: current, showGameList });
-              }}
+              onChange={(current) => this.onClickPageChange(current)}
+              totalRender={total => `总数: ${total}`}
             />
           </Row>
         }

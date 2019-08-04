@@ -1,19 +1,22 @@
-import React, { Component, Dialog } from 'react';
+import React, { Component } from 'react';
+import { Button, Dialog } from '@alifd/next';
 import IceImg from '@icedesign/img';
+import ItemEditor from '../ItemEditor';
 import styles from './SingleItem.module.scss';
-
+import GameUtils from '../../../utils/GameUtils';
 
 export default class SingleItem extends Component {
   static displayName = 'SingleItem';
 
-  genImgUrl = (item, config) => {
-    const count = 500;
-    const low = parseInt(item.imageNumber / count, 10) * count + 1;
-    const high = parseInt(item.imageNumber / count, 10) * count + count;
-    const imageFolder = `${low}-${high}`;
-    const imgUrla = `${config.newDat.imURL + imageFolder}/${item.imageNumber}a.png`;
-    const imgUrlb = `${config.newDat.imURL + imageFolder}/${item.imageNumber}b.png`;
-    return { a: imgUrla, b: imgUrlb };
+  constructor(props) {
+    super(props);
+    this.state = {
+    };
+  }
+
+  genImgUrl = (item, config, context) => {
+    return GameUtils.genImgUrl(
+      item.imageNumber, config.newDat.imURL, config.imFolder, context.gameImgsPath);
   }
 
   genShowList = (item) => {
@@ -34,20 +37,60 @@ export default class SingleItem extends Component {
     // </game>
     const showList = [];
     showList.push({label: '标题', value: item.title});
+    showList.push({label: '备注', value: item.comment});
+    showList.push({label: '来源', value: item.sourceRom});
     showList.push({label: '编号', value: item.releaseNumber});
     showList.push({label: '图片', value: item.imageNumber});
     showList.push({label: '尺寸', value: item.romSize});
-    showList.push({label: '出版', value: item.publisher});
+    showList.push({label: '发行', value: item.publisher});
     showList.push({label: '地区', value: item.location});
     showList.push({label: '语言', value: item.language});
-    showList.push({label: '评论', value: item.comment});
-    showList.push({label: 'crc', value: item.files.romCRC._});
+    showList.push({label: 'crc32', value: item.files.romCRC._});
     return showList;
   }
 
-  handleEditor = () => {
+  onEditRomSubmit = (values) => {
+    console.log('onEditRomSubmit. values: ', values);
+    const {item} = this.props;
+    const keyList = [
+      'releaseNumber',
+      'imageNumber',
+      'title',
+      'romSize',
+      'publisher',
+      'location',
+      'language',
+      'comment',
+    ];
+    keyList.map((key) => {
+      return item[key] = values[key];
+    });
+    item.files.romCRC._ = values.crc32;
+    if (this.props.onUpdateGame) {
+      this.props.onUpdateGame(item);
+    }
+  }
+
+  onEditRomDialog = () => {
+    const config = this.props.config;
+    const context = this.props.context;
+    const game = this.props.item;
+    const releaseNumber = this.props.item.releaseNumber;
     Dialog.confirm({
-      content: '请先申请权限在查看调用示例',
+      title: '编辑Rom信息',
+      content: <ItemEditor {...{
+        isModify: true,
+        releaseNumber,
+        innerSubmit: this.onEditRomSubmit,
+        game,
+        config,
+        context,
+      }} />,
+      // footerActions: [],
+      isFullScreen: true,
+      onOk: () => console.log('ok'),
+      // onOk: () => this.onFormSubmit(),
+      onCancel: () => console.log('cancel'),
     });
   }
 
@@ -55,10 +98,11 @@ export default class SingleItem extends Component {
     const {
       item,
       config,
+      context,
     } = this.props;
 
-    const showList = this.genShowList(item, config);
-    const imgUrl = this.genImgUrl(item, config);
+    const showList = this.genShowList(item);
+    const imgUrl = this.genImgUrl(item, config, context);
 
     return (
       <div className={styles.game}>
@@ -68,14 +112,19 @@ export default class SingleItem extends Component {
           {data.title}
         </div> */}
 
-        {/* <IceImg
-          src={imgUrl.a}
-          width={149}
-          height={149}
-          style={{ margin: '8px' }}
-        /> */}
-
         <div className={styles.body}>
+          <div className={styles.item}>
+            <div className={styles.imgGroup}>
+              <span className={styles.imgItem}>
+                <IceImg src={imgUrl.a} width={160} type="contain"/>
+              </span>
+              <span className={styles.imgItem}>
+                <IceImg src={imgUrl.b} width={160} type="contain"/>
+              </span>
+            </div>
+            {/* <IceImg src={imgUrl.a} type="contain" className={styles.img} /> */}
+          </div>
+
           {showList.map((showItem, key) => {
             return (
               <div className={styles.item} key={key}>
@@ -87,12 +136,9 @@ export default class SingleItem extends Component {
         </div>
 
         <div className={styles.footer}>
-          <a
-            onClick={this.handleEditor}
-            className={styles.button1}
-          >
-            编辑
-          </a>
+          <Button type="primary" onClick={() => this.onEditRomDialog()}>
+            编辑Rom信息
+          </Button>
         </div>
       </div>
     );
