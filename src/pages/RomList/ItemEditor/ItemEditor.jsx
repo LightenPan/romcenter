@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
-// import { Form, Field } from '@ice/form';
 import IceImg from '@icedesign/img';
-import { Grid, Button, Form, Field, Input, Upload, Select } from '@alifd/next';
+import { Button, Form, Field, Input, Select } from '@alifd/next';
 import IceNotification from '@icedesign/notification';
+import { FilePicker } from 'react-file-picker'
+
 import GameUtils from '../../../utils/GameUtils';
 
 import styles from './ItemEditor.module.scss';
 
-const FormItem = Form.Item;
-
-const { Row, Col } = Grid;
+function lpad(s, len, chr) {
+  const L = len - s.length
+  const C = chr || " ";
+  if (L <= 0) return s;
+  return new Array(L + 1).join(C) + s;
+}
 
 const noIntroImageDict = {
   WSC: 'Official No-Intro Bandai WonderSwan Color',
@@ -81,19 +85,18 @@ export default class ItemEditor extends Component {
       const config = this.props.config;
       const context = this.props.context;
       const imgObj = this.genImageObj(imageNumber, config, context);
-      this.setState({imgObj});
+      this.setState({ imgObj });
     }
   }
 
-  onSubmit = (values) => {
-    console.log('ItemEditor onSubmit. values: %s', values);
+  onSubmit = () => {
     if (!this.field.getValue('releaseNumber')) {
       IceNotification.error({
         message: '参数错误',
         description:
           '缺少游戏编号',
       });
-      return;
+      return null;
     }
 
     if (!this.field.getValue('imageNumber')) {
@@ -102,7 +105,7 @@ export default class ItemEditor extends Component {
         description:
           '缺少图片编号',
       });
-      return;
+      return null;
     }
 
     if (!this.field.getValue('crc32')) {
@@ -111,29 +114,38 @@ export default class ItemEditor extends Component {
         description:
           '缺少crc32',
       });
-      return;
+      return null;
     }
 
-    if (this.props.innerSubmit) {
-      this.props.innerSubmit(this.field.values);
-    }
+    // if (this.props.innerSubmit) {
+    //   this.props.innerSubmit(this.field.values);
+    // }
+
+    return this.field.values;
   }
 
-  onClickRomFile = (files) => {
-    const file = files[files.length - 1];
-    console.log('load rom file: ', file);
-
-    const reader = new FileReader();
-    reader.readAsText(file.originFileObj, 'UTF-8');
-    reader.onload = (event) => {
-      const crc32 = GameUtils.calcFileCrc32(event.target.result);
-      this.setState({ crc32 });
-    };
+  onReadRomFile = (fileObj) => {
+    const jszip = require("jszip");
+    jszip.loadAsync(fileObj) // 1) read the Blob
+      .then((zip) => {
+        let count = 0;
+        zip.forEach((_, file) => {  // 2) print entries
+          count++;
+          if (count >= 1) {
+            return;
+          }
+          const romSize = file._data.uncompressedSize; // eslint-disable-line no-underscore-dangle
+          const crc32 = file._data.crc32; // eslint-disable-line no-underscore-dangle
+          const hexCrc32 = lpad((crc32 >>> 0).toString(16), 8, '0'); // eslint-disable-line no-bitwise
+          this.field.setValue('crc32', hexCrc32.toUpperCase());
+          this.field.setValue('romSize', romSize);
+        });
+      });
   }
 
   genImageObj = (imageNumber, config, context) => {
     return GameUtils.genImageObj(
-      imageNumber, config.newDat.imURL, config.imFolder, context.gameImgsPath);
+      imageNumber, config.newDat.imURL, context.gameImgsPath, config.imFolder);
   }
 
   onImageNumberChange = (text) => {
@@ -148,13 +160,13 @@ export default class ItemEditor extends Component {
     this.setState({ scrapyObj: imgObj });
   }
 
-  genScrapyImageObj = (type, scrapyImageNumber, imageNumber) => {
+  genScrapyImageObj = (type, scrapyImageNumber) => {
     if (!noIntroImageDict[type]) {
       return null;
     }
     const name = noIntroImageDict[type];
-    const imgUrl = 'http://nointro.free.fr/imgs';
-    return GameUtils.genImageObj(scrapyImageNumber, imgUrl, name, null);
+    const imgUrl = `http://nointro.free.fr/imgs/${name}`;
+    return GameUtils.genImageObj(scrapyImageNumber, imgUrl, null, null);
   }
 
   onImageScrapyChange = (text) => {
@@ -193,19 +205,19 @@ export default class ItemEditor extends Component {
         wrapperCol={{ span: 20 }}
         labelAlign="left"
         style={{ width: '600px' }}>
-        <FormItem label="游戏编号：">
+        <Form.Item label="游戏编号：">
           <Input {...init('releaseNumber')} />
-        </FormItem>
-        <FormItem label="标题：">
+        </Form.Item>
+        <Form.Item label="标题：">
           <Input {...init('title')} />
-        </FormItem>
-        <FormItem label="备注：">
+        </Form.Item>
+        <Form.Item label="备注：">
           <Input {...init('comment')} />
-        </FormItem>
-        <FormItem label="来源：">
+        </Form.Item>
+        <Form.Item label="来源：">
           <Input {...init('sourceRom')} />
-        </FormItem>
-        <FormItem label="图片编号：">
+        </Form.Item>
+        <Form.Item label="图片编号：">
           <div className={styles.cenGroup}>
             <span>
               <Input {...init('imageNumber', {
@@ -215,15 +227,15 @@ export default class ItemEditor extends Component {
               })} />
             </span>
           </div>
-        </FormItem>
+        </Form.Item>
         {
           (this.state.imgObj) &&
-          <FormItem label="图片预览：">
+          <Form.Item label="图片预览：">
             <IceImg src={this.state.imgObj.a} type="contain" className={styles.img} style={{ marginRight: '10px' }} />
             <IceImg src={this.state.imgObj.b} type="contain" className={styles.img} style={{ marginRight: '10px' }} />
-          </FormItem>
+          </Form.Item>
         }
-        <FormItem label="图片抓取：">
+        <Form.Item label="图片抓取：">
           <div className={styles.cenGroup}>
             <span>
               <Input {...init('scrapyImageNumber', {
@@ -258,8 +270,8 @@ export default class ItemEditor extends Component {
               <a id="Download" target="_blank" style={{ display: "none" }}>下载</a>
             </span>
           </div>
-        </FormItem>
-        <FormItem label="noIntro图库：">
+        </Form.Item>
+        <Form.Item label="noIntro图库：">
           <Select {...init('imgNoIntroType', {
             props: {
               onChange: (v) => this.onImgNoIntroTypeChange(v),
@@ -273,72 +285,70 @@ export default class ItemEditor extends Component {
               })
             }
           </Select>
-        </FormItem>
+        </Form.Item>
         {
           (this.state.scrapyObj) &&
-          <FormItem label="图片预览：">
+          <Form.Item label="图片预览：">
             <IceImg
-            src={this.state.scrapyObj.a}
-            title={this.state.scrapyObj.namea}
-            type="contain"
-            className={styles.img}
-            style={{ marginRight: '10px' }} />
+              src={this.state.scrapyObj.a}
+              title={this.state.scrapyObj.namea}
+              type="contain"
+              className={styles.img}
+              style={{ marginRight: '10px' }} />
             <IceImg
-            src={this.state.scrapyObj.b}
-            title={this.state.scrapyObj.nameb}
-            type="contain"
-            className={styles.img}
-            style={{ marginRight: '10px' }} />
-          </FormItem>
+              src={this.state.scrapyObj.b}
+              title={this.state.scrapyObj.nameb}
+              type="contain"
+              className={styles.img}
+              style={{ marginRight: '10px' }} />
+          </Form.Item>
         }
-        <FormItem label="rom文件">
-          <Upload accept=".xml" onChange={(files) => this.onClickRomFile(files)}>
+        <Form.Item label="rom文件">
+          <FilePicker
+            extensions={['zip']}
+            onChange={FileObject => this.onReadRomFile(FileObject)}
+          // onError={errMsg => (/* do something with err msg string */)
+          >
             <div className={styles.cenGroup}>
               <span>用来计算crc32和尺寸</span>
               <span>
                 <Button type="primary">选择文件</Button>
               </span>
             </div>
-          </Upload>
-        </FormItem>
-        <FormItem label="crc32：">
-          <Input name="crc32" disabled />
-        </FormItem>
-        <FormItem label="尺寸：">
-          <Input name="romSize" disabled />
-        </FormItem>
+          </FilePicker>
+        </Form.Item>
+        <Form.Item label="crc32：">
+          <Input {...init('crc32')} disabled />
+        </Form.Item>
+        <Form.Item label="尺寸：">
+          <Input {...init('romSize')} disabled />
+        </Form.Item>
 
-        {/* <FormItem label="语言：">
+        {/* <Form.Item label="语言：">
           <Radio.Group name="language">
             <Radio value="0">日语</Radio>
             <Radio value="1">英语</Radio>
             <Radio value="2">法语</Radio>
             <Radio value="3">汉语</Radio>
           </Radio.Group>
-        </FormItem>
+        </Form.Item>
 
-        <FormItem label="地区：">
+        <Form.Item label="地区：">
           <Radio.Group name="location">
             <Radio value="0">日本</Radio>
             <Radio value="1">美国</Radio>
             <Radio value="2">英国</Radio>
           </Radio.Group>
-        </FormItem>
+        </Form.Item>
 
-        <FormItem label="发行：">
+        <Form.Item label="发行：">
           <Radio.Group name="publisher">
             <Radio value="0">日语</Radio>
             <Radio value="1">英语</Radio>
             <Radio value="2">法语</Radio>
             <Radio value="3">汉语</Radio>
           </Radio.Group>
-        </FormItem> */}
-
-        <Row style={{ marginTop: 24 }}>
-          <Col offset="6">
-            <Form.Submit type="primary" onClick={() => this.onSubmit()}>确定</Form.Submit>
-          </Col>
-        </Row>
+        </Form.Item> */}
       </Form>
     );
   }

@@ -11,12 +11,13 @@ export default class SingleItem extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      showEditDialog: false,
     };
   }
 
   genImgUrl = (item, config, context) => {
-    return GameUtils.genImgUrl(
-      item.imageNumber, config.newDat.imURL, config.imFolder, context.gameImgsPath);
+    return GameUtils.genImageObj(
+      item.imageNumber, config.newDat.imURL, context.gameImgsPath, config.imFolder);
   }
 
   genShowList = (item) => {
@@ -61,6 +62,7 @@ export default class SingleItem extends Component {
       'location',
       'language',
       'comment',
+      'sourceRom',
     ];
     keyList.map((key) => {
       return item[key] = values[key];
@@ -69,6 +71,7 @@ export default class SingleItem extends Component {
     if (this.props.onUpdateGame) {
       this.props.onUpdateGame(item);
     }
+    this.setState({showEditDialog: false});
   }
 
   onEditRomDialog = () => {
@@ -136,9 +139,33 @@ export default class SingleItem extends Component {
         </div>
 
         <div className={styles.footer}>
-          <Button type="primary" onClick={() => this.onEditRomDialog()}>
+          <Button type="primary" onClick={() => this.setState({showEditDialog: true})}>
             编辑Rom信息
           </Button>
+          <Dialog
+            isFullScreen
+            title="编辑Rom信息"
+            visible={this.state.showEditDialog}
+            onOk={() => {
+              const values = this.romEditor.onSubmit();
+              if (values) {
+                this.onEditRomSubmit(values);
+              }
+            }}
+            onCancel={() => this.setState({showEditDialog: false})}
+            onClose={() => this.setState({showEditDialog: false})}
+          >
+            <ItemEditor
+              ref={(c) => { this.romEditor = c; }}
+              {...{
+              isModify: true,
+              releaseNumber: this.props.item.releaseNumber,
+              innerSubmit: this.onEditRomSubmit,
+              game: this.props.item,
+              config: this.props.config,
+              context: this.props.context,
+            }} />
+          </Dialog>
         </div>
       </div>
     );

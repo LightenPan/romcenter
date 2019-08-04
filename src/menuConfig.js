@@ -8,13 +8,13 @@ const asideMenuConfig = [
     path: '/romlist',
     // icon: 'cascades',
   },
-  {
-    name: '反馈',
-    path: 'https://github.com/alibaba/ice/issues/new',
-    icon: 'question2',
-    external: true,
-    newWindow: true,
-  },
+  // {
+  //   name: '反馈',
+  //   path: 'https://github.com/alibaba/ice/issues/new',
+  //   icon: 'question2',
+  //   external: true,
+  //   newWindow: true,
+  // },
 ];
 
 const headerMenuConfig = asideMenuConfig;
