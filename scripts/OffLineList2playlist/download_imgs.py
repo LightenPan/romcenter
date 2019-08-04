@@ -40,8 +40,8 @@ def load_xml_from_zip(_zip_file):
     return zdata
 
 
-def check_and_download(game, dst_title_file, dst_snaps_file):
-    imageNumber = int(game['imageNumber'])
+def check_and_download(imageNumber, dst_title_file, dst_snaps_file):
+    imageNumber = int(imageNumber)
     calcImageNumber = imageNumber
     if (imageNumber == 0):
         calcImageNumber = 1
@@ -98,9 +98,9 @@ def check_and_download(game, dst_title_file, dst_snaps_file):
         )
         return False
 
-def try_multi_check_and_download(game, dst_title_file, dst_snaps_file):
-    for item in range(1, 5):
-        succ = check_and_download(game, dst_title_file, dst_snaps_file)
+def try_multi_check_and_download(imageNumber, dst_title_file, dst_snaps_file):
+    for _ in range(1, 5):
+        succ = check_and_download(imageNumber, dst_title_file, dst_snaps_file)
         if succ:
             break
 
@@ -112,6 +112,7 @@ if __name__ == "__main__":
     parser.add_option("--offlinelist_xml")
     parser.add_option("--ext")
     parser.add_option("--dst_dir")
+    parser.add_option("--user_release_number")
 
     (options, args) = parser.parse_args()
 
@@ -120,6 +121,11 @@ if __name__ == "__main__":
 
     if not options.dst_dir:
         options.dst_dir = '.'
+
+    if not options.user_release_number:
+        options.user_release_number = 0
+    else:
+        options.user_release_number = int(options.user_release_number)
 
     # 计算xml-data文件目录
     parent_path = os.path.dirname(options.offlinelist_xml)
@@ -144,5 +150,8 @@ if __name__ == "__main__":
         # 默认是通过xml文件去下载图片，如果图片没有下载链接，则用本地目录
         afile = os.path.join(imgs_dir, str(game['imageNumber']) + 'a.png')
         bfile = os.path.join(imgs_dir, str(game['imageNumber']) + 'b.png')
-        check_and_download(game, afile, bfile)
+        imageNumber = game['imageNumber']
+        if options.user_release_number == 1:
+            imageNumber = game['releaseNumber']
+        try_multi_check_and_download(imageNumber, afile, bfile)
     pbar.close()
