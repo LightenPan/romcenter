@@ -5,4 +5,6 @@ python download_imgs.py --offlinelist_xml="./chsdats/Official_OfflineList_No-Int
 
 python download_imgs.py --offlinelist_xml="./chsdats/Official No-Intro Nintendo NES - Famicom.xml" --dst_dir="output\LP_NES_OL"
 
-python download_imgs.py --offlinelist_xml="./chsdats/NdsBbs_OL.xml" --dst_dir="output\LP_NES_OL"
+python download_imgs.py --offlinelist_xml="./chsdats/NdsBbs_OL.xml" --dst_dir="output\LP_DNS_OL" --user_release_number=1
+
+python download_imgs.py --offlinelist_xml="D:\devel\yanjiu\RetroGameDatForOfflineList\dats\LP_PSP_PSN_OL.xml" --dst_dir="D:\devel\yanjiu\RetroGameDatForOfflineList\imgs\LP_PSP_PSN_OL" --by_crc=0

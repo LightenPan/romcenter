@@ -94,7 +94,6 @@ def do_download(image_title_url, image_snaps_url, dst_title_file, dst_snaps_file
 def check_and_download_by_crc(crc, dst_title_file, dst_snaps_file):
     if os.path.exists(dst_title_file) and os.path.exists(dst_snaps_file):
         return True
-
     helper = ScreenScraperHelper()
     image_title_url, image_snaps_url = helper.getGameImageUrls(crc)
     return do_download(image_title_url, image_snaps_url, dst_title_file, dst_snaps_file)
@@ -112,7 +111,6 @@ def check_and_download_by_image_number(imageNumber, dst_title_file, dst_snaps_fi
     low = ((calcImageNumber - 1) // count) * count + 1
     high = ((calcImageNumber - 1) // count) * count + 500
     imageFolder = '%s-%s' % (low, high)
-    print(low, high, imageFolder)
     image_title_url = '%s%s/%sa.png' % (game['imURL'], imageFolder, imageNumber)
     image_snaps_url = '%s%s/%sb.png' % (game['imURL'], imageFolder, imageNumber)
     return do_download(image_title_url, image_snaps_url, dst_title_file, dst_snaps_file)
@@ -158,7 +156,7 @@ if __name__ == "__main__":
         options.by_crc = int(options.by_crc)
 
     if not options.thread_num:
-        options.thread_num = 1
+        options.thread_num = 5
     else:
         options.thread_num = int(options.thread_num)
 
@@ -198,6 +196,7 @@ if __name__ == "__main__":
         if os.path.exists(afile) and os.path.exists(bfile):
             continue
 
+
         params = {
           'by_crc': options.by_crc,
           'crc': game['romCRC'],
@@ -214,3 +213,11 @@ if __name__ == "__main__":
                 t.join()
             threads.clear()
     pbar.close()
+
+    # 还有剩余任务没有处理
+    if len(threads) >= 0:
+        for t in threads:
+            t.start()
+        for t in threads:
+            t.join()
+        threads.clear()
