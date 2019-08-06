@@ -5,8 +5,10 @@ import os
 import zipfile
 # import json
 from XmlDataLoader import XmlDataLoader
+from ScreenScraperHelper import ScreenScraperHelper
 from tqdm import tqdm
 import requests.api
+import threading
 
 # 利用logging.basicConfig()打印信息到控制台
 import logging
@@ -39,28 +41,16 @@ def load_xml_from_zip(_zip_file):
         break
     return zdata
 
-
-def check_and_download(imageNumber, dst_title_file, dst_snaps_file):
-    imageNumber = int(imageNumber)
-    calcImageNumber = imageNumber
-    if (imageNumber == 0):
-        calcImageNumber = 1
-    count = 500
-    low = ((calcImageNumber - 1) // count) * count + 1
-    high = ((calcImageNumber - 1) // count) * count + 500
-    imageFolder = '%s-%s' % (low, high)
-    print(low, high, imageFolder)
-    image_title_url = '%s%s/%sa.png' % (game['imURL'], imageFolder, imageNumber)
-    image_snaps_url = '%s%s/%sb.png' % (game['imURL'], imageFolder, imageNumber)
-    if os.path.exists(dst_title_file) and os.path.exists(dst_snaps_file):
-        return True
-
+def do_download(image_title_url, image_snaps_url, dst_title_file, dst_snaps_file):
     # logging.info('title: %s, image_title_url: %s, dst_title_file: %s, image_snaps_url: %s, dst_snaps_file: %s',
     #     XmlDataLoader.genGameName(game),
     #     image_title_url, dst_title_file,
     #     image_snaps_url, dst_snaps_file)
 
     try:
+        if not image_title_url:
+            return False
+
         f = open(dst_title_file, 'wb')
         r = requests.get(image_title_url)
         if r.status_code != 200:
@@ -80,6 +70,9 @@ def check_and_download(imageNumber, dst_title_file, dst_snaps_file):
         return False
 
     try:
+        if not image_snaps_url:
+            return False
+
         f = open(dst_snaps_file, 'wb')
         r = requests.get(image_snaps_url)
         if r.status_code != 200:
@@ -98,11 +91,41 @@ def check_and_download(imageNumber, dst_title_file, dst_snaps_file):
         )
         return False
 
-def try_multi_check_and_download(imageNumber, dst_title_file, dst_snaps_file):
-    for _ in range(1, 5):
-        succ = check_and_download(imageNumber, dst_title_file, dst_snaps_file)
-        if succ:
-            break
+def check_and_download_by_crc(crc, dst_title_file, dst_snaps_file):
+    if os.path.exists(dst_title_file) and os.path.exists(dst_snaps_file):
+        return True
+
+    helper = ScreenScraperHelper()
+    image_title_url, image_snaps_url = helper.getGameImageUrls(crc)
+    return do_download(image_title_url, image_snaps_url, dst_title_file, dst_snaps_file)
+
+
+def check_and_download_by_image_number(imageNumber, dst_title_file, dst_snaps_file):
+    if os.path.exists(dst_title_file) and os.path.exists(dst_snaps_file):
+        return True
+
+    imageNumber = int(imageNumber)
+    calcImageNumber = imageNumber
+    if (imageNumber == 0):
+        calcImageNumber = 1
+    count = 500
+    low = ((calcImageNumber - 1) // count) * count + 1
+    high = ((calcImageNumber - 1) // count) * count + 500
+    imageFolder = '%s-%s' % (low, high)
+    print(low, high, imageFolder)
+    image_title_url = '%s%s/%sa.png' % (game['imURL'], imageFolder, imageNumber)
+    image_snaps_url = '%s%s/%sb.png' % (game['imURL'], imageFolder, imageNumber)
+    return do_download(image_title_url, image_snaps_url, dst_title_file, dst_snaps_file)
+
+
+def try_multi_check_and_download(params):
+    # 循环多次
+    count = 2
+    for _ in range(1, count):
+        if params['by_crc'] == 1:
+            check_and_download_by_crc(params['crc'], params['afile'], params['bfile'])
+        else:
+            check_and_download_by_image_number(params['imageNumber'], params['afile'], params['bfile'])
 
 
 if __name__ == "__main__":
@@ -113,6 +136,8 @@ if __name__ == "__main__":
     parser.add_option("--ext")
     parser.add_option("--dst_dir")
     parser.add_option("--user_release_number")
+    parser.add_option("--by_crc")
+    parser.add_option("--thread_num")
 
     (options, args) = parser.parse_args()
 
@@ -127,6 +152,16 @@ if __name__ == "__main__":
     else:
         options.user_release_number = int(options.user_release_number)
 
+    if not options.by_crc:
+        options.by_crc = 1
+    else:
+        options.by_crc = int(options.by_crc)
+
+    if not options.thread_num:
+        options.thread_num = 1
+    else:
+        options.thread_num = int(options.thread_num)
+
     # 计算xml-data文件目录
     parent_path = os.path.dirname(options.offlinelist_xml)
     logging.info('parent_path: %s', parent_path)
@@ -135,9 +170,15 @@ if __name__ == "__main__":
     data = xml_data_loader.load(options.offlinelist_xml)
 
     logging.info('生成缩略图:')
+    index = 0
     image_count = 500
     pbar = tqdm(data['game_list'])
+    threads = []
     for game in pbar:
+        index = index + 1
+        # if index > 100:
+        #     break
+
         pbar.set_description("处理缩略图 %s" % xml_data_loader.genGameName(game))
         pbar.update()
 
@@ -153,5 +194,23 @@ if __name__ == "__main__":
         imageNumber = game['imageNumber']
         if options.user_release_number == 1:
             imageNumber = game['releaseNumber']
-        try_multi_check_and_download(imageNumber, afile, bfile)
+
+        if os.path.exists(afile) and os.path.exists(bfile):
+            continue
+
+        params = {
+          'by_crc': options.by_crc,
+          'crc': game['romCRC'],
+          'imageNumber': imageNumber,
+          'afile': afile,
+          'bfile': bfile,
+        }
+        t = threading.Thread(target=try_multi_check_and_download, args=(params,))
+        threads.append(t)
+        if len(threads) >= options.thread_num:
+            for t in threads:
+                t.start()
+            for t in threads:
+                t.join()
+            threads.clear()
     pbar.close()
