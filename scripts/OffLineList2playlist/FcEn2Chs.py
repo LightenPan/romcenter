@@ -53,19 +53,27 @@ if __name__ == "__main__":
     usage = ''
     parser = OptionParser(usage)
     parser.add_option("--file")
+    parser.add_option("--output")
 
     (options, args) = parser.parse_args()
 
     if not options.file:
         options.file = 'FC中英对照表.txt'
 
+    simple_list = list()
     xlist = load(options.file)
     for item in xlist:
         en, zh = split_en_chs(item)
         if not en:
             continue
         info = {
-            'en': en,
-            'chs': zh,
+            'ename': en,
+            'cname': zh,
         }
-        print(json.dumps(info, ensure_ascii=False))
+        simple_list.append(info)
+
+    if options.output:
+        json_file = open(options.output, 'w', encoding='utf-8')
+        for item in simple_list:
+            json_file.write('%s\n' % json.dumps(item, ensure_ascii=False))
+        json_file.close()
