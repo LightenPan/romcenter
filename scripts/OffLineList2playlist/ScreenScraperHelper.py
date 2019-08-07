@@ -87,14 +87,15 @@ class ScreenScraperHelper:
                     img1 = medias['media_screenshot']
                     img2 = medias['media_screenshottitle']
                     return img1, img2
-                elif 'media_screenshot' not in medias:
-                    img1 = medias['media_screenshottitle']
-                    img2 = medias['media_screenshottitle']
-                    return img1, img2
-                elif 'media_screenshottitle' not in medias:
-                    img1 = medias['media_screenshot']
-                    img2 = medias['media_screenshot']
-                    return img1, img2
+                if 'media_screenshot' in medias or 'media_screenshottitle' in medias:
+                    if 'media_screenshot' not in medias:
+                        img1 = medias['media_screenshottitle']
+                        img2 = medias['media_screenshottitle']
+                        return img1, img2
+                    else:
+                        img1 = medias['media_screenshot']
+                        img2 = medias['media_screenshot']
+                        return img1, img2
 
             for item in medias:
                 if item['region'] != romregions:
