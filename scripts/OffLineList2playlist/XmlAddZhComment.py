@@ -97,9 +97,9 @@ def gen_simple_from_en2chs(en2chs):
 
 
 if __name__ == "__main__":
-    usage = 'python XmlAddZhComment.py --offlinelist_xml="endats\noIntro - Nintendo - Super Nintendo Entertainment System .xml" --en2chs=en2chs\sfc.json --output_xml=output\LP_SFC_OL.xml'
+    usage = 'python XmlAddZhComment.py --dat="endats\noIntro - Nintendo - Super Nintendo Entertainment System .xml" --en2chs=en2chs\sfc.json --output_xml=output\LP_SFC_OL.xml'
     parser = OptionParser(usage)
-    parser.add_option("--offlinelist_xml")
+    parser.add_option("--dat")
     parser.add_option("--en2chs")
     parser.add_option("--en2chs_simple")
     parser.add_option("--output_xml")
@@ -109,8 +109,8 @@ if __name__ == "__main__":
 
 
     xml_data_loader = XmlDataLoader()
-    tree = xml_data_loader.load_xml_tree(options.offlinelist_xml)
-    data = xml_data_loader.load(options.offlinelist_xml)
+    tree = xml_data_loader.load_xml_tree(options.dat)
+    data = xml_data_loader.load(options.dat)
     en2chs = load_en2chs(options.en2chs)
     tmp_en2chs_simple = gen_simple_from_en2chs(en2chs)
 

@@ -130,7 +130,7 @@ if __name__ == "__main__":
     from optparse import OptionParser
     usage = ''
     parser = OptionParser(usage)
-    parser.add_option("--offlinelist_xml")
+    parser.add_option("--dat")
     parser.add_option("--ext")
     parser.add_option("--dst_dir")
     parser.add_option("--user_release_number")
@@ -161,11 +161,11 @@ if __name__ == "__main__":
         options.thread_num = int(options.thread_num)
 
     # 计算xml-data文件目录
-    parent_path = os.path.dirname(options.offlinelist_xml)
+    parent_path = os.path.dirname(options.dat)
     logging.info('parent_path: %s', parent_path)
 
     xml_data_loader = XmlDataLoader()
-    data = xml_data_loader.load(options.offlinelist_xml)
+    data = xml_data_loader.load(options.dat)
 
     logging.info('生成缩略图:')
     index = 0

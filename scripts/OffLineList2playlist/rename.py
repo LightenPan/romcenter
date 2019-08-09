@@ -113,7 +113,7 @@ if __name__ == "__main__":
     from optparse import OptionParser
     usage = ''
     parser = OptionParser(usage)
-    parser.add_option("--offlinelist_xml")
+    parser.add_option("--dat")
     parser.add_option("--room_dir")
     parser.add_option("--rename")
     (options, args) = parser.parse_args()
@@ -121,5 +121,5 @@ if __name__ == "__main__":
     if not options.rename:
         options.rename = 0
 
-    data = load_offlinelist_xml(options.offlinelist_xml)
+    data = load_offlinelist_xml(options.dat)
     rename_by_xml_dat(int(options.rename), options.room_dir, data)

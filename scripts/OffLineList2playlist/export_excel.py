@@ -39,7 +39,7 @@ if __name__ == "__main__":
     from optparse import OptionParser
     usage = ''
     parser = OptionParser(usage)
-    parser.add_option("--offlinelist_xml")
+    parser.add_option("--dat")
     parser.add_option("--ext")
     parser.add_option("--output")
 
@@ -49,7 +49,7 @@ if __name__ == "__main__":
         options.ext = '.zip'
 
     xml_data_loader = XmlDataLoader()
-    data = xml_data_loader.load(options.offlinelist_xml)
+    data = xml_data_loader.load(options.dat)
 
     logging.info('生成excel:')
     values = [[0 for i in range(2)] for j in range(len(data['game_list']))]

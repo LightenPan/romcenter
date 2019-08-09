@@ -38,16 +38,16 @@ def load_en2chs(file):
 
 
 if __name__ == "__main__":
-    usage = 'python XmlRenameImageNumberByReleaseNumber.py --offlinelist_xml='
+    usage = 'python XmlRenameImageNumberByReleaseNumber.py --dat='
     parser = OptionParser(usage)
-    parser.add_option("--offlinelist_xml")
+    parser.add_option("--dat")
     parser.add_option("--output_xml")
 
     (options, args) = parser.parse_args()
 
     xml_data_loader = XmlDataLoader()
-    tree = xml_data_loader.load_xml_tree(options.offlinelist_xml)
-    data = xml_data_loader.load(options.offlinelist_xml)
+    tree = xml_data_loader.load_xml_tree(options.dat)
+    data = xml_data_loader.load(options.dat)
 
     count = 0
     index = 0

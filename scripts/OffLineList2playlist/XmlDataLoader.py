@@ -159,7 +159,7 @@ class XmlDataLoader:
             releaseNumber = int(releaseNumber)
             language = game.find('language').text
             comment = game.find('comment').text
-            romCRC = game.find('files/romCRC').text.upper()
+            romCRC = game.find('files/romCRC').text.lower()
             imageNumber = game.find('imageNumber').text
             imageNumber = int(imageNumber)
             extension = game.find('files/romCRC').attrib['extension']

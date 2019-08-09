@@ -105,7 +105,7 @@ if __name__ == "__main__":
     from optparse import OptionParser
     usage = ''
     parser = OptionParser(usage)
-    parser.add_option("--offlinelist_xml")
+    parser.add_option("--dat")
     parser.add_option("--prex")
     parser.add_option("--lpl")
     parser.add_option("--ext")
@@ -165,7 +165,7 @@ if __name__ == "__main__":
         options.prex = '%s/%s/' % (options.prex, options.lpl)
 
     # 计算xml-data文件目录
-    parent_path = os.path.dirname(options.offlinelist_xml)
+    parent_path = os.path.dirname(options.dat)
     logging.info('parent_path: %s', parent_path)
 
     config = {
@@ -174,7 +174,7 @@ if __name__ == "__main__":
         'rom_title': options.rom_title,
     }
     xml_data_loader = XmlDataLoader()
-    data = xml_data_loader.load(options.offlinelist_xml, config)
+    data = xml_data_loader.load(options.dat, config)
 
     # playlist格式1
     # /storage/roms/n64/Legend of Zelda, The - Ocarina of Time (USA).n64
