@@ -20,6 +20,9 @@ def split_en_chs(zh_en_str, sep):
         return None
     _en = xsplit[0]
     _chs = xsplit[1]
+    _chs = _chs.strip()
+    if not _chs:
+        return None
     # print(en, chs)
     # 用正则表达式，去掉括弧内的内容
     return {
@@ -36,6 +39,7 @@ def load(file):
         # print line,            # 后面跟 ',' 将忽略换行符
         # print(line, end = '')  # 在 Python 3中使用
         line = f.readline()
+        line = line.strip('\n')
         if not line:
             continue
         xlist.append(line)
@@ -45,7 +49,7 @@ def load(file):
 
 if __name__ == "__main__":
     from optparse import OptionParser
-    usage = ''
+    usage = 'python dict_handle\GenSimpleDict.py --file= --output='
     parser = OptionParser(usage)
     parser.add_option("--file")
     parser.add_option("--output")

@@ -48,7 +48,7 @@
   "scaffoldConfig": {
     "builder": "ice-scripts",
     "name": "ice-algorithm-model-admin",
-    "title": "算法模型管理系统",
+    "title": "OfflineList数据编辑器",
     "categories": [
       "行业领域"
     ],

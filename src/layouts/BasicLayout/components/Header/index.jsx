@@ -39,7 +39,7 @@ function Header(props) {
                           ) : null}
                           <span>{nav.name}</span>
                         </span>
-)}
+                      )}
                     >
                       {nav.children.map((item) => {
                         const linkProps = {};
@@ -105,7 +105,7 @@ function Header(props) {
           </Nav>
         </div>
 
-        <Balloon
+        {/* <Balloon
           trigger={(
             <div
               className={styles.iceDesignHeaderUserpannel}
@@ -134,7 +134,7 @@ function Header(props) {
                 className={styles.iconDown}
               />
             </div>
-)}
+          )}
           closable={false}
           className={styles.userProfileMenu}
         >
@@ -152,7 +152,7 @@ function Header(props) {
               </Link>
             </li>
           </ul>
-        </Balloon>
+        </Balloon> */}
       </div>
     </div>
   );

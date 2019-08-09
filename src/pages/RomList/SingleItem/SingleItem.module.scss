@@ -93,3 +93,14 @@ img {
 	max-width: 100%;
 	max-height: 100%;
 }
+
+.labelGroup {
+  display: flex;
+  // padding-bottom: 15px;
+  // margin-left: 12px;
+}
+
+.labelGroupItem {
+  display: flex;
+  width: 50%;
+}

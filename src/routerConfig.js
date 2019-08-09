@@ -39,7 +39,7 @@ const routerConfig = [
       },
       {
         path: '/',
-        redirect: '/management',
+        redirect: '/romlist',
       },
     ],
   },

@@ -6,7 +6,7 @@ export default function Logo() {
   return (
     <div className={styles.container}>
       <Link to="/" className={styles.logoText}>
-        算法模型管理系统
+        数据编辑器
       </Link>
     </div>
   );

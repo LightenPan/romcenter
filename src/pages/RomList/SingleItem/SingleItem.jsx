@@ -39,14 +39,14 @@ export default class SingleItem extends Component {
     const showList = [];
     showList.push({label: '标题', value: item.title});
     showList.push({label: '备注', value: item.comment});
-    showList.push({label: '来源', value: item.sourceRom});
-    showList.push({label: '编号', value: item.releaseNumber});
-    showList.push({label: '图片', value: item.imageNumber});
-    showList.push({label: '尺寸', value: item.romSize});
-    showList.push({label: '发行', value: item.publisher});
-    showList.push({label: '地区', value: item.location});
-    showList.push({label: '语言', value: item.language});
-    showList.push({label: 'crc32', value: item.files.romCRC._});
+    // showList.push({label: '来源', value: item.sourceRom});
+    // showList.push({label: 'crc32', value: item.files.romCRC._});
+    // showList.push({label: '编号', value: item.releaseNumber});
+    // showList.push({label: '图片', value: item.imageNumber});
+    // showList.push({label: '尺寸', value: item.romSize});
+    // showList.push({label: '发行', value: item.publisher});
+    // showList.push({label: '地区', value: item.location});
+    // showList.push({label: '语言', value: item.language});
     return showList;
   }
 
@@ -54,15 +54,15 @@ export default class SingleItem extends Component {
     console.log('onEditRomSubmit. values: ', values);
     const {item} = this.props;
     const keyList = [
+      'title',
+      'comment',
+      'sourceRom',
       'releaseNumber',
       'imageNumber',
-      'title',
       'romSize',
       'publisher',
       'location',
       'language',
-      'comment',
-      'sourceRom',
     ];
     keyList.map((key) => {
       return item[key] = values[key];
@@ -128,14 +128,60 @@ export default class SingleItem extends Component {
             {/* <IceImg src={imgUrl.a} type="contain" className={styles.img} /> */}
           </div>
 
-          {showList.map((showItem, key) => {
+          {/* {showList.map((showItem, key) => {
             return (
               <div className={styles.item} key={key}>
-                <span className={styles.label}>{showItem.label}：</span>
+                <span className={styles.label}>{showItem.label}: </span>
                 <span className={styles.value}>{showItem.value}</span>
               </div>
             );
-          })}
+          })} */}
+          <div className={styles.item}>
+            <span className={styles.label}>标题: </span>
+            <span className={styles.value}>{item.title}</span>
+          </div>
+          <div className={styles.item}>
+            <span className={styles.label}>备注: </span>
+            <span className={styles.value}>{item.comment}</span>
+          </div>
+          <div className={styles.item}>
+            <span className={styles.label}>发行: </span>
+            <span className={styles.value}>{item.publisher}</span>
+          </div>
+          {/* <div className={styles.item}>
+            <span className={styles.label}>来源: </span>
+            <span className={styles.value}>{item.sourceRom}</span>
+          </div> */}
+          <div className={styles.labelGroup}>
+            <div className={styles.labelGroupItem}>
+              <span className={styles.label}>CRC: </span>
+              <span className={styles.value}>{item.files.romCRC._}</span>
+            </div>
+            <div className={styles.labelGroupItem}>
+              <span className={styles.label}>尺寸: </span>
+              <span className={styles.value}>{item.romSize}</span>
+            </div>
+          </div>
+          <div className={styles.labelGroup}>
+            <div className={styles.labelGroupItem}>
+              <span className={styles.label}>编号: </span>
+              <span className={styles.value}>{item.releaseNumber}</span>
+            </div>
+            <div className={styles.labelGroupItem}>
+              <span className={styles.label}>图片: </span>
+              <span className={styles.value}>{item.imageNumber}</span>
+            </div>
+          </div>
+          <div className={styles.labelGroup}>
+            <div className={styles.labelGroupItem}>
+              <span className={styles.label}>地区: </span>
+              <span className={styles.value}>{item.location}</span>
+            </div>
+            <div className={styles.labelGroupItem}>
+              <span className={styles.label}>语言: </span>
+              <span className={styles.value}>{item.language}</span>
+            </div>
+          </div>
         </div>
 
         <div className={styles.footer}>

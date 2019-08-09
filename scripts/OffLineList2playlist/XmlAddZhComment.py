@@ -64,8 +64,9 @@ def load_en2chs_simple(file):
     f.close()
     return xdict
 
-
-def save_no_chs_list(file, no_chs_list):
+def save_no_chs_list_xls(file, no_chs_list):
+    if os.path.exists(file):
+        os.remove(file)
     values = [[0 for i in range(2)] for j in range(len(no_chs_list) + 1)]
     values[0][0] = 'crc32'
     values[0][1] = '英文名'
@@ -76,10 +77,14 @@ def save_no_chs_list(file, no_chs_list):
         row = row + 1
     write_excel_xls(file, 'sheet1', values)
 
-    # file_obj = open(file, 'w', encoding='utf-8')
-    # for title in no_chs_list:
-    #     file_obj.write('%s\n' % title)
-    # file_obj.close()
+def save_no_chs_list(file, no_chs_list):
+    if os.path.splitext(file)[-1] == '.xls':
+        save_no_chs_list_xls(file, no_chs_list)
+    else:
+        file_obj = open(file, 'w', encoding='utf-8')
+        for title in no_chs_list:
+            file_obj.write('%s\n' % title)
+        file_obj.close()
 
 def gen_simple_from_en2chs(en2chs):
     import re
@@ -107,7 +112,6 @@ if __name__ == "__main__":
 
     (options, args) = parser.parse_args()
 
-
     xml_data_loader = XmlDataLoader()
     tree = xml_data_loader.load_xml_tree(options.dat)
     data = xml_data_loader.load(options.dat)
@@ -132,12 +136,15 @@ if __name__ == "__main__":
         pbar.set_description("处理 %s" % xml_data_loader.genGameName(game))
         pbar.update()
 
-        crc = game['romCRC']
+        tree_game = tree_games[index]
+        if tree_game.find('comment').text and tree_game.find('comment').text != '':
+            continue
+
+        crc = game['romCRC'].upper()
         if crc not in en2chs:
             continue
 
         info = en2chs[crc]
-        tree_game = tree_games[index]
         tree_game.find('comment').text = info['cname']
     pbar.close()
 
@@ -149,8 +156,12 @@ if __name__ == "__main__":
         pbar.set_description("处理 %s" % xml_data_loader.genGameName(game))
         pbar.update()
 
+        tree_game = tree_games[index]
+        if tree_game.find('comment').text and tree_game.find('comment').text != '':
+            continue
+
         # 跳过crc匹配的，前面已经处理了
-        crc = game['romCRC']
+        crc = game['romCRC'].upper()
         if crc in en2chs:
             continue
 
@@ -175,6 +186,7 @@ if __name__ == "__main__":
         xml_file.write(xml_str)
         xml_file.close()
 
+    print('len no_chs_list: ', len(no_chs_list))
     if no_chs_list:
         if options.no_chs_file:
             save_no_chs_list(options.no_chs_file, no_chs_list)
