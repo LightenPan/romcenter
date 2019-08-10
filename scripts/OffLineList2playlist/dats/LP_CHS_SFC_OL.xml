@@ -5,9 +5,9 @@
 
 <dat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="datas.xsd">
 	<configuration>
-		<datName>LP_CHS_SNES_OL</datName>
-		<imFolder>LP_CHS_SNES_OL</imFolder>
-		<datVersion>20180228</datVersion>
+		<datName>LP_CHS_SFC_OL</datName>
+		<imFolder>LP_CHS_SFC_OL</imFolder>
+		<datVersion>20190810</datVersion>
 		<system>Nintendo - Super Nintendo Entertainment System</system>
 		<screenshotsWidth>256</screenshotsWidth>
 		<screenshotsHeight>224</screenshotsHeight>
@@ -31,9 +31,9 @@
 			<extension>.sfc</extension>
 		</canOpen>
 		<newDat>
-			<datVersionURL>http://ol.emu618.org:81/version/Chinese%20Games%20-%20SNES.ver</datVersionURL>
-			<datURL fileName="CHS_SNES_OL.zip">http://ol.emu618.org:81/dat/CHS_SNES_OL.zip</datURL>
-			<imURL>http://ol.emu618.org:81/img/Chinese%20Games%20-%20SNES/</imURL>
+		   <datVersionURL></datVersionURL>
+		   <datURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/dats/LP_CHS_SFC_OL.xml</datURL>
+		   <imURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/imgs/LP_CHS_SFC_OL</imURL>
 		</newDat>
 		<search>
 			<to value="location" default="true" auto="true"/>

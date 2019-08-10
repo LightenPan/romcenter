@@ -33,9 +33,9 @@
 			<extension>.bin</extension>
 		</canOpen>
 		<newDat>
-			<datVersionURL>http://ol.emu618.org:81/version/Chinese%20Games%20-%20NGPC.ver</datVersionURL>
-			<datURL fileName="CHS_NGPC_OL.zip">http://ol.emu618.org:81/dat/CHS_NGPC_OL.zip</datURL>
-			<imURL>http://ol.emu618.org:81/img/Chinese%20Games%20-%20NGPC/</imURL>
+		   <datVersionURL></datVersionURL>
+		   <datURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/dats/LP_CHS_NGPC_OL.xml</datURL>
+		   <imURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/imgs/LP_CHS_NGPC_OL</imURL>
 		</newDat>
 		<search>
 			<to value="location" default="true" auto="true"></to>
