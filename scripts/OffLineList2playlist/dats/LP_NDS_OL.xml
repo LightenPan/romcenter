@@ -30,7 +30,7 @@
 			<datVersionURL>http://file.ndsbbs.com/OL/Ndsbbs_OL.txt</datVersionURL>
 			<datURL fileName="Ndsbbs_OL.zip">http://file.ndsbbs.com/OL/Ndsbbs_OL.zip</datURL>
 			<imURL>http://nointro.free.fr/imgs/Official%20No-Intro%20Nintendo%20Dual%20Screen/</imURL>
-		</newDat>	
+		</newDat>
 		<search>
 			<to auto="true" default="true" value="location" />
 			<to auto="false" default="true" value="romSize">

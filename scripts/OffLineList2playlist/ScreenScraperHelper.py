@@ -1,4 +1,5 @@
 # encoding=utf8
+import traceback
 
 # 利用logging.basicConfig()打印信息到控制台
 import logging
@@ -12,24 +13,25 @@ logging.getLogger("requests").setLevel(logging.WARNING)
 logging.getLogger("urllib3").setLevel(logging.WARNING)
 
 class ScreenScraperHelper:
-    def __init__(self):
+    def __init__(self, use_socks5_proxy):
       self.devlist = [
-          {
-              'devid': 'capsaicin',
-              'devpassword': 'rpivid20161125',
-              'softname': 'video_scraper',
-          },
-          {
+        {
+            'devid': 'capsaicin',
+            'devpassword': 'rpivid20161125',
+            'softname': 'video_scraper',
+        },
+        {
             'devid': 'son_link',
             'devpassword': 'link20161231son',
             'softname': 'multi-scrapper',
-          },
-          {
+        },
+        {
             'devid': 'NeeeeB',
             'devpassword': 'mapzoe',
             'softname': 'Universal_XML_Scraper',
-          },
+        },
       ]
+      self.use_socks5_proxy = use_socks5_proxy
 
     def __get_rand_dev_info(self):
         import random
@@ -44,10 +46,16 @@ class ScreenScraperHelper:
             'softname': devinfo['softname'],
             'output': 'json',
             'crc': crc,
-            'romnom': 'Sonic',
+            # 'romnom': 'Sonic',
+            'romnom': 'LightenPan',
         }
         url = 'http://www.screenscraper.fr/api/jeuInfos.php'
         import requests
+        if self.use_socks5_proxy == 1:
+            import socket
+            import socks
+            socks.set_default_proxy(socks.SOCKS5, "127.0.0.1", 1080)
+            socket.socket = socks.socksocket
         resp = requests.get(url, params=params)
         if resp.status_code != requests.codes.ok:
             return None
@@ -55,7 +63,8 @@ class ScreenScraperHelper:
             jdata = resp.json()
             return jdata
         except Exception as excep:
-            logging.error('getGameImageUrls failed. excep: %s, resp_text: %s, url: %s', excep, resp.text, resp.url)
+            logging.error('getGameImageUrls failed. excep: %s, traceback: %s, resp_text: %s, url: %s',
+            excep, traceback.format_exc(), resp.text, resp.url)
             return None
 
     def getGameImageUrls(self, crc):

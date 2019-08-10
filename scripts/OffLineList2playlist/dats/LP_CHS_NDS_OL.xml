@@ -3,7 +3,7 @@
 <dat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="datas.xsd">
 	<configuration>
 		<datName>LP_CHS_NDS_OL</datName>
-		<imFolder>LP_NDS_OL</imFolder>
+		<imFolder>LP_CHS_NDS_OL</imFolder>
 		<datVersion>130503</datVersion>
 		<system>Nintendo DS</system>
 		<screenshotsWidth>256</screenshotsWidth>
@@ -32,7 +32,7 @@
 		<newDat>
 			<datVersionURL>http://ndsbbs-ol-chinese.googlecode.com/svn/trunk/NdsBbs_OL_CHINESE_RE.txt</datVersionURL>
 			<datURL fileName="NdsBbs_OL_CHINESE_RE.zip">http://ndsbbs-ol-chinese.googlecode.com/svn/trunk/NdsBbs_OL_CHINESE_RE.zip</datURL>
-			<imURL>http://www.retrocovers.com/offline/imgs/ADVANsCEne_NDS/</imURL>
+			<imURL>http://www.advanscene.com/offline/imgs/ADVANsCEne_NDS/</imURL>
 		</newDat>
 		<search>
 			<to value="location" default="true" auto="true"/>

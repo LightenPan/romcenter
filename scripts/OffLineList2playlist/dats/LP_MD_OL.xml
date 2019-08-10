@@ -26,9 +26,9 @@
 			<extension>.smd</extension>
 		</canOpen>
 		<newDat>
-		   <datVersionURL />
-		   <datURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/dats/LP_MD_OL.xml</datURL>
-		   <imURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/imgs/LP_MD_OL</imURL>
+			<datVersionURL>http://ouaper2k.free.fr/MD/MDDatVersion</datVersionURL>
+			<datURL fileName="MD_OL.zip">http://ouaper2k.free.fr/MD/MD_OL.zip</datURL>
+			<imURL>http://ouaper2k.free.fr/MD/imgs/</imURL>
 		</newDat>
 		<search>
 			<to auto="true" default="true" value="location" />

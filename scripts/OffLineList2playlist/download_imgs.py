@@ -10,6 +10,10 @@ from tqdm import tqdm
 import requests.api
 import threading
 from PIL import Image
+import traceback
+import requests
+import socket
+import socks
 
 # 利用logging.basicConfig()打印信息到控制台
 import logging
@@ -21,8 +25,24 @@ logging.basicConfig(
 # 关闭requests的日志
 logging.getLogger("requests").setLevel(logging.WARNING)
 logging.getLogger("urllib3").setLevel(logging.WARNING)
+logging.getLogger("PIL").setLevel(logging.WARNING)
+logger = logging.getLogger('download_imgs')
 
 DOWNLOAD_FAILED_LIST = list()
+
+proxy_list = [
+    {
+        'http': 'socks5://127.0.0.1:1080',
+    },
+]
+
+def get_proxies():
+    if len(proxy_list) > 0:
+        import random
+        index = random.randint(0, len(proxy_list) - 1)
+        return proxy_list[index]
+    return None
+
 
 def is_valid_image(filename):
     valid = True
@@ -40,7 +60,7 @@ def mkdirs(path):
 
 
 def load_xml_from_zip(_zip_file):
-    logging.info('_zip_file: %s', _zip_file)
+    logger.info('_zip_file: %s', _zip_file)
     _ext_list = ['.xml']
     zdata = ''
     z = zipfile.ZipFile(_zip_file, "r")
@@ -52,17 +72,19 @@ def load_xml_from_zip(_zip_file):
         break
     return zdata
 
-def do_download(image_title_url, image_snaps_url, dst_title_file, dst_snaps_file):
-    # logging.info('title: %s, image_title_url: %s, dst_title_file: %s, image_snaps_url: %s, dst_snaps_file: %s',
+def do_download(use_socks5_proxy, image_title_url, image_snaps_url, dst_title_file, dst_snaps_file):
+    # logger.info('title: %s, image_title_url: %s, dst_title_file: %s, image_snaps_url: %s, dst_snaps_file: %s',
     #     XmlDataLoader.genGameName(game),
     #     image_title_url, dst_title_file,
     #     image_snaps_url, dst_snaps_file)
 
     try:
         if not image_title_url:
-            DOWNLOAD_FAILED_LIST.append(image_title_url)
             return False
 
+        if use_socks5_proxy == 1:
+            socks.set_default_proxy(socks.SOCKS5, "127.0.0.1", 1080)
+            socket.socket = socks.socksocket
         f = open(dst_title_file, 'wb')
         r = requests.get(image_title_url)
         if r.status_code != 200:
@@ -77,23 +99,25 @@ def do_download(image_title_url, image_snaps_url, dst_title_file, dst_snaps_file
         f.close()
 
         # 检验下载的文件是否正常，不正常需要删除重新下载
-        if not is_valid_image(image_title_url):
-            os.remove(image_title_url)
+        if not is_valid_image(dst_title_file):
+            os.remove(dst_title_file)
             DOWNLOAD_FAILED_LIST.append(image_title_url)
 
     except Exception as excep:
         logging.error(
-            'down load image failed. title: %s, image_title_url: %s, dst_title_file: %s, image_snaps_url: %s, dst_snaps_file: %s',
-            XmlDataLoader.genGameName(game), image_title_url, dst_title_file, image_snaps_url, dst_snaps_file
+            'down load image failed. excep: %s, traceback: %s, title: %s, image_title_url: %s, dst_title_file: %s, image_snaps_url: %s, dst_snaps_file: %s',
+            excep, traceback.format_exc(), XmlDataLoader.genGameName(game), image_title_url, dst_title_file, image_snaps_url, dst_snaps_file
         )
         DOWNLOAD_FAILED_LIST.append(image_title_url)
         return False
 
     try:
         if not image_snaps_url:
-            DOWNLOAD_FAILED_LIST.append(image_snaps_url)
             return False
 
+        if use_socks5_proxy == 1:
+            socks.set_default_proxy(socks.SOCKS5, "127.0.0.1", 1080)
+            socket.socket = socks.socksocket
         f = open(dst_snaps_file, 'wb')
         r = requests.get(image_snaps_url)
         if r.status_code != 200:
@@ -108,31 +132,31 @@ def do_download(image_title_url, image_snaps_url, dst_title_file, dst_snaps_file
         f.close()
 
         # 检验下载的文件是否正常，不正常需要删除重新下载
-        if not is_valid_image(image_snaps_url):
-            os.remove(image_snaps_url)
+        if not is_valid_image(dst_snaps_file):
+            os.remove(dst_snaps_file)
             DOWNLOAD_FAILED_LIST.append(image_snaps_url)
 
     except Exception as excep:
         logging.error(
-            'down load image failed. title: %s, image_title_url: %s, dst_title_file: %s, image_snaps_url: %s, dst_snaps_file: %s',
-            XmlDataLoader.genGameName(game), image_title_url, dst_title_file, image_snaps_url, dst_snaps_file
+            'down load image failed. excep: %s, traceback: %s, title: %s, image_title_url: %s, dst_title_file: %s, image_snaps_url: %s, dst_snaps_file: %s',
+            excep, traceback.format_exc(), XmlDataLoader.genGameName(game), image_title_url, dst_title_file, image_snaps_url, dst_snaps_file
         )
         DOWNLOAD_FAILED_LIST.append(image_snaps_url)
         return False
 
-def check_and_download_by_crc(crc, dst_title_file, dst_snaps_file):
+def check_and_download_by_crc(use_socks5_proxy, crc, dst_title_file, dst_snaps_file):
     if os.path.exists(dst_title_file) and os.path.exists(dst_snaps_file):
         return True
-    helper = ScreenScraperHelper()
+    helper = ScreenScraperHelper(use_socks5_proxy)
     image_title_url, image_snaps_url = helper.getGameImageUrls(crc)
     if not image_title_url:
         DOWNLOAD_FAILED_LIST.append(dst_title_file)
     if not image_snaps_url:
         DOWNLOAD_FAILED_LIST.append(dst_snaps_file)
-    return do_download(image_title_url, image_snaps_url, dst_title_file, dst_snaps_file)
+    return do_download(use_socks5_proxy, image_title_url, image_snaps_url, dst_title_file, dst_snaps_file)
 
 
-def check_and_download_by_image_number(imageNumber, dst_title_file, dst_snaps_file):
+def check_and_download_by_image_number(use_socks5_proxy, imageNumber, dst_title_file, dst_snaps_file):
     if os.path.exists(dst_title_file) and os.path.exists(dst_snaps_file):
         return True
 
@@ -146,17 +170,22 @@ def check_and_download_by_image_number(imageNumber, dst_title_file, dst_snaps_fi
     imageFolder = '%s-%s' % (low, high)
     image_title_url = '%s%s/%sa.png' % (game['imURL'], imageFolder, imageNumber)
     image_snaps_url = '%s%s/%sb.png' % (game['imURL'], imageFolder, imageNumber)
-    return do_download(image_title_url, image_snaps_url, dst_title_file, dst_snaps_file)
+    return do_download(use_socks5_proxy, image_title_url, image_snaps_url, dst_title_file, dst_snaps_file)
 
 
 def try_multi_check_and_download(params):
     # 循环多次
     count = 2
+    use_socks5_proxy = 0
+    if 'use_socks5_proxy' in params:
+        use_socks5_proxy = params['use_socks5_proxy']
     for _ in range(1, count):
         if params['by_crc'] == 1:
-            check_and_download_by_crc(params['crc'], params['afile'], params['bfile'])
+            succ = check_and_download_by_crc(use_socks5_proxy, params['crc'], params['afile'], params['bfile'])
         else:
-            check_and_download_by_image_number(params['imageNumber'], params['afile'], params['bfile'])
+            succ = check_and_download_by_image_number(use_socks5_proxy, params['imageNumber'], params['afile'], params['bfile'])
+        if succ:
+            break
 
 
 if __name__ == "__main__":
@@ -169,6 +198,7 @@ if __name__ == "__main__":
     parser.add_option("--user_release_number")
     parser.add_option("--by_crc")
     parser.add_option("--thread_num")
+    parser.add_option("--use_socks5_proxy")
 
     (options, args) = parser.parse_args()
 
@@ -193,14 +223,19 @@ if __name__ == "__main__":
     else:
         options.thread_num = int(options.thread_num)
 
+    if not options.use_socks5_proxy:
+        options.use_socks5_proxy = 1
+    else:
+        options.use_socks5_proxy = int(options.use_socks5_proxy)
+
     # 计算xml-data文件目录
     parent_path = os.path.dirname(options.dat)
-    logging.info('parent_path: %s', parent_path)
+    logger.info('parent_path: %s', parent_path)
 
     xml_data_loader = XmlDataLoader()
     data = xml_data_loader.load(options.dat)
 
-    logging.info('生成缩略图:')
+    logger.info('生成缩略图:')
     index = 0
     image_count = 500
     pbar = tqdm(data['game_list'])
@@ -235,6 +270,7 @@ if __name__ == "__main__":
           'imageNumber': imageNumber,
           'afile': afile,
           'bfile': bfile,
+          'use_socks5_proxy': options.use_socks5_proxy,
         }
         t = threading.Thread(target=try_multi_check_and_download, args=(params,))
         threads.append(t)
