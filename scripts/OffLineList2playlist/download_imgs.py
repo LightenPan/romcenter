@@ -9,6 +9,7 @@ from ScreenScraperHelper import ScreenScraperHelper
 from tqdm import tqdm
 import requests.api
 import threading
+from PIL import Image
 
 # 利用logging.basicConfig()打印信息到控制台
 import logging
@@ -20,6 +21,16 @@ logging.basicConfig(
 # 关闭requests的日志
 logging.getLogger("requests").setLevel(logging.WARNING)
 logging.getLogger("urllib3").setLevel(logging.WARNING)
+
+DOWNLOAD_FAILED_LIST = list()
+
+def is_valid_image(filename):
+    valid = True
+    try:
+        Image.open(filename).load()
+    except OSError:
+        valid = False
+    return valid
 
 
 def mkdirs(path):
@@ -49,11 +60,14 @@ def do_download(image_title_url, image_snaps_url, dst_title_file, dst_snaps_file
 
     try:
         if not image_title_url:
+            DOWNLOAD_FAILED_LIST.append(image_title_url)
             return False
 
         f = open(dst_title_file, 'wb')
         r = requests.get(image_title_url)
         if r.status_code != 200:
+            os.remove(dst_title_file)
+            DOWNLOAD_FAILED_LIST.append(image_title_url)
             logging.error(
                 'down load image failed. title: %s, image_title_url: %s, dst_title_file: %s, image_snaps_url: %s, dst_snaps_file: %s',
                 XmlDataLoader.genGameName(game), image_title_url, dst_title_file, image_snaps_url, dst_snaps_file
@@ -62,20 +76,29 @@ def do_download(image_title_url, image_snaps_url, dst_title_file, dst_snaps_file
         f.write(r.content)
         f.close()
 
+        # 检验下载的文件是否正常，不正常需要删除重新下载
+        if not is_valid_image(image_title_url):
+            os.remove(image_title_url)
+            DOWNLOAD_FAILED_LIST.append(image_title_url)
+
     except Exception as excep:
         logging.error(
             'down load image failed. title: %s, image_title_url: %s, dst_title_file: %s, image_snaps_url: %s, dst_snaps_file: %s',
             XmlDataLoader.genGameName(game), image_title_url, dst_title_file, image_snaps_url, dst_snaps_file
         )
+        DOWNLOAD_FAILED_LIST.append(image_title_url)
         return False
 
     try:
         if not image_snaps_url:
+            DOWNLOAD_FAILED_LIST.append(image_snaps_url)
             return False
 
         f = open(dst_snaps_file, 'wb')
         r = requests.get(image_snaps_url)
         if r.status_code != 200:
+            os.remove(image_snaps_url)
+            DOWNLOAD_FAILED_LIST.append(image_snaps_url)
             logging.error(
                 'down load image failed. title: %s, image_title_url: %s, dst_title_file: %s, image_snaps_url: %s, dst_snaps_file: %s',
                 XmlDataLoader.genGameName(game), image_title_url, dst_title_file, image_snaps_url, dst_snaps_file
@@ -84,11 +107,17 @@ def do_download(image_title_url, image_snaps_url, dst_title_file, dst_snaps_file
         f.write(r.content)
         f.close()
 
+        # 检验下载的文件是否正常，不正常需要删除重新下载
+        if not is_valid_image(image_snaps_url):
+            os.remove(image_snaps_url)
+            DOWNLOAD_FAILED_LIST.append(image_snaps_url)
+
     except Exception as excep:
         logging.error(
             'down load image failed. title: %s, image_title_url: %s, dst_title_file: %s, image_snaps_url: %s, dst_snaps_file: %s',
             XmlDataLoader.genGameName(game), image_title_url, dst_title_file, image_snaps_url, dst_snaps_file
         )
+        DOWNLOAD_FAILED_LIST.append(image_snaps_url)
         return False
 
 def check_and_download_by_crc(crc, dst_title_file, dst_snaps_file):
@@ -96,6 +125,10 @@ def check_and_download_by_crc(crc, dst_title_file, dst_snaps_file):
         return True
     helper = ScreenScraperHelper()
     image_title_url, image_snaps_url = helper.getGameImageUrls(crc)
+    if not image_title_url:
+        DOWNLOAD_FAILED_LIST.append(dst_title_file)
+    if not image_snaps_url:
+        DOWNLOAD_FAILED_LIST.append(dst_snaps_file)
     return do_download(image_title_url, image_snaps_url, dst_title_file, dst_snaps_file)
 
 
@@ -156,7 +189,7 @@ if __name__ == "__main__":
         options.by_crc = int(options.by_crc)
 
     if not options.thread_num:
-        options.thread_num = 5
+        options.thread_num = 4
     else:
         options.thread_num = int(options.thread_num)
 
@@ -196,7 +229,6 @@ if __name__ == "__main__":
         if os.path.exists(afile) and os.path.exists(bfile):
             continue
 
-
         params = {
           'by_crc': options.by_crc,
           'crc': game['romCRC'],
@@ -221,3 +253,6 @@ if __name__ == "__main__":
         for t in threads:
             t.join()
         threads.clear()
+
+    for item in DOWNLOAD_FAILED_LIST:
+        print('failed image: ', item)

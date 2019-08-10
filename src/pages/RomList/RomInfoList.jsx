@@ -34,6 +34,7 @@ export default class RomInfoList extends Component {
       showAddDialog: false,
       showLoading: false,
       filterType: 0,
+      queryText: '',
     };
   }
 
@@ -251,31 +252,64 @@ export default class RomInfoList extends Component {
     Dialog.confirm({
       title: '选择过滤条件',
       content: (
-        <div className={styles.renderedContainer}>
+        <div>
           <h3>列表条件</h3>
-          <Radio.Group
-            // value={this.state.filterType}
-            itemDirection='ver'
-            onChange={(val) => {
-              this.setState({filterType: val});
-            }}
-          >
-            <Radio value={0}>不过滤</Radio>
-            <Radio value={1}>只显示空备注数据</Radio>
-          </Radio.Group>
+          <div className={styles.renderedContainer}>
+            <Radio.Group
+              // value={this.state.filterType}
+              itemDirection='ver'
+              onChange={(val) => {
+                this.setState({filterType: val});
+              }}
+            >
+              <Radio value={0}>不过滤</Radio>
+              <Radio value={1}>只显示空备注数据</Radio>
+              <Radio value={2}>根据游戏编号过滤</Radio>
+              <Radio value={3}>根据图片编号过滤</Radio>
+            </Radio.Group>
+          </div>
+          <h3>列表查询数据</h3>
+          <div className={styles.renderedContainer}>
+            <Input
+              // value={this.state.queryText}
+              onChange={(val) => this.setState({queryText: val})} />
+          </div>
         </div>
 
       ),
       onOk: () => {
         const { xmlData } = this.state;
         let allGameList = xmlData.dat.games.game;
-        if (this.state.filterType === 1) {
-          allGameList = xmlData.dat.games.game.filter((item) => {
-            if (item.comment === '') {
-              return true;
-            }
-            return false;
-          })
+        switch (this.state.filterType)
+        {
+          case 1:
+            allGameList = xmlData.dat.games.game.filter((item) => {
+              if (item.comment === '') {
+                return true;
+              }
+              return false;
+            });
+            break;
+          case 2:
+            console.log('queryText: ', this.state.queryText);
+            allGameList = xmlData.dat.games.game.filter((item) => {
+              if (item.releaseNumber === this.state.queryText) {
+                return true;
+              }
+              return false;
+            });
+            break;
+          case 3:
+            console.log('queryText: ', this.state.queryText);
+            allGameList = xmlData.dat.games.game.filter((item) => {
+              if (item.imageNumber === this.state.queryText) {
+                return true;
+              }
+              return false;
+            });
+            break;
+          default:
+            break;
         }
         const current = 1;
         const start = (current - 1) * this.state.context.pageCount;

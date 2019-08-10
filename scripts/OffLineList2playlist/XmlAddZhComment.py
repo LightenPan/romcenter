@@ -59,7 +59,7 @@ def load_en2chs_simple(file):
         # print line,            # 后面跟 ',' 将忽略换行符
         # print(line, end = '')  # 在 Python 3中使用
         info = json.loads(line)
-        xdict[info['ename']] = info
+        xdict[info['ename'].lower()] = info # 英文转成小写，容易匹配上
         line = f.readline()
     f.close()
     return xdict
@@ -91,10 +91,10 @@ def gen_simple_from_en2chs(en2chs):
     xdict = dict()
     tmp_list = list(en2chs.values())
     for item in tmp_list:
-        ename = item['ename']
+        ename = item['ename'].lower() # 英文转成小写，容易匹配上
         ename = re.sub(' \(.*\)', '', ename)
         info = {
-            'ename': ename,
+            'ename': ename.lower(), # 英文转成小写，容易匹配上
             'cname': item['cname'],
         }
         xdict[ename] = info
@@ -115,8 +115,11 @@ if __name__ == "__main__":
     xml_data_loader = XmlDataLoader()
     tree = xml_data_loader.load_xml_tree(options.dat)
     data = xml_data_loader.load(options.dat)
-    en2chs = load_en2chs(options.en2chs)
-    tmp_en2chs_simple = gen_simple_from_en2chs(en2chs)
+    en2chs = dict()
+    tmp_en2chs_simple = dict()
+    if options.en2chs:
+        en2chs = load_en2chs(options.en2chs)
+        tmp_en2chs_simple = gen_simple_from_en2chs(en2chs)
 
     en2chs_simple = dict()
     if options.en2chs_simple:

@@ -65,8 +65,8 @@ if __name__ == "__main__":
         tree_game = tree_games[index]
         tree_game.find('releaseNumber').text = str(index + 1)
         tree_game.find('imageNumber').text = str(index + 1)
-        logging.info('releaseNumber: %s', tree_game.find('releaseNumber').text)
-        logging.info('imageNumber: %s', tree_game.find('imageNumber').text)
+        # logging.info('releaseNumber: %s', tree_game.find('releaseNumber').text)
+        # logging.info('imageNumber: %s', tree_game.find('imageNumber').text)
         index = index + 1
     pbar.close()
 
