@@ -63,7 +63,7 @@ class ScreenScraperHelper:
             jdata = resp.json()
             return jdata
         except Exception as excep:
-            logging.error('getGameImageUrls failed. excep: %s, traceback: %s, resp_text: %s, url: %s',
+            logging.error('__jeuInfos failed. excep: %s, traceback: %s, resp_text: %s, url: %s',
             excep, traceback.format_exc(), resp.text, resp.url)
             return None
 
@@ -105,6 +105,14 @@ class ScreenScraperHelper:
                         img1 = medias['media_screenshot']
                         img2 = medias['media_screenshot']
                         return img1, img2
+                if 'media_boxs' in medias:
+                    media_boxs = medias['media_boxs']
+                    if 'media_boxs2d' in media_boxs and 'media_box2d_ss' in media_boxs['media_boxs2d']:
+                        img1 = media_boxs['media_boxs2d']['media_box2d_ss']
+                    if 'media_boxstexture' in media_boxs and 'media_boxtexture_ss' in media_boxs['media_boxstexture']:
+                        img2 = media_boxs['media_boxstexture']['media_boxtexture_ss']
+                    if img1 and img2:
+                        return img1, img2
 
             for item in medias:
                 if item['region'] != romregions:
@@ -126,5 +134,7 @@ class ScreenScraperHelper:
             return img1, img2
 
         except Exception as excep:
-            print('getGameImageUrls failed. excep: %s, header: %s' %(excep, jdata['header']))
+            print('getGameImageUrls failed. excep: %s, traceback: %s, header: %s' % (
+                excep, traceback.format_exc(), jdata['header'])
+            )
             return None, None
