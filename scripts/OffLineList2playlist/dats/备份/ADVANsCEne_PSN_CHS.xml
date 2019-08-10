@@ -3,8 +3,8 @@
 <!-- OL Datter :  Ratail -->
 <dat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="datas.xsd">
 	<configuration>
-		<datName>LP_CHS_PSP_PSN_OL</datName>
-		<imFolder>LP_CHS_PSP_PSN_OL</imFolder>
+		<datName>ADVANsCEne Sony PSN Collection CHS</datName>
+		<imFolder>ADVANsCEne Sony PSN Collection</imFolder>
 		<datVersion>20180809</datVersion>
 		<system>Sony PSN</system>
 		<screenshotsWidth>320</screenshotsWidth>

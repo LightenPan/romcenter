@@ -30,7 +30,7 @@
 		<newDat>
 			<datVersionURL>http://file.ndsbbs.com/OL/Ndsbbs_OL.txt</datVersionURL>
 			<datURL fileName="Ndsbbs_OL.zip">http://file.ndsbbs.com/OL/Ndsbbs_OL.zip</datURL>
-			<imURL>http://nointro.free.fr/imgs/Official%20No-Intro%20Nintendo%20Dual%20Screen/</imURL>
+			<imURL>http://file.ndsbbs.com/OL/imgs/NdsBbs_OL_NDS_DATA/</imURL>
 		</newDat>	
 		<search>
 			<to value="location" default="true" auto="true" />

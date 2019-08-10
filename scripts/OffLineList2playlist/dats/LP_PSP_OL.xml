@@ -3,8 +3,8 @@
 <!-- OL Datter :  Ratail -->
 <dat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="datas.xsd">
 	<configuration>
-		<datName>LP_CHS_PSP_OL</datName>
-		<imFolder>LP_CHS_PSP_OL</imFolder>
+		<datName>LP_PSP_OL</datName>
+		<imFolder>LP_PSP_OL</imFolder>
 		<datVersion>20180809</datVersion>
 		<system>Sony PSP</system>
 		<screenshotsWidth>320</screenshotsWidth>

@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- Pictures by : money_114 -->
+<!-- OL Datter : money_114 -->
+
+<dat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="datas.xsd">
+	<configuration>
+		<datName>Chinese Game Dat (Simplified) - N64</datName>
+		<imFolder>Chinese Games - N64</imFolder>
+		<datVersion>20141210</datVersion>
+		<system>Nintendo - Nintendo 64</system>
+		<screenshotsWidth>320</screenshotsWidth>
+		<screenshotsHeight>240</screenshotsHeight>
+		<infos>
+			<title visible="true" inNamingOption="true" default="false"></title>
+			<location visible="true" inNamingOption="true" default="true"></location>
+			<publisher visible="true" inNamingOption="true" default="true"></publisher>
+			<sourceRom visible="true" inNamingOption="true" default="true"></sourceRom>
+			<saveType visible="false" inNamingOption="true" default="false"></saveType>
+			<romSize visible="true" inNamingOption="true" default="true"></romSize>
+			<releaseNumber visible="false" inNamingOption="true" default="false"></releaseNumber>
+			<imageNumber visible="false" inNamingOption="false" default="false"></imageNumber>
+			<languageNumber visible="false" inNamingOption="false" default="false"></languageNumber>
+			<comment visible="true" inNamingOption="true" default="true"></comment>
+			<romCRC visible="true" inNamingOption="true" default="true"></romCRC>
+			<im1CRC visible="false" inNamingOption="false" default="false"></im1CRC>
+			<im2CRC visible="false" inNamingOption="false" default="false"></im2CRC>
+			<languages visible="true" inNamingOption="true" default="true"></languages>
+		</infos>
+		<canOpen>
+			<extension>.z64</extension>
+			<extension>.nes</extension>
+			<extension>.n64</extension>
+			<extension>.bin</extension>
+		</canOpen>
+		<newDat>
+			<datVersionURL>http://ol.emu618.org:81/version/Chinese%20Games%20-%20N64.ver</datVersionURL>
+			<datURL fileName="CHS_N64_OL.zip">http://ol.emu618.org:81/dat/CHS_N64_OL.zip</datURL>
+			<imURL>http://ol.emu618.org:81/img/Chinese%20Games%20-%20N64/</imURL>
+		</newDat>
+		<search>
+			<to value="location" default="true" auto="true"></to>
+			<to value="publisher" default="true" auto="true"></to>
+			<to value="sourceRom" default="true" auto="true"></to>
+			<to value="languages" default="false" auto="true"></to>
+			<to value="saveType" default="false" auto="false">
+			</to>
+			<to value="romSize" default="true" auto="false">
+				<find operation="=" value="16777216">= 128 MBits</find>
+				<find operation="=" value="33554432">= 256 MBits</find>
+				<find operation="=" value="44040192">= 336 MBits</find>
+			</to>
+		</search>
+		<romTitle>%n (%g)</romTitle>
+	</configuration>
+	<games>
+		<game>
+			<imageNumber>1</imageNumber>
+			<releaseNumber>1</releaseNumber>
+			<title>纸片马里奥 (简) (v0.9)</title>
+			<saveType></saveType>
+			<romSize>44040192</romSize>
+			<publisher>Nintendo</publisher>
+			<location>1</location>
+			<sourceRom>漫游汉化组</sourceRom>
+			<language>4</language>
+			<files>
+				<romCRC extension=".n64">A34D20D7</romCRC>
+			</files>
+			<im1CRC>714A4A05</im1CRC>
+			<im2CRC>63FC9006</im2CRC>
+			<comment>Paper Mario (USA) (v0.9) [CHS]</comment>
+			<duplicateID>1</duplicateID>
+		</game>
+		<game>
+			<imageNumber>2</imageNumber>
+			<releaseNumber>2</releaseNumber>
+			<title>塞尔达传说 - 时之笛 (简) (v20090726)</title>
+			<saveType></saveType>
+			<romSize>33554432</romSize>
+			<publisher>Nintendo</publisher>
+			<location>7</location>
+			<sourceRom>madcell</sourceRom>
+			<language>4</language>
+			<files>
+				<romCRC extension=".n64">A16FC9EE</romCRC>
+			</files>
+			<im1CRC>A8B4F42A</im1CRC>
+			<im2CRC>3163DBE4</im2CRC>
+			<comment>Zelda no Densetsu - Toki no Ocarina (Japan) (v20090726) [CHS]</comment>
+			<duplicateID>0</duplicateID>
+		</game>
+		<game>
+			<imageNumber>3</imageNumber>
+			<releaseNumber>3</releaseNumber>
+			<title>恶魔城 - 默示录外传 (简) (v3.1)</title>
+			<saveType></saveType>
+			<romSize>16777216</romSize>
+			<publisher>Konami</publisher>
+			<location>7</location>
+			<sourceRom>凯莉汉化组</sourceRom>
+			<language>4</language>
+			<files>
+				<romCRC extension=".n64">C1</romCRC>
+			</files>
+			<im1CRC>F8981D3A</im1CRC>
+			<im2CRC>4D9C5842</im2CRC>
+			<comment>Akumajou Dracula Mokushiroku Gaiden - Legend of Cornell (Japan) (v3.1) [CHS]</comment>
+			<duplicateID>0</duplicateID>
+		</game>
+		<game>
+			<imageNumber>4</imageNumber>
+			<releaseNumber>4</releaseNumber>
+			<title>纸片马里奥 (繁) (v0.9)</title>
+			<saveType></saveType>
+			<romSize>44040192</romSize>
+			<publisher>Nintendo</publisher>
+			<location>1</location>
+			<sourceRom>漫游汉化组 &amp; zzz5655</sourceRom>
+			<language>4</language>
+			<files>
+				<romCRC extension=".n64">62CC2CD9</romCRC>
+			</files>
+			<im1CRC>1C11814E</im1CRC>
+			<im2CRC>60A44A88</im2CRC>
+			<comment>Paper Mario (USA) (v0.9) [CHT]</comment>
+			<duplicateID>1</duplicateID>
+		</game>
+		<game>
+			<imageNumber>5</imageNumber>
+			<releaseNumber>5</releaseNumber>
+			<title>塞尔达传说 - 马祖拉的假面 (简)</title>
+			<saveType></saveType>
+			<romSize>33554432</romSize>
+			<publisher>Nintendo</publisher>
+			<location>7</location>
+			<sourceRom>塞尔达传说吧</sourceRom>
+			<language>4</language>
+			<files>
+				<romCRC extension=".n64">4B10F7F5</romCRC>
+			</files>
+			<im1CRC>23994E40</im1CRC>
+			<im2CRC>2AFA1097</im2CRC>
+			<comment>Zelda no Densetsu - Mujura no Kamen (Japan) [CHS]</comment>
+			<duplicateID>0</duplicateID>
+		</game>
+	</games>
+</dat>

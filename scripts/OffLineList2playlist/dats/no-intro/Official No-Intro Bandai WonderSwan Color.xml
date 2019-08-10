@@ -1,0 +1,1863 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- Dat by Patrick (nointro@free.fr) aka [-F1-] on IRC, Dat and Images Hosted on http://nointro.free.fr -->
+<!-- Please visit official no-intro website on http://www.gbadat.altervista.org> -->
+<!-- Download OfflineList on http://offlinelist.free.fr> -->
+
+<!-- Datter : NGEfreak -->
+<!-- Pictures by : poppu -->
+<!-- OL Datter : poppu -->
+
+<dat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="datas.xsd">
+	<configuration>
+		<datName>Official No-Intro Bandai WonderSwan Color</datName>
+		<datVersion>981092159</datVersion>
+		<system>Bandai WonderSwan Color</system>
+		<screenshotsWidth>224</screenshotsWidth>
+		<screenshotsHeight>224</screenshotsHeight>
+		<infos>
+			<title visible="false" inNamingOption="true" default="false"></title>
+			<location visible="true" inNamingOption="true" default="true"></location>
+			<publisher visible="true" inNamingOption="true" default="true"></publisher>
+			<sourceRom visible="true" inNamingOption="true" default="true"></sourceRom>
+			<saveType visible="false" inNamingOption="false" default="false"></saveType>
+			<romSize visible="true" inNamingOption="true" default="true"></romSize>
+			<releaseNumber visible="true" inNamingOption="true" default="false"></releaseNumber>
+			<languageNumber visible="true" inNamingOption="true" default="false"></languageNumber>
+			<comment visible="true" inNamingOption="true" default="true"></comment>
+			<romCRC visible="true" inNamingOption="true" default="true"></romCRC>
+			<im1CRC visible="true" inNamingOption="true" default="false"></im1CRC>
+			<im2CRC visible="true" inNamingOption="true" default="false"></im2CRC>
+			<languages visible="true" inNamingOption="true" default="true"></languages>
+		</infos>
+		<canOpen>
+			<extension>.wsc</extension>
+		</canOpen>
+		<newDat>
+			<datVersionURL>http://nointro.free.fr/version/Official%20No-Intro%20Bandai%20WonderSwan%20Color_version</datVersionURL>
+			<datURL fileName="Official No-Intro Bandai WonderSwan Color.zip">http://nointro.free.fr/datas/Official%20No-Intro%20Bandai%20WonderSwan%20Color.zip</datURL>
+			<imURL>http://nointro.free.fr/imgs/Official%20No-Intro%20Bandai%20WonderSwan%20Color/</imURL>
+		</newDat>
+		<search>
+			<to value="location" default="true" auto="true"></to>
+			<to value="romSize" default="true" auto="false">
+				<find operation="=" value="1048576">= 8 MBits</find>
+				<find operation="=" value="2097152">= 16 MBits</find>
+				<find operation="=" value="4194304">= 32 MBits</find>
+				<find operation="=" value="8388608">= 64 MBits</find>
+			</to>
+			<to value="languages" default="true" auto="true"></to>
+			<to value="publisher" default="true" auto="true"></to>
+			<to value="sourceRom" default="true" auto="true"></to>
+		</search>
+		<romTitle>%n %o %m %e</romTitle>
+	</configuration>
+	<games>
+
+		<game>
+			<imageNumber>126</imageNumber>
+			<releaseNumber>126</releaseNumber>
+			<title>Alchemist Marie &amp; Elie - Futari no Atelier</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>E3 Staff</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">B18CDC0D</romCRC>
+			</files>
+			<im1CRC>83C1894E</im1CRC>
+			<im2CRC>E2409C5C</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>189</imageNumber>
+			<releaseNumber>189</releaseNumber>
+			<title>Another Heaven - Memory of those Days</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Omega Micott Inc</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">D7A0AB74</romCRC>
+			</files>
+			<im1CRC>3F28EA80</im1CRC>
+			<im2CRC>A24FB060</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>168</imageNumber>
+			<releaseNumber>168</releaseNumber>
+			<title>Arc the Lad - Kishin Fukkatsu</title>
+			<saveType></saveType>
+			<romSize>8388608</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Chakky</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">E2317345</romCRC>
+			</files>
+			<im1CRC>FEBE01FC</im1CRC>
+			<im2CRC>CF0E4F25</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>50001</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Battle Spirit - Digimon Frontier</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher></publisher>
+			<location>7</location>
+			<sourceRom></sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">8BA49DAB</romCRC>
+			</files>
+			<im1CRC>03A71395</im1CRC>
+			<im2CRC>19454372</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>97</imageNumber>
+			<releaseNumber>97</releaseNumber>
+			<title>Blue Wing Blitz</title>
+			<saveType></saveType>
+			<romSize>2097152</romSize>
+			<publisher>Square</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">99027238</romCRC>
+			</files>
+			<im1CRC>3869EE92</im1CRC>
+			<im2CRC>6E52ACC7</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>96</imageNumber>
+			<releaseNumber>96</releaseNumber>
+			<title>Dark Eyes - Battle Gate</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">12AE932C</romCRC>
+			</files>
+			<im1CRC>8283EF88</im1CRC>
+			<im2CRC>501A8B34</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>0</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Dicing Knight.</title>
+			<saveType></saveType>
+			<romSize>524288</romSize>
+			<publisher></publisher>
+			<location>7</location>
+			<sourceRom></sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">D28DC930</romCRC>
+			</files>
+			<im1CRC>78175125</im1CRC>
+			<im2CRC>78175125</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>134</imageNumber>
+			<releaseNumber>134</releaseNumber>
+			<title>Digimon - Anode Tamer &amp; Cathode Tamer (Asia)</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>3</location>
+			<sourceRom>Menace</sourceRom>
+			<language>2</language>
+			<files>
+				<romCRC extension=".wsc">77689273</romCRC>
+			</files>
+			<im1CRC>513DB3CF</im1CRC>
+			<im2CRC>453AB158</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>2</imageNumber>
+			<releaseNumber>2</releaseNumber>
+			<title>Digimon Adventure 02 - D1 Tamers</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">4D28637E</romCRC>
+			</files>
+			<im1CRC>C8E7CDB3</im1CRC>
+			<im2CRC>EEBC982F</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>125</imageNumber>
+			<releaseNumber>125</releaseNumber>
+			<title>Digimon Tamers - Battle Spirit</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">C927BFCB</romCRC>
+			</files>
+			<im1CRC>E5F425F9</im1CRC>
+			<im2CRC>2BB71354</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>50002</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Digimon Tamers - Battle Spirit Ver. 1.5</title>
+			<saveType></saveType>
+			<romSize>8388608</romSize>
+			<publisher></publisher>
+			<location>7</location>
+			<sourceRom></sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">6CAAD4A2</romCRC>
+			</files>
+			<im1CRC>298260C3</im1CRC>
+			<im2CRC>4254E041</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>166</imageNumber>
+			<releaseNumber>166</releaseNumber>
+			<title>Digimon Tamers - Brave Tamer</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">F1F4D41F</romCRC>
+			</files>
+			<im1CRC>C8960334</im1CRC>
+			<im2CRC>590F9B74</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>103</imageNumber>
+			<releaseNumber>103</releaseNumber>
+			<title>Digimon Tamers - Digimon Medley</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">FA92418D</romCRC>
+			</files>
+			<im1CRC>C9A01482</im1CRC>
+			<im2CRC>CEAC140C</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>169</imageNumber>
+			<releaseNumber>169</releaseNumber>
+			<title>Digital Monster - D-Project</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Chakky</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">FAAEFBCB</romCRC>
+			</files>
+			<im1CRC>A9A17745</im1CRC>
+			<im2CRC>352D9894</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>163</imageNumber>
+			<releaseNumber>163</releaseNumber>
+			<title>Digital Monster Card Game - Ver. WonderSwan Color</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">603CB5E6</romCRC>
+			</files>
+			<im1CRC>DA4B4C8C</im1CRC>
+			<im2CRC>EFFF2FA6</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>40</imageNumber>
+			<releaseNumber>40</releaseNumber>
+			<title>Dokodemo Hamster 3 - Odekake Saffron</title>
+			<saveType></saveType>
+			<romSize>2097152</romSize>
+			<publisher>Bec Co.</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">93E19F13</romCRC>
+			</files>
+			<im1CRC>105BE3F4</im1CRC>
+			<im2CRC>BC6157F9</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>184</imageNumber>
+			<releaseNumber>184</releaseNumber>
+			<title>Dragon Ball</title>
+			<saveType></saveType>
+			<romSize>2097152</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">067238D1</romCRC>
+			</files>
+			<im1CRC>B32223CE</im1CRC>
+			<im2CRC>F6323F2F</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>1</imageNumber>
+			<releaseNumber>1</releaseNumber>
+			<title>Final Fantasy</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Square</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">B7243E88</romCRC>
+			</files>
+			<im1CRC>2D85C388</im1CRC>
+			<im2CRC>21DF0683</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>33</imageNumber>
+			<releaseNumber>33</releaseNumber>
+			<title>Final Fantasy II</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Square</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">F09E752F</romCRC>
+			</files>
+			<im1CRC>4898280D</im1CRC>
+			<im2CRC>E7A6DA87</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>161</imageNumber>
+			<releaseNumber>161</releaseNumber>
+			<title>Final Fantasy IV</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Square</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">F699D6D1</romCRC>
+			</files>
+			<im1CRC>ADBCC1AC</im1CRC>
+			<im2CRC>6FEC7B93</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>136</imageNumber>
+			<releaseNumber>136</releaseNumber>
+			<title>Final Lap Special - GT &amp; Formula Machine</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">B07E6A56</romCRC>
+			</files>
+			<im1CRC>C655D8CF</im1CRC>
+			<im2CRC>C2642244</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>74</imageNumber>
+			<releaseNumber>74</releaseNumber>
+			<title>Flash Koibito-kun</title>
+			<saveType></saveType>
+			<romSize>2097152</romSize>
+			<publisher>Koubunsha</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">69D8D433</romCRC>
+			</files>
+			<im1CRC>331469A1</im1CRC>
+			<im2CRC>E826B54F</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>188</imageNumber>
+			<releaseNumber>188</releaseNumber>
+			<title>From TV Animation One Piece - Chopper no Daibouken</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">8E120B5A</romCRC>
+			</files>
+			<im1CRC>2884472C</im1CRC>
+			<im2CRC>E2FF5C12</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>174</imageNumber>
+			<releaseNumber>174</releaseNumber>
+			<title>From TV Animation One Piece - Grand Battle Swan Colosseum</title>
+			<saveType></saveType>
+			<romSize>8388608</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Rising Sun</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">F8A1DD2B</romCRC>
+			</files>
+			<im1CRC>AF2AB18B</im1CRC>
+			<im2CRC>E28AFBE9</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>124</imageNumber>
+			<releaseNumber>124</releaseNumber>
+			<title>From TV Animation One Piece - Niji no Shima Densetsu</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">427056C4</romCRC>
+			</files>
+			<im1CRC>21DEAC6E</im1CRC>
+			<im2CRC>A9DF6F0E</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>186</imageNumber>
+			<releaseNumber>186</releaseNumber>
+			<title>From TV Animation One Piece - Treasure Wars</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">205503C3</romCRC>
+			</files>
+			<im1CRC>A3AF7E7F</im1CRC>
+			<im2CRC>9AA7DD4D</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>187</imageNumber>
+			<releaseNumber>187</releaseNumber>
+			<title>From TV Animation One Piece - Treasure Wars 2 - Buggy Land he Youkoso</title>
+			<saveType></saveType>
+			<romSize>8388608</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">0D1048F0</romCRC>
+			</files>
+			<im1CRC>9E7B04B3</im1CRC>
+			<im2CRC>336D5AA3</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>172</imageNumber>
+			<releaseNumber>172</releaseNumber>
+			<title>Front Mission</title>
+			<saveType></saveType>
+			<romSize>8388608</romSize>
+			<publisher>Square</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">2F9E2560</romCRC>
+			</files>
+			<im1CRC>3743A86C</im1CRC>
+			<im2CRC>0B4D6E88</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>50003</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Gekitou! Crash Gear Turbo - Gear Champion League</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher></publisher>
+			<location>7</location>
+			<sourceRom></sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">8A8B827C</romCRC>
+			</files>
+			<im1CRC>85FE2DAA</im1CRC>
+			<im2CRC>C16BB47A</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>120</imageNumber>
+			<releaseNumber>120</releaseNumber>
+			<title>Gensou Maden Saiyuuki Retribution - Hi no Ataru Basho de</title>
+			<saveType></saveType>
+			<romSize>2097152</romSize>
+			<publisher>Mubikku</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">446E2581</romCRC>
+			</files>
+			<im1CRC>861F243D</im1CRC>
+			<im2CRC>C120B76E</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>162</imageNumber>
+			<releaseNumber>162</releaseNumber>
+			<title>Golden Axe</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">BC944A98</romCRC>
+			</files>
+			<im1CRC>EE353D3B</im1CRC>
+			<im2CRC>64D5484D</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>50004</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Gransta Chronicle</title>
+			<saveType></saveType>
+			<romSize>8388608</romSize>
+			<publisher></publisher>
+			<location>7</location>
+			<sourceRom></sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">AF24F95C</romCRC>
+			</files>
+			<im1CRC>5701F229</im1CRC>
+			<im2CRC>259C5816</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>39</imageNumber>
+			<releaseNumber>39</releaseNumber>
+			<title>Guilty Gear Petit</title>
+			<saveType></saveType>
+			<romSize>2097152</romSize>
+			<publisher>Sammy</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">9750BC2A</romCRC>
+			</files>
+			<im1CRC>AD094512</im1CRC>
+			<im2CRC>19D548E5</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>123</imageNumber>
+			<releaseNumber>123</releaseNumber>
+			<title>Guilty Gear Petit 2</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Sammy</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">D7A12BD5</romCRC>
+			</files>
+			<im1CRC>54E68D8A</im1CRC>
+			<im2CRC>FAB7345A</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>34</imageNumber>
+			<releaseNumber>34</releaseNumber>
+			<title>GunPey EX</title>
+			<saveType></saveType>
+			<romSize>1048576</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">0C9CB12C</romCRC>
+			</files>
+			<im1CRC>E4E61F8A</im1CRC>
+			<im2CRC>2C185626</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>158</imageNumber>
+			<releaseNumber>158</releaseNumber>
+			<title>Hanjuku Hero - Ah, Sekai yo Hanjuku Nare...!!</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Square</publisher>
+			<location>7</location>
+			<sourceRom>Eur3</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">31E09BED</romCRC>
+			</files>
+			<im1CRC>01B11960</im1CRC>
+			<im2CRC>C05E79D9</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>93</imageNumber>
+			<releaseNumber>93</releaseNumber>
+			<title>Hataraku Chocobo</title>
+			<saveType></saveType>
+			<romSize>1048576</romSize>
+			<publisher>Square</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">7A29E9A6</romCRC>
+			</files>
+			<im1CRC>D32C51DF</im1CRC>
+			<im2CRC>F80E6067</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>171</imageNumber>
+			<releaseNumber>171</releaseNumber>
+			<title>Hunter X Hunter - Greed Island</title>
+			<saveType></saveType>
+			<romSize>8388608</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">A487B7A8</romCRC>
+			</files>
+			<im1CRC>0E5D1B02</im1CRC>
+			<im2CRC>42BAFBAD</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>107</imageNumber>
+			<releaseNumber>107</releaseNumber>
+			<title>Hunter X Hunter - Michibikareshi Mono</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">9402BCA9</romCRC>
+			</files>
+			<im1CRC>6D195099</im1CRC>
+			<im2CRC>28A87E4C</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>56</imageNumber>
+			<releaseNumber>56</releaseNumber>
+			<title>Hunter X Hunter - Sorezore no Ketsui</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">D0B20C5A</romCRC>
+			</files>
+			<im1CRC>D2D0CE9A</im1CRC>
+			<im2CRC>5E823CFA</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>177</imageNumber>
+			<releaseNumber>177</releaseNumber>
+			<title>Inuyasha - Fuuun Emaki</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Rising Sun</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">3FF5791F</romCRC>
+			</files>
+			<im1CRC>2B6FDB99</im1CRC>
+			<im2CRC>D7E2E387</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>151</imageNumber>
+			<releaseNumber>151</releaseNumber>
+			<title>Inuyasha - Kagome no Sengoku Nikki</title>
+			<saveType></saveType>
+			<romSize>2097152</romSize>
+			<publisher>Sammy</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">0C23D551</romCRC>
+			</files>
+			<im1CRC>3855DB26</im1CRC>
+			<im2CRC>FFC952EF</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>50005</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Inuyasha - Kagome no Yume Nikki</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher></publisher>
+			<location>7</location>
+			<sourceRom></sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">44453234</romCRC>
+			</files>
+			<im1CRC>EE015573</im1CRC>
+			<im2CRC>2697E889</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>0</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Judgement Silversword - Rebirth Edition</title>
+			<saveType></saveType>
+			<romSize>524288</romSize>
+			<publisher></publisher>
+			<location>7</location>
+			<sourceRom></sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">60191872</romCRC>
+			</files>
+			<im1CRC>78175125</im1CRC>
+			<im2CRC>78175125</im2CRC>
+			<comment>(Rev 4321)</comment>
+			<duplicateID>1</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>0</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Judgement Silversword - Rebirth Edition</title>
+			<saveType></saveType>
+			<romSize>524288</romSize>
+			<publisher></publisher>
+			<location>7</location>
+			<sourceRom></sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">4FCE380D</romCRC>
+			</files>
+			<im1CRC>78175125</im1CRC>
+			<im2CRC>78175125</im2CRC>
+			<comment>(Rev SC21)</comment>
+			<duplicateID>1</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>50006</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Kidou Senshi Gundam - Giren no Yabou - Tokubetsu Hen - Aoki Hoshi no Hasha</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher></publisher>
+			<location>7</location>
+			<sourceRom></sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">D4061551</romCRC>
+			</files>
+			<im1CRC>EF0EF1D3</im1CRC>
+			<im2CRC>A017C704</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>182</imageNumber>
+			<releaseNumber>182</releaseNumber>
+			<title>Kidou Senshi Gundam Seed</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Rising Sun</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">BCE15137</romCRC>
+			</files>
+			<im1CRC>84A7E99D</im1CRC>
+			<im2CRC>17A8EA12</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>12</imageNumber>
+			<releaseNumber>12</releaseNumber>
+			<title>Kidou Senshi Gundam Vol. 1 - Side 7</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">08C0247B</romCRC>
+			</files>
+			<im1CRC>C8374CD7</im1CRC>
+			<im2CRC>55F0506D</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>106</imageNumber>
+			<releaseNumber>106</releaseNumber>
+			<title>Kidou Senshi Gundam Vol. 2 - Jaburo</title>
+			<saveType></saveType>
+			<romSize>8388608</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>OldSkool</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">39A1391A</romCRC>
+			</files>
+			<im1CRC>6C771CE3</im1CRC>
+			<im2CRC>EC4F819C</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>50007</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Kidou Senshi Gundam Vol. 3 - A Baoa Qu</title>
+			<saveType></saveType>
+			<romSize>8388608</romSize>
+			<publisher></publisher>
+			<location>7</location>
+			<sourceRom></sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">A9F5BF54</romCRC>
+			</files>
+			<im1CRC>B5A97529</im1CRC>
+			<im2CRC>5557A050</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>180</imageNumber>
+			<releaseNumber>180</releaseNumber>
+			<title>Kinnikuman IIsei - Choujin Seisenshi</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Rising Sun</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">6142FD9D</romCRC>
+			</files>
+			<im1CRC>754A7E98</im1CRC>
+			<im2CRC>4DDDECEE</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>164</imageNumber>
+			<releaseNumber>164</releaseNumber>
+			<title>Kinnikuman IIsei - Dream Tag Match</title>
+			<saveType></saveType>
+			<romSize>2097152</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">462F9275</romCRC>
+			</files>
+			<im1CRC>7D299F10</im1CRC>
+			<im2CRC>736F452F</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>94</imageNumber>
+			<releaseNumber>94</releaseNumber>
+			<title>Kurupara!</title>
+			<saveType></saveType>
+			<romSize>2097152</romSize>
+			<publisher>Tomukuri</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">274719F5</romCRC>
+			</files>
+			<im1CRC>4A4D866F</im1CRC>
+			<im2CRC>E0DA915B</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>139</imageNumber>
+			<releaseNumber>139</releaseNumber>
+			<title>Last Alive</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">DA4479BF</romCRC>
+			</files>
+			<im1CRC>1E3DF1A9</im1CRC>
+			<im2CRC>8223880F</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>165</imageNumber>
+			<releaseNumber>165</releaseNumber>
+			<title>Makai Toushi Sa-Ga</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Square</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">1B6F5F30</romCRC>
+			</files>
+			<im1CRC>B8F52FD1</im1CRC>
+			<im2CRC>EC2663EB</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>157</imageNumber>
+			<releaseNumber>157</releaseNumber>
+			<title>Meitantei Conan - Yuugure no Koujo</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">9F6E3F8D</romCRC>
+			</files>
+			<im1CRC>925B1638</im1CRC>
+			<im2CRC>68028A1A</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>51</imageNumber>
+			<releaseNumber>51</releaseNumber>
+			<title>Memories Off - Festa</title>
+			<saveType></saveType>
+			<romSize>2097152</romSize>
+			<publisher>Kid</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">8E123373</romCRC>
+			</files>
+			<im1CRC>0EBCBE99</im1CRC>
+			<im2CRC>430E0329</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>48</imageNumber>
+			<releaseNumber>48</releaseNumber>
+			<title>Mikeneko Holmes - Ghost Panic</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Kobunsha</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">D75EFFC2</romCRC>
+			</files>
+			<im1CRC>4524E424</im1CRC>
+			<im2CRC>02F00874</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>35</imageNumber>
+			<releaseNumber>35</releaseNumber>
+			<title>Mr. Driller</title>
+			<saveType></saveType>
+			<romSize>2097152</romSize>
+			<publisher>Namco</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">5555D95C</romCRC>
+			</files>
+			<im1CRC>DD74AD29</im1CRC>
+			<im2CRC>C6D0B776</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>50008</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Namco Super Wars</title>
+			<saveType></saveType>
+			<romSize>2097152</romSize>
+			<publisher></publisher>
+			<location>7</location>
+			<sourceRom></sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">8CE4652F</romCRC>
+			</files>
+			<im1CRC>1EB2BCB5</im1CRC>
+			<im2CRC>44DAC6C3</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>178</imageNumber>
+			<releaseNumber>178</releaseNumber>
+			<title>Naruto - Konoha Ninpouchou</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Rising Sun</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">71556E6A</romCRC>
+			</files>
+			<im1CRC>5B6BB384</im1CRC>
+			<im2CRC>3CF5BC7B</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>140</imageNumber>
+			<releaseNumber>140</releaseNumber>
+			<title>Pocket no Naka no Doraemon</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">2B61BB2B</romCRC>
+			</files>
+			<im1CRC>67F4B080</im1CRC>
+			<im2CRC>0849E017</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>50009</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>RUN=DIM - Return to Earth</title>
+			<saveType></saveType>
+			<romSize>2097152</romSize>
+			<publisher></publisher>
+			<location>7</location>
+			<sourceRom></sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">15C4552E</romCRC>
+			</files>
+			<im1CRC>A1538599</im1CRC>
+			<im2CRC>AB7848A8</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>133</imageNumber>
+			<releaseNumber>133</releaseNumber>
+			<title>Raku Jongg</title>
+			<saveType></saveType>
+			<romSize>1048576</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">FE4FF701</romCRC>
+			</files>
+			<im1CRC>1A4EEB2A</im1CRC>
+			<im2CRC>781BD551</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>36</imageNumber>
+			<releaseNumber>36</releaseNumber>
+			<title>Rhyme Rider Kerorican</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">60706555</romCRC>
+			</files>
+			<im1CRC>A7C36684</im1CRC>
+			<im2CRC>A3D8565D</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>173</imageNumber>
+			<releaseNumber>173</releaseNumber>
+			<title>Riviera - Yakusoku no Chi Riviera</title>
+			<saveType></saveType>
+			<romSize>8388608</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">2460B45A</romCRC>
+			</files>
+			<im1CRC>108C6F1E</im1CRC>
+			<im2CRC>0AE158DA</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>185</imageNumber>
+			<releaseNumber>185</releaseNumber>
+			<title>Rockman EXE - N1 Battle</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Capcom</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">1F10CA75</romCRC>
+			</files>
+			<im1CRC>F153126F</im1CRC>
+			<im2CRC>E19E44BC</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>179</imageNumber>
+			<releaseNumber>179</releaseNumber>
+			<title>Rockman EXE WS</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Capcom</publisher>
+			<location>7</location>
+			<sourceRom>Rising Sun</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">658C4B98</romCRC>
+			</files>
+			<im1CRC>A600E29D</im1CRC>
+			<im2CRC>4F446292</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>138</imageNumber>
+			<releaseNumber>138</releaseNumber>
+			<title>Romancing Sa-Ga</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Square</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">9C98D97D</romCRC>
+			</files>
+			<im1CRC>AD80488F</im1CRC>
+			<im2CRC>1E92343F</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>176</imageNumber>
+			<releaseNumber>176</releaseNumber>
+			<title>SD Gundam - Operation U.C.</title>
+			<saveType></saveType>
+			<romSize>2097152</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Rising Sun</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">F0ACDA5C</romCRC>
+			</files>
+			<im1CRC>EE1994FC</im1CRC>
+			<im2CRC>10C127AA</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>54</imageNumber>
+			<releaseNumber>54</releaseNumber>
+			<title>SD Gundam Eiyuuden - Kishi Densetsu</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">C60E5162</romCRC>
+			</files>
+			<im1CRC>B0082B41</im1CRC>
+			<im2CRC>55BDBE80</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>49</imageNumber>
+			<releaseNumber>49</releaseNumber>
+			<title>SD Gundam Eiyuuden - Musha Densetsu</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">18ECFFB8</romCRC>
+			</files>
+			<im1CRC>5C4B348B</im1CRC>
+			<im2CRC>A5E584A6</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>92</imageNumber>
+			<releaseNumber>92</releaseNumber>
+			<title>SD Gundam G-Generation - Gather Beat 2</title>
+			<saveType></saveType>
+			<romSize>8388608</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">4D21A347</romCRC>
+			</files>
+			<im1CRC>544F3F05</im1CRC>
+			<im2CRC>EB1A82A0</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>170</imageNumber>
+			<releaseNumber>170</releaseNumber>
+			<title>SD Gundam G-Generation - Mono-Eye Gundams</title>
+			<saveType></saveType>
+			<romSize>8388608</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">6ACA1F04</romCRC>
+			</files>
+			<im1CRC>DBB7A20C</im1CRC>
+			<im2CRC>E717DFC7</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>183</imageNumber>
+			<releaseNumber>183</releaseNumber>
+			<title>Saint Seiya - Ougon Densetsu Hen - Perfect Edition</title>
+			<saveType></saveType>
+			<romSize>2097152</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Rising Sun</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">6E8A792D</romCRC>
+			</files>
+			<im1CRC>2935B42A</im1CRC>
+			<im2CRC>0D0E8B44</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>11</imageNumber>
+			<releaseNumber>11</releaseNumber>
+			<title>Senkaiden Ni - TV Animation Senkaiden Houshin Engi Yori</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">9F35D00F</romCRC>
+			</files>
+			<im1CRC>7B5C9245</im1CRC>
+			<im2CRC>3CCEF44A</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>50010</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Shaman King - Asu heno Ishi</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher></publisher>
+			<location>7</location>
+			<sourceRom></sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">6C029674</romCRC>
+			</files>
+			<im1CRC>55993F7E</im1CRC>
+			<im2CRC>67DEFE50</im2CRC>
+			<comment></comment>
+			<duplicateID>2</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>175</imageNumber>
+			<releaseNumber>175</releaseNumber>
+			<title>Shaman King - Asu heno Ishi</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Rising Sun</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">34908CB4</romCRC>
+			</files>
+			<im1CRC>2FA0E1E1</im1CRC>
+			<im2CRC>492CCEB3</im2CRC>
+			<comment>(v1.1)</comment>
+			<duplicateID>2</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>9</imageNumber>
+			<releaseNumber>9</releaseNumber>
+			<title>Sorobang</title>
+			<saveType></saveType>
+			<romSize>1048576</romSize>
+			<publisher>Kaga Tech</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">0E467D97</romCRC>
+			</files>
+			<im1CRC>AF61FCE0</im1CRC>
+			<im2CRC>8D3D6762</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>122</imageNumber>
+			<releaseNumber>122</releaseNumber>
+			<title>Star Hearts - Hoshi to Daichi no Shisha</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">138D1018</romCRC>
+			</files>
+			<im1CRC>7BC0433A</im1CRC>
+			<im2CRC>B811A73C</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>156</imageNumber>
+			<releaseNumber>156</releaseNumber>
+			<title>Star Hearts - Hoshi to Daichi no Shisha - Taikenban</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">9874E9A2</romCRC>
+			</files>
+			<im1CRC>B92B8C37</im1CRC>
+			<im2CRC>46333407</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>181</imageNumber>
+			<releaseNumber>181</releaseNumber>
+			<title>Super Robot Taisen Compact 3</title>
+			<saveType></saveType>
+			<romSize>8388608</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Rising Sun</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">6918C824</romCRC>
+			</files>
+			<im1CRC>6D4ED545</im1CRC>
+			<im2CRC>F23261C0</im2CRC>
+			<comment>(v1.5)</comment>
+			<duplicateID>3</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>50011</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Super Robot Taisen Compact 3</title>
+			<saveType></saveType>
+			<romSize>8388608</romSize>
+			<publisher></publisher>
+			<location>7</location>
+			<sourceRom></sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">188CA644</romCRC>
+			</files>
+			<im1CRC>82055BC9</im1CRC>
+			<im2CRC>6FC47770</im2CRC>
+			<comment>(v1.6)</comment>
+			<duplicateID>3</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>137</imageNumber>
+			<releaseNumber>137</releaseNumber>
+			<title>Super Robot Taisen Compact for WonderSwan Color</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Banpresto</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">16E0D929</romCRC>
+			</files>
+			<im1CRC>618AC69C</im1CRC>
+			<im2CRC>7FB9942D</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>119</imageNumber>
+			<releaseNumber>119</releaseNumber>
+			<title>Terrors 2</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">9BD8F08C</romCRC>
+			</files>
+			<im1CRC>4E7FCB25</im1CRC>
+			<im2CRC>7880F7CC</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>50012</imageNumber>
+			<releaseNumber>0</releaseNumber>
+			<title>Tetris</title>
+			<saveType></saveType>
+			<romSize>1048576</romSize>
+			<publisher></publisher>
+			<location>7</location>
+			<sourceRom></sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">7B0CAEA9</romCRC>
+			</files>
+			<im1CRC>9FCCA043</im1CRC>
+			<im2CRC>5971B8D6</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>153</imageNumber>
+			<releaseNumber>153</releaseNumber>
+			<title>Tonpuusou</title>
+			<saveType></saveType>
+			<romSize>1048576</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">47659B2C</romCRC>
+			</files>
+			<im1CRC>B868550F</im1CRC>
+			<im2CRC>6E7E01A2</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>89</imageNumber>
+			<releaseNumber>89</releaseNumber>
+			<title>Uchuu Senkan Yamato</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">5793BDDA</romCRC>
+			</files>
+			<im1CRC>D1E382ED</im1CRC>
+			<im2CRC>5D3204A4</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>102</imageNumber>
+			<releaseNumber>102</releaseNumber>
+			<title>Ultraman - Hikari no Kuni no Shisha</title>
+			<saveType></saveType>
+			<romSize>2097152</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">DE2208AB</romCRC>
+			</files>
+			<im1CRC>3A2FB35C</im1CRC>
+			<im2CRC>D8E7040C</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>37</imageNumber>
+			<releaseNumber>37</releaseNumber>
+			<title>Wild Card</title>
+			<saveType></saveType>
+			<romSize>2097152</romSize>
+			<publisher>Square</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">D9401F0A</romCRC>
+			</files>
+			<im1CRC>FA11D5CF</im1CRC>
+			<im2CRC>3E54674A</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>132</imageNumber>
+			<releaseNumber>132</releaseNumber>
+			<title>With You - Mitsumete Itai</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Sharuraku</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">E14E9D36</romCRC>
+			</files>
+			<im1CRC>B0339667</im1CRC>
+			<im2CRC>01AAE0C0</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>38</imageNumber>
+			<releaseNumber>38</releaseNumber>
+			<title>Wizardry Scenario 1 - Proving Grounds of the Mad Overlord</title>
+			<saveType></saveType>
+			<romSize>2097152</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">15E55706</romCRC>
+			</files>
+			<im1CRC>B176C9EB</im1CRC>
+			<im2CRC>3AD7E4CF</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>46</imageNumber>
+			<releaseNumber>46</releaseNumber>
+			<title>Wonder Classic</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Menace</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">12F10B27</romCRC>
+			</files>
+			<im1CRC>F4D61572</im1CRC>
+			<im2CRC>AE69A6B2</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>167</imageNumber>
+			<releaseNumber>167</releaseNumber>
+			<title>X - Card of Fate</title>
+			<saveType></saveType>
+			<romSize>4194304</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">66B617D5</romCRC>
+			</files>
+			<im1CRC>F123ABD9</im1CRC>
+			<im2CRC>E32B7416</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+
+		<game>
+			<imageNumber>150</imageNumber>
+			<releaseNumber>150</releaseNumber>
+			<title>XI [sai] Little</title>
+			<saveType></saveType>
+			<romSize>2097152</romSize>
+			<publisher>Bandai</publisher>
+			<location>7</location>
+			<sourceRom>Independent</sourceRom>
+			<language>256</language>
+			<files>
+				<romCRC extension=".wsc">25E2BA75</romCRC>
+			</files>
+			<im1CRC>24EABE14</im1CRC>
+			<im2CRC>C7A5C88E</im2CRC>
+			<comment></comment>
+			<duplicateID>0</duplicateID>
+		</game>
+	</games>
+</dat>
+

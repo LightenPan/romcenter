@@ -1,7 +1,7 @@
 <dat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="datas.xsd">
 	<configuration>
-		<datName>LP_CHS_GBA_OL</datName>
-		<imFolder>LP_CHS_GBA_OL</imFolder>
+		<datName>CHS_GBA_OL</datName>
+		<imFolder>Unofficial No-Intro Nintendo Game Boy Advance Chinese</imFolder>
 		<datVersion>20160403</datVersion>
 		<system>Nintendo Game Boy Advance</system>
 		<screenshotsWidth>240</screenshotsWidth>
@@ -3419,7 +3419,7 @@
 		</game>
 		<game>
 			<imageNumber>353</imageNumber>
-			<releaseNumber>188</releaseNumber>
+			<releaseNumber>192</releaseNumber>
 			<title>约束之地 - 利维艾拉</title>
 			<saveType>Sram_F_v103</saveType>
 			<romSize>33554432</romSize>
@@ -3437,7 +3437,7 @@
 		</game>
 		<game>
 			<imageNumber>351</imageNumber>
-			<releaseNumber>189</releaseNumber>
+			<releaseNumber>191</releaseNumber>
 			<title>约束之地 - 利维艾拉</title>
 			<saveType>Sram_F_v103</saveType>
 			<romSize>33554432</romSize>
@@ -3490,7 +3490,7 @@
 			<duplicateID>1779</duplicateID>
 		</game>
 	    <game>
-			<imageNumber>352</imageNumber>
+			<imageNumber>353</imageNumber>
 			<releaseNumber>192</releaseNumber>
 			<title>死神 - 血染尸魂界</title>
 			<saveType>Eeprom_v122</saveType>

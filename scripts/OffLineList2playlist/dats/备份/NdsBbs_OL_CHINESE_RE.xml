@@ -1,25 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSpy v2013 (http://www.altova.com) by  (allan149) -->
 <dat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="datas.xsd">
 	<configuration>
-		<datName>LP_CHS_NDS_OL</datName>
-		<imFolder>LP_NDS_OL</imFolder>
+		<datName>NdsBbs_OL_CHINESE</datName>
+		<imFolder>ADVANsCEne Nintendo DS Collection</imFolder>
 		<datVersion>130503</datVersion>
 		<system>Nintendo DS</system>
 		<screenshotsWidth>256</screenshotsWidth>
 		<screenshotsHeight>384</screenshotsHeight>
 		<infos>
-			<title default="false" inNamingOption="true" visible="false" />
-			<location default="true" inNamingOption="true" visible="true" />
-			<publisher default="true" inNamingOption="true" visible="true" />
-			<sourceRom default="true" inNamingOption="true" visible="true" />
-			<saveType default="true" inNamingOption="true" visible="true" />
-			<romSize default="true" inNamingOption="true" visible="true" />
-			<releaseNumber default="false" inNamingOption="true" visible="true" />
-			<languageNumber default="false" inNamingOption="true" visible="true" />
-			<comment default="false" inNamingOption="true" visible="true" />
-			<romCRC default="true" inNamingOption="true" visible="true" />
-			<im1CRC default="false" inNamingOption="false" visible="true" />
-			<im2CRC default="false" inNamingOption="false" visible="true" />
-			<languages default="true" inNamingOption="true" visible="true" />
+			<title visible="false" inNamingOption="true" default="false"/>
+			<location visible="true" inNamingOption="true" default="true"/>
+			<publisher visible="true" inNamingOption="true" default="true"/>
+			<sourceRom visible="true" inNamingOption="true" default="true"/>
+			<saveType visible="true" inNamingOption="true" default="true"/>
+			<romSize visible="true" inNamingOption="true" default="true"/>
+			<releaseNumber visible="true" inNamingOption="true" default="false"/>
+			<languageNumber visible="true" inNamingOption="true" default="false"/>
+			<comment visible="true" inNamingOption="true" default="false"/>
+			<romCRC visible="true" inNamingOption="true" default="true"/>
+			<im1CRC visible="true" inNamingOption="false" default="false"/>
+			<im2CRC visible="true" inNamingOption="false" default="false"/>
+			<languages visible="true" inNamingOption="true" default="true"/>
 		</infos>
 		<canOpen>
 			<extension>.nds</extension>
@@ -30,11 +32,11 @@
 		<newDat>
 			<datVersionURL>http://ndsbbs-ol-chinese.googlecode.com/svn/trunk/NdsBbs_OL_CHINESE_RE.txt</datVersionURL>
 			<datURL fileName="NdsBbs_OL_CHINESE_RE.zip">http://ndsbbs-ol-chinese.googlecode.com/svn/trunk/NdsBbs_OL_CHINESE_RE.zip</datURL>
-			<imURL>http://nointro.free.fr/imgs/Official%20No-Intro%20Nintendo%20Dual%20Screen/</imURL>
+			<imURL>http://www.retrocovers.com/offline/imgs/ADVANsCEne_NDS/</imURL>
 		</newDat>
 		<search>
-			<to auto="true" default="true" value="location" />
-			<to auto="false" default="true" value="romSize">
+			<to value="location" default="true" auto="true"/>
+			<to value="romSize" default="true" auto="false">
 				<find operation="=" value="8388608">64Mbits</find>
 				<find operation="=" value="16777216">128Mbits</find>
 				<find operation="=" value="33554432">256Mbits</find>
@@ -42,8 +44,8 @@
 				<find operation="=" value="134217728">1024Mbits</find>
 				<find operation="=" value="268435455">2048Mbits</find>
 			</to>
-			<to auto="true" default="true" value="languages" />
-			<to auto="true" default="true" value="saveType">
+			<to value="languages" default="true" auto="true"/>
+			<to value="saveType" default="true" auto="true">
 				<find operation="inNoCase" value="EEPROM - 4 kbit">Eeprom - 4 kbit</find>
 				<find operation="inNoCase" value="EEPROM - 64 kbit">Eeprom - 64 kbit</find>
 				<find operation="inNoCase" value="EEPROM - 512 kbit">Eeprom - 512 kbit</find>
@@ -55,8 +57,8 @@
 				<find operation="inNoCase" value="NONE">None</find>
 				<find operation="inNoCase" value="TBC">TBC</find>
 			</to>
-			<to auto="true" default="true" value="publisher" />
-			<to auto="true" default="true" value="sourceRom" />
+			<to value="publisher" default="true" auto="true"/>
+			<to value="sourceRom" default="true" auto="true"/>
 		</search>
 		<romTitle>%u - %e%o(%g)</romTitle>
 	</configuration>
@@ -80,7 +82,7 @@
 			<duplicateID>0000</duplicateID>
 		</game>
 		<game>
-			<imageNumber>16</imageNumber>
+			<imageNumber>18</imageNumber>
 			<releaseNumber>16</releaseNumber>
 			<title>Meteos</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -98,7 +100,7 @@
 			<duplicateID>16</duplicateID>
 		</game>
 		<game>
-			<imageNumber>17</imageNumber>
+			<imageNumber>19</imageNumber>
 			<releaseNumber>17</releaseNumber>
 			<title>Ridge Racer DS</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -116,7 +118,7 @@
 			<duplicateID>17</duplicateID>
 		</game>
 		<game>
-			<imageNumber>34</imageNumber>
+			<imageNumber>37</imageNumber>
 			<releaseNumber>34</releaseNumber>
 			<title>Zoo Keeper</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -134,7 +136,7 @@
 			<duplicateID>34</duplicateID>
 		</game>
 		<game>
-			<imageNumber>35</imageNumber>
+			<imageNumber>38</imageNumber>
 			<releaseNumber>35</releaseNumber>
 			<title>Touch! Kirby</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -152,7 +154,7 @@
 			<duplicateID>28</duplicateID>
 		</game>
 		<game>
-			<imageNumber>39</imageNumber>
+			<imageNumber>42</imageNumber>
 			<releaseNumber>39</releaseNumber>
 			<title>Another Code - 2tsu no Kioku(CHS)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -170,7 +172,7 @@
 			<duplicateID>39</duplicateID>
 		</game>
 		<game>
-			<imageNumber>39</imageNumber>
+			<imageNumber>42</imageNumber>
 			<releaseNumber>39</releaseNumber>
 			<title>Another Code - 2tsu no Kioku(CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -188,7 +190,7 @@
 			<duplicateID>39</duplicateID>
 		</game>
 		<game>
-			<imageNumber>46</imageNumber>
+			<imageNumber>49</imageNumber>
 			<releaseNumber>46</releaseNumber>
 			<title>Yakuman DS</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -206,7 +208,7 @@
 			<duplicateID>46</duplicateID>
 		</game>
 		<game>
-			<imageNumber>83</imageNumber>
+			<imageNumber>87</imageNumber>
 			<releaseNumber>83</releaseNumber>
 			<title>Osu! Tatakae! Ouendan!</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -224,7 +226,7 @@
 			<duplicateID>83</duplicateID>
 		</game>
 		<game>
-			<imageNumber>83</imageNumber>
+			<imageNumber>87</imageNumber>
 			<releaseNumber>83</releaseNumber>
 			<title>Osu! Tatakae! Ouendan!</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -242,7 +244,7 @@
 			<duplicateID>83</duplicateID>
 		</game>
 		<game>
-			<imageNumber>89</imageNumber>
+			<imageNumber>93</imageNumber>
 			<releaseNumber>89</releaseNumber>
 			<title>Nintendogs - Chihuahua &amp; Friends</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -260,7 +262,7 @@
 			<duplicateID>42</duplicateID>
 		</game>
 		<game>
-			<imageNumber>90</imageNumber>
+			<imageNumber>94</imageNumber>
 			<releaseNumber>90</releaseNumber>
 			<title>Nintendogs - Labrador &amp; Friends</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -278,7 +280,7 @@
 			<duplicateID>68</duplicateID>
 		</game>
 		<game>
-			<imageNumber>91</imageNumber>
+			<imageNumber>95</imageNumber>
 			<releaseNumber>91</releaseNumber>
 			<title>Nintendogs - Dachshund &amp; Friends</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -296,7 +298,7 @@
 			<duplicateID>75</duplicateID>
 		</game>
 		<game>
-			<imageNumber>94</imageNumber>
+			<imageNumber>99</imageNumber>
 			<releaseNumber>94</releaseNumber>
 			<title>Akumajou Dracula - Sougetsu no Juujika (v01)(CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -314,7 +316,7 @@
 			<duplicateID>94</duplicateID>
 		</game>
 		<game>
-			<imageNumber>93</imageNumber>
+			<imageNumber>97</imageNumber>
 			<releaseNumber>93</releaseNumber>
 			<title>Hagane no Renkinjutsushi - Dual Sympathy</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -332,7 +334,7 @@
 			<duplicateID>93</duplicateID>
 		</game>
 		<game>
-			<imageNumber>94</imageNumber>
+			<imageNumber>99</imageNumber>
 			<releaseNumber>94</releaseNumber>
 			<title>Akumajou Dracula - Sougetsu no Juujika (v01)(CHS)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -350,7 +352,7 @@
 			<duplicateID>94</duplicateID>
 		</game>
 		<game>
-			<imageNumber>97</imageNumber>
+			<imageNumber>102</imageNumber>
 			<releaseNumber>97</releaseNumber>
 			<title>Pac'n Roll</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -368,7 +370,7 @@
 			<duplicateID>97</duplicateID>
 		</game>
 		<game>
-			<imageNumber>100</imageNumber>
+			<imageNumber>105</imageNumber>
 			<releaseNumber>100</releaseNumber>
 			<title>Bokujou Monogatari - Korobokkuru Station (v02)</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -386,7 +388,7 @@
 			<duplicateID>100</duplicateID>
 		</game>
 		<game>
-			<imageNumber>101</imageNumber>
+			<imageNumber>106</imageNumber>
 			<releaseNumber>101</releaseNumber>
 			<title>Lost in Blue - Futari no Survival Life (CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -404,7 +406,7 @@
 			<duplicateID>101</duplicateID>
 		</game>
 		<game>
-			<imageNumber>101</imageNumber>
+			<imageNumber>106</imageNumber>
 			<releaseNumber>101</releaseNumber>
 			<title>Lost in Blue - Futari no Survival Life (CHS)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -422,7 +424,7 @@
 			<duplicateID>101</duplicateID>
 		</game>
 		<game>
-			<imageNumber>125</imageNumber>
+			<imageNumber>129</imageNumber>
 			<releaseNumber>125</releaseNumber>
 			<title>Chou Shittou Caduceus</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -440,7 +442,7 @@
 			<duplicateID>125</duplicateID>
 		</game>
 		<game>
-			<imageNumber>125</imageNumber>
+			<imageNumber>129</imageNumber>
 			<releaseNumber>125</releaseNumber>
 			<title>Chou Shittou Caduceus</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -458,7 +460,7 @@
 			<duplicateID>125</duplicateID>
 		</game>
 		<game>
-			<imageNumber>125</imageNumber>
+			<imageNumber>129</imageNumber>
 			<releaseNumber>125</releaseNumber>
 			<title>Chou Shittou Caduceus</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -476,7 +478,7 @@
 			<duplicateID>125</duplicateID>
 		</game>
 		<game>
-			<imageNumber>126</imageNumber>
+			<imageNumber>131</imageNumber>
 			<releaseNumber>126</releaseNumber>
 			<title>Yu-Gi-Oh! - Nightmare Troubadour(CHS)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -494,7 +496,7 @@
 			<duplicateID>126</duplicateID>
 		</game>
 		<game>
-			<imageNumber>126</imageNumber>
+			<imageNumber>131</imageNumber>
 			<releaseNumber>126</releaseNumber>
 			<title>Yu-Gi-Oh! - Nightmare Troubadour(CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -512,7 +514,7 @@
 			<duplicateID>126</duplicateID>
 		</game>
 		<game>
-			<imageNumber>137</imageNumber>
+			<imageNumber>142</imageNumber>
 			<releaseNumber>137</releaseNumber>
 			<title>Pokemon Torouze</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -530,7 +532,7 @@
 			<duplicateID>137</duplicateID>
 		</game>
 		<game>
-			<imageNumber>144</imageNumber>
+			<imageNumber>149</imageNumber>
 			<releaseNumber>144</releaseNumber>
 			<title>Puzzle Bobble DS</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -548,7 +550,7 @@
 			<duplicateID>144</duplicateID>
 		</game>
 		<game>
-			<imageNumber>159</imageNumber>
+			<imageNumber>164</imageNumber>
 			<releaseNumber>159</releaseNumber>
 			<title>Touch Game Party</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -566,7 +568,7 @@
 			<duplicateID>159</duplicateID>
 		</game>
 		<game>
-			<imageNumber>186</imageNumber>
+			<imageNumber>191</imageNumber>
 			<releaseNumber>186</releaseNumber>
 			<title>Gyakuten Saiban - Yomigaeru Gyakuten</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -584,7 +586,7 @@
 			<duplicateID>186</duplicateID>
 		</game>
 		<game>
-			<imageNumber>212</imageNumber>
+			<imageNumber>217</imageNumber>
 			<releaseNumber>212</releaseNumber>
 			<title>ATV Quad Frenzy</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -602,7 +604,7 @@
 			<duplicateID>212</duplicateID>
 		</game>
 		<game>
-			<imageNumber>216</imageNumber>
+			<imageNumber>221</imageNumber>
 			<releaseNumber>216</releaseNumber>
 			<title>Mario &amp; Luigi - Partners in Time</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -620,7 +622,7 @@
 			<duplicateID>216</duplicateID>
 		</game>
 		<game>
-			<imageNumber>219</imageNumber>
+			<imageNumber>224</imageNumber>
 			<releaseNumber>219</releaseNumber>
 			<title>Slime MoriMori Dragon Quest 2 - Daisensha to Shippodan</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -638,7 +640,7 @@
 			<duplicateID>219</duplicateID>
 		</game>
 		<game>
-			<imageNumber>228</imageNumber>
+			<imageNumber>233</imageNumber>
 			<releaseNumber>228</releaseNumber>
 			<title>Mario Kart DS</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -656,7 +658,7 @@
 			<duplicateID>168</duplicateID>
 		</game>
 		<game>
-			<imageNumber>228</imageNumber>
+			<imageNumber>233</imageNumber>
 			<releaseNumber>228</releaseNumber>
 			<title>Mario Kart DS</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -674,7 +676,7 @@
 			<duplicateID>168</duplicateID>
 		</game>
 		<game>
-			<imageNumber>230</imageNumber>
+			<imageNumber>235</imageNumber>
 			<releaseNumber>230</releaseNumber>
 			<title>Bokujou Monogatari - Korobokkuru Station For Girl</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -692,7 +694,7 @@
 			<duplicateID>230</duplicateID>
 		</game>
 		<game>
-			<imageNumber>239</imageNumber>
+			<imageNumber>247</imageNumber>
 			<releaseNumber>239</releaseNumber>
 			<title>Tao - Mamono no Tou to Mahou no Tamago</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -710,7 +712,7 @@
 			<duplicateID>239</duplicateID>
 		</game>
 		<game>
-			<imageNumber>241</imageNumber>
+			<imageNumber>256</imageNumber>
 			<releaseNumber>241</releaseNumber>
 			<title>Shanghai</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -728,7 +730,7 @@
 			<duplicateID>241</duplicateID>
 		</game>
 		<game>
-			<imageNumber>241</imageNumber>
+			<imageNumber>256</imageNumber>
 			<releaseNumber>241</releaseNumber>
 			<title>Shanghai</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -746,7 +748,7 @@
 			<duplicateID>241</duplicateID>
 		</game>
 		<game>
-			<imageNumber>248</imageNumber>
+			<imageNumber>264</imageNumber>
 			<releaseNumber>248</releaseNumber>
 			<title>New Rainbow Islands</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -764,7 +766,7 @@
 			<duplicateID>248</duplicateID>
 		</game>
 		<game>
-			<imageNumber>95502</imageNumber>
+			<imageNumber>275</imageNumber>
 			<releaseNumber>95502</releaseNumber>
 			<title>Momo Waliou</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -782,7 +784,7 @@
 			<duplicateID>5</duplicateID>
 		</game>
 		<game>
-			<imageNumber>276</imageNumber>
+			<imageNumber>294</imageNumber>
 			<releaseNumber>276</releaseNumber>
 			<title>Biohazard - Deadly Silence(CHS)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -800,7 +802,7 @@
 			<duplicateID>276</duplicateID>
 		</game>
 		<game>
-			<imageNumber>276</imageNumber>
+			<imageNumber>294</imageNumber>
 			<releaseNumber>276</releaseNumber>
 			<title>Biohazard - Deadly Silence(CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -818,7 +820,7 @@
 			<duplicateID>276</duplicateID>
 		</game>
 		<game>
-			<imageNumber>283</imageNumber>
+			<imageNumber>301</imageNumber>
 			<releaseNumber>283</releaseNumber>
 			<title>Iron Feather(CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -836,7 +838,7 @@
 			<duplicateID>283</duplicateID>
 		</game>
 		<game>
-			<imageNumber>283</imageNumber>
+			<imageNumber>301</imageNumber>
 			<releaseNumber>283</releaseNumber>
 			<title>Iron Feather(CHS)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -854,7 +856,7 @@
 			<duplicateID>283</duplicateID>
 		</game>
 		<game>
-			<imageNumber>285</imageNumber>
+			<imageNumber>303</imageNumber>
 			<releaseNumber>285</releaseNumber>
 			<title>Snowboard Kids Party</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -872,7 +874,7 @@
 			<duplicateID>205</duplicateID>
 		</game>
 		<game>
-			<imageNumber>292</imageNumber>
+			<imageNumber>310</imageNumber>
 			<releaseNumber>292</releaseNumber>
 			<title>Bleach DS - Souten ni Kakeru Unmei</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -890,7 +892,7 @@
 			<duplicateID>292</duplicateID>
 		</game>
 		<game>
-			<imageNumber>305</imageNumber>
+			<imageNumber>323</imageNumber>
 			<releaseNumber>305</releaseNumber>
 			<title>Unou no Tatsujin - Soukai! Machigai Museum(CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -908,7 +910,7 @@
 			<duplicateID>305</duplicateID>
 		</game>
 		<game>
-			<imageNumber>305</imageNumber>
+			<imageNumber>323</imageNumber>
 			<releaseNumber>305</releaseNumber>
 			<title>Unou no Tatsujin - Soukai! Machigai Museum(CHS)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -926,7 +928,7 @@
 			<duplicateID>305</duplicateID>
 		</game>
 		<game>
-			<imageNumber>328</imageNumber>
+			<imageNumber>347</imageNumber>
 			<releaseNumber>328</releaseNumber>
 			<title>Rub Rabbits!, The</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -944,7 +946,7 @@
 			<duplicateID>167</duplicateID>
 		</game>
 		<game>
-			<imageNumber>328</imageNumber>
+			<imageNumber>347</imageNumber>
 			<releaseNumber>328</releaseNumber>
 			<title>Rub Rabbits!, The</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -962,7 +964,7 @@
 			<duplicateID>167</duplicateID>
 		</game>
 		<game>
-			<imageNumber>330</imageNumber>
+			<imageNumber>349</imageNumber>
 			<releaseNumber>330</releaseNumber>
 			<title>Sangokushi DS</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -980,7 +982,7 @@
 			<duplicateID>330</duplicateID>
 		</game>
 		<game>
-			<imageNumber>330</imageNumber>
+			<imageNumber>349</imageNumber>
 			<releaseNumber>330</releaseNumber>
 			<title>Sangokushi DS</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -998,7 +1000,7 @@
 			<duplicateID>330</duplicateID>
 		</game>
 		<game>
-			<imageNumber>357</imageNumber>
+			<imageNumber>377</imageNumber>
 			<releaseNumber>357</releaseNumber>
 			<title>Chou-Gekijou-Ban Keroro Gunsou - Enshuu Dayo! Zenin Shuugou</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -1016,7 +1018,7 @@
 			<duplicateID>357</duplicateID>
 		</game>
 		<game>
-			<imageNumber>339</imageNumber>
+			<imageNumber>358</imageNumber>
 			<releaseNumber>339</releaseNumber>
 			<title>Daikoukai Jidai IV - Rota Nova</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -1034,7 +1036,7 @@
 			<duplicateID>339</duplicateID>
 		</game>
 		<game>
-			<imageNumber>367</imageNumber>
+			<imageNumber>387</imageNumber>
 			<releaseNumber>367</releaseNumber>
 			<title>Metroid Prime Hunters</title>
 			<saveType>Flash - 2 mbit</saveType>
@@ -1052,7 +1054,7 @@
 			<duplicateID>367</duplicateID>
 		</game>
 		<game>
-			<imageNumber>394</imageNumber>
+			<imageNumber>415</imageNumber>
 			<releaseNumber>394</releaseNumber>
 			<title>Tenchu Dark Shadow</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -1070,7 +1072,7 @@
 			<duplicateID>394</duplicateID>
 		</game>
 		<game>
-			<imageNumber>392</imageNumber>
+			<imageNumber>412</imageNumber>
 			<releaseNumber>392</releaseNumber>
 			<title>Viewtiful Joe - Double Trouble!</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -1088,7 +1090,7 @@
 			<duplicateID>392</duplicateID>
 		</game>
 		<game>
-			<imageNumber>417</imageNumber>
+			<imageNumber>441</imageNumber>
 			<releaseNumber>417</releaseNumber>
 			<title>Tetris DS</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -1106,7 +1108,7 @@
 			<duplicateID>366</duplicateID>
 		</game>
 		<game>
-			<imageNumber>418</imageNumber>
+			<imageNumber>442</imageNumber>
 			<releaseNumber>418</releaseNumber>
 			<title>Ore no Sentouki</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -1124,7 +1126,7 @@
 			<duplicateID>418</duplicateID>
 		</game>
 		<game>
-			<imageNumber>423</imageNumber>
+			<imageNumber>447</imageNumber>
 			<releaseNumber>423</releaseNumber>
 			<title>Ochaken no Heya DS</title>
 			<saveType>TBC</saveType>
@@ -1142,7 +1144,7 @@
 			<duplicateID>423</duplicateID>
 		</game>
 		<game>
-			<imageNumber>427</imageNumber>
+			<imageNumber>451</imageNumber>
 			<releaseNumber>427</releaseNumber>
 			<title>LostMagic</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -1160,7 +1162,7 @@
 			<duplicateID>275</duplicateID>
 		</game>
 		<game>
-			<imageNumber>434</imageNumber>
+			<imageNumber>458</imageNumber>
 			<releaseNumber>434</releaseNumber>
 			<title>New Super Mario Bros</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -1178,7 +1180,7 @@
 			<duplicateID>434</duplicateID>
 		</game>
 		<game>
-			<imageNumber>451</imageNumber>
+			<imageNumber>475</imageNumber>
 			<releaseNumber>451</releaseNumber>
 			<title>Daisenryaku DS - Great Strategy</title>
 			<saveType>TBC</saveType>
@@ -1196,7 +1198,7 @@
 			<duplicateID>451</duplicateID>
 		</game>
 		<game>
-			<imageNumber>460</imageNumber>
+			<imageNumber>485</imageNumber>
 			<releaseNumber>460</releaseNumber>
 			<title>Metal Saga - Hagane no Kisetsu</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -1214,7 +1216,7 @@
 			<duplicateID>460</duplicateID>
 		</game>
 		<game>
-			<imageNumber>461</imageNumber>
+			<imageNumber>486</imageNumber>
 			<releaseNumber>461</releaseNumber>
 			<title>Magnetica</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -1232,7 +1234,7 @@
 			<duplicateID>337</duplicateID>
 		</game>
 		<game>
-			<imageNumber>462</imageNumber>
+			<imageNumber>487</imageNumber>
 			<releaseNumber>462</releaseNumber>
 			<title>Gouma Reifu Den Izuna (CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -1250,7 +1252,7 @@
 			<duplicateID>462</duplicateID>
 		</game>
 		<game>
-			<imageNumber>462</imageNumber>
+			<imageNumber>487</imageNumber>
 			<releaseNumber>462</releaseNumber>
 			<title>Gouma Reifu Den Izuna (CHS)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -1268,7 +1270,7 @@
 			<duplicateID>462</duplicateID>
 		</game>
 		<game>
-			<imageNumber>481</imageNumber>
+			<imageNumber>508</imageNumber>
 			<releaseNumber>481</releaseNumber>
 			<title>Sudoku Gridmaster</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -1286,7 +1288,7 @@
 			<duplicateID>363</duplicateID>
 		</game>
 		<game>
-			<imageNumber>490</imageNumber>
+			<imageNumber>518</imageNumber>
 			<releaseNumber>490</releaseNumber>
 			<title>Brave Story - Boku no Kioku to Negai</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -1304,7 +1306,7 @@
 			<duplicateID>490</duplicateID>
 		</game>
 		<game>
-			<imageNumber>492</imageNumber>
+			<imageNumber>520</imageNumber>
 			<releaseNumber>492</releaseNumber>
 			<title>Electroplankton</title>
 			<saveType>None</saveType>
@@ -1322,7 +1324,7 @@
 			<duplicateID>1</duplicateID>
 		</game>
 		<game>
-			<imageNumber>498</imageNumber>
+			<imageNumber>526</imageNumber>
 			<releaseNumber>498</releaseNumber>
 			<title>Touch! Bomberman Land</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -1340,7 +1342,7 @@
 			<duplicateID>498</duplicateID>
 		</game>
 		<game>
-			<imageNumber>95201</imageNumber>
+			<imageNumber>547</imageNumber>
 			<releaseNumber>95201</releaseNumber>
 			<title>Game &amp; Watch Collection (Club Nintendo)</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -1358,7 +1360,7 @@
 			<duplicateID>95201</duplicateID>
 		</game>
 		<game>
-			<imageNumber>524</imageNumber>
+			<imageNumber>555</imageNumber>
 			<releaseNumber>524</releaseNumber>
 			<title>Final Fantasy III(CHT BIG)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -1376,7 +1378,7 @@
 			<duplicateID>524</duplicateID>
 		</game>
 		<game>
-			<imageNumber>524</imageNumber>
+			<imageNumber>555</imageNumber>
 			<releaseNumber>524</releaseNumber>
 			<title>Final Fantasy III(CHT)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -1394,7 +1396,7 @@
 			<duplicateID>524</duplicateID>
 		</game>
 		<game>
-			<imageNumber>524</imageNumber>
+			<imageNumber>555</imageNumber>
 			<releaseNumber>524</releaseNumber>
 			<title>Final Fantasy III(CHS BIG)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -1412,7 +1414,7 @@
 			<duplicateID>524</duplicateID>
 		</game>
 		<game>
-			<imageNumber>524</imageNumber>
+			<imageNumber>555</imageNumber>
 			<releaseNumber>524</releaseNumber>
 			<title>Final Fantasy III(CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -1430,7 +1432,7 @@
 			<duplicateID>524</duplicateID>
 		</game>
 		<game>
-			<imageNumber>524</imageNumber>
+			<imageNumber>555</imageNumber>
 			<releaseNumber>524</releaseNumber>
 			<title>Final Fantasy III (CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -1448,7 +1450,7 @@
 			<duplicateID>524</duplicateID>
 		</game>
 		<game>
-			<imageNumber>524</imageNumber>
+			<imageNumber>555</imageNumber>
 			<releaseNumber>524</releaseNumber>
 			<title>Final Fantasy III (CHT)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -1466,7 +1468,7 @@
 			<duplicateID>524</duplicateID>
 		</game>
 		<game>
-			<imageNumber>525</imageNumber>
+			<imageNumber>556</imageNumber>
 			<releaseNumber>525</releaseNumber>
 			<title>Rune Factory - Shin Bokujou Monogatari</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -1484,7 +1486,7 @@
 			<duplicateID>525</duplicateID>
 		</game>
 		<game>
-			<imageNumber>525</imageNumber>
+			<imageNumber>556</imageNumber>
 			<releaseNumber>525</releaseNumber>
 			<title>Rune Factory - Shin Bokujou Monogatari</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -1502,7 +1504,7 @@
 			<duplicateID>525</duplicateID>
 		</game>
 		<game>
-			<imageNumber>525</imageNumber>
+			<imageNumber>556</imageNumber>
 			<releaseNumber>525</releaseNumber>
 			<title>Rune Factory - Shin Bokujou Monogatari</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -1520,7 +1522,7 @@
 			<duplicateID>525</duplicateID>
 		</game>
 		<game>
-			<imageNumber>532</imageNumber>
+			<imageNumber>563</imageNumber>
 			<releaseNumber>532</releaseNumber>
 			<title>Nounai Kakusei Honeycomb Beat</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -1538,7 +1540,7 @@
 			<duplicateID>532</duplicateID>
 		</game>
 		<game>
-			<imageNumber>559</imageNumber>
+			<imageNumber>590</imageNumber>
 			<releaseNumber>559</releaseNumber>
 			<title>Mario Hoops 3on3</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -1556,7 +1558,7 @@
 			<duplicateID>505</duplicateID>
 		</game>
 		<game>
-			<imageNumber>560</imageNumber>
+			<imageNumber>591</imageNumber>
 			<releaseNumber>560</releaseNumber>
 			<title>Cooking Mama</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -1574,7 +1576,7 @@
 			<duplicateID>362</duplicateID>
 		</game>
 		<game>
-			<imageNumber>576</imageNumber>
+			<imageNumber>609</imageNumber>
 			<releaseNumber>576</releaseNumber>
 			<title>Pokemon Pearl(CHT)1.1.0</title>
 			<saveType>Flash - 4 Mbit</saveType>
@@ -1592,7 +1594,7 @@
 			<duplicateID>576</duplicateID>
 		</game>
 		<game>
-			<imageNumber>576</imageNumber>
+			<imageNumber>609</imageNumber>
 			<releaseNumber>576</releaseNumber>
 			<title>Pokemon Pearl(CHS)1.1.0</title>
 			<saveType>Flash - 4 Mbit</saveType>
@@ -1610,7 +1612,7 @@
 			<duplicateID>576</duplicateID>
 		</game>
 		<game>
-			<imageNumber>577</imageNumber>
+			<imageNumber>610</imageNumber>
 			<releaseNumber>577</releaseNumber>
 			<title>Pokemon Diamond(CHT)1.1.0</title>
 			<saveType>Flash - 4 Mbit</saveType>
@@ -1628,7 +1630,7 @@
 			<duplicateID>577</duplicateID>
 		</game>
 		<game>
-			<imageNumber>577</imageNumber>
+			<imageNumber>610</imageNumber>
 			<releaseNumber>577</releaseNumber>
 			<title>Pokemon Diamond(CHS)1.1.0</title>
 			<saveType>Flash - 4 Mbit</saveType>
@@ -1646,7 +1648,7 @@
 			<duplicateID>577</duplicateID>
 		</game>
 		<game>
-			<imageNumber>623</imageNumber>
+			<imageNumber>656</imageNumber>
 			<releaseNumber>623</releaseNumber>
 			<title>Pinky Street - Kira Kira Music Hour</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -1664,7 +1666,7 @@
 			<duplicateID>623</duplicateID>
 		</game>
 		<game>
-			<imageNumber>625</imageNumber>
+			<imageNumber>658</imageNumber>
 			<releaseNumber>625</releaseNumber>
 			<title>Tales of the Tempest</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -1682,7 +1684,7 @@
 			<duplicateID>625</duplicateID>
 		</game>
 		<game>
-			<imageNumber>637</imageNumber>
+			<imageNumber>670</imageNumber>
 			<releaseNumber>637</releaseNumber>
 			<title>Lode Runner</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -1700,7 +1702,7 @@
 			<duplicateID>637</duplicateID>
 		</game>
 		<game>
-			<imageNumber>638</imageNumber>
+			<imageNumber>671</imageNumber>
 			<releaseNumber>638</releaseNumber>
 			<title>Hoshi no Kirby - Sanjou! Dorocche Dan</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -1718,7 +1720,7 @@
 			<duplicateID>638</duplicateID>
 		</game>
 		<game>
-			<imageNumber>640</imageNumber>
+			<imageNumber>673</imageNumber>
 			<releaseNumber>640</releaseNumber>
 			<title>Winning Eleven DS</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -1736,7 +1738,7 @@
 			<duplicateID>640</duplicateID>
 		</game>
 		<game>
-			<imageNumber>661</imageNumber>
+			<imageNumber>694</imageNumber>
 			<releaseNumber>661</releaseNumber>
 			<title>Yoshi's Island DS</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -1754,7 +1756,7 @@
 			<duplicateID>661</duplicateID>
 		</game>
 		<game>
-			<imageNumber>676</imageNumber>
+			<imageNumber>709</imageNumber>
 			<releaseNumber>676</releaseNumber>
 			<title>Akumajou Dracula - Gallery of Labyrinth (CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -1772,7 +1774,7 @@
 			<duplicateID>676</duplicateID>
 		</game>
 		<game>
-			<imageNumber>676</imageNumber>
+			<imageNumber>709</imageNumber>
 			<releaseNumber>676</releaseNumber>
 			<title>Akumajou Dracula - Gallery of Labyrinth (CHT)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -1790,7 +1792,7 @@
 			<duplicateID>676</duplicateID>
 		</game>
 		<game>
-			<imageNumber>677</imageNumber>
+			<imageNumber>710</imageNumber>
 			<releaseNumber>677</releaseNumber>
 			<title>Magic Taizen</title>
 			<saveType>TBC</saveType>
@@ -1808,7 +1810,7 @@
 			<duplicateID>677</duplicateID>
 		</game>
 		<game>
-			<imageNumber>681</imageNumber>
+			<imageNumber>714</imageNumber>
 			<releaseNumber>681</releaseNumber>
 			<title>Final Fantasy III</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -1826,7 +1828,7 @@
 			<duplicateID>524</duplicateID>
 		</game>
 		<game>
-			<imageNumber>681</imageNumber>
+			<imageNumber>714</imageNumber>
 			<releaseNumber>681</releaseNumber>
 			<title>Final Fantasy III</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -1844,7 +1846,7 @@
 			<duplicateID>524</duplicateID>
 		</game>
 		<game>
-			<imageNumber>698</imageNumber>
+			<imageNumber>731</imageNumber>
 			<releaseNumber>698</releaseNumber>
 			<title>Nihon Curling Kyoukai Kounin - Minna no Curling DS</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -1862,7 +1864,7 @@
 			<duplicateID>698</duplicateID>
 		</game>
 		<game>
-			<imageNumber>710</imageNumber>
+			<imageNumber>746</imageNumber>
 			<releaseNumber>710</releaseNumber>
 			<title>Yu-Gi-Oh! GX - Spirit Summoner</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -1880,7 +1882,7 @@
 			<duplicateID>710</duplicateID>
 		</game>
 		<game>
-			<imageNumber>738</imageNumber>
+			<imageNumber>774</imageNumber>
 			<releaseNumber>738</releaseNumber>
 			<title>Doko Demo Raku Raku! DS Kakeibo</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -1898,7 +1900,7 @@
 			<duplicateID>738</duplicateID>
 		</game>
 		<game>
-			<imageNumber>746</imageNumber>
+			<imageNumber>782</imageNumber>
 			<releaseNumber>746</releaseNumber>
 			<title>Tenohira Gakushuu - Chikyuu no Narabe Kata</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -1916,7 +1918,7 @@
 			<duplicateID>746</duplicateID>
 		</game>
 		<game>
-			<imageNumber>756</imageNumber>
+			<imageNumber>792</imageNumber>
 			<releaseNumber>756</releaseNumber>
 			<title>Naruto - Shinobi Retsuden</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -1934,7 +1936,7 @@
 			<duplicateID>756</duplicateID>
 		</game>
 		<game>
-			<imageNumber>758</imageNumber>
+			<imageNumber>794</imageNumber>
 			<releaseNumber>758</releaseNumber>
 			<title>Chocobo To Mahou no Ehon</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -1952,7 +1954,7 @@
 			<duplicateID>758</duplicateID>
 		</game>
 		<game>
-			<imageNumber>767</imageNumber>
+			<imageNumber>803</imageNumber>
 			<releaseNumber>767</releaseNumber>
 			<title>Fushigi no Dungeon - Fuurai no Shiren DS</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -1970,7 +1972,7 @@
 			<duplicateID>767</duplicateID>
 		</game>
 		<game>
-			<imageNumber>782</imageNumber>
+			<imageNumber>818</imageNumber>
 			<releaseNumber>782</releaseNumber>
 			<title>Hiite Utaeru DS Guitar - M-06</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -1988,7 +1990,7 @@
 			<duplicateID>782</duplicateID>
 		</game>
 		<game>
-			<imageNumber>797</imageNumber>
+			<imageNumber>833</imageNumber>
 			<releaseNumber>797</releaseNumber>
 			<title>Mahjong Haoh DS Special</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -2006,7 +2008,7 @@
 			<duplicateID>797</duplicateID>
 		</game>
 		<game>
-			<imageNumber>811</imageNumber>
+			<imageNumber>848</imageNumber>
 			<releaseNumber>811</releaseNumber>
 			<title>Essential Sudoku DS</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -2024,7 +2026,7 @@
 			<duplicateID>422</duplicateID>
 		</game>
 		<game>
-			<imageNumber>816</imageNumber>
+			<imageNumber>853</imageNumber>
 			<releaseNumber>816</releaseNumber>
 			<title>Sekaiju no Meikyuu</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -2042,7 +2044,7 @@
 			<duplicateID>816</duplicateID>
 		</game>
 		<game>
-			<imageNumber>817</imageNumber>
+			<imageNumber>854</imageNumber>
 			<releaseNumber>817</releaseNumber>
 			<title>Kaitou Wario the Seven</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -2060,7 +2062,7 @@
 			<duplicateID>817</duplicateID>
 		</game>
 		<game>
-			<imageNumber>826</imageNumber>
+			<imageNumber>863</imageNumber>
 			<releaseNumber>826</releaseNumber>
 			<title>San Goku Shi Taisen DS</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -2078,7 +2080,7 @@
 			<duplicateID>826</duplicateID>
 		</game>
 		<game>
-			<imageNumber>830</imageNumber>
+			<imageNumber>867</imageNumber>
 			<releaseNumber>830</releaseNumber>
 			<title>Picross DS</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -2096,7 +2098,7 @@
 			<duplicateID>830</duplicateID>
 		</game>
 		<game>
-			<imageNumber>830</imageNumber>
+			<imageNumber>867</imageNumber>
 			<releaseNumber>830</releaseNumber>
 			<title>Picross DS</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -2114,7 +2116,7 @@
 			<duplicateID>830</duplicateID>
 		</game>
 		<game>
-			<imageNumber>831</imageNumber>
+			<imageNumber>868</imageNumber>
 			<releaseNumber>831</releaseNumber>
 			<title>Wish Room - Tenshi no Kioku</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -2132,7 +2134,7 @@
 			<duplicateID>823</duplicateID>
 		</game>
 		<game>
-			<imageNumber>831</imageNumber>
+			<imageNumber>868</imageNumber>
 			<releaseNumber>831</releaseNumber>
 			<title>Wish Room - Tenshi no Kioku</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -2150,7 +2152,7 @@
 			<duplicateID>823</duplicateID>
 		</game>
 		<game>
-			<imageNumber>846</imageNumber>
+			<imageNumber>883</imageNumber>
 			<releaseNumber>846</releaseNumber>
 			<title>Luminous Arc(CHT)</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -2168,7 +2170,7 @@
 			<duplicateID>846</duplicateID>
 		</game>
 		<game>
-			<imageNumber>846</imageNumber>
+			<imageNumber>883</imageNumber>
 			<releaseNumber>846</releaseNumber>
 			<title>Luminous Arc(CHS)</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -2186,7 +2188,7 @@
 			<duplicateID>846</duplicateID>
 		</game>
 		<game>
-			<imageNumber>852</imageNumber>
+			<imageNumber>889</imageNumber>
 			<releaseNumber>852</releaseNumber>
 			<title>Jet Impulse</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -2204,7 +2206,7 @@
 			<duplicateID>852</duplicateID>
 		</game>
 		<game>
-			<imageNumber>857</imageNumber>
+			<imageNumber>894</imageNumber>
 			<releaseNumber>857</releaseNumber>
 			<title>Layton Kyouju to Fushigi na Machi (CHS)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -2222,7 +2224,7 @@
 			<duplicateID>857</duplicateID>
 		</game>
 		<game>
-			<imageNumber>857</imageNumber>
+			<imageNumber>894</imageNumber>
 			<releaseNumber>857</releaseNumber>
 			<title>Layton Kyouju to Fushigi na Machi (CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -2240,7 +2242,7 @@
 			<duplicateID>857</duplicateID>
 		</game>
 		<game>
-			<imageNumber>866</imageNumber>
+			<imageNumber>903</imageNumber>
 			<releaseNumber>866</releaseNumber>
 			<title>Puyo Puyo! 15th Anniversary (v01)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -2258,7 +2260,7 @@
 			<duplicateID>866</duplicateID>
 		</game>
 		<game>
-			<imageNumber>870</imageNumber>
+			<imageNumber>907</imageNumber>
 			<releaseNumber>870</releaseNumber>
 			<title>Super Robot Taisen W 1.1(CHT)</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -2276,7 +2278,7 @@
 			<duplicateID>870</duplicateID>
 		</game>
 		<game>
-			<imageNumber>870</imageNumber>
+			<imageNumber>907</imageNumber>
 			<releaseNumber>870</releaseNumber>
 			<title>Super Robot Taisen W 1.1(CHS)</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -2294,7 +2296,7 @@
 			<duplicateID>870</duplicateID>
 		</game>
 		<game>
-			<imageNumber>873</imageNumber>
+			<imageNumber>910</imageNumber>
 			<releaseNumber>873</releaseNumber>
 			<title>Boku wa Koukuu Kanseikan DS</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -2312,7 +2314,7 @@
 			<duplicateID>873</duplicateID>
 		</game>
 		<game>
-			<imageNumber>882</imageNumber>
+			<imageNumber>922</imageNumber>
 			<releaseNumber>882</releaseNumber>
 			<title>Numpla 10000 Mon</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -2330,7 +2332,7 @@
 			<duplicateID>882</duplicateID>
 		</game>
 		<game>
-			<imageNumber>904</imageNumber>
+			<imageNumber>944</imageNumber>
 			<releaseNumber>904</releaseNumber>
 			<title>Yu-Gi-Oh! Duel Monsters - World Championship 2007</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -2348,7 +2350,7 @@
 			<duplicateID>904</duplicateID>
 		</game>
 		<game>
-			<imageNumber>907</imageNumber>
+			<imageNumber>947</imageNumber>
 			<releaseNumber>907</releaseNumber>
 			<title>Survival Kids - Lost in Blue 2 (CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -2366,7 +2368,7 @@
 			<duplicateID>907</duplicateID>
 		</game>
 		<game>
-			<imageNumber>907</imageNumber>
+			<imageNumber>947</imageNumber>
 			<releaseNumber>907</releaseNumber>
 			<title>Survival Kids - Lost in Blue 2 (CHS)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -2384,7 +2386,7 @@
 			<duplicateID>907</duplicateID>
 		</game>
 		<game>
-			<imageNumber>908</imageNumber>
+			<imageNumber>948</imageNumber>
 			<releaseNumber>908</releaseNumber>
 			<title>Theme Park DS</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -2402,7 +2404,7 @@
 			<duplicateID>908</duplicateID>
 		</game>
 		<game>
-			<imageNumber>915</imageNumber>
+			<imageNumber>955</imageNumber>
 			<releaseNumber>915</releaseNumber>
 			<title>KuruPoto</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -2420,7 +2422,7 @@
 			<duplicateID>915</duplicateID>
 		</game>
 		<game>
-			<imageNumber>918</imageNumber>
+			<imageNumber>958</imageNumber>
 			<releaseNumber>918</releaseNumber>
 			<title>Tokimeki Memorial - Girl's Side 1st Love</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -2438,7 +2440,7 @@
 			<duplicateID>918</duplicateID>
 		</game>
 		<game>
-			<imageNumber>938</imageNumber>
+			<imageNumber>978</imageNumber>
 			<releaseNumber>938</releaseNumber>
 			<title>Theme Park</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -2456,7 +2458,7 @@
 			<duplicateID>908</duplicateID>
 		</game>
 		<game>
-			<imageNumber>952</imageNumber>
+			<imageNumber>992</imageNumber>
 			<releaseNumber>952</releaseNumber>
 			<title>Tossa no Keisan Shunkan Kaitou - Keisan DS Training (v01)(CHT)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -2474,7 +2476,7 @@
 			<duplicateID>952</duplicateID>
 		</game>
 		<game>
-			<imageNumber>952</imageNumber>
+			<imageNumber>992</imageNumber>
 			<releaseNumber>952</releaseNumber>
 			<title>Tossa no Keisan Shunkan Kaitou - Keisan DS Training (v01)(CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -2492,7 +2494,7 @@
 			<duplicateID>952</duplicateID>
 		</game>
 		<game>
-			<imageNumber>960</imageNumber>
+			<imageNumber>1000</imageNumber>
 			<releaseNumber>960</releaseNumber>
 			<title>Digimon Story - Moonlight</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -2510,7 +2512,7 @@
 			<duplicateID>960</duplicateID>
 		</game>
 		<game>
-			<imageNumber>961</imageNumber>
+			<imageNumber>1001</imageNumber>
 			<releaseNumber>961</releaseNumber>
 			<title>Digimon Story - Sunburst</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -2528,7 +2530,7 @@
 			<duplicateID>961</duplicateID>
 		</game>
 		<game>
-			<imageNumber>973</imageNumber>
+			<imageNumber>1013</imageNumber>
 			<releaseNumber>973</releaseNumber>
 			<title>Eigo ga Nigate na Otona no DS Training - Motto Eigo Zuke</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -2546,7 +2548,7 @@
 			<duplicateID>973</duplicateID>
 		</game>
 		<game>
-			<imageNumber>975</imageNumber>
+			<imageNumber>1015</imageNumber>
 			<releaseNumber>975</releaseNumber>
 			<title>Kokoro ga Uruou Birei Aquarium DS - Tetra - Guppy - Angelfish</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -2564,7 +2566,7 @@
 			<duplicateID>975</duplicateID>
 		</game>
 		<game>
-			<imageNumber>975</imageNumber>
+			<imageNumber>1015</imageNumber>
 			<releaseNumber>975</releaseNumber>
 			<title>Kokoro ga Uruou Birei Aquarium DS - Tetra - Guppy - Angelfish</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -2582,7 +2584,7 @@
 			<duplicateID>975</duplicateID>
 		</game>
 		<game>
-			<imageNumber>975</imageNumber>
+			<imageNumber>1015</imageNumber>
 			<releaseNumber>975</releaseNumber>
 			<title>Kokoro ga Uruou Birei Aquarium DS - Tetra - Guppy - Angelfish</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -2600,7 +2602,7 @@
 			<duplicateID>975</duplicateID>
 		</game>
 		<game>
-			<imageNumber>976</imageNumber>
+			<imageNumber>1016</imageNumber>
 			<releaseNumber>976</releaseNumber>
 			<title>Kokoro ga Uruou Birei Aquarium DS - Kujira - Iruka - Penguin</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -2618,7 +2620,7 @@
 			<duplicateID>976</duplicateID>
 		</game>
 		<game>
-			<imageNumber>976</imageNumber>
+			<imageNumber>1016</imageNumber>
 			<releaseNumber>976</releaseNumber>
 			<title>Kokoro ga Uruou Birei Aquarium DS - Kujira - Iruka - Penguin</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -2636,7 +2638,7 @@
 			<duplicateID>976</duplicateID>
 		</game>
 		<game>
-			<imageNumber>982</imageNumber>
+			<imageNumber>1022</imageNumber>
 			<releaseNumber>982</releaseNumber>
 			<title>Shin Sangoku Musou DS - Fighter's Battle</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -2654,7 +2656,7 @@
 			<duplicateID>982</duplicateID>
 		</game>
 		<game>
-			<imageNumber>984</imageNumber>
+			<imageNumber>1024</imageNumber>
 			<releaseNumber>984</releaseNumber>
 			<title>Detective Conan - Tantei Ryoku Trainer</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -2672,7 +2674,7 @@
 			<duplicateID>984</duplicateID>
 		</game>
 		<game>
-			<imageNumber>989</imageNumber>
+			<imageNumber>1029</imageNumber>
 			<releaseNumber>989</releaseNumber>
 			<title>Oide yo Doubutsu no Mori(CHS)</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -2690,7 +2692,7 @@
 			<duplicateID>193</duplicateID>
 		</game>
 		<game>
-			<imageNumber>989</imageNumber>
+			<imageNumber>1029</imageNumber>
 			<releaseNumber>989</releaseNumber>
 			<title>Oide yo Doubutsu no Mori(CHT)</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -2708,7 +2710,7 @@
 			<duplicateID>193</duplicateID>
 		</game>
 		<game>
-			<imageNumber>993</imageNumber>
+			<imageNumber>1034</imageNumber>
 			<releaseNumber>993</releaseNumber>
 			<title>Gyakuten Saiben 4</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -2726,7 +2728,7 @@
 			<duplicateID>993</duplicateID>
 		</game>
 		<game>
-			<imageNumber>993</imageNumber>
+			<imageNumber>1034</imageNumber>
 			<releaseNumber>993</releaseNumber>
 			<title>Gyakuten Saiben 4</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -2744,7 +2746,7 @@
 			<duplicateID>993</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1011</imageNumber>
+			<imageNumber>1053</imageNumber>
 			<releaseNumber>1011</releaseNumber>
 			<title>Theme Park</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -2762,7 +2764,7 @@
 			<duplicateID>908</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1017</imageNumber>
+			<imageNumber>1059</imageNumber>
 			<releaseNumber>1017</releaseNumber>
 			<title>Asonde Igo ga Tsuyokunaru! - Ginsei Igo DS</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -2780,7 +2782,7 @@
 			<duplicateID>1017</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1018</imageNumber>
+			<imageNumber>1060</imageNumber>
 			<releaseNumber>1018</releaseNumber>
 			<title>Final Fantasy XII - Revenant Wings(CHT)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -2798,7 +2800,7 @@
 			<duplicateID>1018</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1018</imageNumber>
+			<imageNumber>1060</imageNumber>
 			<releaseNumber>1018</releaseNumber>
 			<title>Final Fantasy XII - Revenant Wings(CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -2816,7 +2818,7 @@
 			<duplicateID>1018</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1036</imageNumber>
+			<imageNumber>1079</imageNumber>
 			<releaseNumber>1036</releaseNumber>
 			<title>Super Black Bass - Kitahankyuu o Tsuru</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -2834,7 +2836,7 @@
 			<duplicateID>1036</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1105</imageNumber>
+			<imageNumber>1149</imageNumber>
 			<releaseNumber>1105</releaseNumber>
 			<title>Kekkaishi Karasumori Ayakashi Kidan</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -2852,7 +2854,7 @@
 			<duplicateID>1105</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1105</imageNumber>
+			<imageNumber>1149</imageNumber>
 			<releaseNumber>1105</releaseNumber>
 			<title>Kekkaishi Karasumori Ayakashi Kidan</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -2870,7 +2872,7 @@
 			<duplicateID>1105</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1136</imageNumber>
+			<imageNumber>1180</imageNumber>
 			<releaseNumber>1136</releaseNumber>
 			<title>Labyrinth</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -2888,7 +2890,7 @@
 			<duplicateID>289</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1157</imageNumber>
+			<imageNumber>1201</imageNumber>
 			<releaseNumber>1157</releaseNumber>
 			<title>Itadaki Street</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -2906,7 +2908,7 @@
 			<duplicateID>1157</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1153</imageNumber>
+			<imageNumber>1197</imageNumber>
 			<releaseNumber>1153</releaseNumber>
 			<title>Unou Kaiten - Match-Bou Puzzle DS</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -2924,7 +2926,7 @@
 			<duplicateID>1153</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1158</imageNumber>
+			<imageNumber>1202</imageNumber>
 			<releaseNumber>1158</releaseNumber>
 			<title>The Legend of Zelda - Mugen no Sunadokei</title>
 			<saveType>Flash - 4 Mbit</saveType>
@@ -2942,7 +2944,7 @@
 			<duplicateID>1158</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1158</imageNumber>
+			<imageNumber>1202</imageNumber>
 			<releaseNumber>1158</releaseNumber>
 			<title>The Legend of Zelda - Mugen no Sunadokei</title>
 			<saveType>Flash - 4 Mbit</saveType>
@@ -2960,7 +2962,7 @@
 			<duplicateID>1158</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1178</imageNumber>
+			<imageNumber>1222</imageNumber>
 			<releaseNumber>1178</releaseNumber>
 			<title>Simple DS Series Vol. 16 - The Sagasou Fushigi na Konchuu no Mori</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -2978,7 +2980,7 @@
 			<duplicateID>1178</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1183</imageNumber>
+			<imageNumber>1227</imageNumber>
 			<releaseNumber>1183</releaseNumber>
 			<title>Chuukana Janshi Tenhoo Painyan Remix</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -2996,7 +2998,7 @@
 			<duplicateID>1183</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1183</imageNumber>
+			<imageNumber>1227</imageNumber>
 			<releaseNumber>1183</releaseNumber>
 			<title>Chuukana Janshi Tenhoo Painyan Remix</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -3014,7 +3016,7 @@
 			<duplicateID>1183</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1192</imageNumber>
+			<imageNumber>1236</imageNumber>
 			<releaseNumber>1192</releaseNumber>
 			<title>Sakasete! Chibi-Robo!(CHT)</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -3032,7 +3034,7 @@
 			<duplicateID>1192</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1192</imageNumber>
+			<imageNumber>1236</imageNumber>
 			<releaseNumber>1192</releaseNumber>
 			<title>Sakasete! Chibi-Robo!(CHS)</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -3050,7 +3052,7 @@
 			<duplicateID>1192</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1200</imageNumber>
+			<imageNumber>1244</imageNumber>
 			<releaseNumber>1200</releaseNumber>
 			<title>Kyou Kara DS Calorie Navi</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -3068,7 +3070,7 @@
 			<duplicateID>1200</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1216</imageNumber>
+			<imageNumber>1260</imageNumber>
 			<releaseNumber>1216</releaseNumber>
 			<title>Death Note - L o Tsugu Mono</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -3086,7 +3088,7 @@
 			<duplicateID>1216</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1226</imageNumber>
+			<imageNumber>1270</imageNumber>
 			<releaseNumber>1226</releaseNumber>
 			<title>Naruto Shippuuden - Saikyou Ninja Daikesshuu 5 - Kessen! Akatsuki</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -3104,7 +3106,7 @@
 			<duplicateID>1226</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1239</imageNumber>
+			<imageNumber>1283</imageNumber>
 			<releaseNumber>1239</releaseNumber>
 			<title>Simple DS Series Vol. 18 - The Soukou Kihei Gun Ground</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -3122,7 +3124,7 @@
 			<duplicateID>1239</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1240</imageNumber>
+			<imageNumber>1284</imageNumber>
 			<releaseNumber>1240</releaseNumber>
 			<title>Subarashiki Kono Sekai - It's a Wonderful World</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -3140,7 +3142,7 @@
 			<duplicateID>1240</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1256</imageNumber>
+			<imageNumber>1300</imageNumber>
 			<releaseNumber>1256</releaseNumber>
 			<title>Idol Janshi Suchie-Pai III Remix</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -3158,7 +3160,7 @@
 			<duplicateID>1256</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1256</imageNumber>
+			<imageNumber>1300</imageNumber>
 			<releaseNumber>1256</releaseNumber>
 			<title>Idol Janshi Suchie-Pai III Remix</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -3176,7 +3178,7 @@
 			<duplicateID>1256</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1260</imageNumber>
+			<imageNumber>1304</imageNumber>
 			<releaseNumber>1260</releaseNumber>
 			<title>Saiyuuki - Kinkaku-Ginkaku no Inbou</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -3194,7 +3196,7 @@
 			<duplicateID>1260</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1281</imageNumber>
+			<imageNumber>1325</imageNumber>
 			<releaseNumber>1281</releaseNumber>
 			<title>Hissatsu Kung Fu - Kanji Dragon</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -3212,7 +3214,7 @@
 			<duplicateID>1281</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1304</imageNumber>
+			<imageNumber>1348</imageNumber>
 			<releaseNumber>1304</releaseNumber>
 			<title>Itsuwari no Round</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -3230,7 +3232,7 @@
 			<duplicateID>1304</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1304</imageNumber>
+			<imageNumber>1348</imageNumber>
 			<releaseNumber>1304</releaseNumber>
 			<title>Itsuwari no Round</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -3248,7 +3250,7 @@
 			<duplicateID>1304</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1314</imageNumber>
+			<imageNumber>1358</imageNumber>
 			<releaseNumber>1314</releaseNumber>
 			<title>1500 DS Spirits Vol.1 Mahjong</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -3266,7 +3268,7 @@
 			<duplicateID>1314</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1316</imageNumber>
+			<imageNumber>1360</imageNumber>
 			<releaseNumber>1316</releaseNumber>
 			<title>1500 DS Spirits Vol.3 Block Kuzushi</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -3284,7 +3286,7 @@
 			<duplicateID>1316</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1317</imageNumber>
+			<imageNumber>1361</imageNumber>
 			<releaseNumber>1317</releaseNumber>
 			<title>1500 DS Spirits Vol.4 Reversi</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -3302,7 +3304,7 @@
 			<duplicateID>1317</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1318</imageNumber>
+			<imageNumber>1362</imageNumber>
 			<releaseNumber>1318</releaseNumber>
 			<title>1500 DS Spirits Vol.5 Hanafuda</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -3320,7 +3322,7 @@
 			<duplicateID>1318</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1336</imageNumber>
+			<imageNumber>1380</imageNumber>
 			<releaseNumber>1336</releaseNumber>
 			<title>Final Fantasy Crystal Chronicles - Ring of Fates</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -3338,7 +3340,7 @@
 			<duplicateID>1336</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1336</imageNumber>
+			<imageNumber>1380</imageNumber>
 			<releaseNumber>1336</releaseNumber>
 			<title>Final Fantasy Crystal Chronicles - Ring of Fates (CHT)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -3356,7 +3358,7 @@
 			<duplicateID>1336</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1336</imageNumber>
+			<imageNumber>1380</imageNumber>
 			<releaseNumber>1336</releaseNumber>
 			<title>Final Fantasy Crystal Chronicles - Ring of Fates (CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -3374,7 +3376,7 @@
 			<duplicateID>1336</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1345</imageNumber>
+			<imageNumber>1390</imageNumber>
 			<releaseNumber>1345</releaseNumber>
 			<title>Simple DS Series Vol. 20 - The Senkan</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -3392,7 +3394,7 @@
 			<duplicateID>1345</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1347</imageNumber>
+			<imageNumber>1392</imageNumber>
 			<releaseNumber>1347</releaseNumber>
 			<title>Konchuu Wars</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -3410,7 +3412,7 @@
 			<duplicateID>1347</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1363</imageNumber>
+			<imageNumber>1409</imageNumber>
 			<releaseNumber>1363</releaseNumber>
 			<title>Summon Night Twin Age - Seireitachi no Koe (CHT)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -3428,7 +3430,7 @@
 			<duplicateID>1363</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1363</imageNumber>
+			<imageNumber>1409</imageNumber>
 			<releaseNumber>1363</releaseNumber>
 			<title>Summon Night Twin Age - Seireitachi no Koe (CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -3446,7 +3448,7 @@
 			<duplicateID>1363</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1371</imageNumber>
+			<imageNumber>1417</imageNumber>
 			<releaseNumber>1371</releaseNumber>
 			<title>Simple DS Series Vol. 21 - The Hohei - Butai de Shutsugeki! Senjou no Inutachi</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -3464,7 +3466,7 @@
 			<duplicateID>1371</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1375</imageNumber>
+			<imageNumber>1421</imageNumber>
 			<releaseNumber>1375</releaseNumber>
 			<title>One Piece - Gear Spirit</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -3482,7 +3484,7 @@
 			<duplicateID>1375</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1404</imageNumber>
+			<imageNumber>1451</imageNumber>
 			<releaseNumber>1404</releaseNumber>
 			<title>Freshly-Picked - Tingle's Rosy Rupeeland</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -3500,7 +3502,7 @@
 			<duplicateID>546</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1412</imageNumber>
+			<imageNumber>1460</imageNumber>
 			<releaseNumber>1412</releaseNumber>
 			<title>Tsunde Tsumi Kiss</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -3518,7 +3520,7 @@
 			<duplicateID>1412</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1413</imageNumber>
+			<imageNumber>1461</imageNumber>
 			<releaseNumber>1413</releaseNumber>
 			<title>Taiko no Tatsujin DS - Touch de Dokodon! (v01)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -3536,7 +3538,7 @@
 			<duplicateID>1235</duplicateID>
 		</game>
 		<game>
-			<imageNumber>95006</imageNumber>
+			<imageNumber>1480</imageNumber>
 			<releaseNumber>95006</releaseNumber>
 			<title>Level5 Premium Silver</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -3554,7 +3556,7 @@
 			<duplicateID>1480</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1458</imageNumber>
+			<imageNumber>1506</imageNumber>
 			<releaseNumber>1458</releaseNumber>
 			<title>Ash - Archaic Sealed Heat</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -3572,7 +3574,7 @@
 			<duplicateID>1458</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1458</imageNumber>
+			<imageNumber>1506</imageNumber>
 			<releaseNumber>1458</releaseNumber>
 			<title>Ash - Archaic Sealed Heat</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -3590,7 +3592,7 @@
 			<duplicateID>1458</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1478</imageNumber>
+			<imageNumber>1526</imageNumber>
 			<releaseNumber>1478</releaseNumber>
 			<title>Mitsukete! Keroro Gunsou - Machigai Sagashi Daisakusen de Arimasu!</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -3608,7 +3610,7 @@
 			<duplicateID>1478</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1519</imageNumber>
+			<imageNumber>1568</imageNumber>
 			<releaseNumber>1519</releaseNumber>
 			<title>Flash Focus - Vision Training in Minutes a Day(CHT)</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -3626,7 +3628,7 @@
 			<duplicateID>1114</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1519</imageNumber>
+			<imageNumber>1568</imageNumber>
 			<releaseNumber>1519</releaseNumber>
 			<title>Flash Focus - Vision Training in Minutes a Day(CHS)</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -3644,7 +3646,7 @@
 			<duplicateID>1114</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1535</imageNumber>
+			<imageNumber>1584</imageNumber>
 			<releaseNumber>1535</releaseNumber>
 			<title>Final Fantasy Tactics A2 - Fuuketsu no Grimoire</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -3662,7 +3664,7 @@
 			<duplicateID>1535</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1549</imageNumber>
+			<imageNumber>1598</imageNumber>
 			<releaseNumber>1549</releaseNumber>
 			<title>Megaman ZX Advent</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -3680,7 +3682,7 @@
 			<duplicateID>1211</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1560</imageNumber>
+			<imageNumber>1609</imageNumber>
 			<releaseNumber>1560</releaseNumber>
 			<title>Code Geass - Hangyaku no Lelouch</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -3698,7 +3700,7 @@
 			<duplicateID>1560</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1567</imageNumber>
+			<imageNumber>1616</imageNumber>
 			<releaseNumber>1567</releaseNumber>
 			<title>Dementium - The Ward(CHT)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -3716,7 +3718,7 @@
 			<duplicateID>1567</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1567</imageNumber>
+			<imageNumber>1616</imageNumber>
 			<releaseNumber>1567</releaseNumber>
 			<title>Dementium - The Ward(CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -3734,7 +3736,7 @@
 			<duplicateID>1567</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1568</imageNumber>
+			<imageNumber>1617</imageNumber>
 			<releaseNumber>1568</releaseNumber>
 			<title>Tengen Toppa Gurren-Lagann</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -3752,7 +3754,7 @@
 			<duplicateID>1568</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1569</imageNumber>
+			<imageNumber>1618</imageNumber>
 			<releaseNumber>1569</releaseNumber>
 			<title>Dungeon Maker - Mahou no Shovel to Chiisana Yuusha(CHT)</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -3770,7 +3772,7 @@
 			<duplicateID>1569</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1569</imageNumber>
+			<imageNumber>1618</imageNumber>
 			<releaseNumber>1569</releaseNumber>
 			<title>Dungeon Maker - Mahou no Shovel to Chiisana Yuusha(CHS)</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -3788,7 +3790,7 @@
 			<duplicateID>1569</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1574</imageNumber>
+			<imageNumber>1623</imageNumber>
 			<releaseNumber>1574</releaseNumber>
 			<title>Jigoku Shoujo - Akekazura</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -3806,7 +3808,7 @@
 			<duplicateID>1574</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1617</imageNumber>
+			<imageNumber>1666</imageNumber>
 			<releaseNumber>1617</releaseNumber>
 			<title>Call of Duty 4 - Modern Warfare</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -3824,7 +3826,7 @@
 			<duplicateID>1617</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1617</imageNumber>
+			<imageNumber>1666</imageNumber>
 			<releaseNumber>1617</releaseNumber>
 			<title>Call of Duty 4 - Modern Warfare</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -3842,7 +3844,7 @@
 			<duplicateID>1617</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1628</imageNumber>
+			<imageNumber>1677</imageNumber>
 			<releaseNumber>1628</releaseNumber>
 			<title>Dragon Quest Monsters - Joker</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -3860,7 +3862,7 @@
 			<duplicateID>784</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1650</imageNumber>
+			<imageNumber>1699</imageNumber>
 			<releaseNumber>1650</releaseNumber>
 			<title>I Love Dolphin (CHT)</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -3878,7 +3880,7 @@
 			<duplicateID>1650</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1650</imageNumber>
+			<imageNumber>1699</imageNumber>
 			<releaseNumber>1650</releaseNumber>
 			<title>I Love Dolphin (CHS)</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -3896,7 +3898,7 @@
 			<duplicateID>1650</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1654</imageNumber>
+			<imageNumber>1703</imageNumber>
 			<releaseNumber>1654</releaseNumber>
 			<title>Sangokushi DS 2 (CHT)</title>
 			<saveType>Flash - 2 mbit</saveType>
@@ -3914,7 +3916,7 @@
 			<duplicateID>1654</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1654</imageNumber>
+			<imageNumber>1703</imageNumber>
 			<releaseNumber>1654</releaseNumber>
 			<title>Sangokushi DS 2 (CHS)</title>
 			<saveType>Flash - 2 mbit</saveType>
@@ -3932,7 +3934,7 @@
 			<duplicateID>1654</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1661</imageNumber>
+			<imageNumber>1710</imageNumber>
 			<releaseNumber>1661</releaseNumber>
 			<title>Uwasa no Midori-Kun!! Natsuiro Striker</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -3950,7 +3952,7 @@
 			<duplicateID>1661</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1669</imageNumber>
+			<imageNumber>1718</imageNumber>
 			<releaseNumber>1669</releaseNumber>
 			<title>Dragon Tamer - Sound Spirits</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -3968,7 +3970,7 @@
 			<duplicateID>1669</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1669</imageNumber>
+			<imageNumber>1718</imageNumber>
 			<releaseNumber>1669</releaseNumber>
 			<title>Dragon Tamer - Sound Spirits</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -3986,7 +3988,7 @@
 			<duplicateID>1669</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1697</imageNumber>
+			<imageNumber>1747</imageNumber>
 			<releaseNumber>1697</releaseNumber>
 			<title>Dragon Quest IV - Michibikareshi Monotachi</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -4004,7 +4006,7 @@
 			<duplicateID>1697</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1697</imageNumber>
+			<imageNumber>1747</imageNumber>
 			<releaseNumber>1697</releaseNumber>
 			<title>Dragon Quest IV - Michibikareshi Monotachi (CHT)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -4022,7 +4024,7 @@
 			<duplicateID>1697</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1697</imageNumber>
+			<imageNumber>1747</imageNumber>
 			<releaseNumber>1697</releaseNumber>
 			<title>Dragon Quest IV - Michibikareshi Monotachi (CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -4040,7 +4042,7 @@
 			<duplicateID>1697</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1739</imageNumber>
+			<imageNumber>1790</imageNumber>
 			<releaseNumber>1739</releaseNumber>
 			<title>Layton Kyouju to Akuma no Hako (CHT)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -4058,7 +4060,7 @@
 			<duplicateID>1739</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1739</imageNumber>
+			<imageNumber>1790</imageNumber>
 			<releaseNumber>1739</releaseNumber>
 			<title>Layton Kyouju to Akuma no Hako (CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -4076,7 +4078,7 @@
 			<duplicateID>1739</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1748</imageNumber>
+			<imageNumber>1799</imageNumber>
 			<releaseNumber>1748</releaseNumber>
 			<title>Gouma Reifu Den Izuna 2(CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -4094,7 +4096,7 @@
 			<duplicateID>1748</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1748</imageNumber>
+			<imageNumber>1799</imageNumber>
 			<releaseNumber>1748</releaseNumber>
 			<title>Gouma Reifu Den Izuna 2(CHS)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -4112,7 +4114,7 @@
 			<duplicateID>1748</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1751</imageNumber>
+			<imageNumber>1802</imageNumber>
 			<releaseNumber>1751</releaseNumber>
 			<title>Yu-Gi-Oh! Duel Monsters - World Championship 2008</title>
 			<saveType>Flash - 2 mbit</saveType>
@@ -4130,7 +4132,7 @@
 			<duplicateID>1751</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1762</imageNumber>
+			<imageNumber>1813</imageNumber>
 			<releaseNumber>1762</releaseNumber>
 			<title>Simple DS Series Vol. 23 - The Puzzle Quest - Agaria no Kishi</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -4148,7 +4150,7 @@
 			<duplicateID>936</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1762</imageNumber>
+			<imageNumber>1813</imageNumber>
 			<releaseNumber>1762</releaseNumber>
 			<title>Simple DS Series Vol. 23 - The Puzzle Quest - Agaria no Kishi</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -4166,7 +4168,7 @@
 			<duplicateID>936</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1767</imageNumber>
+			<imageNumber>1818</imageNumber>
 			<releaseNumber>1767</releaseNumber>
 			<title>Simple DS Series Vol. 27 - The Misshitsu Kara no Dasshutsu</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -4184,7 +4186,7 @@
 			<duplicateID>1767</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1770</imageNumber>
+			<imageNumber>1821</imageNumber>
 			<releaseNumber>1770</releaseNumber>
 			<title>Tales of Innocence(CHT)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -4202,7 +4204,7 @@
 			<duplicateID>1770</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1770</imageNumber>
+			<imageNumber>1821</imageNumber>
 			<releaseNumber>1770</releaseNumber>
 			<title>Tales of Innocence(CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -4220,7 +4222,7 @@
 			<duplicateID>1770</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1810</imageNumber>
+			<imageNumber>1861</imageNumber>
 			<releaseNumber>1810</releaseNumber>
 			<title>Juushin Enbu DS</title>
 			<saveType>TBC</saveType>
@@ -4238,7 +4240,7 @@
 			<duplicateID>1810</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1834</imageNumber>
+			<imageNumber>1885</imageNumber>
 			<releaseNumber>1834</releaseNumber>
 			<title>Final Fantasy IV(CHT)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -4256,7 +4258,7 @@
 			<duplicateID>1834</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1834</imageNumber>
+			<imageNumber>1885</imageNumber>
 			<releaseNumber>1834</releaseNumber>
 			<title>Final Fantasy IV(CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -4274,7 +4276,7 @@
 			<duplicateID>1834</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1837</imageNumber>
+			<imageNumber>1888</imageNumber>
 			<releaseNumber>1837</releaseNumber>
 			<title>Survival Kids - Chiisana Shima no Ookina Himitsu!</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -4292,7 +4294,7 @@
 			<duplicateID>1837</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1843</imageNumber>
+			<imageNumber>1894</imageNumber>
 			<releaseNumber>1843</releaseNumber>
 			<title>Kousoku Card Battle - Card Hero</title>
 			<saveType>Flash - 2 mbit</saveType>
@@ -4310,7 +4312,7 @@
 			<duplicateID>1843</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1889</imageNumber>
+			<imageNumber>1940</imageNumber>
 			<releaseNumber>1889</releaseNumber>
 			<title>Love Cat Life</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -4328,7 +4330,7 @@
 			<duplicateID>1889</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1903</imageNumber>
+			<imageNumber>1957</imageNumber>
 			<releaseNumber>1903</releaseNumber>
 			<title>Simple DS Series Vol. 24 - The Sensha</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -4346,7 +4348,7 @@
 			<duplicateID>1903</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1922</imageNumber>
+			<imageNumber>1976</imageNumber>
 			<releaseNumber>1922</releaseNumber>
 			<title>SuperLite2500 - Gekikara Numpla 2500-Mon</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -4364,7 +4366,7 @@
 			<duplicateID>1922</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1935</imageNumber>
+			<imageNumber>1989</imageNumber>
 			<releaseNumber>1935</releaseNumber>
 			<title>SuperLite2500 - Crimson Room(CHT)</title>
 			<saveType>TBC</saveType>
@@ -4382,7 +4384,7 @@
 			<duplicateID>1935</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1935</imageNumber>
+			<imageNumber>1989</imageNumber>
 			<releaseNumber>1935</releaseNumber>
 			<title>SuperLite2500 - Crimson Room(CHS)</title>
 			<saveType>TBC</saveType>
@@ -4400,7 +4402,7 @@
 			<duplicateID>1935</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1946</imageNumber>
+			<imageNumber>2001</imageNumber>
 			<releaseNumber>1946</releaseNumber>
 			<title>Mario &amp; Sonic at Beijing Olympics</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -4418,7 +4420,7 @@
 			<duplicateID>1946</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1957</imageNumber>
+			<imageNumber>2012</imageNumber>
 			<releaseNumber>1957</releaseNumber>
 			<title>From the Abyss</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -4436,7 +4438,7 @@
 			<duplicateID>1957</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1957</imageNumber>
+			<imageNumber>2012</imageNumber>
 			<releaseNumber>1957</releaseNumber>
 			<title>From the Abyss(CHT)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -4454,7 +4456,7 @@
 			<duplicateID>1957</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1957</imageNumber>
+			<imageNumber>2012</imageNumber>
 			<releaseNumber>1957</releaseNumber>
 			<title>From the Abyss(CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -4472,7 +4474,7 @@
 			<duplicateID>1957</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1964</imageNumber>
+			<imageNumber>2019</imageNumber>
 			<releaseNumber>1964</releaseNumber>
 			<title>Advance Wars - Days of Ruin</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -4490,7 +4492,7 @@
 			<duplicateID>1964</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1970</imageNumber>
+			<imageNumber>2025</imageNumber>
 			<releaseNumber>1970</releaseNumber>
 			<title>Hijouguchi - Exit DS</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -4508,7 +4510,7 @@
 			<duplicateID>1970</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1979</imageNumber>
+			<imageNumber>2034</imageNumber>
 			<releaseNumber>1979</releaseNumber>
 			<title>Sims 2 - Survival, The</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -4526,7 +4528,7 @@
 			<duplicateID>1543</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1981</imageNumber>
+			<imageNumber>2036</imageNumber>
 			<releaseNumber>1981</releaseNumber>
 			<title>Houkago Shounen(CHT)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -4544,7 +4546,7 @@
 			<duplicateID>1981</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1981</imageNumber>
+			<imageNumber>2036</imageNumber>
 			<releaseNumber>1981</releaseNumber>
 			<title>Houkago Shounen(CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -4562,7 +4564,7 @@
 			<duplicateID>1981</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1982</imageNumber>
+			<imageNumber>2037</imageNumber>
 			<releaseNumber>1982</releaseNumber>
 			<title>Simple DS Series Vol. 31 - The Chou-Dangan!! Custom Sensha</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -4580,7 +4582,7 @@
 			<duplicateID>1982</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2022</imageNumber>
+			<imageNumber>2076</imageNumber>
 			<releaseNumber>2022</releaseNumber>
 			<title>Simple DS Series Vol. 32 - The Zombie Crisis</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -4598,7 +4600,7 @@
 			<duplicateID>2022</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2028</imageNumber>
+			<imageNumber>2083</imageNumber>
 			<releaseNumber>2028</releaseNumber>
 			<title>Mushishi - Amefuru Sato</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -4616,7 +4618,7 @@
 			<duplicateID>2028</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2031</imageNumber>
+			<imageNumber>2086</imageNumber>
 			<releaseNumber>2031</releaseNumber>
 			<title>Otometeki Koi Kakumei - Love Revo!! DS</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -4634,7 +4636,7 @@
 			<duplicateID>2031</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2032</imageNumber>
+			<imageNumber>2087</imageNumber>
 			<releaseNumber>2032</releaseNumber>
 			<title>Tokimeki Memorial Girl's Side 2nd Season</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -4652,7 +4654,7 @@
 			<duplicateID>2032</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2037</imageNumber>
+			<imageNumber>2092</imageNumber>
 			<releaseNumber>2037</releaseNumber>
 			<title>Sekaiju no Meikyuu 2 - Shoou no Seihai</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -4670,7 +4672,7 @@
 			<duplicateID>2037</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2042</imageNumber>
+			<imageNumber>2097</imageNumber>
 			<releaseNumber>2042</releaseNumber>
 			<title>Space Invaders Extreme</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -4688,7 +4690,7 @@
 			<duplicateID>2042</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2048</imageNumber>
+			<imageNumber>2103</imageNumber>
 			<releaseNumber>2048</releaseNumber>
 			<title>Bokujou Monogatari - Kira Kira Taiyou to Nakama Tachi</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -4706,7 +4708,7 @@
 			<duplicateID>2048</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2048</imageNumber>
+			<imageNumber>2103</imageNumber>
 			<releaseNumber>2048</releaseNumber>
 			<title>Bokujou Monogatari - Kira Kira Taiyou to Nakama Tachi</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -4724,7 +4726,7 @@
 			<duplicateID>2048</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2048</imageNumber>
+			<imageNumber>2103</imageNumber>
 			<releaseNumber>2048</releaseNumber>
 			<title>Bokujou Monogatari - Kira Kira Taiyou to Nakama Tachi</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -4742,7 +4744,7 @@
 			<duplicateID>2048</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2048</imageNumber>
+			<imageNumber>2103</imageNumber>
 			<releaseNumber>2048</releaseNumber>
 			<title>Bokujou Monogatari - Kira Kira Taiyou to Nakama Tachi</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -4760,7 +4762,7 @@
 			<duplicateID>2048</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2048</imageNumber>
+			<imageNumber>2103</imageNumber>
 			<releaseNumber>2048</releaseNumber>
 			<title>Bokujou Monogatari - Kira Kira Taiyou to Nakama Tachi</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -4778,7 +4780,7 @@
 			<duplicateID>2048</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2048</imageNumber>
+			<imageNumber>2103</imageNumber>
 			<releaseNumber>2048</releaseNumber>
 			<title>Bokujou Monogatari - Kira Kira Taiyou to Nakama Tachi</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -4796,7 +4798,7 @@
 			<duplicateID>2048</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2048</imageNumber>
+			<imageNumber>2103</imageNumber>
 			<releaseNumber>2048</releaseNumber>
 			<title>Bokujou Monogatari - Kira Kira Taiyou to Nakama Tachi</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -4814,7 +4816,7 @@
 			<duplicateID>2048</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2049</imageNumber>
+			<imageNumber>2104</imageNumber>
 			<releaseNumber>2049</releaseNumber>
 			<title>Dekiru Otoko no Mote Life - Yoru no Mote Jissen Hen</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -4832,7 +4834,7 @@
 			<duplicateID>2049</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2058</imageNumber>
+			<imageNumber>2113</imageNumber>
 			<releaseNumber>2058</releaseNumber>
 			<title>Soma Bringer(CHT)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -4850,7 +4852,7 @@
 			<duplicateID>2058</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2058</imageNumber>
+			<imageNumber>2113</imageNumber>
 			<releaseNumber>2058</releaseNumber>
 			<title>Soma Bringer(CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -4868,7 +4870,7 @@
 			<duplicateID>2058</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2064</imageNumber>
+			<imageNumber>2119</imageNumber>
 			<releaseNumber>2064</releaseNumber>
 			<title>Keiji J.B. Harold no Jikenbo - Satsujin Club</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -4886,7 +4888,7 @@
 			<duplicateID>2064</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2068</imageNumber>
+			<imageNumber>2123</imageNumber>
 			<releaseNumber>2068</releaseNumber>
 			<title>Bubble Bobble Double Shot</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -4904,7 +4906,7 @@
 			<duplicateID>901</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2085</imageNumber>
+			<imageNumber>2141</imageNumber>
 			<releaseNumber>2085</releaseNumber>
 			<title>Dekiru Otoko no Mote Life - Hiru no Mote Kouza Hen</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -4922,7 +4924,7 @@
 			<duplicateID>2085</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2104</imageNumber>
+			<imageNumber>2161</imageNumber>
 			<releaseNumber>2104</releaseNumber>
 			<title>Chou-Gekijou-Ban Keroro Gunsou 3 - Tenkuu Daibouken de Arimasu!</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -4940,7 +4942,7 @@
 			<duplicateID>2104</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2130</imageNumber>
+			<imageNumber>2188</imageNumber>
 			<releaseNumber>2130</releaseNumber>
 			<title>Kage Densetsu - The Legend of Kage 2</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -4958,7 +4960,7 @@
 			<duplicateID>2130</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2134</imageNumber>
+			<imageNumber>2192</imageNumber>
 			<releaseNumber>2134</releaseNumber>
 			<title>Contra - Dual Spirits</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -4976,7 +4978,7 @@
 			<duplicateID>1662</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2145</imageNumber>
+			<imageNumber>2203</imageNumber>
 			<releaseNumber>2145</releaseNumber>
 			<title>SuperLite 2500 - Tokyo Odaiba Casino</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -4994,7 +4996,7 @@
 			<duplicateID>2145</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2157</imageNumber>
+			<imageNumber>2215</imageNumber>
 			<releaseNumber>2157</releaseNumber>
 			<title>Dramatic Dungeon Sakura Taisen - Kimi Arugatame</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -5012,7 +5014,7 @@
 			<duplicateID>2157</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2157</imageNumber>
+			<imageNumber>2215</imageNumber>
 			<releaseNumber>2157</releaseNumber>
 			<title>Dramatic Dungeon Sakura Taisen - Kimi Arugatame</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -5030,7 +5032,7 @@
 			<duplicateID>2157</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2160</imageNumber>
+			<imageNumber>2218</imageNumber>
 			<releaseNumber>2160</releaseNumber>
 			<title>Zoo Tycoon 2 DS</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -5048,7 +5050,7 @@
 			<duplicateID>1994</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2162</imageNumber>
+			<imageNumber>2220</imageNumber>
 			<releaseNumber>2162</releaseNumber>
 			<title>Pokemon Ranger - Batonnage</title>
 			<saveType>Flash - 2 mbit</saveType>
@@ -5066,7 +5068,7 @@
 			<duplicateID>2162</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2163</imageNumber>
+			<imageNumber>2221</imageNumber>
 			<releaseNumber>2163</releaseNumber>
 			<title>Ninja Gaiden Dragon Sword</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -5084,7 +5086,7 @@
 			<duplicateID>2163</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2168</imageNumber>
+			<imageNumber>2226</imageNumber>
 			<releaseNumber>2168</releaseNumber>
 			<title>Ys DS</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -5102,7 +5104,7 @@
 			<duplicateID>2168</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2169</imageNumber>
+			<imageNumber>2227</imageNumber>
 			<releaseNumber>2169</releaseNumber>
 			<title>Ys 2 DS</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -5120,7 +5122,7 @@
 			<duplicateID>2169</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2172</imageNumber>
+			<imageNumber>2230</imageNumber>
 			<releaseNumber>2172</releaseNumber>
 			<title>Kekkaishi - Kokubourou Shuurai</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -5138,7 +5140,7 @@
 			<duplicateID>2172</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2175</imageNumber>
+			<imageNumber>2233</imageNumber>
 			<releaseNumber>2175</releaseNumber>
 			<title>Bakousou Dekotora Densetsu Black</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -5156,7 +5158,7 @@
 			<duplicateID>2175</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2187</imageNumber>
+			<imageNumber>2245</imageNumber>
 			<releaseNumber>2187</releaseNumber>
 			<title>Kidou Senshi Gundam 00 CHS</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -5174,7 +5176,7 @@
 			<duplicateID>2187</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2203</imageNumber>
+			<imageNumber>2261</imageNumber>
 			<releaseNumber>2203</releaseNumber>
 			<title>Simple DS Series Vol. 35 - The Genshijin</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -5192,7 +5194,7 @@
 			<duplicateID>2203</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2208</imageNumber>
+			<imageNumber>2266</imageNumber>
 			<releaseNumber>2208</releaseNumber>
 			<title>Puchi Eva - Evangelion at Game</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -5210,7 +5212,7 @@
 			<duplicateID>2208</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2226</imageNumber>
+			<imageNumber>2287</imageNumber>
 			<releaseNumber>2226</releaseNumber>
 			<title>Shion no Ou</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -5228,7 +5230,7 @@
 			<duplicateID>2226</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2229</imageNumber>
+			<imageNumber>2290</imageNumber>
 			<releaseNumber>2229</releaseNumber>
 			<title>Spitfire Heroes - Tales of the Royal Air Force</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -5246,7 +5248,7 @@
 			<duplicateID>2229</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2243</imageNumber>
+			<imageNumber>2304</imageNumber>
 			<releaseNumber>2243</releaseNumber>
 			<title>Pokemon Mystery Dungeon - Explorers of Darkness</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -5264,7 +5266,7 @@
 			<duplicateID>1399</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2244</imageNumber>
+			<imageNumber>2305</imageNumber>
 			<releaseNumber>2244</releaseNumber>
 			<title>Pokemon Mystery Dungeon - Explorers of Time</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -5282,7 +5284,7 @@
 			<duplicateID>1402</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2257</imageNumber>
+			<imageNumber>2318</imageNumber>
 			<releaseNumber>2257</releaseNumber>
 			<title>Meitantei Conan - Kieta Hakase to Machigai Sagashi no Tou (CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -5300,7 +5302,7 @@
 			<duplicateID>2257</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2274</imageNumber>
+			<imageNumber>2335</imageNumber>
 			<releaseNumber>2274</releaseNumber>
 			<title>Toy Shop</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -5318,7 +5320,7 @@
 			<duplicateID>2274</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2278</imageNumber>
+			<imageNumber>2339</imageNumber>
 			<releaseNumber>2278</releaseNumber>
 			<title>Yume Neko DS</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -5336,7 +5338,7 @@
 			<duplicateID>2278</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2304</imageNumber>
+			<imageNumber>2366</imageNumber>
 			<releaseNumber>2304</releaseNumber>
 			<title>Luminous Arc 2 - Will</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -5354,7 +5356,7 @@
 			<duplicateID>2304</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2307</imageNumber>
+			<imageNumber>2369</imageNumber>
 			<releaseNumber>2307</releaseNumber>
 			<title>Dungeon of Windaria</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -5372,7 +5374,7 @@
 			<duplicateID>2307</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2326</imageNumber>
+			<imageNumber>2389</imageNumber>
 			<releaseNumber>2326</releaseNumber>
 			<title>Mugen no Frontier - Super Robot Taisen OG Saga(CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -5390,7 +5392,7 @@
 			<duplicateID>2326</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2326</imageNumber>
+			<imageNumber>2389</imageNumber>
 			<releaseNumber>2326</releaseNumber>
 			<title>Mugen no Frontier - Super Robot Taisen OG Saga(CHS)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -5408,7 +5410,7 @@
 			<duplicateID>2326</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2327</imageNumber>
+			<imageNumber>2390</imageNumber>
 			<releaseNumber>2327</releaseNumber>
 			<title>1500 DS Spirits Vol. 10 - Igo</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -5426,7 +5428,7 @@
 			<duplicateID>2327</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2344</imageNumber>
+			<imageNumber>2407</imageNumber>
 			<releaseNumber>2344</releaseNumber>
 			<title>99 no Namida</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -5444,7 +5446,7 @@
 			<duplicateID>2344</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2358</imageNumber>
+			<imageNumber>2421</imageNumber>
 			<releaseNumber>2358</releaseNumber>
 			<title>Zombie Shiki - Eigo Ryoku Sosei Jutsu - English of the Dead</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -5462,7 +5464,7 @@
 			<duplicateID>2358</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2378</imageNumber>
+			<imageNumber>2441</imageNumber>
 			<releaseNumber>2378</releaseNumber>
 			<title>Spectral Force Genesis</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -5480,7 +5482,7 @@
 			<duplicateID>2378</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2400</imageNumber>
+			<imageNumber>2464</imageNumber>
 			<releaseNumber>2400</releaseNumber>
 			<title>Kunitori Zunou Battle - Nobunaga no Yabou</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -5498,7 +5500,7 @@
 			<duplicateID>2400</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2401</imageNumber>
+			<imageNumber>2465</imageNumber>
 			<releaseNumber>2401</releaseNumber>
 			<title>Makai Senki Disgaea - Makai no Ouji to Akai Tsuki</title>
 			<saveType>Flash - 4 Mbit</saveType>
@@ -5516,7 +5518,7 @@
 			<duplicateID>2401</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2404</imageNumber>
+			<imageNumber>2468</imageNumber>
 			<releaseNumber>2404</releaseNumber>
 			<title>Ookami to Koushinryou - Boku to Horo no Ichinen</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -5534,7 +5536,7 @@
 			<duplicateID>2404</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2420</imageNumber>
+			<imageNumber>2484</imageNumber>
 			<releaseNumber>2420</releaseNumber>
 			<title>Nanashi no Geemu</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -5552,7 +5554,7 @@
 			<duplicateID>2420</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2437</imageNumber>
+			<imageNumber>2501</imageNumber>
 			<releaseNumber>2437</releaseNumber>
 			<title>Jigsaw World - Daigekitou! Jig-Battle Heroes</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -5570,7 +5572,7 @@
 			<duplicateID>2437</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2454</imageNumber>
+			<imageNumber>2518</imageNumber>
 			<releaseNumber>2454</releaseNumber>
 			<title>Gegege no Kitarou - Youkai Daigekisen</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -5588,7 +5590,7 @@
 			<duplicateID>2454</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2455</imageNumber>
+			<imageNumber>2519</imageNumber>
 			<releaseNumber>2455</releaseNumber>
 			<title>Simple DS Series Vol.42 - The Haioku Byoutou</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -5606,7 +5608,7 @@
 			<duplicateID>2455</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2466</imageNumber>
+			<imageNumber>2531</imageNumber>
 			<releaseNumber>2466</releaseNumber>
 			<title>Metal Slug 7(CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -5624,7 +5626,7 @@
 			<duplicateID>2466</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2466</imageNumber>
+			<imageNumber>2531</imageNumber>
 			<releaseNumber>2466</releaseNumber>
 			<title>Metal Slug 7(CHS)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -5642,7 +5644,7 @@
 			<duplicateID>2466</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2472</imageNumber>
+			<imageNumber>2537</imageNumber>
 			<releaseNumber>2472</releaseNumber>
 			<title>Dragon Quest V - Tenkuu no Hanayome</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -5660,7 +5662,7 @@
 			<duplicateID>2472</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2472</imageNumber>
+			<imageNumber>2537</imageNumber>
 			<releaseNumber>2472</releaseNumber>
 			<title>Dragon Quest V - Tenkuu no Hanayome</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -5678,7 +5680,7 @@
 			<duplicateID>2472</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2478</imageNumber>
+			<imageNumber>2543</imageNumber>
 			<releaseNumber>2478</releaseNumber>
 			<title>Hello Kitty no Panda Sports Stadium</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -5696,7 +5698,7 @@
 			<duplicateID>2478</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2509</imageNumber>
+			<imageNumber>2574</imageNumber>
 			<releaseNumber>2509</releaseNumber>
 			<title>Twilight Syndrome - Kinjirareta Toshi Densetsu(CHS)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -5714,7 +5716,7 @@
 			<duplicateID>2509</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2509</imageNumber>
+			<imageNumber>2574</imageNumber>
 			<releaseNumber>2509</releaseNumber>
 			<title>Twilight Syndrome - Kinjirareta Toshi Densetsu(CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -5732,7 +5734,7 @@
 			<duplicateID>2509</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2514</imageNumber>
+			<imageNumber>2579</imageNumber>
 			<releaseNumber>2514</releaseNumber>
 			<title>KORG DS-10 - Synthesizer</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -5750,7 +5752,7 @@
 			<duplicateID>2514</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2524</imageNumber>
+			<imageNumber>2589</imageNumber>
 			<releaseNumber>2524</releaseNumber>
 			<title>Steal Princess - Touzoku Koujo</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -5768,7 +5770,7 @@
 			<duplicateID>2524</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2528</imageNumber>
+			<imageNumber>2593</imageNumber>
 			<releaseNumber>2528</releaseNumber>
 			<title>Rune Factory 2 (v01)</title>
 			<saveType>Flash - 4 Mbit</saveType>
@@ -5786,7 +5788,7 @@
 			<duplicateID>1893</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2528</imageNumber>
+			<imageNumber>2593</imageNumber>
 			<releaseNumber>2528</releaseNumber>
 			<title>Rune Factory 2 (v01)</title>
 			<saveType>Flash - 4 Mbit</saveType>
@@ -5804,7 +5806,7 @@
 			<duplicateID>1893</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2531</imageNumber>
+			<imageNumber>2596</imageNumber>
 			<releaseNumber>2531</releaseNumber>
 			<title>Lemuore no Renkinjutsushi</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -5822,7 +5824,7 @@
 			<duplicateID>2531</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2532</imageNumber>
+			<imageNumber>2597</imageNumber>
 			<releaseNumber>2532</releaseNumber>
 			<title>Mezase! Koushien</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -5840,7 +5842,7 @@
 			<duplicateID>2532</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2533</imageNumber>
+			<imageNumber>2598</imageNumber>
 			<releaseNumber>2533</releaseNumber>
 			<title>Panda-San Nikki</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -5858,7 +5860,7 @@
 			<duplicateID>2533</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2534</imageNumber>
+			<imageNumber>2599</imageNumber>
 			<releaseNumber>2534</releaseNumber>
 			<title>Windy x Windam CHS 50%</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -5876,7 +5878,7 @@
 			<duplicateID>2534</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2536</imageNumber>
+			<imageNumber>2602</imageNumber>
 			<releaseNumber>2536</releaseNumber>
 			<title>Moetan DS</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -5894,7 +5896,7 @@
 			<duplicateID>2536</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2537</imageNumber>
+			<imageNumber>2601</imageNumber>
 			<releaseNumber>2537</releaseNumber>
 			<title>Touch de Taikyaku! Yawaraka Sensha</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -5912,7 +5914,7 @@
 			<duplicateID>2537</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2541</imageNumber>
+			<imageNumber>2606</imageNumber>
 			<releaseNumber>2541</releaseNumber>
 			<title>Fire Emblem - Shin Ankokuryuu to Hikari no Ken</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -5930,7 +5932,7 @@
 			<duplicateID>2541</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2562</imageNumber>
+			<imageNumber>2627</imageNumber>
 			<releaseNumber>2562</releaseNumber>
 			<title>Shoho kara Hajimeru - Otona no Eitango Renshuu</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -5948,7 +5950,7 @@
 			<duplicateID>2562</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2566</imageNumber>
+			<imageNumber>2631</imageNumber>
 			<releaseNumber>2566</releaseNumber>
 			<title>Kyuukyuu Kyuumei Caduceus 2</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -5966,7 +5968,7 @@
 			<duplicateID>2421</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2579</imageNumber>
+			<imageNumber>2645</imageNumber>
 			<releaseNumber>2579</releaseNumber>
 			<title>Simple DS Series Vol. 39 - The Shouboutai</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -5984,7 +5986,7 @@
 			<duplicateID>2579</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2581</imageNumber>
+			<imageNumber>2647</imageNumber>
 			<releaseNumber>2581</releaseNumber>
 			<title>Sigma Harmonics</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -6002,7 +6004,7 @@
 			<duplicateID>2581</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2583</imageNumber>
+			<imageNumber>2649</imageNumber>
 			<releaseNumber>2583</releaseNumber>
 			<title>Inazuma Eleven</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6020,7 +6022,7 @@
 			<duplicateID>2583</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2601</imageNumber>
+			<imageNumber>2667</imageNumber>
 			<releaseNumber>2601</releaseNumber>
 			<title>Norimono Oukoku DS - You! Unten Shichaina Yo!</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6038,7 +6040,7 @@
 			<duplicateID>2601</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2609</imageNumber>
+			<imageNumber>2675</imageNumber>
 			<releaseNumber>2609</releaseNumber>
 			<title>Harvest Moon DS - Island of Happiness (CHT)</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -6056,7 +6058,7 @@
 			<duplicateID>839</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2609</imageNumber>
+			<imageNumber>2675</imageNumber>
 			<releaseNumber>2609</releaseNumber>
 			<title>Harvest Moon DS - Island of Happiness (CHS)</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -6074,7 +6076,7 @@
 			<duplicateID>839</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2618</imageNumber>
+			<imageNumber>2684</imageNumber>
 			<releaseNumber>2618</releaseNumber>
 			<title>Shinseiki Evangelion - Ayanami Ikusei Keikaku DS with Asuka Hokan Keikaku</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6092,7 +6094,7 @@
 			<duplicateID>2618</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2621</imageNumber>
+			<imageNumber>2687</imageNumber>
 			<releaseNumber>2621</releaseNumber>
 			<title>Touch de Ni Hao - Hitsudan-kun</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -6110,7 +6112,7 @@
 			<duplicateID>2621</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2630</imageNumber>
+			<imageNumber>2696</imageNumber>
 			<releaseNumber>2630</releaseNumber>
 			<title>Chi's Sweet Home - Chi ga Ouchi ni Yattekita!</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6128,7 +6130,7 @@
 			<duplicateID>2630</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2630</imageNumber>
+			<imageNumber>2696</imageNumber>
 			<releaseNumber>2630</releaseNumber>
 			<title>Chi's Sweet Home - Chi ga Ouchi ni Yattekita!</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6146,7 +6148,7 @@
 			<duplicateID>2630</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2631</imageNumber>
+			<imageNumber>2697</imageNumber>
 			<releaseNumber>2631</releaseNumber>
 			<title>Blue Dragon Plus</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -6164,7 +6166,7 @@
 			<duplicateID>2631</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2636</imageNumber>
+			<imageNumber>2702</imageNumber>
 			<releaseNumber>2636</releaseNumber>
 			<title>Johnny no Dasshutsu Daisakusen</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -6182,7 +6184,7 @@
 			<duplicateID>2636</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2641</imageNumber>
+			<imageNumber>2707</imageNumber>
 			<releaseNumber>2641</releaseNumber>
 			<title>Pokemon Platinum (CHT)</title>
 			<saveType>Flash - 4 Mbit</saveType>
@@ -6200,7 +6202,7 @@
 			<duplicateID>2641</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2641</imageNumber>
+			<imageNumber>2707</imageNumber>
 			<releaseNumber>2641</releaseNumber>
 			<title>Pokemon Platinum (CHS)</title>
 			<saveType>Flash - 4 Mbit</saveType>
@@ -6218,7 +6220,7 @@
 			<duplicateID>2641</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2675</imageNumber>
+			<imageNumber>2741</imageNumber>
 			<releaseNumber>2675</releaseNumber>
 			<title>Dragon Ball DS</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6236,7 +6238,7 @@
 			<duplicateID>2675</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2675</imageNumber>
+			<imageNumber>2741</imageNumber>
 			<releaseNumber>2675</releaseNumber>
 			<title>Dragon Ball DS</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6254,7 +6256,7 @@
 			<duplicateID>2675</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2676</imageNumber>
+			<imageNumber>2742</imageNumber>
 			<releaseNumber>2676</releaseNumber>
 			<title>Yajuu Deka - Tokyo Douji Tahatsu Terror wo Chinatsu Seyo!(CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6272,7 +6274,7 @@
 			<duplicateID>2676</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2676</imageNumber>
+			<imageNumber>2742</imageNumber>
 			<releaseNumber>2676</releaseNumber>
 			<title>Yajuu Deka - Tokyo Douji Tahatsu Terror wo Chinatsu Seyo!(CHS)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6290,7 +6292,7 @@
 			<duplicateID>2676</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2685</imageNumber>
+			<imageNumber>2751</imageNumber>
 			<releaseNumber>2685</releaseNumber>
 			<title>Soul Bubbles</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -6308,7 +6310,7 @@
 			<duplicateID>2359</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2695</imageNumber>
+			<imageNumber>2762</imageNumber>
 			<releaseNumber>2695</releaseNumber>
 			<title>Kumatan Chi</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -6326,7 +6328,7 @@
 			<duplicateID>2695</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2695</imageNumber>
+			<imageNumber>2762</imageNumber>
 			<releaseNumber>2695</releaseNumber>
 			<title>Kumatan Chi</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -6344,7 +6346,7 @@
 			<duplicateID>2695</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2711</imageNumber>
+			<imageNumber>2778</imageNumber>
 			<releaseNumber>2711</releaseNumber>
 			<title>Gabu Gabu Planet</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -6362,7 +6364,7 @@
 			<duplicateID>2711</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2712</imageNumber>
+			<imageNumber>2779</imageNumber>
 			<releaseNumber>2712</releaseNumber>
 			<title>Gyakkyou Burai Kaiji - Death or Survival</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6380,7 +6382,7 @@
 			<duplicateID>2712</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2713</imageNumber>
+			<imageNumber>2780</imageNumber>
 			<releaseNumber>2713</releaseNumber>
 			<title>Princess Maker 4 DS - Special Edition</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6398,7 +6400,7 @@
 			<duplicateID>2713</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2738</imageNumber>
+			<imageNumber>2805</imageNumber>
 			<releaseNumber>2738</releaseNumber>
 			<title>Unknown Soldier - Mokuba no Houkou(CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6416,7 +6418,7 @@
 			<duplicateID>2738</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2738</imageNumber>
+			<imageNumber>2805</imageNumber>
 			<releaseNumber>2738</releaseNumber>
 			<title>Unknown Soldier - Mokuba no Houkou(CHS)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6434,7 +6436,7 @@
 			<duplicateID>2738</duplicateID>
 		</game>
 		<game>
-			<imageNumber>95204</imageNumber>
+			<imageNumber>2759</imageNumber>
 			<releaseNumber>95204</releaseNumber>
 			<title>Game &amp; Watch Collection 2 (Club Nintendo)</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -6452,7 +6454,7 @@
 			<duplicateID>95204</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2744</imageNumber>
+			<imageNumber>2811</imageNumber>
 			<releaseNumber>2744</releaseNumber>
 			<title>Crazy Machines</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -6470,7 +6472,7 @@
 			<duplicateID>2744</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2776</imageNumber>
+			<imageNumber>2843</imageNumber>
 			<releaseNumber>2776</releaseNumber>
 			<title>Culdcept DS</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -6488,7 +6490,7 @@
 			<duplicateID>2776</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2784</imageNumber>
+			<imageNumber>2851</imageNumber>
 			<releaseNumber>2784</releaseNumber>
 			<title>Away - Shuffle Dungeon</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6506,7 +6508,7 @@
 			<duplicateID>2784</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2797</imageNumber>
+			<imageNumber>2864</imageNumber>
 			<releaseNumber>2797</releaseNumber>
 			<title>Kimino Yusha</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -6524,7 +6526,7 @@
 			<duplicateID>2797</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2803</imageNumber>
+			<imageNumber>2870</imageNumber>
 			<releaseNumber>2803</releaseNumber>
 			<title>Akumajou Dracula - Ubawareta Kokuin (CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6542,7 +6544,7 @@
 			<duplicateID>2803</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2803</imageNumber>
+			<imageNumber>2870</imageNumber>
 			<releaseNumber>2803</releaseNumber>
 			<title>Akumajou Dracula - Ubawareta Kokuin(CHS)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6560,7 +6562,7 @@
 			<duplicateID>2803</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2803</imageNumber>
+			<imageNumber>2870</imageNumber>
 			<releaseNumber>2803</releaseNumber>
 			<title>Akumajou Dracula - Ubawareta Kokuin</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6578,7 +6580,7 @@
 			<duplicateID>2803</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2812</imageNumber>
+			<imageNumber>2879</imageNumber>
 			<releaseNumber>2812</releaseNumber>
 			<title>Ketsui - Death Label</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -6596,7 +6598,7 @@
 			<duplicateID>2812</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2814</imageNumber>
+			<imageNumber>2881</imageNumber>
 			<releaseNumber>2814</releaseNumber>
 			<title>Galileo (CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6614,7 +6616,7 @@
 			<duplicateID>2814</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2814</imageNumber>
+			<imageNumber>2881</imageNumber>
 			<releaseNumber>2814</releaseNumber>
 			<title>Galileo (CHS)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6632,7 +6634,7 @@
 			<duplicateID>2814</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2815</imageNumber>
+			<imageNumber>2882</imageNumber>
 			<releaseNumber>2815</releaseNumber>
 			<title>Soul Eater - Medusa no Inbou(CHS)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6650,7 +6652,7 @@
 			<duplicateID>2815</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2815</imageNumber>
+			<imageNumber>2882</imageNumber>
 			<releaseNumber>2815</releaseNumber>
 			<title>Soul Eater - Medusa no Inbou(CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6668,7 +6670,7 @@
 			<duplicateID>2815</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2816</imageNumber>
+			<imageNumber>2883</imageNumber>
 			<releaseNumber>2816</releaseNumber>
 			<title>Saihai no Yukue</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6686,7 +6688,7 @@
 			<duplicateID>2816</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2845</imageNumber>
+			<imageNumber>2915</imageNumber>
 			<releaseNumber>2845</releaseNumber>
 			<title>Dr. Slump Arale Chan</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6704,7 +6706,7 @@
 			<duplicateID>2845</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2853</imageNumber>
+			<imageNumber>2923</imageNumber>
 			<releaseNumber>2853</releaseNumber>
 			<title>Valkyrie Profile - Toga wo Seou Mono</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -6722,7 +6724,7 @@
 			<duplicateID>2853</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2854</imageNumber>
+			<imageNumber>2924</imageNumber>
 			<releaseNumber>2854</releaseNumber>
 			<title>Avalon Code</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -6740,7 +6742,7 @@
 			<duplicateID>2854</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2854</imageNumber>
+			<imageNumber>2924</imageNumber>
 			<releaseNumber>2854</releaseNumber>
 			<title>Avalon Code (Big 1.2)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -6758,7 +6760,7 @@
 			<duplicateID>2854</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2873</imageNumber>
+			<imageNumber>2944</imageNumber>
 			<releaseNumber>2873</releaseNumber>
 			<title>Nostalgeo no Kaze(CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -6776,7 +6778,7 @@
 			<duplicateID>2873</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2873</imageNumber>
+			<imageNumber>2944</imageNumber>
 			<releaseNumber>2873</releaseNumber>
 			<title>Nostalgeo no Kaze(CHT)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -6794,7 +6796,7 @@
 			<duplicateID>2873</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2905</imageNumber>
+			<imageNumber>2976</imageNumber>
 			<releaseNumber>2905</releaseNumber>
 			<title>Call of Duty - World at War</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -6812,7 +6814,7 @@
 			<duplicateID>2905</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2928</imageNumber>
+			<imageNumber>3004</imageNumber>
 			<releaseNumber>2928</releaseNumber>
 			<title>Elminage DS Remix - Yami no Miko to Kamigami no Yubiwa</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -6830,7 +6832,7 @@
 			<duplicateID>2928</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2949</imageNumber>
+			<imageNumber>3027</imageNumber>
 			<releaseNumber>2949</releaseNumber>
 			<title>Chrono Trigger(CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -6848,7 +6850,7 @@
 			<duplicateID>2949</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2981</imageNumber>
+			<imageNumber>3059</imageNumber>
 			<releaseNumber>2981</releaseNumber>
 			<title>Robocalypse</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6866,7 +6868,7 @@
 			<duplicateID>2981</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3049</imageNumber>
+			<imageNumber>3127</imageNumber>
 			<releaseNumber>3049</releaseNumber>
 			<title>Layton Kyouju to Saigo no Jikan Ryokou(CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6884,7 +6886,7 @@
 			<duplicateID>3049</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3049</imageNumber>
+			<imageNumber>3127</imageNumber>
 			<releaseNumber>3049</releaseNumber>
 			<title>Layton Kyouju to Saigo no Jikan Ryokou(CHS)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6902,7 +6904,7 @@
 			<duplicateID>3049</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3067</imageNumber>
+			<imageNumber>3145</imageNumber>
 			<releaseNumber>3067</releaseNumber>
 			<title>Keiji J.B. Harold no Jikenbo - Manhattan Requiem Kiss of Murder</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6920,7 +6922,7 @@
 			<duplicateID>3067</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3069</imageNumber>
+			<imageNumber>3147</imageNumber>
 			<releaseNumber>3069</releaseNumber>
 			<title>Simple DS Series Vol. 45 - The Misshitsu Kara no Dasshutsu 2</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6938,7 +6940,7 @@
 			<duplicateID>3069</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3069</imageNumber>
+			<imageNumber>3147</imageNumber>
 			<releaseNumber>3069</releaseNumber>
 			<title>Simple DS Series Vol. 45 - The Misshitsu Kara no Dasshutsu 2</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -6956,7 +6958,7 @@
 			<duplicateID>3069</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3087</imageNumber>
+			<imageNumber>3165</imageNumber>
 			<releaseNumber>3087</releaseNumber>
 			<title>Conveni DS - Otona no Keieiryoku Training, The</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -6974,7 +6976,7 @@
 			<duplicateID>3087</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3090</imageNumber>
+			<imageNumber>3168</imageNumber>
 			<releaseNumber>3090</releaseNumber>
 			<title>Professor Heinz Wolff's Gravity(CHT)</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -6992,7 +6994,7 @@
 			<duplicateID>3090</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3090</imageNumber>
+			<imageNumber>3168</imageNumber>
 			<releaseNumber>3090</releaseNumber>
 			<title>Professor Heinz Wolff's Gravity(CHS)</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -7010,7 +7012,7 @@
 			<duplicateID>3090</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3107</imageNumber>
+			<imageNumber>3185</imageNumber>
 			<releaseNumber>3107</releaseNumber>
 			<title>Prince of Persia - The Fallen King</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -7028,7 +7030,7 @@
 			<duplicateID>3107</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3111</imageNumber>
+			<imageNumber>3189</imageNumber>
 			<releaseNumber>3111</releaseNumber>
 			<title>Princess on Ice</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -7046,7 +7048,7 @@
 			<duplicateID>2237</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3145</imageNumber>
+			<imageNumber>3225</imageNumber>
 			<releaseNumber>3145</releaseNumber>
 			<title>Puzzle Mate - Nanpure Mate</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -7064,7 +7066,7 @@
 			<duplicateID>3145</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3153</imageNumber>
+			<imageNumber>3233</imageNumber>
 			<releaseNumber>3153</releaseNumber>
 			<title>Elebits - Kai to Zero no Fushigi na Tabi(CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -7082,7 +7084,7 @@
 			<duplicateID>3153</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3153</imageNumber>
+			<imageNumber>3233</imageNumber>
 			<releaseNumber>3153</releaseNumber>
 			<title>Elebits - Kai to Zero no Fushigi na Tabi(CHT)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -7100,7 +7102,7 @@
 			<duplicateID>3153</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3161</imageNumber>
+			<imageNumber>3241</imageNumber>
 			<releaseNumber>3161</releaseNumber>
 			<title>Ragnarok Online DS(CHT)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -7118,7 +7120,7 @@
 			<duplicateID>3161</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3161</imageNumber>
+			<imageNumber>3241</imageNumber>
 			<releaseNumber>3161</releaseNumber>
 			<title>Ragnarok Online DS(CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -7136,7 +7138,7 @@
 			<duplicateID>3161</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3169</imageNumber>
+			<imageNumber>3249</imageNumber>
 			<releaseNumber>3169</releaseNumber>
 			<title>Tales of Hearts - Anime Movie Edition(CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -7154,7 +7156,7 @@
 			<duplicateID>3169</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3169</imageNumber>
+			<imageNumber>3249</imageNumber>
 			<releaseNumber>3169</releaseNumber>
 			<title>Tales of Hearts - Anime Movie Edition(CHT)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -7172,7 +7174,7 @@
 			<duplicateID>3169</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3174</imageNumber>
+			<imageNumber>3254</imageNumber>
 			<releaseNumber>3174</releaseNumber>
 			<title>Tales of Hearts - CG Movie Edition(CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -7190,7 +7192,7 @@
 			<duplicateID>3174</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3174</imageNumber>
+			<imageNumber>3254</imageNumber>
 			<releaseNumber>3174</releaseNumber>
 			<title>Tales of Hearts - CG Movie Edition(CHT)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -7208,7 +7210,7 @@
 			<duplicateID>3174</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3182</imageNumber>
+			<imageNumber>3262</imageNumber>
 			<releaseNumber>3182</releaseNumber>
 			<title>Bokujou Monogatari - Youkoso Kaze no Bazaar(CHS)</title>
 			<saveType>Flash - 2 mbit</saveType>
@@ -7226,7 +7228,7 @@
 			<duplicateID>3182</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3182</imageNumber>
+			<imageNumber>3262</imageNumber>
 			<releaseNumber>3182</releaseNumber>
 			<title>Bokujou Monogatari - Youkoso Kaze no Bazaar(CHS)</title>
 			<saveType>Flash - 2 mbit</saveType>
@@ -7244,7 +7246,7 @@
 			<duplicateID>3182</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3182</imageNumber>
+			<imageNumber>3262</imageNumber>
 			<releaseNumber>3182</releaseNumber>
 			<title>Bokujou Monogatari - Youkoso Kaze no Bazaar(CHT)</title>
 			<saveType>Flash - 2 mbit</saveType>
@@ -7262,7 +7264,7 @@
 			<duplicateID>3182</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3182</imageNumber>
+			<imageNumber>3262</imageNumber>
 			<releaseNumber>3182</releaseNumber>
 			<title>Bokujou Monogatari - Youkoso Kaze no Bazaar</title>
 			<saveType>Flash - 2 mbit</saveType>
@@ -7280,7 +7282,7 @@
 			<duplicateID>3182</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3182</imageNumber>
+			<imageNumber>3262</imageNumber>
 			<releaseNumber>3182</releaseNumber>
 			<title>Bokujou Monogatari - Youkoso Kaze no Bazaar</title>
 			<saveType>Flash - 2 mbit</saveType>
@@ -7298,7 +7300,7 @@
 			<duplicateID>3182</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3182</imageNumber>
+			<imageNumber>3262</imageNumber>
 			<releaseNumber>3182</releaseNumber>
 			<title>Bokujou Monogatari - Youkoso Kaze no Bazaar</title>
 			<saveType>Flash - 2 mbit</saveType>
@@ -7316,7 +7318,7 @@
 			<duplicateID>3182</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3182</imageNumber>
+			<imageNumber>3262</imageNumber>
 			<releaseNumber>3182</releaseNumber>
 			<title>Bokujou Monogatari - Youkoso Kaze no Bazaar</title>
 			<saveType>Flash - 2 mbit</saveType>
@@ -7334,7 +7336,7 @@
 			<duplicateID>3182</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3183</imageNumber>
+			<imageNumber>3263</imageNumber>
 			<releaseNumber>3183</releaseNumber>
 			<title>Edogawa Ranpo no Kaijin Nijuu Mensou DS</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -7352,7 +7354,7 @@
 			<duplicateID>3183</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3204</imageNumber>
+			<imageNumber>3284</imageNumber>
 			<releaseNumber>3204</releaseNumber>
 			<title>Toudou Ryuunosuke Tantei Nikki - Kohakuiro no Yuigon</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -7370,7 +7372,7 @@
 			<duplicateID>3204</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3219</imageNumber>
+			<imageNumber>3299</imageNumber>
 			<releaseNumber>3219</releaseNumber>
 			<title>Akai Ito DS</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -7388,7 +7390,7 @@
 			<duplicateID>3219</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3221</imageNumber>
+			<imageNumber>3301</imageNumber>
 			<releaseNumber>3221</releaseNumber>
 			<title>Riz-Zoawd</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -7406,7 +7408,7 @@
 			<duplicateID>3221</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3221</imageNumber>
+			<imageNumber>3301</imageNumber>
 			<releaseNumber>3221</releaseNumber>
 			<title>Riz-Zoawd(CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -7424,7 +7426,7 @@
 			<duplicateID>3221</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3221</imageNumber>
+			<imageNumber>3301</imageNumber>
 			<releaseNumber>3221</releaseNumber>
 			<title>Riz-Zoawd(CHS)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -7442,7 +7444,7 @@
 			<duplicateID>3221</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3261</imageNumber>
+			<imageNumber>3350</imageNumber>
 			<releaseNumber>3261</releaseNumber>
 			<title>Moon</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -7460,7 +7462,7 @@
 			<duplicateID>3261</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3325</imageNumber>
+			<imageNumber>3415</imageNumber>
 			<releaseNumber>3325</releaseNumber>
 			<title>Puzzle Mate DS - Oekaki Mate</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -7478,7 +7480,7 @@
 			<duplicateID>3325</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3332</imageNumber>
+			<imageNumber>3422</imageNumber>
 			<releaseNumber>3332</releaseNumber>
 			<title>Final Fantasy Crystal Chronicles - Echoes of Time(CHT)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -7496,7 +7498,7 @@
 			<duplicateID>3332</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3332</imageNumber>
+			<imageNumber>3422</imageNumber>
 			<releaseNumber>3332</releaseNumber>
 			<title>Final Fantasy Crystal Chronicles - Echoes of Time(CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -7514,7 +7516,7 @@
 			<duplicateID>3332</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3356</imageNumber>
+			<imageNumber>3446</imageNumber>
 			<releaseNumber>3356</releaseNumber>
 			<title>Meitantei Conan &amp; Kindaichi Shounen no Jikenbo - Meguri Au 2-Nin no Meitantei</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -7532,7 +7534,7 @@
 			<duplicateID>3356</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3379</imageNumber>
+			<imageNumber>3469</imageNumber>
 			<releaseNumber>3379</releaseNumber>
 			<title>Saga no Gabaibaa-Chan</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -7550,7 +7552,7 @@
 			<duplicateID>3379</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3432</imageNumber>
+			<imageNumber>3523</imageNumber>
 			<releaseNumber>3432</releaseNumber>
 			<title>Zennou Series Vol. 03 - Akiyama Jin Kyouju Kanshuu - Zennou JinJin 2</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -7568,7 +7570,7 @@
 			<duplicateID>3432</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3464</imageNumber>
+			<imageNumber>3555</imageNumber>
 			<releaseNumber>3464</releaseNumber>
 			<title>Saru Saru DS</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -7586,7 +7588,7 @@
 			<duplicateID>3464</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3499</imageNumber>
+			<imageNumber>3590</imageNumber>
 			<releaseNumber>3499</releaseNumber>
 			<title>Rittai Picross</title>
 			<saveType>Flash - 4 Mbit</saveType>
@@ -7604,7 +7606,7 @@
 			<duplicateID>3499</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3499</imageNumber>
+			<imageNumber>3590</imageNumber>
 			<releaseNumber>3499</releaseNumber>
 			<title>Rittai Picross</title>
 			<saveType>Flash - 4 Mbit</saveType>
@@ -7622,7 +7624,7 @@
 			<duplicateID>3499</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3535</imageNumber>
+			<imageNumber>3626</imageNumber>
 			<releaseNumber>3535</releaseNumber>
 			<title>Super Robot Taisen K(CHT 1.0)</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -7640,7 +7642,7 @@
 			<duplicateID>3535</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3535</imageNumber>
+			<imageNumber>3626</imageNumber>
 			<releaseNumber>3535</releaseNumber>
 			<title>Super Robot Taisen K(CHS 1.0)</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -7658,7 +7660,7 @@
 			<duplicateID>3535</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3538</imageNumber>
+			<imageNumber>3630</imageNumber>
 			<releaseNumber>3538</releaseNumber>
 			<title>Grand Theft Auto - Chinatown Wars</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -7676,7 +7678,7 @@
 			<duplicateID>3517</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3563</imageNumber>
+			<imageNumber>3655</imageNumber>
 			<releaseNumber>3563</releaseNumber>
 			<title>Yu-Gi-Oh! 5D's - Stardust Accelerator - World Championship 2009(CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -7694,7 +7696,7 @@
 			<duplicateID>3563</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3563</imageNumber>
+			<imageNumber>3655</imageNumber>
 			<releaseNumber>3563</releaseNumber>
 			<title>Yu-Gi-Oh! 5D's - Stardust Accelerator - World Championship 2009(CHT)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -7712,7 +7714,7 @@
 			<duplicateID>3563</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3578</imageNumber>
+			<imageNumber>3670</imageNumber>
 			<releaseNumber>3578</releaseNumber>
 			<title>Space Invaders Extreme 2</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -7730,7 +7732,7 @@
 			<duplicateID>3578</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3588</imageNumber>
+			<imageNumber>3680</imageNumber>
 			<releaseNumber>3588</releaseNumber>
 			<title>Rhythm Heaven</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -7748,7 +7750,7 @@
 			<duplicateID>2517</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3588</imageNumber>
+			<imageNumber>3680</imageNumber>
 			<releaseNumber>3588</releaseNumber>
 			<title>Rhythm Heaven</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -7766,7 +7768,7 @@
 			<duplicateID>2517</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3605</imageNumber>
+			<imageNumber>3697</imageNumber>
 			<releaseNumber>3605</releaseNumber>
 			<title>Gardening Mama</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -7784,7 +7786,7 @@
 			<duplicateID>3605</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3665</imageNumber>
+			<imageNumber>3759</imageNumber>
 			<releaseNumber>3665</releaseNumber>
 			<title>Kokoro ga Uruou Birei Aquarium - Sekai no Uo to Ikura-Kujira Tachi</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -7802,7 +7804,7 @@
 			<duplicateID>3665</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3672</imageNumber>
+			<imageNumber>3766</imageNumber>
 			<releaseNumber>3672</releaseNumber>
 			<title>Fuuun! Dairoujou</title>
 			<saveType>TBC</saveType>
@@ -7820,7 +7822,7 @@
 			<duplicateID>3672</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3682</imageNumber>
+			<imageNumber>3776</imageNumber>
 			<releaseNumber>3682</releaseNumber>
 			<title>Last Bullet</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -7838,7 +7840,7 @@
 			<duplicateID>3682</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3689</imageNumber>
+			<imageNumber>3784</imageNumber>
 			<releaseNumber>3689</releaseNumber>
 			<title>Dragon Ball Kai - Saiyajin Raishuu</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -7856,7 +7858,7 @@
 			<duplicateID>3689</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3718</imageNumber>
+			<imageNumber>3812</imageNumber>
 			<releaseNumber>3718</releaseNumber>
 			<title>Ouran Koukou Host-Bu DS</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -7874,7 +7876,7 @@
 			<duplicateID>3718</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3782</imageNumber>
+			<imageNumber>3877</imageNumber>
 			<releaseNumber>3782</releaseNumber>
 			<title>Sloane to MacHale no Nazo no Story(CHT)</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -7892,7 +7894,7 @@
 			<duplicateID>3782</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3782</imageNumber>
+			<imageNumber>3877</imageNumber>
 			<releaseNumber>3782</releaseNumber>
 			<title>Sloane to MacHale no Nazo no Story(CHS)</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -7910,7 +7912,7 @@
 			<duplicateID>3782</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3789</imageNumber>
+			<imageNumber>3884</imageNumber>
 			<releaseNumber>3789</releaseNumber>
 			<title>Ore ga Omae o Mamoru</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -7928,7 +7930,7 @@
 			<duplicateID>3789</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3789</imageNumber>
+			<imageNumber>3884</imageNumber>
 			<releaseNumber>3789</releaseNumber>
 			<title>Ore ga Omae o Mamoru</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -7946,7 +7948,7 @@
 			<duplicateID>3789</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3809</imageNumber>
+			<imageNumber>3904</imageNumber>
 			<releaseNumber>3809</releaseNumber>
 			<title>Gyakuten Kenji</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -7964,7 +7966,7 @@
 			<duplicateID>3809</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3814</imageNumber>
+			<imageNumber>3909</imageNumber>
 			<releaseNumber>3814</releaseNumber>
 			<title>Days of Memories 3</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -7982,7 +7984,7 @@
 			<duplicateID>3814</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3823</imageNumber>
+			<imageNumber>3918</imageNumber>
 			<releaseNumber>3823</releaseNumber>
 			<title>Claymore - Gingan no Majo</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -8000,7 +8002,7 @@
 			<duplicateID>3823</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3850</imageNumber>
+			<imageNumber>3945</imageNumber>
 			<releaseNumber>3850</releaseNumber>
 			<title>LEGO Battles</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -8018,7 +8020,7 @@
 			<duplicateID>3850</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3852</imageNumber>
+			<imageNumber>3947</imageNumber>
 			<releaseNumber>3852</releaseNumber>
 			<title>Majo ni Naru (CHT)</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -8036,7 +8038,7 @@
 			<duplicateID>3852</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3852</imageNumber>
+			<imageNumber>3947</imageNumber>
 			<releaseNumber>3852</releaseNumber>
 			<title>Majo ni Naru (CHS)</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -8054,7 +8056,7 @@
 			<duplicateID>3852</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3898</imageNumber>
+			<imageNumber>3993</imageNumber>
 			<releaseNumber>3898</releaseNumber>
 			<title>Crazy Chicken - Star Karts</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -8072,7 +8074,7 @@
 			<duplicateID>3277</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3908</imageNumber>
+			<imageNumber>4003</imageNumber>
 			<releaseNumber>3908</releaseNumber>
 			<title>Catan</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -8090,7 +8092,7 @@
 			<duplicateID>3908</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3966</imageNumber>
+			<imageNumber>4061</imageNumber>
 			<releaseNumber>3966</releaseNumber>
 			<title>Dragon Quest IX - Hoshizora no Mamoribito(CHT)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -8108,7 +8110,7 @@
 			<duplicateID>3966</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3966</imageNumber>
+			<imageNumber>4061</imageNumber>
 			<releaseNumber>3966</releaseNumber>
 			<title>Dragon Quest IX - Hoshizora no Mamoribito(CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -8126,7 +8128,7 @@
 			<duplicateID>3966</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3966</imageNumber>
+			<imageNumber>4061</imageNumber>
 			<releaseNumber>3966</releaseNumber>
 			<title>Dragon Quest IX - Hoshizora no Mamoribito(CHS for DStwo)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -8144,7 +8146,7 @@
 			<duplicateID>3966</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3983</imageNumber>
+			<imageNumber>4078</imageNumber>
 			<releaseNumber>3983</releaseNumber>
 			<title>Awatama</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -8162,7 +8164,7 @@
 			<duplicateID>2359</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4013</imageNumber>
+			<imageNumber>4110</imageNumber>
 			<releaseNumber>4013</releaseNumber>
 			<title>Okaeri! Chibi-Robo! Happy Rich Oosouji</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -8180,7 +8182,7 @@
 			<duplicateID>4013</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4036</imageNumber>
+			<imageNumber>4133</imageNumber>
 			<releaseNumber>4036</releaseNumber>
 			<title>Puyo Puyo 7</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -8198,7 +8200,7 @@
 			<duplicateID>4036</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4070</imageNumber>
+			<imageNumber>4167</imageNumber>
 			<releaseNumber>4070</releaseNumber>
 			<title>Koisuru Purin! - Koi wa Daibouken! Dr. Kanmi no Yabou!</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -8216,7 +8218,7 @@
 			<duplicateID>4070</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4085</imageNumber>
+			<imageNumber>4183</imageNumber>
 			<releaseNumber>4085</releaseNumber>
 			<title>Blood of Bahamut(CHS)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -8234,7 +8236,7 @@
 			<duplicateID>4085</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4085</imageNumber>
+			<imageNumber>4183</imageNumber>
 			<releaseNumber>4085</releaseNumber>
 			<title>Blood of Bahamut(CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -8252,7 +8254,7 @@
 			<duplicateID>4085</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4096</imageNumber>
+			<imageNumber>4194</imageNumber>
 			<releaseNumber>4096</releaseNumber>
 			<title>Bleach DS 4th - Flame Bringer</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -8270,7 +8272,7 @@
 			<duplicateID>4096</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4100</imageNumber>
+			<imageNumber>4198</imageNumber>
 			<releaseNumber>4100</releaseNumber>
 			<title>Shugo Chara! Norinori! Chara-Nari Zumu</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -8288,7 +8290,7 @@
 			<duplicateID>4100</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4119</imageNumber>
+			<imageNumber>4217</imageNumber>
 			<releaseNumber>4119</releaseNumber>
 			<title>Fushigi Yuugi DS</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -8306,7 +8308,7 @@
 			<duplicateID>4119</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4133</imageNumber>
+			<imageNumber>4231</imageNumber>
 			<releaseNumber>4133</releaseNumber>
 			<title>Nanashi no Game Me</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -8324,7 +8326,7 @@
 			<duplicateID>4133</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4134</imageNumber>
+			<imageNumber>4232</imageNumber>
 			<releaseNumber>4134</releaseNumber>
 			<title>SupaRobo Gakuen</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -8342,7 +8344,7 @@
 			<duplicateID>4134</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4151</imageNumber>
+			<imageNumber>4249</imageNumber>
 			<releaseNumber>4151</releaseNumber>
 			<title>Sloane to MacHale no Nazo no Story 2</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -8360,7 +8362,7 @@
 			<duplicateID>4151</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4152</imageNumber>
+			<imageNumber>4250</imageNumber>
 			<releaseNumber>4152</releaseNumber>
 			<title>Love Plus</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -8378,7 +8380,7 @@
 			<duplicateID>4152</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4152</imageNumber>
+			<imageNumber>4250</imageNumber>
 			<releaseNumber>4152</releaseNumber>
 			<title>Love Plus(CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -8396,7 +8398,7 @@
 			<duplicateID>4152</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4168</imageNumber>
+			<imageNumber>4268</imageNumber>
 			<releaseNumber>4168</releaseNumber>
 			<title>Pokemon - Heart Gold</title>
 			<saveType>Flash - 4 Mbit</saveType>
@@ -8414,7 +8416,7 @@
 			<duplicateID>4168</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4169</imageNumber>
+			<imageNumber>4269</imageNumber>
 			<releaseNumber>4169</releaseNumber>
 			<title>Pokemon - Soul Silver</title>
 			<saveType>Flash - 4 Mbit</saveType>
@@ -8432,7 +8434,7 @@
 			<duplicateID>4169</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4186</imageNumber>
+			<imageNumber>4286</imageNumber>
 			<releaseNumber>4186</releaseNumber>
 			<title>SaGa 2 - Hihou Densetsu - Goddess of Destiny</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -8450,7 +8452,7 @@
 			<duplicateID>4186</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4192</imageNumber>
+			<imageNumber>4292</imageNumber>
 			<releaseNumber>4192</releaseNumber>
 			<title>Kindaichi Shonen no Jikenbo - Akuma no Satsujin Koukai(CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -8468,7 +8470,7 @@
 			<duplicateID>4192</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4192</imageNumber>
+			<imageNumber>4292</imageNumber>
 			<releaseNumber>4192</releaseNumber>
 			<title>Kindaichi Shonen no Jikenbo - Akuma no Satsujin Koukai(CHS)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -8486,7 +8488,7 @@
 			<duplicateID>4192</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4207</imageNumber>
+			<imageNumber>4307</imageNumber>
 			<releaseNumber>4207</releaseNumber>
 			<title>Ookami to Koushinryou - Umi wo Wataru Kaze</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -8504,7 +8506,7 @@
 			<duplicateID>4207</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4208</imageNumber>
+			<imageNumber>4308</imageNumber>
 			<releaseNumber>4208</releaseNumber>
 			<title>Arabians Lost - The Engagement on Desert</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -8522,7 +8524,7 @@
 			<duplicateID>4208</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4259</imageNumber>
+			<imageNumber>4360</imageNumber>
 			<releaseNumber>4259</releaseNumber>
 			<title>Blue Dragon - Ikai no Kyoujuu</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -8540,7 +8542,7 @@
 			<duplicateID>4259</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4273</imageNumber>
+			<imageNumber>4374</imageNumber>
 			<releaseNumber>4273</releaseNumber>
 			<title>Pokemon Mystery Dungeon - Explorers of Sky</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -8558,7 +8560,7 @@
 			<duplicateID>3656</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4284</imageNumber>
+			<imageNumber>4385</imageNumber>
 			<releaseNumber>4284</releaseNumber>
 			<title>Ant Nation</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -8576,7 +8578,7 @@
 			<duplicateID>4195</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4301</imageNumber>
+			<imageNumber>4403</imageNumber>
 			<releaseNumber>4301</releaseNumber>
 			<title>Kimi ni Todoke - Sodateru Omoi</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -8594,7 +8596,7 @@
 			<duplicateID>4301</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4322</imageNumber>
+			<imageNumber>4424</imageNumber>
 			<releaseNumber>4322</releaseNumber>
 			<title>Top Spin 3</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -8612,7 +8614,7 @@
 			<duplicateID>2392</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4329</imageNumber>
+			<imageNumber>4431</imageNumber>
 			<releaseNumber>4329</releaseNumber>
 			<title>Rune Factory 3</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -8630,7 +8632,7 @@
 			<duplicateID>4329</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4329</imageNumber>
+			<imageNumber>4431</imageNumber>
 			<releaseNumber>4329</releaseNumber>
 			<title>Rune Factory 3</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -8648,7 +8650,7 @@
 			<duplicateID>4329</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4329</imageNumber>
+			<imageNumber>4431</imageNumber>
 			<releaseNumber>4329</releaseNumber>
 			<title>Rune Factory 3</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -8666,7 +8668,7 @@
 			<duplicateID>4329</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4345</imageNumber>
+			<imageNumber>4447</imageNumber>
 			<releaseNumber>4345</releaseNumber>
 			<title>Crazy Machines 2</title>
 			<saveType>TBC</saveType>
@@ -8684,7 +8686,7 @@
 			<duplicateID>4345</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4351</imageNumber>
+			<imageNumber>4453</imageNumber>
 			<releaseNumber>4351</releaseNumber>
 			<title>Astro Boy - The Video Game</title>
 			<saveType>TBC</saveType>
@@ -8702,7 +8704,7 @@
 			<duplicateID>4351</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4353</imageNumber>
+			<imageNumber>4455</imageNumber>
 			<releaseNumber>4353</releaseNumber>
 			<title>Hikari no 4 Senshi - Final Fantasy Gaiden</title>
 			<saveType>TBC</saveType>
@@ -8720,7 +8722,7 @@
 			<duplicateID>4353</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4354</imageNumber>
+			<imageNumber>4456</imageNumber>
 			<releaseNumber>4354</releaseNumber>
 			<title>Umihara Kawase Shun - Second Edition Kanzenban</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -8738,7 +8740,7 @@
 			<duplicateID>4354</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4370</imageNumber>
+			<imageNumber>4472</imageNumber>
 			<releaseNumber>4370</releaseNumber>
 			<title>Summon Night X - Tears Crown</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -8756,7 +8758,7 @@
 			<duplicateID>4370</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4424</imageNumber>
+			<imageNumber>4526</imageNumber>
 			<releaseNumber>4424</releaseNumber>
 			<title>Call of Duty - Modern Warfare - Mobilized (Big Font)</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -8774,7 +8776,7 @@
 			<duplicateID>4421</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4424</imageNumber>
+			<imageNumber>4526</imageNumber>
 			<releaseNumber>4424</releaseNumber>
 			<title>Call of Duty - Modern Warfare - Mobilized (Small Font)</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -8792,7 +8794,7 @@
 			<duplicateID>4421</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4492</imageNumber>
+			<imageNumber>4595</imageNumber>
 			<releaseNumber>4492</releaseNumber>
 			<title>Layton Kyouju to Majin no Fue (NDS)</title>
 			<saveType>TBC</saveType>
@@ -8810,7 +8812,7 @@
 			<duplicateID>4492</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4492</imageNumber>
+			<imageNumber>4595</imageNumber>
 			<releaseNumber>4492</releaseNumber>
 			<title>Layton Kyouju to Majin no Fue (Simulator)</title>
 			<saveType>TBC</saveType>
@@ -8828,7 +8830,7 @@
 			<duplicateID>4492</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4514</imageNumber>
+			<imageNumber>4617</imageNumber>
 			<releaseNumber>4514</releaseNumber>
 			<title>Rilakkuma Rhythm - Mattari Kibun de Dararan Ran</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -8846,7 +8848,7 @@
 			<duplicateID>4514</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4527</imageNumber>
+			<imageNumber>4630</imageNumber>
 			<releaseNumber>4527</releaseNumber>
 			<title>Legend of Zelda - Spirit Tracks, The(CHS)</title>
 			<saveType>Flash - 4 Mbit</saveType>
@@ -8864,7 +8866,7 @@
 			<duplicateID>4527</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4527</imageNumber>
+			<imageNumber>4630</imageNumber>
 			<releaseNumber>4527</releaseNumber>
 			<title>Legend of Zelda - Spirit Tracks, The(CHT)</title>
 			<saveType>Flash - 4 Mbit</saveType>
@@ -8882,7 +8884,7 @@
 			<duplicateID>4527</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4527</imageNumber>
+			<imageNumber>4630</imageNumber>
 			<releaseNumber>4527</releaseNumber>
 			<title>Legend of Zelda - Spirit Tracks, The</title>
 			<saveType>Flash - 4 Mbit</saveType>
@@ -8900,7 +8902,7 @@
 			<duplicateID>4527</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4561</imageNumber>
+			<imageNumber>4665</imageNumber>
 			<releaseNumber>4561</releaseNumber>
 			<title>Kyokugen Dasshutsu - 9-jikan, 9-nin, 9 no Tobira</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -8918,7 +8920,7 @@
 			<duplicateID>4561</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4563</imageNumber>
+			<imageNumber>4667</imageNumber>
 			<releaseNumber>4563</releaseNumber>
 			<title>Balloon Pop</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -8936,7 +8938,7 @@
 			<duplicateID>4563</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4606</imageNumber>
+			<imageNumber>4710</imageNumber>
 			<releaseNumber>4606</releaseNumber>
 			<title>Coropata(CHS)</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -8954,7 +8956,7 @@
 			<duplicateID>4606</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4606</imageNumber>
+			<imageNumber>4710</imageNumber>
 			<releaseNumber>4606</releaseNumber>
 			<title>Coropata(CHS)</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -8972,7 +8974,7 @@
 			<duplicateID>4606</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4619</imageNumber>
+			<imageNumber>4723</imageNumber>
 			<releaseNumber>4619</releaseNumber>
 			<title>Hello Kitty no Paku Paku &amp; Logic</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -8990,7 +8992,7 @@
 			<duplicateID>4619</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4642</imageNumber>
+			<imageNumber>4748</imageNumber>
 			<releaseNumber>4642</releaseNumber>
 			<title>Reversal Challenge</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -9008,7 +9010,7 @@
 			<duplicateID>4642</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4654</imageNumber>
+			<imageNumber>4762</imageNumber>
 			<releaseNumber>4654</releaseNumber>
 			<title>Last Window - Mayonaka no Yakusoku</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -9026,7 +9028,7 @@
 			<duplicateID>4654</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4680</imageNumber>
+			<imageNumber>4793</imageNumber>
 			<releaseNumber>4680</releaseNumber>
 			<title>Dragon Quest VI - Maboroshi no Daichi(CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -9044,7 +9046,7 @@
 			<duplicateID>4680</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4680</imageNumber>
+			<imageNumber>4793</imageNumber>
 			<releaseNumber>4680</releaseNumber>
 			<title>Dragon Quest VI - Maboroshi no Daichi(CHT)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -9062,7 +9064,7 @@
 			<duplicateID>4680</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4680</imageNumber>
+			<imageNumber>4793</imageNumber>
 			<releaseNumber>4680</releaseNumber>
 			<title>Dragon Quest VI - Maboroshi no Daichi(CHT)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -9080,7 +9082,7 @@
 			<duplicateID>4680</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4686</imageNumber>
+			<imageNumber>4799</imageNumber>
 			<releaseNumber>4686</releaseNumber>
 			<title>Fast Food Panic</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -9098,7 +9100,7 @@
 			<duplicateID>3839</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4712</imageNumber>
+			<imageNumber>4826</imageNumber>
 			<releaseNumber>4712</releaseNumber>
 			<title>Dragon Ball DS 2 - Totsugeki! Red Ribbon Gun (CHS)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -9116,7 +9118,7 @@
 			<duplicateID>4712</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4712</imageNumber>
+			<imageNumber>4826</imageNumber>
 			<releaseNumber>4712</releaseNumber>
 			<title>Dragon Ball DS 2 - Totsugeki! Red Ribbon Gun (CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -9134,7 +9136,7 @@
 			<duplicateID>4712</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4721</imageNumber>
+			<imageNumber>4836</imageNumber>
 			<releaseNumber>4721</releaseNumber>
 			<title>Yu-Gi-Oh! 5D's - World Championship 2010 - Reverse of Arcadia</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -9152,7 +9154,7 @@
 			<duplicateID>4721</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4736</imageNumber>
+			<imageNumber>4851</imageNumber>
 			<releaseNumber>4736</releaseNumber>
 			<title>Fushigi no Dungeon - Fuurai no Shiren 4 - Kami no Hitomi to Akuma no Heso</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -9170,7 +9172,7 @@
 			<duplicateID>4736</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4742</imageNumber>
+			<imageNumber>4857</imageNumber>
 			<releaseNumber>4742</releaseNumber>
 			<title>Utacchi</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -9188,7 +9190,7 @@
 			<duplicateID>4742</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4742</imageNumber>
+			<imageNumber>4857</imageNumber>
 			<releaseNumber>4742</releaseNumber>
 			<title>Utacchi</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -9206,7 +9208,7 @@
 			<duplicateID>4742</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4762</imageNumber>
+			<imageNumber>4877</imageNumber>
 			<releaseNumber>4762</releaseNumber>
 			<title>Alice in Wonderland (DSi Enhanced)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -9224,7 +9226,7 @@
 			<duplicateID>4762</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4764</imageNumber>
+			<imageNumber>4879</imageNumber>
 			<releaseNumber>4764</releaseNumber>
 			<title>Keroro RPG - Kishi to Musha to Densetsu no Kaizoku</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -9242,7 +9244,7 @@
 			<duplicateID>4764</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4765</imageNumber>
+			<imageNumber>4880</imageNumber>
 			<releaseNumber>4765</releaseNumber>
 			<title>Sonic Classic Collection (DSi Enhanced)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -9260,7 +9262,7 @@
 			<duplicateID>4765</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4789</imageNumber>
+			<imageNumber>4905</imageNumber>
 			<releaseNumber>4789</releaseNumber>
 			<title>RPG Tsukuru DS (DSi Enhanced)</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -9278,7 +9280,7 @@
 			<duplicateID>4789</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4813</imageNumber>
+			<imageNumber>4929</imageNumber>
 			<releaseNumber>4813</releaseNumber>
 			<title>Rooms - The Main Building</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -9296,7 +9298,7 @@
 			<duplicateID>4813</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4829</imageNumber>
+			<imageNumber>4945</imageNumber>
 			<releaseNumber>4829</releaseNumber>
 			<title>Seitokai no Ichizon - DS Suru Seitokai (CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -9314,7 +9316,7 @@
 			<duplicateID>4829</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4829</imageNumber>
+			<imageNumber>4945</imageNumber>
 			<releaseNumber>4829</releaseNumber>
 			<title>Seitokai no Ichizon - DS Suru Seitokai (CHT)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -9332,7 +9334,7 @@
 			<duplicateID>4829</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4829</imageNumber>
+			<imageNumber>4945</imageNumber>
 			<releaseNumber>4829</releaseNumber>
 			<title>Seitokai no Ichizon - DS Suru Seitokai (CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -9350,7 +9352,7 @@
 			<duplicateID>4829</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4853</imageNumber>
+			<imageNumber>4969</imageNumber>
 			<releaseNumber>4853</releaseNumber>
 			<title>Yukkuri Tanoshimu - Otona no Jigsaw Puzzle DS - Watase Seizou - Love Umi to Blue</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -9368,7 +9370,7 @@
 			<duplicateID>4853</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4865</imageNumber>
+			<imageNumber>4981</imageNumber>
 			<releaseNumber>4865</releaseNumber>
 			<title>Marie &amp; Gully no Let's Science</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -9386,7 +9388,7 @@
 			<duplicateID>4865</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4894</imageNumber>
+			<imageNumber>5010</imageNumber>
 			<releaseNumber>4894</releaseNumber>
 			<title>Maple Story DS (CHS)</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -9404,7 +9406,7 @@
 			<duplicateID>4894</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4894</imageNumber>
+			<imageNumber>5010</imageNumber>
 			<releaseNumber>4894</releaseNumber>
 			<title>Maple Story DS (CHT)</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -9422,7 +9424,7 @@
 			<duplicateID>4894</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4899</imageNumber>
+			<imageNumber>5015</imageNumber>
 			<releaseNumber>4899</releaseNumber>
 			<title>Dragon Quest Monsters - Joker 2</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -9440,7 +9442,7 @@
 			<duplicateID>4899</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4932</imageNumber>
+			<imageNumber>5048</imageNumber>
 			<releaseNumber>4932</releaseNumber>
 			<title>Dementium II</title>
 			<saveType>TBC</saveType>
@@ -9458,7 +9460,7 @@
 			<duplicateID>4932</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4958</imageNumber>
+			<imageNumber>5074</imageNumber>
 			<releaseNumber>4958</releaseNumber>
 			<title>Captain Tsubasa - Gekitou no Kiseki</title>
 			<saveType>TBC</saveType>
@@ -9476,7 +9478,7 @@
 			<duplicateID>4958</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5017</imageNumber>
+			<imageNumber>5135</imageNumber>
 			<releaseNumber>5017</releaseNumber>
 			<title>Ghost Trick (Imitation of the original font)</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -9494,7 +9496,7 @@
 			<duplicateID>5017</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5017</imageNumber>
+			<imageNumber>5135</imageNumber>
 			<releaseNumber>5017</releaseNumber>
 			<title>Ghost Trick (Times New Roman)</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -9512,7 +9514,7 @@
 			<duplicateID>5017</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5049</imageNumber>
+			<imageNumber>5167</imageNumber>
 			<releaseNumber>5049</releaseNumber>
 			<title>Taiko no Tatsujin DS - Dororon! Yokai Daikessen!!</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -9530,7 +9532,7 @@
 			<duplicateID>5049</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5052</imageNumber>
+			<imageNumber>5170</imageNumber>
 			<releaseNumber>5052</releaseNumber>
 			<title>Eigokoro Kyoushitsu DS (DSi Enhanced)(CHT)</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -9548,7 +9550,7 @@
 			<duplicateID>5052</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5052</imageNumber>
+			<imageNumber>5170</imageNumber>
 			<releaseNumber>5052</releaseNumber>
 			<title>Eigokoro Kyoushitsu DS (DSi Enhanced)(CHT XL)</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -9566,7 +9568,7 @@
 			<duplicateID>5052</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5052</imageNumber>
+			<imageNumber>5170</imageNumber>
 			<releaseNumber>5052</releaseNumber>
 			<title>Eigokoro Kyoushitsu DS (DSi Enhanced)(CHS)</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -9584,7 +9586,7 @@
 			<duplicateID>5052</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5052</imageNumber>
+			<imageNumber>5170</imageNumber>
 			<releaseNumber>5052</releaseNumber>
 			<title>Eigokoro Kyoushitsu DS (DSi Enhanced)(CHS XL)</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -9602,7 +9604,7 @@
 			<duplicateID>5052</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5073</imageNumber>
+			<imageNumber>5193</imageNumber>
 			<releaseNumber>5073</releaseNumber>
 			<title>Bokujou Monogatari - Futago no Mura</title>
 			<saveType>TBC</saveType>
@@ -9620,7 +9622,7 @@
 			<duplicateID>5073</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5116</imageNumber>
+			<imageNumber>5241</imageNumber>
 			<releaseNumber>5116</releaseNumber>
 			<title>Astro Invaders</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -9638,7 +9640,7 @@
 			<duplicateID>5116</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5135</imageNumber>
+			<imageNumber>5260</imageNumber>
 			<releaseNumber>5135</releaseNumber>
 			<title>Metal Max 3</title>
 			<saveType>TBC</saveType>
@@ -9656,7 +9658,7 @@
 			<duplicateID>5135</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5135</imageNumber>
+			<imageNumber>5260</imageNumber>
 			<releaseNumber>5135</releaseNumber>
 			<title>Metal Max 3</title>
 			<saveType>TBC</saveType>
@@ -9674,7 +9676,7 @@
 			<duplicateID>5135</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5155</imageNumber>
+			<imageNumber>5280</imageNumber>
 			<releaseNumber>5155</releaseNumber>
 			<title>Tetris Party Premium (NDS)Simulator</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -9692,7 +9694,7 @@
 			<duplicateID>4968</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5155</imageNumber>
+			<imageNumber>5280</imageNumber>
 			<releaseNumber>5155</releaseNumber>
 			<title>Tetris Party Premium (Simulator)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -9710,7 +9712,7 @@
 			<duplicateID>4968</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5165</imageNumber>
+			<imageNumber>5293</imageNumber>
 			<releaseNumber>5165</releaseNumber>
 			<title>Chou Kowai Hanashi DS - Ao no Shou</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -9728,7 +9730,7 @@
 			<duplicateID>5165</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5292</imageNumber>
+			<imageNumber>5448</imageNumber>
 			<releaseNumber>5292</releaseNumber>
 			<title>Ougon no Taiyou - Shikkokunaru Yoake</title>
 			<saveType>TBC</saveType>
@@ -9746,7 +9748,7 @@
 			<duplicateID>5292</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5402</imageNumber>
+			<imageNumber>5606</imageNumber>
 			<releaseNumber>5402</releaseNumber>
 			<title>Fuurai no Shiren 5 - Fortun Tower to Unmei no Dice</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -9764,7 +9766,7 @@
 			<duplicateID>5402</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5465</imageNumber>
+			<imageNumber>5682</imageNumber>
 			<releaseNumber>5465</releaseNumber>
 			<title>Pucca Power Up</title>
 			<saveType>TBC</saveType>
@@ -9782,7 +9784,7 @@
 			<duplicateID>5465</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5531</imageNumber>
+			<imageNumber>5749</imageNumber>
 			<releaseNumber>5531</releaseNumber>
 			<title>Dragon Ball Kai - Ultimate Butouden (CHT)</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -9800,7 +9802,7 @@
 			<duplicateID>5531</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5530</imageNumber>
+			<imageNumber>5748</imageNumber>
 			<releaseNumber>5530</releaseNumber>
 			<title>Sora no Otoshimono Forte - Dreamy Season</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -9818,7 +9820,7 @@
 			<duplicateID>5530</duplicateID>
 		</game>
 		<game>
-			<imageNumber>192</imageNumber>
+			<imageNumber>197</imageNumber>
 			<releaseNumber>192</releaseNumber>
 			<title>Pokemon Fushigi no Dungeon - Ao no Kyuujotai</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -9836,7 +9838,7 @@
 			<duplicateID>192</duplicateID>
 		</game>
 		<game>
-			<imageNumber>402</imageNumber>
+			<imageNumber>426</imageNumber>
 			<releaseNumber>402</releaseNumber>
 			<title>Osawari Tantei - Ozawa Rina</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -9854,7 +9856,7 @@
 			<duplicateID>402</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2158</imageNumber>
+			<imageNumber>2216</imageNumber>
 			<releaseNumber>2158</releaseNumber>
 			<title>SimCity DS 2 - Kodai kara Mirai e Tsuzuku Machi</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -9872,7 +9874,7 @@
 			<duplicateID>2158</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2161</imageNumber>
+			<imageNumber>2219</imageNumber>
 			<releaseNumber>2161</releaseNumber>
 			<title>Time Hollow - Ubawareta Kako wo Motomete</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -9890,7 +9892,7 @@
 			<duplicateID>2161</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2250</imageNumber>
+			<imageNumber>2311</imageNumber>
 			<releaseNumber>2250</releaseNumber>
 			<title>Meccha! Taiko no Tatsujin DS - 7 Tsu no Shima no Daibouken</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -9908,7 +9910,7 @@
 			<duplicateID>2250</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2574</imageNumber>
+			<imageNumber>2639</imageNumber>
 			<releaseNumber>2574</releaseNumber>
 			<title>Mite wa Ikenai</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -9926,7 +9928,7 @@
 			<duplicateID>2574</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3108</imageNumber>
+			<imageNumber>3186</imageNumber>
 			<releaseNumber>3108</releaseNumber>
 			<title>Eiyuu Senki - Laevatein</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -9944,7 +9946,7 @@
 			<duplicateID>3108</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3501</imageNumber>
+			<imageNumber>3592</imageNumber>
 			<releaseNumber>3501</releaseNumber>
 			<title>Annie no Atelier - Sera Shima no Renkijutsushi</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -9962,7 +9964,7 @@
 			<duplicateID>3501</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3601</imageNumber>
+			<imageNumber>3693</imageNumber>
 			<releaseNumber>3601</releaseNumber>
 			<title>Akai Ito Destiny DS</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -9980,7 +9982,7 @@
 			<duplicateID>3601</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4512</imageNumber>
+			<imageNumber>4615</imageNumber>
 			<releaseNumber>4512</releaseNumber>
 			<title>Might &amp; Magic - Clash of Heroes</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -9998,7 +10000,7 @@
 			<duplicateID>4512</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4590</imageNumber>
+			<imageNumber>4694</imageNumber>
 			<releaseNumber>4590</releaseNumber>
 			<title>Lina no Atelier - Strahl no Renkinjutsushi</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -10016,7 +10018,7 @@
 			<duplicateID>4590</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4680</imageNumber>
+			<imageNumber>4793</imageNumber>
 			<releaseNumber>4680</releaseNumber>
 			<title>Dragon Quest VI - Maboroshi no Daichi</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -10034,7 +10036,7 @@
 			<duplicateID>4680</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5026</imageNumber>
+			<imageNumber>5144</imageNumber>
 			<releaseNumber>5026</releaseNumber>
 			<title>Love Plus Plus</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -10052,7 +10054,7 @@
 			<duplicateID>5026</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5096</imageNumber>
+			<imageNumber>5217</imageNumber>
 			<releaseNumber>5096</releaseNumber>
 			<title>Fire Emblem - Shin Monshou no Nazo Hikari to Kage no Eiyuu (v01)(DSi Enhanced)</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -10070,7 +10072,7 @@
 			<duplicateID>5096</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5197</imageNumber>
+			<imageNumber>5325</imageNumber>
 			<releaseNumber>5197</releaseNumber>
 			<title>One Piece - Gigant Battle</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -10088,7 +10090,7 @@
 			<duplicateID>5197</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5238</imageNumber>
+			<imageNumber>5392</imageNumber>
 			<releaseNumber>5238</releaseNumber>
 			<title>Okamiden - Chisaki Taiyou</title>
 			<saveType>TBC</saveType>
@@ -10106,7 +10108,7 @@
 			<duplicateID>5238</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5238</imageNumber>
+			<imageNumber>5392</imageNumber>
 			<releaseNumber>5238</releaseNumber>
 			<title>Okamiden - Chisaki Taiyou</title>
 			<saveType>TBC</saveType>
@@ -10124,7 +10126,7 @@
 			<duplicateID>5238</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5421</imageNumber>
+			<imageNumber>5625</imageNumber>
 			<releaseNumber>5421</releaseNumber>
 			<title>Inazuma Eleven 3 - Sekai heno Chousen! The Ogre</title>
 			<saveType>TBC</saveType>
@@ -10142,7 +10144,7 @@
 			<duplicateID>5421</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5451</imageNumber>
+			<imageNumber>5665</imageNumber>
 			<releaseNumber>5451</releaseNumber>
 			<title>SaGa 3 - Jikuu no Hasha - Shadow or Light</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -10160,7 +10162,7 @@
 			<duplicateID>5451</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5615</imageNumber>
+			<imageNumber>5842</imageNumber>
 			<releaseNumber>5615</releaseNumber>
 			<title>Monster Tale</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -10178,7 +10180,7 @@
 			<duplicateID>5615</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5633</imageNumber>
+			<imageNumber>5860</imageNumber>
 			<releaseNumber>5633</releaseNumber>
 			<title>Dragon Quest Monsters - Joker 2 Professional</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -10196,7 +10198,7 @@
 			<duplicateID>5633</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5726</imageNumber>
+			<imageNumber>5955</imageNumber>
 			<releaseNumber>5726</releaseNumber>
 			<title>Meitantei Conan - Aoki Houseki no Rinbukyoku</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -10214,7 +10216,7 @@
 			<duplicateID>5726</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5803</imageNumber>
+			<imageNumber>6035</imageNumber>
 			<releaseNumber>5803</releaseNumber>
 			<title>Atsumete! Kirby</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -10232,7 +10234,7 @@
 			<duplicateID>5803</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5783</imageNumber>
+			<imageNumber>6015</imageNumber>
 			<releaseNumber>5783</releaseNumber>
 			<title>Nora to Toki no Koubou - Kiri no Mori no Majo</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -10250,7 +10252,7 @@
 			<duplicateID>5783</duplicateID>
 		</game>
 		<game>
-			<imageNumber>972</imageNumber>
+			<imageNumber>1012</imageNumber>
 			<releaseNumber>972</releaseNumber>
 			<title>Shakugan no Shana DS</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -10268,7 +10270,7 @@
 			<duplicateID>972</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1223</imageNumber>
+			<imageNumber>1267</imageNumber>
 			<releaseNumber>1223</releaseNumber>
 			<title>Tantei Jinguji Saburo DS - Inishie no Kioku</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -10286,7 +10288,7 @@
 			<duplicateID>1223</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1926</imageNumber>
+			<imageNumber>1980</imageNumber>
 			<releaseNumber>1926</releaseNumber>
 			<title>Smart Kid's Gameclub</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -10304,7 +10306,7 @@
 			<duplicateID>1926</duplicateID>
 		</game>
 		<game>
-			<imageNumber>1980</imageNumber>
+			<imageNumber>2035</imageNumber>
 			<releaseNumber>1980</releaseNumber>
 			<title>Mega Brain Boost</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -10322,7 +10324,7 @@
 			<duplicateID>1980</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2007</imageNumber>
+			<imageNumber>2062</imageNumber>
 			<releaseNumber>2007</releaseNumber>
 			<title>Pic Pic</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -10340,7 +10342,7 @@
 			<duplicateID>1035</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3375</imageNumber>
+			<imageNumber>3465</imageNumber>
 			<releaseNumber>3375</releaseNumber>
 			<title>Know How - Think and Play Outside the Box</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -10358,7 +10360,7 @@
 			<duplicateID>3375</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3557</imageNumber>
+			<imageNumber>3649</imageNumber>
 			<releaseNumber>3557</releaseNumber>
 			<title>Kuroshitsuji - Phantom &amp; Ghost</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -10376,7 +10378,7 @@
 			<duplicateID>3557</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4389</imageNumber>
+			<imageNumber>4491</imageNumber>
 			<releaseNumber>4389</releaseNumber>
 			<title>Keltis - Das Spiel von Reiner Knizia</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -10394,7 +10396,7 @@
 			<duplicateID>4389</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4768</imageNumber>
+			<imageNumber>4883</imageNumber>
 			<releaseNumber>4768</releaseNumber>
 			<title>Pokemon Ranger - Hikari no Kiseki</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -10412,7 +10414,7 @@
 			<duplicateID>4768</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5032</imageNumber>
+			<imageNumber>5150</imageNumber>
 			<releaseNumber>5032</releaseNumber>
 			<title>Datenshi no Amai Yuuwaku x Kaikan Phrase</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -10430,7 +10432,7 @@
 			<duplicateID>5032</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5181</imageNumber>
+			<imageNumber>5309</imageNumber>
 			<releaseNumber>5181</releaseNumber>
 			<title>Farm Frenzy - Animal Country</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -10448,7 +10450,7 @@
 			<duplicateID>5181</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5592</imageNumber>
+			<imageNumber>5811</imageNumber>
 			<releaseNumber>5592</releaseNumber>
 			<title>Yu-Gi-Oh! 5D's - World Championship 2011 - Over the Nexus</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -10466,7 +10468,7 @@
 			<duplicateID>5592</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5657</imageNumber>
+			<imageNumber>5884</imageNumber>
 			<releaseNumber>5657</releaseNumber>
 			<title>Emergency Kids</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -10484,7 +10486,7 @@
 			<duplicateID>5657</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2378</imageNumber>
+			<imageNumber>2441</imageNumber>
 			<releaseNumber>2378</releaseNumber>
 			<title>Spectral Force - Genesis</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -10502,7 +10504,7 @@
 			<duplicateID>2378</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5771</imageNumber>
+			<imageNumber>6003</imageNumber>
 			<releaseNumber>5771</releaseNumber>
 			<title>Camping Mama Plus Papa</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -10520,7 +10522,7 @@
 			<duplicateID>5771</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5215</imageNumber>
+			<imageNumber>5343</imageNumber>
 			<releaseNumber>5215</releaseNumber>
 			<title>Pokemon - White (DSi Enhanced)</title>
 			<saveType>Flash - 4 Mbit</saveType>
@@ -10538,7 +10540,7 @@
 			<duplicateID>5215</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5215</imageNumber>
+			<imageNumber>5343</imageNumber>
 			<releaseNumber>5215</releaseNumber>
 			<title>Pokemon - White (DSi Enhanced)</title>
 			<saveType>Flash - 4 Mbit</saveType>
@@ -10556,7 +10558,7 @@
 			<duplicateID>5215</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5216</imageNumber>
+			<imageNumber>5344</imageNumber>
 			<releaseNumber>5216</releaseNumber>
 			<title>Pokemon - Black (DSi Enhanced)</title>
 			<saveType>Flash - 4 Mbit</saveType>
@@ -10574,7 +10576,7 @@
 			<duplicateID>5216</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5216</imageNumber>
+			<imageNumber>5344</imageNumber>
 			<releaseNumber>5216</releaseNumber>
 			<title>Pokemon - Black (DSi Enhanced)</title>
 			<saveType>Flash - 4 Mbit</saveType>
@@ -10592,7 +10594,7 @@
 			<duplicateID>5216</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3191</imageNumber>
+			<imageNumber>3271</imageNumber>
 			<releaseNumber>3191</releaseNumber>
 			<title>Phantasy Star 0</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -10610,7 +10612,7 @@
 			<duplicateID>3191</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5564</imageNumber>
+			<imageNumber>5783</imageNumber>
 			<releaseNumber>5564</releaseNumber>
 			<title>Minna de Taikan Dokusho DS - Cho-Kowai! Gakkou no Kaidan</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -10628,7 +10630,7 @@
 			<duplicateID>5564</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5925</imageNumber>
+			<imageNumber>6159</imageNumber>
 			<releaseNumber>5925</releaseNumber>
 			<title>Metal Max 2 - Reloaded</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -10646,7 +10648,7 @@
 			<duplicateID>5925</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5992</imageNumber>
+			<imageNumber>6226</imageNumber>
 			<releaseNumber>5992</releaseNumber>
 			<title>Pokemon Plus - Nobunaga no Yabou (DSi Enhanced)</title>
 			<saveType>TBC</saveType>
@@ -10664,7 +10666,7 @@
 			<duplicateID>5992</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5992</imageNumber>
+			<imageNumber>6226</imageNumber>
 			<releaseNumber>5992</releaseNumber>
 			<title>Pokemon Plus - Nobunaga no Yabou (DSi Enhanced)</title>
 			<saveType>TBC</saveType>
@@ -10682,7 +10684,7 @@
 			<duplicateID>5992</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5727</imageNumber>
+			<imageNumber>5956</imageNumber>
 			<releaseNumber>5727</releaseNumber>
 			<title>Treasure Report - Kikai Jikake no Isan</title>
 			<saveType>Eeprom - 4 kbit</saveType>
@@ -10700,7 +10702,7 @@
 			<duplicateID>5727</duplicateID>
 		</game>
 		<game>
-			<imageNumber>6042</imageNumber>
+			<imageNumber>6278</imageNumber>
 			<releaseNumber>6042</releaseNumber>
 			<title>Pokemon - Black 2 (v01)(DSi Enhanced)</title>
 			<saveType>Flash - 4 Mbit</saveType>
@@ -10718,7 +10720,7 @@
 			<duplicateID>6042</duplicateID>
 		</game>
 		<game>
-			<imageNumber>6042</imageNumber>
+			<imageNumber>6278</imageNumber>
 			<releaseNumber>6042</releaseNumber>
 			<title>Pokemon - Black 2 (v01)(DSi Enhanced)</title>
 			<saveType>Flash - 4 Mbit</saveType>
@@ -10736,7 +10738,7 @@
 			<duplicateID>6042</duplicateID>
 		</game>
 		<game>
-			<imageNumber>6043</imageNumber>
+			<imageNumber>6279</imageNumber>
 			<releaseNumber>6043</releaseNumber>
 			<title>Pokemon - White 2 (v01)(DSi Enhanced)</title>
 			<saveType>Flash - 4 Mbit</saveType>
@@ -10754,7 +10756,7 @@
 			<duplicateID>6043</duplicateID>
 		</game>
 		<game>
-			<imageNumber>6043</imageNumber>
+			<imageNumber>6279</imageNumber>
 			<releaseNumber>6043</releaseNumber>
 			<title>Pokemon - White 2 (v01)(DSi Enhanced)</title>
 			<saveType>Flash - 4 Mbit</saveType>
@@ -10772,7 +10774,7 @@
 			<duplicateID>6043</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3667</imageNumber>
+			<imageNumber>3761</imageNumber>
 			<releaseNumber>3667</releaseNumber>
 			<title>Another Time, Another Leaf - Kagami no Naka no Tantei</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -10790,7 +10792,7 @@
 			<duplicateID>3667</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5400</imageNumber>
+			<imageNumber>5604</imageNumber>
 			<releaseNumber>5400</releaseNumber>
 			<title>Ninokuni - Shikkoku no Madoushi</title>
 			<saveType>TBC</saveType>
@@ -10808,7 +10810,7 @@
 			<duplicateID>5400</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3178</imageNumber>
+			<imageNumber>3258</imageNumber>
 			<releaseNumber>3178</releaseNumber>
 			<title>Gensou Suikoden - Tierkreis</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -10826,7 +10828,7 @@
 			<duplicateID>3178</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5532</imageNumber>
+			<imageNumber>5750</imageNumber>
 			<releaseNumber>5532</releaseNumber>
 			<title>Gyakuten Kenji 2</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -10844,7 +10846,7 @@
 			<duplicateID>5532</duplicateID>
 		</game>
 		<game>
-			<imageNumber>676</imageNumber>
+			<imageNumber>709</imageNumber>
 			<releaseNumber>676</releaseNumber>
 			<title>Akumajou Dracula - Gallery of Labyrinth (CHS)</title>
 			<saveType>Eeprom - 512 kbit</saveType>
@@ -10862,7 +10864,7 @@
 			<duplicateID>676</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2037</imageNumber>
+			<imageNumber>2092</imageNumber>
 			<releaseNumber>2037</releaseNumber>
 			<title>Sekaiju no Meikyuu II - Shoou no Seihai</title>
 			<saveType>Flash - 2 Mbit</saveType>
@@ -10880,7 +10882,7 @@
 			<duplicateID>2037</duplicateID>
 		</game>
 		<game>
-			<imageNumber>2326</imageNumber>
+			<imageNumber>2389</imageNumber>
 			<releaseNumber>2326</releaseNumber>
 			<title>Mugen no Frontier - Super Robot Taisen OG Saga</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -10898,7 +10900,7 @@
 			<duplicateID>2326</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3369</imageNumber>
+			<imageNumber>3459</imageNumber>
 			<releaseNumber>3369</releaseNumber>
 			<title>Mario &amp; Luigi RPG 3!!!</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -10916,7 +10918,7 @@
 			<duplicateID>3369</duplicateID>
 		</game>
 		<game>
-			<imageNumber>3705</imageNumber>
+			<imageNumber>3799</imageNumber>
 			<releaseNumber>3705</releaseNumber>
 			<title>Rekishi Adventure Quiz - Sangokushi Tsuu DS</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -10934,7 +10936,7 @@
 			<duplicateID>3705</duplicateID>
 		</game>
 		<game>
-			<imageNumber>4264</imageNumber>
+			<imageNumber>4365</imageNumber>
 			<releaseNumber>4264</releaseNumber>
 			<title>Shin Megami Tensei - Strange Journey</title>
 			<saveType>Eeprom - 64 kbit</saveType>
@@ -10952,7 +10954,7 @@
 			<duplicateID>4264</duplicateID>
 		</game>
 		<game>
-			<imageNumber>5531</imageNumber>
+			<imageNumber>5749</imageNumber>
 			<releaseNumber>5531</releaseNumber>
 			<title>Dragon Ball Kai - Ultimate Butouden (CHS)</title>
 			<saveType>Eeprom - 64 kbit</saveType>

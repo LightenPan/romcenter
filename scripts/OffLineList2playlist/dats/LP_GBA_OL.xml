@@ -2,7 +2,7 @@
 <dat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="datas.xsd">
 	<configuration>
 		<datName>LP_GBA_OL</datName>
-		<datVersion>2373</datVersion>
+		<datVersion>20190806</datVersion>
 		<imFolder>LP_GBA_OL</imFolder>
 		<system>gba</system>
 		<screenshotsWidth>240</screenshotsWidth>
@@ -28,9 +28,9 @@
 			<extension>.bin</extension>
 		</canOpen>
 		<newDat>
-			<datVersionURL>http://file.yxjzy.com/ol/gba/yxjzy_ol_gba_data</datVersionURL>
-			<datURL fileName="YXJZY_OL_GBA_DATA.zip">http://file.yxjzy.com/ol/gba/datas/yxjzy_ol_gba_data.zip</datURL>
-			<imURL>http://file.yxjzy.com/ol/gba/imgs/YXJZY_OL_GBA_DATA/</imURL>
+			<datVersionURL>https://lightenpan.github.io/RetroGameDatForOfflineList/dats</datVersionURL>
+			<datURL fileName="YXJZY_OL_GBA_DATA.zip">https://lightenpan.github.io/RetroGameDatForOfflineList/dats.xml</datURL>
+			<imURL>https://lightenpan.github.io/RetroGameDatForOfflineList/imgs/LP_GBA_OL/</imURL>
 		</newDat>
 		<search>
 			<to value="location" default="true" auto="true"/>
