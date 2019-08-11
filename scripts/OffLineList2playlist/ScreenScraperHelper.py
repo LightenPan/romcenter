@@ -105,6 +105,8 @@ class ScreenScraperHelper:
                         img1 = medias['media_screenshot']
                         img2 = medias['media_screenshot']
                         return img1, img2
+
+                # GBC-ROM取封面不同
                 if 'media_boxs' in medias:
                     media_boxs = medias['media_boxs']
                     if 'media_boxs2d' in media_boxs and 'media_box2d_ss' in media_boxs['media_boxs2d']:

@@ -89,7 +89,7 @@ def do_download(use_socks5_proxy, image_title_url, image_snaps_url, dst_title_fi
         r = requests.get(image_title_url)
         if r.status_code != 200:
             os.remove(dst_title_file)
-            DOWNLOAD_FAILED_LIST.append(image_title_url)
+            DOWNLOAD_FAILED_LIST.append(dst_title_file)
             logging.error(
                 'down load image failed. title: %s, image_title_url: %s, dst_title_file: %s, image_snaps_url: %s, dst_snaps_file: %s',
                 XmlDataLoader.genGameName(game), image_title_url, dst_title_file, image_snaps_url, dst_snaps_file
@@ -101,14 +101,14 @@ def do_download(use_socks5_proxy, image_title_url, image_snaps_url, dst_title_fi
         # 检验下载的文件是否正常，不正常需要删除重新下载
         if not is_valid_image(dst_title_file):
             os.remove(dst_title_file)
-            DOWNLOAD_FAILED_LIST.append(image_title_url)
+            DOWNLOAD_FAILED_LIST.append(dst_title_file)
 
     except Exception as excep:
         logging.error(
             'down load image failed. excep: %s, traceback: %s, title: %s, image_title_url: %s, dst_title_file: %s, image_snaps_url: %s, dst_snaps_file: %s',
             excep, traceback.format_exc(), XmlDataLoader.genGameName(game), image_title_url, dst_title_file, image_snaps_url, dst_snaps_file
         )
-        DOWNLOAD_FAILED_LIST.append(image_title_url)
+        DOWNLOAD_FAILED_LIST.append(dst_title_file)
         return False
 
     try:
@@ -122,7 +122,7 @@ def do_download(use_socks5_proxy, image_title_url, image_snaps_url, dst_title_fi
         r = requests.get(image_snaps_url)
         if r.status_code != 200:
             os.remove(image_snaps_url)
-            DOWNLOAD_FAILED_LIST.append(image_snaps_url)
+            DOWNLOAD_FAILED_LIST.append(dst_snaps_file)
             logging.error(
                 'down load image failed. title: %s, image_title_url: %s, dst_title_file: %s, image_snaps_url: %s, dst_snaps_file: %s',
                 XmlDataLoader.genGameName(game), image_title_url, dst_title_file, image_snaps_url, dst_snaps_file
@@ -134,14 +134,14 @@ def do_download(use_socks5_proxy, image_title_url, image_snaps_url, dst_title_fi
         # 检验下载的文件是否正常，不正常需要删除重新下载
         if not is_valid_image(dst_snaps_file):
             os.remove(dst_snaps_file)
-            DOWNLOAD_FAILED_LIST.append(image_snaps_url)
+            DOWNLOAD_FAILED_LIST.append(dst_snaps_file)
 
     except Exception as excep:
         logging.error(
             'down load image failed. excep: %s, traceback: %s, title: %s, image_title_url: %s, dst_title_file: %s, image_snaps_url: %s, dst_snaps_file: %s',
             excep, traceback.format_exc(), XmlDataLoader.genGameName(game), image_title_url, dst_title_file, image_snaps_url, dst_snaps_file
         )
-        DOWNLOAD_FAILED_LIST.append(image_snaps_url)
+        DOWNLOAD_FAILED_LIST.append(dst_snaps_file)
         return False
 
 def check_and_download_by_crc(use_socks5_proxy, crc, dst_title_file, dst_snaps_file):
@@ -150,8 +150,10 @@ def check_and_download_by_crc(use_socks5_proxy, crc, dst_title_file, dst_snaps_f
     helper = ScreenScraperHelper(use_socks5_proxy)
     image_title_url, image_snaps_url = helper.getGameImageUrls(crc)
     if not image_title_url:
+        print('check_and_download_by_crc: ', dst_title_file)
         DOWNLOAD_FAILED_LIST.append(dst_title_file)
     if not image_snaps_url:
+        print('check_and_download_by_crc: ', dst_snaps_file)
         DOWNLOAD_FAILED_LIST.append(dst_snaps_file)
     return do_download(use_socks5_proxy, image_title_url, image_snaps_url, dst_title_file, dst_snaps_file)
 
