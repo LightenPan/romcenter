@@ -26,9 +26,9 @@
       <extension>.ngc</extension>
     </canOpen>
     <newDat>
-      <datVersionURL/>
-      <datURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/dats/LP_NGPC_OL.xml</datURL>
-      <imURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/imgs/LP_NGPC_OL</imURL>
+       <datVersionURL></datVersionURL>
+       <datURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/dats/LP_NGPC_OL.xml</datURL>
+       <imURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/imgs/LP_NGPC_OL</imURL>
     </newDat>
     <search>
       <to auto="true" default="true" value="location"/>

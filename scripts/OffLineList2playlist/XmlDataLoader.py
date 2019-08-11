@@ -149,7 +149,12 @@ class XmlDataLoader:
                 saveType = saveType.text
             else:
                 saveType = ''
-            romSize = game.find('romSize').text
+
+            romSize = game.find('romSize')
+            if romSize is not None:
+                romSize = romSize.text
+            else:
+                romSize = ''
 
             releaseNumber = game.find('releaseNumber')
             if releaseNumber is not None:

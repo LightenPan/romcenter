@@ -25,12 +25,9 @@
 			<extension>.gb</extension>
 		</canOpen>
 		<newDat>
-		   <!-- <datVersionURL /> -->
-		   <!-- <datURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/dats/LP_GB_OL.xml</datURL> -->
-		   <!-- <imURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/imgs/LP_GB_OL</imURL> -->
-			<datVersionURL>http://nointro.free.fr/version/Official%20No-Intro%20Nintendo%20Gameboy_version</datVersionURL>
-			<datURL fileName="Official No-Intro Nintendo Gameboy.zip">http://nointro.free.fr/datas/Official%20No-Intro%20Nintendo%20Gameboy.zip</datURL>
-			<imURL>http://nointro.free.fr/imgs/Official%20No-Intro%20Nintendo%20Gameboy/</imURL>
+		   <datVersionURL />
+		   <datURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/dats/LP_GB_OL.xml</datURL>
+		   <imURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/imgs/LP_GB_OL</imURL>
 		</newDat>
 		<search>
 			<to auto="true" default="true" value="location" />

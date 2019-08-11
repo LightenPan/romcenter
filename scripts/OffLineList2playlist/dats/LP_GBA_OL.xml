@@ -28,9 +28,9 @@
 			<extension>.bin</extension>
 		</canOpen>
 		<newDat>
-			<datVersionURL>https://lightenpan.github.io/RetroGameDatForOfflineList/dats</datVersionURL>
-			<datURL fileName="YXJZY_OL_GBA_DATA.zip">https://lightenpan.github.io/RetroGameDatForOfflineList/dats.xml</datURL>
-			<imURL>https://lightenpan.github.io/RetroGameDatForOfflineList/imgs/LP_GBA_OL/</imURL>
+		   <datVersionURL></datVersionURL>
+		   <datURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/dats/LP_GBA_OL.xml</datURL>
+		   <imURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/imgs/LP_GBA_OL</imURL>
 		</newDat>
 		<search>
 			<to value="location" default="true" auto="true"/>

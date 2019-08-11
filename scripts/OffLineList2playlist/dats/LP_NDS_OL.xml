@@ -2,7 +2,7 @@
 	<configuration>
 		<datName>LP_NDS_OL</datName>
 		<imFolder>LP_NDS_OL</imFolder>
-		<datVersion>0361</datVersion>
+        <datVersion>20190809</datVersion>
 		<system>Nintendo DS</system>
 		<screenshotsWidth>256</screenshotsWidth>
 		<screenshotsHeight>384</screenshotsHeight>
@@ -27,9 +27,9 @@
 			<extension>.ids</extension>
 		</canOpen>
 		<newDat>
-			<datVersionURL>http://file.ndsbbs.com/OL/Ndsbbs_OL.txt</datVersionURL>
-			<datURL fileName="Ndsbbs_OL.zip">http://file.ndsbbs.com/OL/Ndsbbs_OL.zip</datURL>
-			<imURL>http://nointro.free.fr/imgs/Official%20No-Intro%20Nintendo%20Dual%20Screen/</imURL>
+           <datVersionURL></datVersionURL>
+           <datURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/dats/LP_NDS_OL.xml</datURL>
+           <imURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/imgs/LP_NDS_OL</imURL>
 		</newDat>
 		<search>
 			<to auto="true" default="true" value="location" />

@@ -7,7 +7,7 @@
 	<configuration>
 		<datName>LP_N64_OL</datName>
 		<imFolder>LP_N64_OL</imFolder>
-		<datVersion>20180106</datVersion>
+        <datVersion>20190809</datVersion>
 		<system>Nintendo - Nintendo 64</system>
 		<screenshotsWidth>320</screenshotsWidth>
 		<screenshotsHeight>240</screenshotsHeight>
@@ -30,9 +30,9 @@
 			<extension>.n64</extension>
 		</canOpen>
 		<newDat>
-			<datVersionURL>http://invinzer.com/offline/version/Official_OfflineList_No-Intro_N64_CHS.txt</datVersionURL>
-			<datURL fileName="Official_OfflineList_No-Intro_N64_CHS.zip">http://invinzer.com/offline/datas/Official_OfflineList_No-Intro_N64_CHS.zip</datURL>
-			<imURL>http://invinzer.com/offline/imgs/Official_OfflineList_No-Intro_N64/</imURL>
+           <datVersionURL></datVersionURL>
+           <datURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/dats/LP_N64_OL.xml</datURL>
+           <imURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/imgs/LP_N64_OL</imURL>
 		</newDat>
 		<search>
 			<to value="location" default="true" auto="true"></to>

@@ -104,3 +104,15 @@ img {
   display: flex;
   width: 50%;
 }
+
+.cenGroup {
+  display: flex;
+  // padding-bottom: 15px;
+  // margin-left: 12px;
+}
+
+.cenGroup span {
+  text-align: center;
+  align-self: center;
+  padding-right: 10px;
+}

@@ -5,7 +5,7 @@
 	<configuration>
 		<datName>LP_PSP_OL</datName>
 		<imFolder>LP_PSP_OL</imFolder>
-		<datVersion>20180809</datVersion>
+		<datVersion>20190811</datVersion>
 		<system>Sony PSP</system>
 		<screenshotsWidth>320</screenshotsWidth>
 		<screenshotsHeight>181</screenshotsHeight>
@@ -28,9 +28,9 @@
 			<extension>.iso</extension>
 		</canOpen>
 		<newDat>
- 			<datVersionURL>http://invinzer.com/offline/version/ADVANsCEne_PSP_CHS.txt</datVersionURL>
-			<datURL fileName="ADVANsCEne_PSP_CHS.zip">http://invinzer.com/offline/datas/ADVANsCEne_PSP_CHS.zip</datURL>
-			<imURL>http://www.advanscene.com/offline/imgs/ADVANsCEne_PSP/</imURL>
+		   <datVersionURL></datVersionURL>
+		   <datURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/dats/LP_PSP_OL.xml</datURL>
+		   <imURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/imgs/LP_PSP_OL</imURL>
 		</newDat>
 		<search>
 			<to value="location" default="true" auto="true"/>

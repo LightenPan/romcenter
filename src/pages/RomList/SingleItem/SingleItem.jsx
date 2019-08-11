@@ -12,42 +12,23 @@ export default class SingleItem extends Component {
     super(props);
     this.state = {
       showEditDialog: false,
+      imgObj: null,
     };
   }
 
-  genImgUrl = (item, config, context) => {
-    return GameUtils.genImageObj(
+  // 在组件挂载之前把数据设置进去(可以用initValue替代这种用法)
+  componentWillMount = () => {
+    const { item, config, context } = this.props;
+    const imgObj = GameUtils.genImageObj(
       item.imageNumber, config.newDat.imURL, context.gameImgsPath, config.imFolder);
+    this.setState({ imgObj });
   }
 
-  genShowList = (item) => {
-    // <game>
-    //     <imageNumber>1</imageNumber>
-    //     <title>3-in-1 Supergun </title>
-    //     <romSize>65552</romSize>
-    //     <publisher />
-    //     <location>3</location>
-    //     <sourceRom />
-    //     <language>4</language>
-    //     <im1CRC>002CBBE9</im1CRC>
-    //     <im2CRC>BD47584A</im2CRC>
-    //     <files>
-    //         <romCRC extension=".nes">3B95BC4E</romCRC>
-    //     </files>
-    //     <comment>3-in-1 Supergun</comment>
-    // </game>
-    const showList = [];
-    showList.push({label: '标题', value: item.title});
-    showList.push({label: '备注', value: item.comment});
-    // showList.push({label: '来源', value: item.sourceRom});
-    // showList.push({label: 'crc32', value: item.files.romCRC._});
-    // showList.push({label: '编号', value: item.releaseNumber});
-    // showList.push({label: '图片', value: item.imageNumber});
-    // showList.push({label: '尺寸', value: item.romSize});
-    // showList.push({label: '发行', value: item.publisher});
-    // showList.push({label: '地区', value: item.location});
-    // showList.push({label: '语言', value: item.language});
-    return showList;
+  componentWillReceiveProps = (nextProps) => {
+    const { item, config, context } = nextProps;
+    const imgObj = GameUtils.genImageObj(
+      item.imageNumber, config.newDat.imURL, context.gameImgsPath, config.imFolder);
+    this.setState({ imgObj });
   }
 
   onEditRomSubmit = (values) => {
@@ -98,15 +79,6 @@ export default class SingleItem extends Component {
   }
 
   render() {
-    const {
-      item,
-      config,
-      context,
-    } = this.props;
-
-    const showList = this.genShowList(item);
-    const imgUrl = this.genImgUrl(item, config, context);
-
     return (
       <div className={styles.game}>
         {/* <div className={styles.head}>
@@ -119,75 +91,92 @@ export default class SingleItem extends Component {
           <div className={styles.item}>
             <div className={styles.imgGroup}>
               <span className={styles.imgItem}>
-                <IceImg src={imgUrl.a} width={160} type="contain"/>
+                <IceImg src={this.state.imgObj.a} width={160} type="contain"
+                  onError={() => {
+                    const {imgObj} = this.state;
+                    imgObj.a = '';
+                    this.setState({imgObj});
+                  }}
+                />
               </span>
               <span className={styles.imgItem}>
-                <IceImg src={imgUrl.b} width={160} type="contain"/>
+                <IceImg src={this.state.imgObj.b} width={160} type="contain"
+                  onError={() => {
+                    const {imgObj} = this.state;
+                    imgObj.b = '';
+                    this.setState({imgObj});
+                  }}/>
               </span>
             </div>
-            {/* <IceImg src={imgUrl.a} type="contain" className={styles.img} /> */}
           </div>
 
-          {/* {showList.map((showItem, key) => {
-            return (
-              <div className={styles.item} key={key}>
-                <span className={styles.label}>{showItem.label}: </span>
-                <span className={styles.value}>{showItem.value}</span>
-              </div>
-            );
-          })} */}
           <div className={styles.item}>
             <span className={styles.label}>标题: </span>
-            <span className={styles.value}>{item.title}</span>
+            <span className={styles.value}>{this.props.item.title}</span>
           </div>
           <div className={styles.item}>
             <span className={styles.label}>备注: </span>
-            <span className={styles.value}>{item.comment}</span>
+            <span className={styles.value}>{this.props.item.comment}</span>
           </div>
           <div className={styles.item}>
             <span className={styles.label}>发行: </span>
-            <span className={styles.value}>{item.publisher}</span>
+            <span className={styles.value}>{this.props.item.publisher}</span>
           </div>
           {/* <div className={styles.item}>
             <span className={styles.label}>来源: </span>
-            <span className={styles.value}>{item.sourceRom}</span>
+            <span className={styles.value}>{this.props.item.sourceRom}</span>
           </div> */}
           <div className={styles.labelGroup}>
             <div className={styles.labelGroupItem}>
               <span className={styles.label}>CRC: </span>
-              <span className={styles.value}>{item.files.romCRC._}</span>
+              <span className={styles.value}>{this.props.item.files.romCRC._}</span>
             </div>
             <div className={styles.labelGroupItem}>
               <span className={styles.label}>尺寸: </span>
-              <span className={styles.value}>{item.romSize}</span>
+              <span className={styles.value}>{this.props.item.romSize}</span>
             </div>
           </div>
           <div className={styles.labelGroup}>
             <div className={styles.labelGroupItem}>
               <span className={styles.label}>编号: </span>
-              <span className={styles.value}>{item.releaseNumber}</span>
+              <span className={styles.value}>{this.props.item.releaseNumber}</span>
             </div>
             <div className={styles.labelGroupItem}>
               <span className={styles.label}>图片: </span>
-              <span className={styles.value}>{item.imageNumber}</span>
+              <span className={styles.value}>{this.props.item.imageNumber}</span>
             </div>
           </div>
           <div className={styles.labelGroup}>
             <div className={styles.labelGroupItem}>
               <span className={styles.label}>地区: </span>
-              <span className={styles.value}>{item.location}</span>
+              <span className={styles.value}>{this.props.item.location}</span>
             </div>
             <div className={styles.labelGroupItem}>
               <span className={styles.label}>语言: </span>
-              <span className={styles.value}>{item.language}</span>
+              <span className={styles.value}>{this.props.item.language}</span>
             </div>
           </div>
         </div>
 
         <div className={styles.footer}>
-          <Button type="primary" onClick={() => this.setState({showEditDialog: true})}>
-            编辑Rom信息
-          </Button>
+          <div className={styles.cenGroup}>
+            <span>
+              <Button type="primary" onClick={() => this.setState({showEditDialog: true})}>
+                编辑Rom信息
+              </Button>
+            </span>
+            <span>
+              <Button type="primary" onClick={() => {
+                this.setState({ imgObj: null });
+                const { item, config, context } = this.props;
+                const imgObj = GameUtils.genImageObj(
+                  item.imageNumber, config.newDat.imURL, context.gameImgsPath, config.imFolder);
+                this.setState({ imgObj });
+              }}>
+                刷新图片
+              </Button>
+            </span>
+          </div>
           <Dialog
             isFullScreen
             title="编辑Rom信息"

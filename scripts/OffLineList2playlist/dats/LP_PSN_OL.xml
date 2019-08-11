@@ -28,9 +28,9 @@
 			<extension>.iso</extension>
 		</canOpen>
 		<newDat>
- 			<datVersionURL>http://invinzer.com/offline/version/ADVANsCEne_PSN_CHS.txt</datVersionURL>
-			<datURL fileName="ADVANsCEne_PSN_CHS.zip">http://invinzer.com/offline/datas/ADVANsCEne_PSN_CHS.zip</datURL>
-			<imURL>http://www.advanscene.com/offline/imgs/ADVANsCEne_PSN/</imURL>
+		   <datVersionURL></datVersionURL>
+		   <datURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/dats/LP_PSN_OL.xml</datURL>
+		   <imURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/imgs/LP_PSN_OL</imURL>
 		</newDat>
 		<search>
 			<to value="location" default="true" auto="true"/>

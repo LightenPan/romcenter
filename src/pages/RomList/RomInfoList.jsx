@@ -49,17 +49,6 @@ export default class RomInfoList extends Component {
         console.log(error);
       }
     }
-    // const context = localStorage.getItem("context");
-    // if (context) {
-    //   try {
-    //     const newContext = JSON.parse(context);
-    //     this.setState({
-    //       context: newContext,
-    //       gameImgsPathInput: newContext.gameImgsPath});
-    //   } catch (error) {
-    //     console.log(error);
-    //   }
-    // }
   }
 
   initGameList = (filename, xmlData) => {
@@ -426,7 +415,11 @@ export default class RomInfoList extends Component {
         pageSize={this.state.context.pageCount}
         total={this.state.allGameList.length}
         onChange={(current) => this.onClickPageChange(current)}
-        totalRender={total => `总数: ${total}`}
+        totalRender={total => {
+          return (
+            <div style={{paddingLeft: '10px'}}>总数: {total}</div>
+          )
+        }}
         pageSizeSelector='dropdown'
         pageSizeList={[10, 20, 30, 40, 50, 100]}
         onPageSizeChange={(size) => this.onClickPageSizeChange(size)}

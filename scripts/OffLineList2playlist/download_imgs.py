@@ -150,10 +150,8 @@ def check_and_download_by_crc(use_socks5_proxy, crc, dst_title_file, dst_snaps_f
     helper = ScreenScraperHelper(use_socks5_proxy)
     image_title_url, image_snaps_url = helper.getGameImageUrls(crc)
     if not image_title_url:
-        print('check_and_download_by_crc: ', dst_title_file)
         DOWNLOAD_FAILED_LIST.append(dst_title_file)
     if not image_snaps_url:
-        print('check_and_download_by_crc: ', dst_snaps_file)
         DOWNLOAD_FAILED_LIST.append(dst_snaps_file)
     return do_download(use_socks5_proxy, image_title_url, image_snaps_url, dst_title_file, dst_snaps_file)
 
@@ -168,10 +166,12 @@ def check_and_download_by_image_number(use_socks5_proxy, imageNumber, dst_title_
         calcImageNumber = 1
     count = 500
     low = ((calcImageNumber - 1) // count) * count + 1
-    high = ((calcImageNumber - 1) // count) * count + 500
+    high = ((calcImageNumber - 1) // count) * count + count
     imageFolder = '%s-%s' % (low, high)
     image_title_url = '%s%s/%sa.png' % (game['imURL'], imageFolder, imageNumber)
     image_snaps_url = '%s%s/%sb.png' % (game['imURL'], imageFolder, imageNumber)
+    if imageNumber == 368:
+        print('imageNumber: %s, afile: %s, bfile: %s' % (imageNumber, image_title_url, image_snaps_url))
     return do_download(use_socks5_proxy, image_title_url, image_snaps_url, dst_title_file, dst_snaps_file)
 
 
@@ -250,8 +250,11 @@ if __name__ == "__main__":
         pbar.set_description("处理缩略图 %s" % xml_data_loader.genGameName(game))
         pbar.update()
 
-        low_number = (game['imageNumber'] // image_count) * image_count + 1
-        high_number = (game['imageNumber'] // image_count) * image_count + image_count
+        calcNumber = game['imageNumber']
+        if calcNumber == 0:
+            calcNumber = 1
+        low_number = ((calcNumber - 1) // image_count) * image_count + 1
+        high_number = ((calcNumber - 1) // image_count) * image_count + image_count
         number_dir = '%s-%s' % (low_number, high_number)
         imgs_dir = os.path.join(options.dst_dir, number_dir)
         mkdirs(imgs_dir)
