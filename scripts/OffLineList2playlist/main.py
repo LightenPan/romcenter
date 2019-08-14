@@ -207,6 +207,9 @@ if __name__ == "__main__":
         elif options.rom_name_is_crc == 1:
             romlink = '%s%s%s' % (options.prex, xml_data_loader.genGameCrc(game), options.ext)
             # logging.info('%s\n%s\n%s\n%s\n%s\n%s', romlink, xml_data_loader.genGameCrc(game), 'DETECT', 'DETECT', 'DETECT', options.lpl + '.lpl')
+        else:
+            romlink = '%s%s%s' % (options.prex, xml_data_loader.genGameName(game), options.ext)
+            # logging.info('%s\n%s\n%s\n%s\n%s\n%s', romlink, xml_data_loader.genGameNum(game), 'DETECT', 'DETECT', 'DETECT', options.lpl + '.lpl')
         lpl_file.write(
             '%s\n%s\n%s\n%s\n%s\n%s\n' % (romlink, xml_data_loader.genGameName(game), core_path, options.core_name, 'DETECT', options.lpl + '.lpl')
         )
