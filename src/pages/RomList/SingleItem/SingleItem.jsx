@@ -166,6 +166,7 @@ export default class SingleItem extends Component {
                 Dialog.confirm({
                   title: '选择过滤条件',
                   content: <ImageGrab imageNumber={this.props.item.imageNumber} />,
+                  isFullScreen: true,
                 });
               }}>
                 抓取图片

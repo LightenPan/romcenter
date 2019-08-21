@@ -32,18 +32,18 @@ export default class ImageGrab extends Component {
   static displayName = 'ImageGrab';
 
   static propTypes = {};
+
   constructor(props) {
     super(props);
     this.state = {
       lplName: '',
-      xmlData: null,
       allGameList: [],
       showGameList: [],
       searchTypeName: 0,
     };
   }
 
-  async prepareLplData(name) {
+  prepareLplData = async (name) => {
     // 下载dat文件
     const url = `${datUrlPrex}/${name}.xml`;
     const resp = await fetch(url);
@@ -55,13 +55,14 @@ export default class ImageGrab extends Component {
     parser.parseString(xmlText, (error, xmlData) => {
       if (error) throw error;
       const allGameList = xmlData.dat.games.game;
-      this.setState({lplName: name, xmlData, allGameList});
+      this.setState({lplName: name, allGameList});
     });
   }
 
-  searchName(queryText) {
+  searchName = (queryText) => {
+    const { allGameList } = this.state;
     const prex = `${imgsUrlPrex}/${this.state.lplName}`;
-    const showGameList = this.state.allGameList.filter((item) => {
+    const showGameList = allGameList.filter((item) => {
       if (this.state.searchTypeName == 1) {
         return item.comment.match(queryText);
       }
@@ -74,10 +75,10 @@ export default class ImageGrab extends Component {
         b: `${prex}/${folder}/${item.imageNumber}b.png`,
       }
     })
-    this.setState({showGameList: showGameList.slice(0, 5)});
+    this.setState({showGameList: showGameList.slice(0, 20)});
   }
 
-  onClickSaveImage(imgUrl, name){
+  onClickSaveImage = (imgUrl, name) => {
     const FileSaver = require('file-saver');
     const proxyUrl = `/imgProxy?url=${imgUrl}`;
     FileSaver.saveAs(proxyUrl, name);
