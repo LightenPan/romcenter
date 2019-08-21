@@ -264,7 +264,6 @@ export default class RomInfoList extends Component {
               onChange={(val) => this.setState({queryText: val})} />
           </div>
         </div>
-
       ),
       onOk: () => {
         const { xmlData } = this.state;

@@ -1,0 +1,78 @@
+.cenGroup {
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.cenGroup span {
+  text-align: center;
+  align-self: center;
+  padding-right: 10px;
+}
+
+img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.renderedContainer {
+  margin: 10px 0 0;
+  padding: 10px;
+  border: 3px dashed #aaa;
+  border-radius: 11px;
+}
+
+
+.body {
+  padding: 10px;
+}
+
+
+.item {
+  display: flex;
+  padding-bottom: 4px;
+}
+
+.label {
+  width: 40px;
+  padding: 0 2px;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.value {
+  // width: 50%;
+  font-size: 13px;
+}
+
+
+.imgGroup {
+  display: flex;
+  padding: 2px 0;
+}
+
+.imgItem {
+  width: 50%;
+  padding: 0px 3px;
+}
+
+img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.labelGroup {
+  display: flex;
+  // padding-bottom: 15px;
+  // margin-left: 12px;
+}
+
+.labelGroupItem {
+  display: flex;
+  width: 50%;
+}

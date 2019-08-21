@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Button, Dialog } from '@alifd/next';
 import IceImg from '@icedesign/img';
 import ItemEditor from '../ItemEditor';
+import ImageGrab from '../ImageGrab';
 import styles from './SingleItem.module.scss';
 import GameUtils from '../../../utils/GameUtils';
 
@@ -160,6 +161,16 @@ export default class SingleItem extends Component {
 
         <div className={styles.footer}>
           <div className={styles.cenGroup}>
+            <span>
+              <Button type="primary" onClick={() => {
+                Dialog.confirm({
+                  title: '选择过滤条件',
+                  content: <ImageGrab imageNumber={this.props.item.imageNumber} />,
+                });
+              }}>
+                抓取图片
+              </Button>
+            </span>
             <span>
               <Button type="primary" onClick={() => this.setState({showEditDialog: true})}>
                 编辑Rom信息

@@ -1,5 +1,17 @@
 
 export default class GameUtils {
+  static genImageNumFolder = (inImgNum) => {
+    const count = 500;
+    let calcImageNumer = parseInt(inImgNum, 10);
+    if (calcImageNumer === 0) {
+      calcImageNumer = 1;
+    }
+    const low = parseInt((calcImageNumer - 1) / count, 10) * count + 1;
+    const high = parseInt((calcImageNumer - 1) / count, 10) * count + count;
+    const imageNumFolder = `${low}-${high}`;
+    return imageNumFolder
+  }
+
   static genImageObj = (inImgNum, inImgUrl, inLocalImgUrl, inLocalImgFolder, nameNumber) => {
     const count = 500;
     const imageNumber = parseInt(inImgNum, 10);
