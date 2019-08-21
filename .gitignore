@@ -17,3 +17,6 @@ yarn-debug.log*
 yarn-error.log*
 /scripts/OffLineList2playlist/output
 /scripts/OffLineList2playlist/__pycache__
+/package-lock.json
+/yarn.lock
+/yarn-error.log
