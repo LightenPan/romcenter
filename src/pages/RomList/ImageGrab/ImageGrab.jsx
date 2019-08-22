@@ -8,8 +8,8 @@ import styles from './ImageGrab.module.scss';
 
 const { Row, Col } = Grid;
 
-const datUrlPrex = `https://raw.githubusercontent.com/LightenPan/romcenter/master/scripts/OffLineList2playlist/dats`;
-const imgsUrlPrex = 'https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/imgs';
+const datUrlPrex = `/cdn/RetroGame/dats`;
+const imgsUrlPrex = '/cdn/RetroGame/imgs';
 const lpLplName = {
   WSC: 'LP_WSC_OL',
   WS: 'LP_WS_OL',
@@ -80,8 +80,8 @@ export default class ImageGrab extends Component {
 
   onClickSaveImage = (imgUrl, name) => {
     const FileSaver = require('file-saver');
-    const proxyUrl = `/imgProxy?url=${imgUrl}`;
-    FileSaver.saveAs(proxyUrl, name);
+    // const proxyUrl = `/imgProxy?url=${imgUrl}`;
+    FileSaver.saveAs(imgUrl, name);
   }
 
   render() {

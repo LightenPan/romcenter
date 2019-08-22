@@ -8,6 +8,7 @@ import SingleItem from './SingleItem';
 import ItemEditor from './ItemEditor';
 
 import styles from './RomInfoList.module.scss';
+import FilterSelect from './FilterSelect';
 
 const { Row, Col } = Grid;
 
@@ -240,31 +241,13 @@ export default class RomInfoList extends Component {
   onClickFilter = () => {
     Dialog.confirm({
       title: '选择过滤条件',
-      content: (
-        <div>
-          <h3>列表条件</h3>
-          <div className={styles.renderedContainer}>
-            <Radio.Group
-              // value={this.state.filterType}
-              itemDirection='ver'
-              onChange={(val) => {
-                this.setState({filterType: val});
-              }}
-            >
-              <Radio value={0}>不过滤</Radio>
-              <Radio value={1}>只显示空备注数据</Radio>
-              <Radio value={2}>根据游戏编号过滤</Radio>
-              <Radio value={3}>根据图片编号过滤</Radio>
-            </Radio.Group>
-          </div>
-          <h3>列表查询数据</h3>
-          <div className={styles.renderedContainer}>
-            <Input
-              // value={this.state.queryText}
-              onChange={(val) => this.setState({queryText: val})} />
-          </div>
-        </div>
-      ),
+      content:
+        <FilterSelect
+          filterType={this.state.filterType}
+          queryText={this.state.queryText}
+          cbChange={(info) => {
+            this.setState({filterType: info.filterType, queryText: info.queryText});
+          }} />,
       onOk: () => {
         const { xmlData } = this.state;
         let allGameList = xmlData.dat.games.game;
@@ -294,6 +277,18 @@ export default class RomInfoList extends Component {
                 return true;
               }
               return false;
+            });
+            break;
+          case 4:
+            console.log('queryText: ', this.state.queryText);
+            allGameList = xmlData.dat.games.game.filter((item) => {
+              return item.title.match(this.state.queryText);
+            });
+            break;
+          case 5:
+            console.log('queryText: ', this.state.queryText);
+            allGameList = xmlData.dat.games.game.filter((item) => {
+              return item.comment.match(this.state.queryText);
             });
             break;
           default:
