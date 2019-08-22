@@ -34,8 +34,8 @@
 		</canOpen>
 		<newDat>
 		   <datVersionURL></datVersionURL>
-		   <datURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/dats/LP_CHS_FC_OL.xml</datURL>
-		   <imURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/imgs/LP_CHS_FC_OL</imURL>
+		   <datURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame//dats/LP_CHS_FC_OL.xml</datURL>
+		   <imURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame//imgs/LP_CHS_FC_OL</imURL>
 		</newDat>
 		<search>
 			<to value="location" default="true" auto="true"/>

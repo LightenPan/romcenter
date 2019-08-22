@@ -4,7 +4,7 @@
 	<configuration>
 		<datName>LP_CHS_NDS_OL</datName>
 		<imFolder>LP_CHS_NDS_OL</imFolder>
-		<datVersion>130503</datVersion>
+		<datVersion>20190823</datVersion>
 		<system>Nintendo DS</system>
 		<screenshotsWidth>256</screenshotsWidth>
 		<screenshotsHeight>384</screenshotsHeight>
@@ -32,7 +32,7 @@
 		<newDat>
 			<datVersionURL>http://ndsbbs-ol-chinese.googlecode.com/svn/trunk/NdsBbs_OL_CHINESE_RE.txt</datVersionURL>
 			<datURL fileName="NdsBbs_OL_CHINESE_RE.zip">http://ndsbbs-ol-chinese.googlecode.com/svn/trunk/NdsBbs_OL_CHINESE_RE.zip</datURL>
-			<imURL>http://www.advanscene.com/offline/imgs/ADVANsCEne_NDS/</imURL>
+            <imURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame/imgs/LP_CHS_NDS_OL</imURL>
 		</newDat>
 		<search>
 			<to value="location" default="true" auto="true"/>

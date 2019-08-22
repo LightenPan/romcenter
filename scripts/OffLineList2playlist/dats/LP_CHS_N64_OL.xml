@@ -7,7 +7,7 @@
 	<configuration>
 		<datName>LP_CHS_N64_OL</datName>
 		<imFolder>LP_CHS_N64_OL</imFolder>
-		<datVersion>20141210</datVersion>
+		<datVersion>20190823</datVersion>
 		<system>Nintendo - Nintendo 64</system>
 		<screenshotsWidth>320</screenshotsWidth>
 		<screenshotsHeight>240</screenshotsHeight>
@@ -36,7 +36,7 @@
 		<newDat>
 			<datVersionURL>http://ol.emu618.org:81/version/Chinese%20Games%20-%20N64.ver</datVersionURL>
 			<datURL fileName="CHS_N64_OL.zip">http://ol.emu618.org:81/dat/CHS_N64_OL.zip</datURL>
-			<imURL>http://ol.emu618.org:81/img/Chinese%20Games%20-%20N64/</imURL>
+            <imURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame/imgs/LP_CHS_N64_OL</imURL>
 		</newDat>
 		<search>
 			<to value="location" default="true" auto="true"></to>

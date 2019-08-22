@@ -3,7 +3,7 @@
   <configuration>
     <datName>LP_CHS_GBA_OL</datName>
     <imFolder>LP_CHS_GBA_OL</imFolder>
-    <datVersion>20160403</datVersion>
+    <datVersion>20190823</datVersion>
     <system>Nintendo Game Boy Advance</system>
     <screenshotsWidth>240</screenshotsWidth>
     <screenshotsHeight>160</screenshotsHeight>
@@ -28,7 +28,7 @@
       <!-- 新增加的汉化游戏，缺少缩略图 -->
       <datVersionURL/>
       <datURL fileName="Unofficial No-Intro Nintendo Game Boy Advance Chinese.zip"/>
-      <imURL>http://file3.ppxbbs.com/offlinelist/imgs/Unofficial%20No-Intro%20Nintendo%20Game%20Boy%20Advance%20Chinese/</imURL>
+      <imURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame/imgs/LP_CHS_GBA_OL</imURL>
     </newDat>
     <search>
       <to auto="true" default="true" value="location"/>
