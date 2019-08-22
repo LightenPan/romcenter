@@ -78,11 +78,31 @@ class FmtGame:
         self.comment = game['comment']
         self.romCRC = game['romCRC']
 
+        if not self.location:
+            self.location = ''
+        if not self.publisher:
+            self.publisher = ''
+        if not self.sourceRom:
+            self.sourceRom = ''
+        if not self.saveType:
+            self.saveType = ''
+        if not self.romSize:
+            self.romSize = ''
+        if not self.releaseNumber:
+            self.releaseNumber = ''
+        if not self.language:
+            self.language = ''
+        if not self.comment:
+            self.comment = ''
+        if not self.romCRC:
+            self.romCRC = ''
+
     def __format__(self, fmt):
         tmp_fmt = fmt
         for k, v in self._formats.items():
             tmp_fmt = tmp_fmt.replace(k, v)
-        return tmp_fmt.format(game=self)
+        text = tmp_fmt.format(game=self)
+        return text.strip()
 
 
 class XmlDataLoader:
