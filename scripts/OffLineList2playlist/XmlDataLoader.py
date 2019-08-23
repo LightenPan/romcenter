@@ -184,10 +184,14 @@ class XmlDataLoader:
             releaseNumber = int(releaseNumber)
             language = game.find('language').text
             comment = game.find('comment').text
-            romCRC = game.find('files/romCRC').text.upper()
+            romCRC = ''
+            if game.find('files/romCRC'):
+                romCRC = game.find('files/romCRC').text.upper()
             imageNumber = game.find('imageNumber').text
             imageNumber = int(imageNumber)
-            extension = game.find('files/romCRC').attrib['extension']
+            extension = ''
+            if game.find('files/romCRC') and 'extension' in game.find('files/romCRC'):
+                extension = game.find('files/romCRC').attrib['extension']
 
             info = {
                 'ori_title': ori_title,

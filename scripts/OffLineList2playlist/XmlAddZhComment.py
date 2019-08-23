@@ -148,7 +148,7 @@ if __name__ == "__main__":
             continue
 
         info = en2chs[crc]
-        tree_game.find('comment').text = info['cname']
+        tree_game.find('comment').text = str(info['cname'])
     pbar.close()
 
     # 再用英文名匹配
@@ -179,7 +179,7 @@ if __name__ == "__main__":
             continue
         info_simple = en2chs_simple[title]
         tree_game = tree_games[index]
-        tree_game.find('comment').text = info_simple['cname']
+        tree_game.find('comment').text = str(info_simple['cname'])
     pbar.close()
 
     if options.output_xml:
