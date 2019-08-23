@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import IceContainer from '@icedesign/container';
 import { Grid, Pagination, Button, Dialog, Input, Loading, Radio } from '@alifd/next';
 import Files from 'react-files'
+import JSONC from 'jsoncomp';
 import GameUtils from '@/utils/GameUtils';
 
 import SingleItem from './SingleItem';
@@ -11,6 +12,21 @@ import styles from './RomInfoList.module.scss';
 import FilterSelect from './FilterSelect';
 
 const { Row, Col } = Grid;
+
+function B64ZipPackJson(data) {
+  const zlib = require('zlib');
+  const zipString = zlib.gzipSync(Buffer.from(JSON.stringify(data)));
+  const b64String = Buffer.from(zipString).toString('base64')
+  return b64String;
+}
+
+function B64ZipUnpackJson(data) {
+  const zipString = new Buffer(data, 'base64');
+  const zlib = require('zlib');
+  const jsonString = Buffer.from(zlib.gunzipSync(zipString), 'binary').toString();
+  return JSON.parse(jsonString);
+}
+
 
 export default class RomInfoList extends Component {
   static displayName = 'RomInfoList';
@@ -41,11 +57,13 @@ export default class RomInfoList extends Component {
 
   // 在组件挂载之前把数据设置进去(可以用initValue替代这种用法)
   componentWillMount = () => {
-    const xmldata = localStorage.getItem("xmldata");
+    let xmldata = localStorage.getItem("xmldata");
     const filename = localStorage.getItem("filename");
     if (filename && xmldata) {
       try {
-        this.initGameList(filename, JSON.parse(xmldata));
+        xmldata = B64ZipUnpackJson(xmldata);
+        // xmldata = JSON.parse(xmldata);
+        this.initGameList(filename, xmldata);
       } catch (error) {
         console.log(error);
       }
@@ -98,7 +116,8 @@ export default class RomInfoList extends Component {
       const end = Math.min(start + context.pageCount, allGameList.length);
       showGameList = allGameList.slice(start, end);
     }
-    localStorage.setItem("xmldata", JSON.stringify(xmlData));
+    localStorage.setItem("xmldata", B64ZipPackJson(xmlData));
+    // localStorage.setItem("xmldata", JSON.stringify(xmlData));
     localStorage.setItem("context", JSON.stringify(this.state.context));
     this.setState({ showAddDialog: false, allGameList, showGameList, xmlData });
   }
@@ -118,7 +137,8 @@ export default class RomInfoList extends Component {
         this.setState({context});
         this.initGameList(fileObj.name, res);
         localStorage.setItem("filename", fileObj.name);
-        localStorage.setItem("xmldata", JSON.stringify(res));
+        localStorage.setItem("xmldata", B64ZipPackJson(res));
+        // localStorage.setItem("xmldata", JSON.stringify(res));
         localStorage.setItem("context", JSON.stringify(this.state.context));
       });
     };
@@ -234,7 +254,8 @@ export default class RomInfoList extends Component {
     const end = Math.min(start + context.pageCount, allGameList.length);
     const showGameList = allGameList.slice(start, end);
     this.setState({ showLoading: false, allGameList, showGameList, xmlData });
-    localStorage.setItem("xmldata", JSON.stringify(xmlData));
+    localStorage.setItem("xmldata", B64ZipPackJson(xmlData));
+    // localStorage.setItem("xmldata", JSON.stringify(xmlData));
     localStorage.setItem("context", JSON.stringify(this.state.context));
   }
 
