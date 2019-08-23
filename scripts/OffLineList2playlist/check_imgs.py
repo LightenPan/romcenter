@@ -45,10 +45,10 @@ if __name__ == "__main__":
     listdir(options.imgs, files)
 
     fail_list = list()
-    pbar = tqdm(files)
+    pbar = tqdm(files, ascii=True)
     threads = []
     for item in pbar:
-        pbar.set_description("处理文件 %s" % item)
+        pbar.set_description("处理 %s" % item)
         pbar.update()
 
         ext = os.path.splitext(item)[-1]

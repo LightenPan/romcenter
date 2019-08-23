@@ -53,7 +53,7 @@ if __name__ == "__main__":
     index = 0
     no_chs_list = list()
     tree_games = tree.findall('games/game')
-    pbar = tqdm(data['game_list'])
+    pbar = tqdm(data['game_list'], ascii=True)
     for game in pbar:
         pbar.set_description("处理 %s" % xml_data_loader.genGameName(game))
         pbar.update()

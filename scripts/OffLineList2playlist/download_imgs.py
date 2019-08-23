@@ -259,14 +259,14 @@ if __name__ == "__main__":
     logger.info('生成缩略图:')
     index = 0
     image_count = 500
-    pbar = tqdm(data['game_list'])
+    pbar = tqdm(data['game_list'], ascii=True)
     threads = []
     for game in pbar:
         index = index + 1
         # if index > 10:
         #     break
 
-        pbar.set_description("处理缩略图 %s" % xml_data_loader.genGameName(game))
+        pbar.set_description("处理 %s" % xml_data_loader.genGameName(game))
         pbar.update()
 
         calcNumber = game['imageNumber']

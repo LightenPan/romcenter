@@ -38,7 +38,7 @@ if __name__ == "__main__":
 
     logging.info('生成csv:')
     image_count = 500
-    pbar = tqdm(data['game_list'])
+    pbar = tqdm(data['game_list'], ascii=True)
     output_file = open(options.output, 'w', encoding='utf-8')
     for game in pbar:
         pbar.set_description("处理 %s" % xml_data_loader.genGameName(game))

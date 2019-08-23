@@ -5,6 +5,18 @@ from PIL import Image
 from XmlDataLoader import XmlDataLoader
 
 
+# 利用logging.basicConfig()打印信息到控制台
+import logging
+logging.basicConfig(
+    format='%(asctime)s [%(levelname)s] [%(pathname)s:%(lineno)d] [%(module)s] [%(funcName)s] >> %(message)s',
+    level=logging.DEBUG
+)
+
+# 关闭requests的日志
+logging.getLogger("PIL").setLevel(logging.WARNING)
+logger = logging.getLogger('')
+
+
 def listdir(dst_dir, list_name):  #传入存储的list
     for root, dirs, files in os.walk(dst_dir):
         # print(root) #当前目录路径
@@ -50,12 +62,12 @@ if __name__ == "__main__":
     miss_image_list = list()
     index = 0
     image_count = 500
-    pbar = tqdm(data['game_list'])
+    pbar = tqdm(data['game_list'], ascii=True)
     threads = []
     for game in pbar:
         index = index + 1
 
-        pbar.set_description("处理缩略图 %s" % xml_data_loader.genGameName(game))
+        pbar.set_description("处理 %s" % xml_data_loader.genGameName(game))
         pbar.update()
 
         calcNumber = game['imageNumber']

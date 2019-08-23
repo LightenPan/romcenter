@@ -54,7 +54,7 @@ if __name__ == "__main__":
     logging.info('生成excel:')
     values = [[0 for i in range(2)] for j in range(len(data['game_list']))]
     image_count = 500
-    pbar = tqdm(data['game_list'])
+    pbar = tqdm(data['game_list'], ascii=True)
     output_file = open(options.output, 'w', encoding='utf-8')
     row = 0
     for game in pbar:

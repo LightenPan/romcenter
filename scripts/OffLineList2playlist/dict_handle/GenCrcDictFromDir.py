@@ -91,10 +91,10 @@ if __name__ == "__main__":
         en2chs_dict = load_en2chs(options.exist_en2chs)
 
     crc_list = list()
-    pbar = tqdm(files)
+    pbar = tqdm(files, ascii=True)
     threads = []
     for item in pbar:
-        pbar.set_description("处理文件 %s" % item)
+        pbar.set_description("处理 %s" % item)
         pbar.update()
 
         info = crc32_from_zip_file(item)

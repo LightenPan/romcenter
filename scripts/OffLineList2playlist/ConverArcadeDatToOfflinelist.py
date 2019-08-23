@@ -49,7 +49,7 @@ if __name__ == "__main__":
 
     # 遍历街机
     index = -1
-    pbar = tqdm(xml_arcade_game_list)
+    pbar = tqdm(xml_arcade_game_list, ascii=True)
     for game in pbar:
         # if index > 1000:
         #     break

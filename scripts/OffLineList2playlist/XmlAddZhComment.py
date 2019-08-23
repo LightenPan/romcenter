@@ -133,7 +133,7 @@ if __name__ == "__main__":
     tree_games = tree.findall('games/game')
 
     # 先用crc匹配
-    pbar = tqdm(data['game_list'])
+    pbar = tqdm(data['game_list'], ascii=True)
     for game in pbar:
         index = index + 1
         pbar.set_description("处理 %s" % xml_data_loader.genGameName(game))
@@ -153,7 +153,7 @@ if __name__ == "__main__":
 
     # 再用英文名匹配
     index = -1
-    pbar = tqdm(data['game_list'])
+    pbar = tqdm(data['game_list'], ascii=True)
     for game in pbar:
         index = index + 1
         pbar.set_description("处理 %s" % xml_data_loader.genGameName(game))
