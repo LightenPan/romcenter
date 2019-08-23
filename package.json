@@ -1,5 +1,5 @@
 {
-  "name": "@icedesign/algorithm-model-admin-scaffold",
+  "name": "romcenter",
   "version": "2.0.9",
   "description": "该模板适用于数据模型类的管理类后台，内置通用的介绍页和丰富的区块，使用时需要根据需求进行删除和添加",
   "keywords": [
