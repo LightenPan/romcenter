@@ -38,7 +38,7 @@ class ScreenScraperHelper:
         rand = random.randint(0, len(self.devlist) - 1)
         return self.devlist[rand]
 
-    def __jeuInfos(self, crc):
+    def __jeuInfos(self, crc, name):
         devinfo = self.__get_rand_dev_info()
         params = {
             'devid': devinfo['devid'],
@@ -47,8 +47,14 @@ class ScreenScraperHelper:
             'output': 'json',
             'crc': crc,
             # 'romnom': 'Sonic',
-            'romnom': 'LightenPan',
+            # 'romnom': 'LightenPan',
+            'ssid': 'LightenPan',
+            'sspassword': 'panliang1985',
         }
+        if crc:
+            params['crc'] = crc
+        if name:
+            params['romnom'] = name
         url = 'http://www.screenscraper.fr/api/jeuInfos.php'
         import requests
         if self.use_socks5_proxy == 1:
@@ -67,73 +73,50 @@ class ScreenScraperHelper:
             excep, traceback.format_exc(), resp.text, resp.url)
             return None
 
-    def getGameImageUrls(self, crc):
-        jdata = self.__jeuInfos(crc)
+    def getGameImageUrlsByName(self, name):
+        jdata = self.__jeuInfos(None, name)
         if not jdata:
             return None, None
+        return self.__getGameImageUrls(jdata)
 
+    def getGameImageUrls(self, crc):
+        jdata = self.__jeuInfos(crc, None)
+        if not jdata:
+            return None, None
+        return self.__getGameImageUrls(jdata)
+
+    def __getGameImageUrls(self, jdata):
         try:
             if 'roms' not in jdata['response']['jeu']:
                   return None, None
 
-            select_rom = None
-            roms = jdata['response']['jeu']['roms']
-            for rom in roms:
-                if rom['romcrc'].upper() == crc.upper():
-                    select_rom = rom
-            if not select_rom:
-                  return None, None
-
-            romregions = ''
-            if 'romregions' in select_rom:
-                romregions = select_rom['romregions']
-
             img1 = None
             img2 = None
             medias = jdata['response']['jeu']['medias']
-            if type(medias) is dict:
-                if 'media_screenshot' in medias and 'media_screenshottitle' in medias:
-                    img1 = medias['media_screenshot']
+
+            if 'media_screenshot' in medias and 'media_screenshottitle' in medias:
+                img1 = medias['media_screenshot']
+                img2 = medias['media_screenshottitle']
+                return img1, img2
+            if 'media_screenshot' in medias or 'media_screenshottitle' in medias:
+                if 'media_screenshot' not in medias:
+                    img1 = medias['media_screenshottitle']
                     img2 = medias['media_screenshottitle']
                     return img1, img2
-                if 'media_screenshot' in medias or 'media_screenshottitle' in medias:
-                    if 'media_screenshot' not in medias:
-                        img1 = medias['media_screenshottitle']
-                        img2 = medias['media_screenshottitle']
-                        return img1, img2
-                    else:
-                        img1 = medias['media_screenshot']
-                        img2 = medias['media_screenshot']
-                        return img1, img2
+                else:
+                    img1 = medias['media_screenshot']
+                    img2 = medias['media_screenshot']
+                    return img1, img2
 
-                # GBC-ROM取封面不同
-                if 'media_boxs' in medias:
-                    media_boxs = medias['media_boxs']
-                    if 'media_boxs2d' in media_boxs and 'media_box2d_ss' in media_boxs['media_boxs2d']:
-                        img1 = media_boxs['media_boxs2d']['media_box2d_ss']
-                    if 'media_boxstexture' in media_boxs and 'media_boxtexture_ss' in media_boxs['media_boxstexture']:
-                        img2 = media_boxs['media_boxstexture']['media_boxtexture_ss']
-                    if img1 and img2:
-                        return img1, img2
-
-            for item in medias:
-                if item['region'] != romregions:
-                      break
-                if item['type'] == 'sstitle':
-                      img1 = item['url']
-                if item['type'] == 'ss':
-                      img2 = item['url']
-            if not img1:
-                for item in medias:
-                  if item['type'] == 'sstitle':
-                        img1 = item['url']
-                        break
-            if not img2:
-                for item in medias:
-                  if item['type'] == 'ss':
-                        img1 = item['url']
-                        break
-            return img1, img2
+            # GBC-ROM取封面不同
+            if 'media_boxs' in medias:
+                media_boxs = medias['media_boxs']
+                if 'media_boxs2d' in media_boxs and 'media_box2d_ss' in media_boxs['media_boxs2d']:
+                    img1 = media_boxs['media_boxs2d']['media_box2d_ss']
+                if 'media_boxstexture' in media_boxs and 'media_boxtexture_ss' in media_boxs['media_boxstexture']:
+                    img2 = media_boxs['media_boxstexture']['media_boxtexture_ss']
+                if img1 and img2:
+                    return img1, img2
 
         except Exception as excep:
             print('getGameImageUrls failed. excep: %s, traceback: %s, header: %s' % (

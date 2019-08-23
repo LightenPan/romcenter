@@ -58,7 +58,7 @@ def load_en2chs(file):
         # print line,            # 后面跟 ',' 将忽略换行符
         # print(line, end = '')  # 在 Python 3中使用
         info = json.loads(line)
-        xdict[info['ename']] = info
+        xdict[info['ename']] = info['cname']
         line = f.readline()
     f.close()
     return xdict

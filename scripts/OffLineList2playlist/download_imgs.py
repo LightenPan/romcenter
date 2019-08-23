@@ -155,6 +155,17 @@ def check_and_download_by_crc(use_socks5_proxy, crc, dst_title_file, dst_snaps_f
         DOWNLOAD_FAILED_LIST.append(dst_snaps_file)
     return do_download(use_socks5_proxy, image_title_url, image_snaps_url, dst_title_file, dst_snaps_file)
 
+def check_and_download_by_name(use_socks5_proxy, name, dst_title_file, dst_snaps_file):
+    if os.path.exists(dst_title_file) and os.path.exists(dst_snaps_file):
+        return True
+    helper = ScreenScraperHelper(use_socks5_proxy)
+    image_title_url, image_snaps_url = helper.getGameImageUrlsByName(name)
+    if not image_title_url:
+        DOWNLOAD_FAILED_LIST.append(dst_title_file)
+    if not image_snaps_url:
+        DOWNLOAD_FAILED_LIST.append(dst_snaps_file)
+    return do_download(use_socks5_proxy, image_title_url, image_snaps_url, dst_title_file, dst_snaps_file)
+
 
 def check_and_download_by_image_number(use_socks5_proxy, imageNumber, dst_title_file, dst_snaps_file):
     if os.path.exists(dst_title_file) and os.path.exists(dst_snaps_file):
@@ -184,6 +195,8 @@ def try_multi_check_and_download(params):
     for _ in range(1, count):
         if params['by_crc'] == 1:
             succ = check_and_download_by_crc(use_socks5_proxy, params['crc'], params['afile'], params['bfile'])
+        elif params['by_name'] == 1:
+            succ = check_and_download_by_name(use_socks5_proxy, params['name'], params['afile'], params['bfile'])
         else:
             succ = check_and_download_by_image_number(use_socks5_proxy, params['imageNumber'], params['afile'], params['bfile'])
         if succ:
@@ -199,6 +212,7 @@ if __name__ == "__main__":
     parser.add_option("--dst_dir")
     parser.add_option("--user_release_number")
     parser.add_option("--by_crc")
+    parser.add_option("--by_name")
     parser.add_option("--thread_num")
     parser.add_option("--use_socks5_proxy")
 
@@ -219,6 +233,11 @@ if __name__ == "__main__":
         options.by_crc = 1
     else:
         options.by_crc = int(options.by_crc)
+
+    if not options.by_name:
+        options.by_name = 0
+    else:
+        options.by_name = int(options.by_name)
 
     if not options.thread_num:
         options.thread_num = 4
@@ -244,7 +263,7 @@ if __name__ == "__main__":
     threads = []
     for game in pbar:
         index = index + 1
-        # if index > 100:
+        # if index > 10:
         #     break
 
         pbar.set_description("处理缩略图 %s" % xml_data_loader.genGameName(game))
@@ -271,7 +290,9 @@ if __name__ == "__main__":
 
         params = {
           'by_crc': options.by_crc,
+          'by_name': options.by_name,
           'crc': game['romCRC'],
+          'name': game['title'],
           'imageNumber': imageNumber,
           'afile': afile,
           'bfile': bfile,
