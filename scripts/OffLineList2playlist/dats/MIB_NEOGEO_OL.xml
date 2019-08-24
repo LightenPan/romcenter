@@ -1,0 +1,4080 @@
+<dat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="datas.xsd">
+	<configuration>
+		<datName>MIB_NEOGEO_OL</datName>
+		<imFolder>MIB_NEOGEO_OL</imFolder>
+		<datVersion>20190823</datVersion>
+		<system>FB Alpha</system>
+		<screenshotsWidth>240</screenshotsWidth>
+		<screenshotsHeight>160</screenshotsHeight>
+		<infos>
+			<title default="false" inNamingOption="true" visible="false" />
+			<location default="true" inNamingOption="true" visible="true" />
+			<publisher default="true" inNamingOption="true" visible="true" />
+			<sourceRom default="true" inNamingOption="true" visible="true" />
+			<saveType default="true" inNamingOption="true" visible="true" />
+			<romSize default="true" inNamingOption="true" visible="true" />
+			<releaseNumber default="true" inNamingOption="true" visible="true" />
+			<comment default="true" inNamingOption="true" visible="true" />
+			<romCRC default="true" inNamingOption="true" visible="true" />
+			<im1CRC default="false" inNamingOption="true" visible="true" />
+			<im2CRC default="false" inNamingOption="true" visible="true" />
+			<languages default="true" inNamingOption="true" visible="true" />
+		</infos>
+		<canOpen>
+			<extension>.zip</extension>
+		</canOpen>
+		<newDat>
+			<datVersionURL />
+			<datURL fileName="Unofficial No-Intro Nintendo Game Boy Advance Chinese.zip" />
+			<imURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame/imgs/MIB_NEOGEO_OL</imURL>
+		</newDat>
+		<search>
+			<to auto="true" default="true" value="location" />
+			<to auto="false" default="true" value="romSize">
+				<find operation="&lt;" value="4194304">&lt; 32 MBits</find>
+				<find operation="=" value="4194304">= 32 MBits</find>
+				<find operation="=" value="8388608">= 64 MBits</find>
+				<find operation="=" value="16777216">= 128 MBits</find>
+				<find operation="=" value="33554432">= 256 MBits</find>
+			</to>
+			<to auto="true" default="true" value="languages" />
+			<to auto="false" default="true" value="saveType">
+				<find operation="inNoCase" value="EEPROM">Eeprom</find>
+				<find operation="inNoCase" value="FLASH">Flash</find>
+				<find operation="inNoCase" value="SRAM">SRam</find>
+				<find operation="inNoCase" value="NONE">None</find>
+			</to>
+			<to auto="true" default="true" value="publisher" />
+			<to auto="true" default="true" value="sourceRom" />
+		</search>
+		<romTitle>%u - %n %e %g</romTitle>
+	</configuration>
+	<games>
+		<game>
+			<releaseNumber>1</releaseNumber>
+			<imageNumber>1</imageNumber>
+			<title>2020bb</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">A180DB80</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>2020超级棒球</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>2</releaseNumber>
+			<imageNumber>2</imageNumber>
+			<title>3countb</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">E59385A9</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>三回合较量-火线摔跤</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>3</releaseNumber>
+			<imageNumber>3</imageNumber>
+			<title>alpham2</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">68435EAE</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>阿尔法任务II-最后的守护神</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>4</releaseNumber>
+			<imageNumber>4</imageNumber>
+			<title>androdun</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">6906267A</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>勇者之击</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>5</releaseNumber>
+			<imageNumber>5</imageNumber>
+			<title>aodk</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">17303CE0</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>热血进行曲</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>6</releaseNumber>
+			<imageNumber>6</imageNumber>
+			<title>aof</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">AC09D00</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>龙虎之拳</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>7</releaseNumber>
+			<imageNumber>7</imageNumber>
+			<title>aof2</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">5BE820B8</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>龙虎之拳2</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>8</releaseNumber>
+			<imageNumber>8</imageNumber>
+			<title>aof3</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">A015CAC</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>龙虎之拳3-斗士之路</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>9</releaseNumber>
+			<imageNumber>9</imageNumber>
+			<title>b2b</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">316C55E8</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>棒棒破坏者</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>10</releaseNumber>
+			<imageNumber>10</imageNumber>
+			<title>bakatono</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">D22BB73E</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>傻瓜殿下麻雀漫游记</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>11</releaseNumber>
+			<imageNumber>11</imageNumber>
+			<title>bangbead</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">2AEDCA8D</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>碰碰球</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>12</releaseNumber>
+			<imageNumber>12</imageNumber>
+			<title>bjourney</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">7297071F</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>蓝色之旅-拉吉少年</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>13</releaseNumber>
+			<imageNumber>13</imageNumber>
+			<title>blazstar</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">4459FBD4</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>闪亮之星</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>14</releaseNumber>
+			<imageNumber>14</imageNumber>
+			<title>breakers</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">238A09F5</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>爆烈人-末日英雄</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>15</releaseNumber>
+			<imageNumber>15</imageNumber>
+			<title>breakrev</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">8CCCBB6B</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>爆烈人-复仇</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>16</releaseNumber>
+			<imageNumber>16</imageNumber>
+			<title>bstars</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">CCDA2B98</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>棒球之星</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>17</releaseNumber>
+			<imageNumber>17</imageNumber>
+			<title>bstars2</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">69F18B1D</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>棒球之星2</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>18</releaseNumber>
+			<imageNumber>18</imageNumber>
+			<title>burningf</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">6F36B49C</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>热血快打</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>19</releaseNumber>
+			<imageNumber>19</imageNumber>
+			<title>cnbe</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">B74E1256</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>代号BlutEngel</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>20</releaseNumber>
+			<imageNumber>20</imageNumber>
+			<title>columnsn</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">BF330621</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>宝石方块</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>21</releaseNumber>
+			<imageNumber>21</imageNumber>
+			<title>cphd</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">A0A7BA6</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>卧马藏龙</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>22</releaseNumber>
+			<imageNumber>22</imageNumber>
+			<title>crsword</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">FBDE43D0</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>圣十字剑</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>23</releaseNumber>
+			<imageNumber>23</imageNumber>
+			<title>kof94</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">E46573E6</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇94</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>24</releaseNumber>
+			<imageNumber>24</imageNumber>
+			<title>kof95</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">2C655163</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇95</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>25</releaseNumber>
+			<imageNumber>25</imageNumber>
+			<title>kof96</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">7F1581B0</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇96</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>26</releaseNumber>
+			<imageNumber>26</imageNumber>
+			<title>kof96ae</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">20865151</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇96-周年纪念版 [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>27</releaseNumber>
+			<imageNumber>27</imageNumber>
+			<title>kof96ae20</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">53484B33</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇96-周年纪念版2.0 [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>28</releaseNumber>
+			<imageNumber>28</imageNumber>
+			<title>kof96cn</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">E5C19D0</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇96-ChineseEdition [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>29</releaseNumber>
+			<imageNumber>29</imageNumber>
+			<title>kof97</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">F373FB35</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇97</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>30</releaseNumber>
+			<imageNumber>30</imageNumber>
+			<title>kof97oro</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">E7D29EED</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇97-重出江湖 [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>31</releaseNumber>
+			<imageNumber>31</imageNumber>
+			<title>kof97pls</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">C07E9E1</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇97-风云再起Plus [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>32</releaseNumber>
+			<imageNumber>32</imageNumber>
+			<title>kof97xt</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">24B89779</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇97-FinalBattle [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>33</releaseNumber>
+			<imageNumber>33</imageNumber>
+			<title>kof97cn</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">14AB7CD4</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇97-10周年纪念 [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>34</releaseNumber>
+			<imageNumber>34</imageNumber>
+			<title>kog</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">95CD5265</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇97-果体版 [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>35</releaseNumber>
+			<imageNumber>35</imageNumber>
+			<title>kogplus</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">77D8F03D</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇97-果体版Plus [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>36</releaseNumber>
+			<imageNumber>36</imageNumber>
+			<title>kof98h</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">D59448F1</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇98-梦战斗未结束</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>37</releaseNumber>
+			<imageNumber>37</imageNumber>
+			<title>kof98cb</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">ED6A0B51</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇98-COMBO [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>38</releaseNumber>
+			<imageNumber>38</imageNumber>
+			<title>kof98ae</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">BAAF3215</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇98-周年纪念版 [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>39</releaseNumber>
+			<imageNumber>39</imageNumber>
+			<title>kof98ae2016</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">EF9B3E6F</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇98-周年纪念版2016 [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>40</releaseNumber>
+			<imageNumber>40</imageNumber>
+			<title>kof99h</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">5D5BA72B</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇99-千禧之战</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>41</releaseNumber>
+			<imageNumber>41</imageNumber>
+			<title>kof99ae</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">F6281948</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇99-周年纪念版 [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>42</releaseNumber>
+			<imageNumber>42</imageNumber>
+			<title>kof2000</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">4D1CDC66</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇2K</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>43</releaseNumber>
+			<imageNumber>43</imageNumber>
+			<title>kof2000ps2</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">1209E96C</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇2K-仿PS2 [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>44</releaseNumber>
+			<imageNumber>44</imageNumber>
+			<title>kof2001</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">5D3BFA58</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇2K1</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>45</releaseNumber>
+			<imageNumber>45</imageNumber>
+			<title>kf2k1pls</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">E5DFEF40</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇2K1-增强型Plus [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>46</releaseNumber>
+			<imageNumber>46</imageNumber>
+			<title>cthd2003</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">8C7601BB</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇2K1-卧虎藏龙2K3 [R1][Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>47</releaseNumber>
+			<imageNumber>47</imageNumber>
+			<title>cthd2k3a</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">505AC355</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇2K1-卧虎藏龙2K3 [R2][Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>48</releaseNumber>
+			<imageNumber>48</imageNumber>
+			<title>ct2k3sa</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">4C7BF257</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇2K1-卧虎藏龙2K3SuperPlus [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>49</releaseNumber>
+			<imageNumber>49</imageNumber>
+			<title>ct2k3sp</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">FA617B16</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇2K1-卧虎藏龙2K3风云SuperPlus [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>50</releaseNumber>
+			<imageNumber>50</imageNumber>
+			<title>kof2002</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">990B0B00</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇2K2</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>51</releaseNumber>
+			<imageNumber>51</imageNumber>
+			<title>kf2k2mp</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">F5715412</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇2K2-MagicPlus [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>52</releaseNumber>
+			<imageNumber>52</imageNumber>
+			<title>kf2k2mp2</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">B029BACC</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇2K2-MagicPlusII [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>53</releaseNumber>
+			<imageNumber>53</imageNumber>
+			<title>kf2k2pls</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">327C0D</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇2K2-风云再起 [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>54</releaseNumber>
+			<imageNumber>54</imageNumber>
+			<title>kf2k2pla</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">F553E2DE</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇2K2-风云再起Plus [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>55</releaseNumber>
+			<imageNumber>55</imageNumber>
+			<title>kf2k4pls</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">73FCE475</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇2K2-风云再起2K4 [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>56</releaseNumber>
+			<imageNumber>56</imageNumber>
+			<title>kf10thep</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">EF85A99B</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇2K2-ExtraPlus [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>57</releaseNumber>
+			<imageNumber>57</imageNumber>
+			<title>kf2k2plc</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">E43575D3</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇2K2-Super [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>58</releaseNumber>
+			<imageNumber>58</imageNumber>
+			<title>kof2k4se</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">817E30EB</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇2K2-特别版2004 [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>59</releaseNumber>
+			<imageNumber>59</imageNumber>
+			<title>kf2k2ps2</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">80219FD9</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇2K2-仿PS2 [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>60</releaseNumber>
+			<imageNumber>60</imageNumber>
+			<title>kof10th</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">127C885</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇2K2-十周年纪念 [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>61</releaseNumber>
+			<imageNumber>61</imageNumber>
+			<title>kf2k5uni</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">3311FE0</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇2K2-十周年纪念2005 [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>62</releaseNumber>
+			<imageNumber>62</imageNumber>
+			<title>kof2003</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">553E08F3</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇2K3 [NGM]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>63</releaseNumber>
+			<imageNumber>63</imageNumber>
+			<title>kf2k3pcb</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">96372396</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇2K3 [Jamma]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>64</releaseNumber>
+			<imageNumber>64</imageNumber>
+			<title>kf2k3pl</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">FC6CDDBA</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇2K3-拳皇2K4ExHero [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>65</releaseNumber>
+			<imageNumber>65</imageNumber>
+			<title>kf2k3upl</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">88B1AD96</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇2K3-拳皇2004Ex风云Plus [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>66</releaseNumber>
+			<imageNumber>66</imageNumber>
+			<title>ctomaday</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">37625DD0</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>蕃茄超人</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>67</releaseNumber>
+			<imageNumber>67</imageNumber>
+			<title>cyberlip</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">E51609CA</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>战斗边缘</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>68</releaseNumber>
+			<imageNumber>68</imageNumber>
+			<title>diggerma</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">EC62CD10</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>挖地先生</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>69</releaseNumber>
+			<imageNumber>69</imageNumber>
+			<title>doubledr</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">DD0CED8D</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>双截龙格斗</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>70</releaseNumber>
+			<imageNumber>70</imageNumber>
+			<title>eightman</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">116EDACA</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>八超人</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>71</releaseNumber>
+			<imageNumber>71</imageNumber>
+			<title>fatfury1</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">D4A0A573</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>饿狼传说-宿命之战</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>72</releaseNumber>
+			<imageNumber>72</imageNumber>
+			<title>fatfursp</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">90124CEF</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>饿狼传说特别版</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>73</releaseNumber>
+			<imageNumber>73</imageNumber>
+			<title>fatfury2</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">4F61316E</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>饿狼传说2-新的战斗</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>74</releaseNumber>
+			<imageNumber>74</imageNumber>
+			<title>fatfury3</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">C4B42E4C</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>饿狼传说3-通向最终胜利的道路</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>75</releaseNumber>
+			<imageNumber>75</imageNumber>
+			<title>rbff1</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">3A73DEAC</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>RB饿狼传说</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>76</releaseNumber>
+			<imageNumber>76</imageNumber>
+			<title>rbff1a</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">C09E411</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>RB饿狼传说 [BugFix]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>77</releaseNumber>
+			<imageNumber>77</imageNumber>
+			<title>rbff2</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">57069BA0</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>RB饿狼传说2-新来者</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>78</releaseNumber>
+			<imageNumber>78</imageNumber>
+			<title>rbffspec</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">234E9A55</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>RB饿狼传说特别版</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>79</releaseNumber>
+			<imageNumber>79</imageNumber>
+			<title>garou</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">BC1EDDA4</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>饿狼-狼之烙印</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>80</releaseNumber>
+			<imageNumber>80</imageNumber>
+			<title>fbfrenzy</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">20E8EE58</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>疯狂橄榄球</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>81</releaseNumber>
+			<imageNumber>81</imageNumber>
+			<title>fightfev</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">EE533F76</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>狂热格斗</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>82</releaseNumber>
+			<imageNumber>82</imageNumber>
+			<title>flipshot</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">E17515B2</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>盾牌大战</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>83</releaseNumber>
+			<imageNumber>83</imageNumber>
+			<title>galaxyfg</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">32FC0C04</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>银河快打-星系格斗</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>84</releaseNumber>
+			<imageNumber>84</imageNumber>
+			<title>ganryu</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">757BE43</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>武藏严流记</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>85</releaseNumber>
+			<imageNumber>85</imageNumber>
+			<title>ghostlop</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">C0D9C83</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>鬼精灵投球手</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>86</releaseNumber>
+			<imageNumber>86</imageNumber>
+			<title>goalx3</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">EEA68CC8</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>射门射门射门</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>87</releaseNumber>
+			<imageNumber>87</imageNumber>
+			<title>gowcaizr</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">C26AA25</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>超人学园钢帝王</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>88</releaseNumber>
+			<imageNumber>88</imageNumber>
+			<title>gpilots</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">7D4F07BC</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>魔鬼飞行员-幽灵战区</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>89</releaseNumber>
+			<imageNumber>89</imageNumber>
+			<title>gururin</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">FE863CAB</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>旋转方块</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>90</releaseNumber>
+			<imageNumber>90</imageNumber>
+			<title>ironclad</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">F64403E3</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>超铁战机</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>91</releaseNumber>
+			<imageNumber>91</imageNumber>
+			<title>janshin</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">58429D39</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>雀神传说-寻找麻将大师</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>92</releaseNumber>
+			<imageNumber>92</imageNumber>
+			<title>jockeygp</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">85A9E787</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>赌马</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>93</releaseNumber>
+			<imageNumber>93</imageNumber>
+			<title>joyjoy</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">D43D3312</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>阳光方块</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>94</releaseNumber>
+			<imageNumber>94</imageNumber>
+			<title>karnovr</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">98F1B086</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>格斗列传-卡诺夫的复仇</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>95</releaseNumber>
+			<imageNumber>95</imageNumber>
+			<title>kotm</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">E8B6E172</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>怪兽之王 [R1]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>96</releaseNumber>
+			<imageNumber>96</imageNumber>
+			<title>kotmh</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">F4E30F18</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>怪兽之王 [R2]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>97</releaseNumber>
+			<imageNumber>97</imageNumber>
+			<title>kotm2</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">4087FE81</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>怪兽之王2</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>98</releaseNumber>
+			<imageNumber>98</imageNumber>
+			<title>lbowling</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">ACD422F5</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>联盟保龄球</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>99</releaseNumber>
+			<imageNumber>99</imageNumber>
+			<title>legendos</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">4631276B</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>乔的传说</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>100</releaseNumber>
+			<imageNumber>100</imageNumber>
+			<title>lresort</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">C605AEFF</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>终极手段</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>101</releaseNumber>
+			<imageNumber>101</imageNumber>
+			<title>magdrop2</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">D2B6ED66</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>魔法气泡II</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>102</releaseNumber>
+			<imageNumber>102</imageNumber>
+			<title>magdrop3</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">9517A8C6</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>魔法气泡III</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>103</releaseNumber>
+			<imageNumber>103</imageNumber>
+			<title>maglord</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">91042B37</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>幻魔大战</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>104</releaseNumber>
+			<imageNumber>104</imageNumber>
+			<title>mahretsu</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">33F3A312</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>麻雀狂列传</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>105</releaseNumber>
+			<imageNumber>105</imageNumber>
+			<title>miexchng</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">C8D7269B</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>金钱游戏</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>106</releaseNumber>
+			<imageNumber>106</imageNumber>
+			<title>minasan</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">53E5EEE6</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>麻雀大富翁</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>107</releaseNumber>
+			<imageNumber>107</imageNumber>
+			<title>mslug</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">AC6E93EA</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>合金弹头1-超级坦克-001</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>108</releaseNumber>
+			<imageNumber>108</imageNumber>
+			<title>mslug2</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">F03E8E61</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>合金弹头2-超级坦克-001-II</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>109</releaseNumber>
+			<imageNumber>109</imageNumber>
+			<title>mslug3</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">A6E4D5A1</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>合金弹头3</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>110</releaseNumber>
+			<imageNumber>110</imageNumber>
+			<title>mslug3b6</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">1123E3ED</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>合金弹头3 [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>111</releaseNumber>
+			<imageNumber>111</imageNumber>
+			<title>mslug4</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">94DCF726</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>合金弹头4</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>112</releaseNumber>
+			<imageNumber>112</imageNumber>
+			<title>ms4plus</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">33BE3225</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>合金弹头4 [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>113</releaseNumber>
+			<imageNumber>113</imageNumber>
+			<title>mslug5</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">F3141BA2</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>合金弹头5 [NGM]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>114</releaseNumber>
+			<imageNumber>114</imageNumber>
+			<title>ms5pcb</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">10A9CE30</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>合金弹头5 [Jamma]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>115</releaseNumber>
+			<imageNumber>115</imageNumber>
+			<title>ms5plus</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">25C254F7</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>合金弹头5 [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>116</releaseNumber>
+			<imageNumber>116</imageNumber>
+			<title>mslugx</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">FCA81450</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>合金弹头X-超级坦克-001</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>117</releaseNumber>
+			<imageNumber>117</imageNumber>
+			<title>mutnat</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">E02616FB</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>外星游龙-变异种族</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>118</releaseNumber>
+			<imageNumber>118</imageNumber>
+			<title>nam1975</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">853400C2</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>越战1975</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>119</releaseNumber>
+			<imageNumber>119</imageNumber>
+			<title>ncombat</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">7EEADD3E</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>忍者大战</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>120</releaseNumber>
+			<imageNumber>120</imageNumber>
+			<title>ncommand</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">447722F9</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>忍者指令</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>121</releaseNumber>
+			<imageNumber>121</imageNumber>
+			<title>neobombe</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">56E6D642</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>炸弹人</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>122</releaseNumber>
+			<imageNumber>122</imageNumber>
+			<title>neocup98</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">59325007</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>98机皇杯-胜利之路</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>123</releaseNumber>
+			<imageNumber>123</imageNumber>
+			<title>neodrift</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">679BBE1E</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>Neo拉力赛车-新的技术</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>124</releaseNumber>
+			<imageNumber>124</imageNumber>
+			<title>neogeo</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">456E9C16</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>ZZZ(notgame):Neogeo</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>125</releaseNumber>
+			<imageNumber>125</imageNumber>
+			<title>neomrdo</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">B30E05D6</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>Neo嘟先生</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>126</releaseNumber>
+			<imageNumber>126</imageNumber>
+			<title>neonopon</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">F15895E</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>Neo智力方块</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>127</releaseNumber>
+			<imageNumber>127</imageNumber>
+			<title>neopong</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">4332F248</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>Neo弹球</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>128</releaseNumber>
+			<imageNumber>128</imageNumber>
+			<title>neotet</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">565F3EE2</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>NeoGeo双人俄罗斯方块</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>129</releaseNumber>
+			<imageNumber>129</imageNumber>
+			<title>neothndr</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">EF19A1A8</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>Neo雷电</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>130</releaseNumber>
+			<imageNumber>130</imageNumber>
+			<title>nitd</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">F8BBAAE7</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>午夜噩梦</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>131</releaseNumber>
+			<imageNumber>131</imageNumber>
+			<title>overtop</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">FFC4AC4C</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>跨越巅峰</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>132</releaseNumber>
+			<imageNumber>132</imageNumber>
+			<title>panicbom</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">A426FCE0</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>炸弹人方块</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>133</releaseNumber>
+			<imageNumber>133</imageNumber>
+			<title>pbobblen</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">E018BF82</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>泡泡龙</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>134</releaseNumber>
+			<imageNumber>134</imageNumber>
+			<title>pbobbl2n</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">2E724800</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>泡泡龙2</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>135</releaseNumber>
+			<imageNumber>135</imageNumber>
+			<title>pgoal</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">91F0F617</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>快乐射门-英式足球</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>136</releaseNumber>
+			<imageNumber>136</imageNumber>
+			<title>pnyaa</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">5D2683FA</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>宠物方块</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>137</releaseNumber>
+			<imageNumber>137</imageNumber>
+			<title>popbounc</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">21B470FA</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>动物方块</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>138</releaseNumber>
+			<imageNumber>138</imageNumber>
+			<title>preisle2</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">7A83A3A9</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>原始岛2</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>139</releaseNumber>
+			<imageNumber>139</imageNumber>
+			<title>pspikes2</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">41B4C4CD</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>能量排球2</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>140</releaseNumber>
+			<imageNumber>140</imageNumber>
+			<title>pulstar</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">9C7BCC02</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>死亡之星</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>141</releaseNumber>
+			<imageNumber>141</imageNumber>
+			<title>puzzledp</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">691B1760</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>解谜气泡</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>142</releaseNumber>
+			<imageNumber>142</imageNumber>
+			<title>ragnagrd</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">91C1EAD</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>神凰拳</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>143</releaseNumber>
+			<imageNumber>143</imageNumber>
+			<title>ridhero</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">36EB8E12</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>风速英雄</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>144</releaseNumber>
+			<imageNumber>144</imageNumber>
+			<title>roboarmy</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">5313E119</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>机甲神兵</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>145</releaseNumber>
+			<imageNumber>145</imageNumber>
+			<title>rotd</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">78B26847</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>龙吼</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>146</releaseNumber>
+			<imageNumber>146</imageNumber>
+			<title>s1945p</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">20172A79</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>打击者1945加强版</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>147</releaseNumber>
+			<imageNumber>147</imageNumber>
+			<title>samsho</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">85CEF671</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>侍魂I-十二剑士</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>148</releaseNumber>
+			<imageNumber>148</imageNumber>
+			<title>samsho2</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">BDD45540</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>侍魂II-真侍魂-霸王丸地狱变</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>149</releaseNumber>
+			<imageNumber>149</imageNumber>
+			<title>samsho3</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">CFC71D4B</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>侍魂III-斩红郎无双剑</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>150</releaseNumber>
+			<imageNumber>150</imageNumber>
+			<title>samsho4</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">E182E9A</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>侍魂IV-天草降临</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>151</releaseNumber>
+			<imageNumber>151</imageNumber>
+			<title>samsho4k</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">F7ADA34A</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>侍魂IV-霸王传说 [韩]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>152</releaseNumber>
+			<imageNumber>152</imageNumber>
+			<title>samsho5</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">9FE9C26D</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>侍魂V-侍魂零</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>153</releaseNumber>
+			<imageNumber>153</imageNumber>
+			<title>samsh5sp</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">399058F6</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>侍魂V-侍魂零特别版</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>154</releaseNumber>
+			<imageNumber>154</imageNumber>
+			<title>samsho5x</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">2FBD90DA</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>侍魂V-仿Xbox [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>155</releaseNumber>
+			<imageNumber>155</imageNumber>
+			<title>lastblad</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">C5E33C4B</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>月华剑士I</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>156</releaseNumber>
+			<imageNumber>156</imageNumber>
+			<title>lastbld2</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">CBA188BF</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>月华剑士II</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>157</releaseNumber>
+			<imageNumber>157</imageNumber>
+			<title>savagere</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">5D4213CF</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>风云默示录-格斗创世</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>158</releaseNumber>
+			<imageNumber>158</imageNumber>
+			<title>kizuna</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">AEE289DA</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>风云默示录-超级组队战</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>159</releaseNumber>
+			<imageNumber>159</imageNumber>
+			<title>kabukikl</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">AD2E852A</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>天外魔境真传-东方伊甸园</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>160</releaseNumber>
+			<imageNumber>160</imageNumber>
+			<title>matrim</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">6FEA7509</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>新豪血寺一族-斗婚</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>161</releaseNumber>
+			<imageNumber>161</imageNumber>
+			<title>ninjamas</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">53E7A6FC</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>霸王忍法帖</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>162</releaseNumber>
+			<imageNumber>162</imageNumber>
+			<title>sengoku</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">831BF2BD</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>战国传承</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>163</releaseNumber>
+			<imageNumber>163</imageNumber>
+			<title>sengoku2</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">2E14D60E</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>战国传承2</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>164</releaseNumber>
+			<imageNumber>164</imageNumber>
+			<title>sengoku3</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">3A711CFB</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>战国传承3</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>165</releaseNumber>
+			<imageNumber>165</imageNumber>
+			<title>sdodgeb</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">4EBDD52D</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>超级躲避球-国夫君热血斗球传说</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>166</releaseNumber>
+			<imageNumber>166</imageNumber>
+			<title>shocktro</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">6C183D2E</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>突击骑兵</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>167</releaseNumber>
+			<imageNumber>167</imageNumber>
+			<title>shocktr2</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">75B933FB</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>突击骑兵-第二分队</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>168</releaseNumber>
+			<imageNumber>168</imageNumber>
+			<title>socbrawl</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">4C39A89B</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>机器人足球</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>169</releaseNumber>
+			<imageNumber>169</imageNumber>
+			<title>sonicwi2</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">473E2A48</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>四国战机2</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>170</releaseNumber>
+			<imageNumber>170</imageNumber>
+			<title>sonicwi3</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">F78F395</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>四国战机3</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>171</releaseNumber>
+			<imageNumber>171</imageNumber>
+			<title>spinmast</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">420BC094</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>强尼大冒险</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>172</releaseNumber>
+			<imageNumber>172</imageNumber>
+			<title>ssideki</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">B9FD2D54</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>得点王-超级队友</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>173</releaseNumber>
+			<imageNumber>173</imageNumber>
+			<title>ssideki2</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">7380262C</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>得点王2-世界锦标赛</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>174</releaseNumber>
+			<imageNumber>174</imageNumber>
+			<title>ssideki3</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">1B1901BD</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>得点王3-下一次荣誉</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>175</releaseNumber>
+			<imageNumber>175</imageNumber>
+			<title>ssideki4</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">A68799C5</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>得点王4-终极十一人</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>176</releaseNumber>
+			<imageNumber>176</imageNumber>
+			<title>stakwin</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">C5AEB019</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>赛马冠军-GI完全制霸之道</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>177</releaseNumber>
+			<imageNumber>177</imageNumber>
+			<title>stakwin2</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">AF7F1CCE</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>赛马冠军2</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>178</releaseNumber>
+			<imageNumber>178</imageNumber>
+			<title>strhoop</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">15217B88</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>街头篮球-梦幻篮球赛</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>179</releaseNumber>
+			<imageNumber>179</imageNumber>
+			<title>superspy</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">BB0874D7</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>谍报飞龙</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>180</releaseNumber>
+			<imageNumber>180</imageNumber>
+			<title>svc</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">5E2C5F9C</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>SNK对卡普空 [NGM]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>181</releaseNumber>
+			<imageNumber>181</imageNumber>
+			<title>svcpcb</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">939FC63C</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>SNK对卡普空 [Jamma]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>182</releaseNumber>
+			<imageNumber>182</imageNumber>
+			<title>svcsplus</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">91EB6989</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>SNK对卡普空SuperPlus [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>183</releaseNumber>
+			<imageNumber>183</imageNumber>
+			<title>tophuntr</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">CA733EB4</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>顶尖猎人-罗迪与凯茜</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>184</releaseNumber>
+			<imageNumber>184</imageNumber>
+			<title>tpgolf</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">C2449F6D</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>顶尖高尔夫</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>185</releaseNumber>
+			<imageNumber>185</imageNumber>
+			<title>trally</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">BACF2E5A</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>极速英豪-拉力赛车</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>186</releaseNumber>
+			<imageNumber>186</imageNumber>
+			<title>turfmast</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">3F41C322</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>高尔夫大赛</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>187</releaseNumber>
+			<imageNumber>187</imageNumber>
+			<title>twinspri</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">3B8611CD</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>梦幻小妖精</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>188</releaseNumber>
+			<imageNumber>188</imageNumber>
+			<title>tws96</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">45EF3216</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>Tecmo世界杯足球96</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>189</releaseNumber>
+			<imageNumber>189</imageNumber>
+			<title>viewpoin</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">FF6A43FC</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>视点战机</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>190</releaseNumber>
+			<imageNumber>190</imageNumber>
+			<title>vliner</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">DE2C0BFD</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>水果机 [R1]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>191</releaseNumber>
+			<imageNumber>191</imageNumber>
+			<title>vlinero</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">684D5C33</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>水果机 [R2]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>192</releaseNumber>
+			<imageNumber>192</imageNumber>
+			<title>wakuwak7</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">CC41F6E3</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>火热火热7</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>193</releaseNumber>
+			<imageNumber>193</imageNumber>
+			<title>wh1</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">4B2427C0</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>世界英雄</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>194</releaseNumber>
+			<imageNumber>194</imageNumber>
+			<title>wh2</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">2957AF0</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>世界英雄2</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>195</releaseNumber>
+			<imageNumber>195</imageNumber>
+			<title>wh2j</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">D51E1F46</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>世界英雄2喷射版</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>196</releaseNumber>
+			<imageNumber>196</imageNumber>
+			<title>whp</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">4CD59F3C</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>世界英雄完美版</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>197</releaseNumber>
+			<imageNumber>197</imageNumber>
+			<title>wjammers</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">394A17CE</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>超级飞碟球-沙滩排球</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>198</releaseNumber>
+			<imageNumber>198</imageNumber>
+			<title>zedblade</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">93F12DC3</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>作战名末日</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>199</releaseNumber>
+			<imageNumber>199</imageNumber>
+			<title>zintrkcd</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">808E77FE</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>诡计-挑战史莱姆</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>200</releaseNumber>
+			<imageNumber>200</imageNumber>
+			<title>zintrckb</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">D71221B7</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>诡计-挑战史莱姆 [Hack]</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>201</releaseNumber>
+			<imageNumber>201</imageNumber>
+			<title>zupapa</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">709B2102</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>星星大战</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+	</games>
+	<gui>
+		<images height="160" width="520">
+			<image height="160" width="250" x="0" y="0" />
+			<image height="160" width="240" x="270" y="0" />
+		</images>
+	</gui>
+</dat>

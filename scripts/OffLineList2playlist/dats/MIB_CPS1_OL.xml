@@ -1,0 +1,1044 @@
+<?xml version="1.0" ?>
+<dat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="datas.xsd">
+    <configuration>
+        <datName>MIB_CPS1_OL</datName>
+        <imFolder>MIB_CPS1_OL</imFolder>
+        <datVersion>20190823</datVersion>
+        <system>FB Alpha</system>
+        <screenshotsWidth>240</screenshotsWidth>
+        <screenshotsHeight>160</screenshotsHeight>
+        <infos>
+            <title default="false" inNamingOption="true" visible="false"/>
+            <location default="true" inNamingOption="true" visible="true"/>
+            <publisher default="true" inNamingOption="true" visible="true"/>
+            <sourceRom default="true" inNamingOption="true" visible="true"/>
+            <saveType default="true" inNamingOption="true" visible="true"/>
+            <romSize default="true" inNamingOption="true" visible="true"/>
+            <releaseNumber default="true" inNamingOption="true" visible="true"/>
+            <comment default="true" inNamingOption="true" visible="true"/>
+            <romCRC default="true" inNamingOption="true" visible="true"/>
+            <im1CRC default="false" inNamingOption="true" visible="true"/>
+            <im2CRC default="false" inNamingOption="true" visible="true"/>
+            <languages default="true" inNamingOption="true" visible="true"/>
+        </infos>
+        <canOpen>
+            <extension>.zip</extension>
+        </canOpen>
+        <newDat>
+            <datVersionURL/>
+            <datURL fileName="Unofficial No-Intro Nintendo Game Boy Advance Chinese.zip"/>
+            <imURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame/imgs/MIB_CPS1_OL</imURL>
+        </newDat>
+        <search>
+            <to auto="true" default="true" value="location"/>
+            <to auto="false" default="true" value="romSize">
+                <find operation="&lt;" value="4194304">&lt; 32 MBits</find>
+                <find operation="=" value="4194304">= 32 MBits</find>
+                <find operation="=" value="8388608">= 64 MBits</find>
+                <find operation="=" value="16777216">= 128 MBits</find>
+                <find operation="=" value="33554432">= 256 MBits</find>
+            </to>
+            <to auto="true" default="true" value="languages"/>
+            <to auto="false" default="true" value="saveType">
+                <find operation="inNoCase" value="EEPROM">Eeprom</find>
+                <find operation="inNoCase" value="FLASH">Flash</find>
+                <find operation="inNoCase" value="SRAM">SRam</find>
+                <find operation="inNoCase" value="NONE">None</find>
+            </to>
+            <to auto="true" default="true" value="publisher"/>
+            <to auto="true" default="true" value="sourceRom"/>
+        </search>
+        <romTitle>%u - %n %e %g</romTitle>
+    </configuration>
+    <games>
+        <game>
+            <releaseNumber>1</releaseNumber>
+            <imageNumber>1</imageNumber>
+            <title>1941</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">64E58DC3</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>1941反击战</comment>
+            <duplicateID/>
+            <description>The goal is to shoot down enemy airplanes and collect weapon power-ups (POW). One is only able to perform three loops per level and a bonus is awarded at the end of the level for unused loops. Player 1 uses a P-38 Lightning and Player 2 uses a Mosquito Mk IV. The game shifts from the original Pacific Front setting with that of the Western Front.
+The game consists of six levels.
+It was the first shoot 'em up to add +1 to the score when a continue is used.[1]</description>
+            <year>19900101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>2</releaseNumber>
+            <imageNumber>2</imageNumber>
+            <title>3wonders</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">6DABA1FD</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>三个奇迹</comment>
+            <duplicateID/>
+            <description>The main character of the Chariot and Midnight Wanderers games Lou, was used as an assist only character for Marvel vs Capcom he also had the option character from Midnight Wanderers known as Firestorm with him. His sprite is like an enlarged version of his sprites from Midnight Wanderers, he shares the same position stance, his trademark jump in which he holds his hand on his hat, and also the same shooting animation. The sprites are recoloured in a more vibrant cartoon-esque style, as opposed to the washed out effect from the games, to match the style of the Marvel vs Capcom series. If two players get Lou, then the second player's pallette is Green, and is most likely based on Siva's color clothing from the Midnight Wanderers game. Player two's firestorm is colored orange.
+Lou's Companion Siva, has a character based on him as a tribute, featuring on Capcom's Cannon Spike game. The character is called Shiba Shintaro.</description>
+            <year>19910101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>3</releaseNumber>
+            <imageNumber>3</imageNumber>
+            <title>captcomm</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">A4A89D48</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>名将</comment>
+            <duplicateID/>
+            <description>Captain Commando is set in a crime-ridden future in the year 2026, where a superhero named Captain Commando, assisted by his three faithful Commando Companions rise up to protect the Earth and all the Galaxy from a gang of super-powered criminals.</description>
+            <year>19910101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>4</releaseNumber>
+            <imageNumber>4</imageNumber>
+            <title>cawing</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">31B0791C</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>雌虎战机</comment>
+            <duplicateID/>
+            <description>Carrier Air Wing / U.S. Navy is a horizontally-scrolling shoot-em-up for one or two players set in the 1990s, a decade of great change marked by growing friendships between old enemies and never before seen levels of co-operation between powerful nations of the world. However, in 1997, using new weapons designed in secrecy, the Middle Eastern country of 'Rabu' threatens to destroy this new and fragile peace. 
+Players chose to pilot any one of three different jet fighters and must battle their way through ten enemy-packed stages. Each fighter has a fuel bar which is full at the start of each stage but gradually decreases, additional fuel is lost each time the fighter takes damage from an enemy.</description>
+            <year>19900101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>5</releaseNumber>
+            <imageNumber>5</imageNumber>
+            <title>cps1frog</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Rastersoft</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">8CECCB0F</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>青蛙盛宴</comment>
+            <duplicateID/>
+            <description>Home Made game. Frog Feast is an adaptation of the Intellvision game &quot;Frog Bog&quot;.
+The game concept is pretty simple: 2 Frogs who have to eat as much insects as possible in a limited time.</description>
+            <year>20060101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>6</releaseNumber>
+            <imageNumber>6</imageNumber>
+            <title>dino</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">70DCFE0C</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>恐龙新世纪</comment>
+            <duplicateID/>
+            <description>Cadillacs and Dinosaurs: The Arcade Game, known in Japan as Cadillacs: Dinosaurs of a New Century is a 1993 arcade game released by Capcom. It is a side-scrolling beat 'em up based on the comic book series Xenozoic Tales. The game was produced as a tie-in to the Cadillacs and Dinosaurs animated series which was aired during the same year the game was released.</description>
+            <year>19930101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>7</releaseNumber>
+            <imageNumber>7</imageNumber>
+            <title>dinoh</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">5D8F3BB6</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>恐龙新世纪 [Hack][R1]</comment>
+            <duplicateID/>
+            <description>Cadillacs and Dinosaurs: The Arcade Game, known in Japan as Cadillacs: Dinosaurs of a New Century is a 1993 arcade game released by Capcom. It is a side-scrolling beat 'em up based on the comic book series Xenozoic Tales. The game was produced as a tie-in to the Cadillacs and Dinosaurs animated series which was aired during the same year the game was released.</description>
+            <year>19930101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>8</releaseNumber>
+            <imageNumber>8</imageNumber>
+            <title>dinohunt</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">52BC3AEC</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>恐龙新世纪 [Hack][R2]</comment>
+            <duplicateID/>
+            <description>Cadillacs and Dinosaurs: The Arcade Game, known in Japan as Cadillacs: Dinosaurs of a New Century is a 1993 arcade game released by Capcom. It is a side-scrolling beat 'em up based on the comic book series Xenozoic Tales. The game was produced as a tie-in to the Cadillacs and Dinosaurs animated series which was aired during the same year the game was released.</description>
+            <year>19930101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>9</releaseNumber>
+            <imageNumber>9</imageNumber>
+            <title>dynwarjr</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">BE887E87</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>吞食天地 [日]</comment>
+            <duplicateID/>
+            <description>This game is a side-scrolling beat-em-up based on Japanese manga books of the same name and is a re-enactment of the historical battles between the Kingdom of Shu and the Yellow Turban rebels. Up to two players assume the roles of one of the four Chinese generals riding on horseback whose goal is to wipe out the 'Huang Ching', the organization responsible for the unrest of the Han Dynasty, and to eventually defeat the tyrant, Dong Zhuo.</description>
+            <year>19890101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>10</releaseNumber>
+            <imageNumber>10</imageNumber>
+            <title>dynwar</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">13133F73</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>吞食天地 [美]</comment>
+            <duplicateID/>
+            <description>This game is a side-scrolling beat-em-up based on Japanese manga books of the same name and is a re-enactment of the historical battles between the Kingdom of Shu and the Yellow Turban rebels. Up to two players assume the roles of one of the four Chinese generals riding on horseback whose goal is to wipe out the 'Huang Ching', the organization responsible for the unrest of the Han Dynasty, and to eventually defeat the tyrant, Dong Zhuo.</description>
+            <year>19890101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>11</releaseNumber>
+            <imageNumber>11</imageNumber>
+            <title>ffightjh</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">7A4AAD54</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>快打旋风 [日]</comment>
+            <duplicateID/>
+            <description>Final Fight can be played by up to two players simultaneously, with each player controlling a different character. Before the game begins, the player chooses between the three main characters, Guy, Cody, and Haggar, each with his own fighting style and attributes. Guy is the weakest but has faster attacks, Haggar is the strongest but also the slowest, and Cody has all-round attributes.
+Final Fight consists of six stages or &quot;rounds&quot;, as well as two bonus rounds. Each round takes place in a different section of Metro City such as the Slums and the Subway, with most rounds featuring more than one level. At the end of each round the player will face a boss character unique to that round.</description>
+            <year>19890101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>12</releaseNumber>
+            <imageNumber>12</imageNumber>
+            <title>ffight</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">E5524363</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>快打旋风 [世]</comment>
+            <duplicateID/>
+            <description>Final Fight can be played by up to two players simultaneously, with each player controlling a different character. Before the game begins, the player chooses between the three main characters, Guy, Cody, and Haggar, each with his own fighting style and attributes. Guy is the weakest but has faster attacks, Haggar is the strongest but also the slowest, and Cody has all-round attributes.
+Final Fight consists of six stages or &quot;rounds&quot;, as well as two bonus rounds. Each round takes place in a different section of Metro City such as the Slums and the Subway, with most rounds featuring more than one level. At the end of each round the player will face a boss character unique to that round.</description>
+            <year>19890101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>13</releaseNumber>
+            <imageNumber>13</imageNumber>
+            <title>forgottn</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">0C6F70CB</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>失落的世界</comment>
+            <duplicateID/>
+            <description>The planet used to be beautiful, with gorgeous cities and gleaming countrysides. Until the Aliens attacked! With fire, bombs, and napalm they devastated the world! They made the planet so abominable that it became an outcast in the universe - the Forgotten World. Until you, the Nameless One, appear. You're a Super Warrior of incredible power and energy. You make it your business to reclaim the panet for its rightful owners - the Human Beings!</description>
+            <year>19880101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>14</releaseNumber>
+            <imageNumber>14</imageNumber>
+            <title>ganbare</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">71FEC2E8</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>加油海洋君</comment>
+            <duplicateID/>
+            <description>Ganbare Marin-kun is the final and probably rarest game released on CPS1. I don't know anyone who had even heard of it until it showed up for sale. It's a medal game but along with Tobikose Jumpman and Alien, the best of them I have seen. The music rips off several things including the Indiana Jones theme song.</description>
+            <year>20000101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>15</releaseNumber>
+            <imageNumber>15</imageNumber>
+            <title>ghouls</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">B5E40BEF</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>大魔界村</comment>
+            <duplicateID/>
+            <description>Three years have passed since the events of &quot;Makaimura&quot; and Arthur the knight once again finds himself battling against the hideous creatures of Demon World. The demons have now seized the kingdom and Arthur returns home to witness the castle's lone survivor, his beloved Gunievere, murdered by the king of the demons, Lucifer. Arthur once again embarks on a one-man quest to destroy the demonic invaders and save Gunievere's mortal soul.</description>
+            <year>19880101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>16</releaseNumber>
+            <imageNumber>16</imageNumber>
+            <title>knights</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">3228E413</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>圆桌骑士</comment>
+            <duplicateID/>
+            <description>Knights of the Round is an arcade game released by Capcom in 1991. A side-scrolling beat 'em up based loosely on the legend of King Arthur and the Knights of the Round Table, the game features an role-playing video game-like level advancement system, with fighters getting new weapons and armour as they advance through the game, however the player can not choose how to upgrade his/her character - the level up system is static.</description>
+            <year>19910101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>17</releaseNumber>
+            <imageNumber>17</imageNumber>
+            <title>knightsh</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">F72BEE46</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>圆桌骑士 [Hack]</comment>
+            <duplicateID/>
+            <description>Knights of the Round is an arcade game released by Capcom in 1991. A side-scrolling beat 'em up based loosely on the legend of King Arthur and the Knights of the Round Table, the game features an role-playing video game-like level advancement system, with fighters getting new weapons and armour as they advance through the game, however the player can not choose how to upgrade his/her character - the level up system is static.</description>
+            <year>19910101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>18</releaseNumber>
+            <imageNumber>18</imageNumber>
+            <title>kod</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">8DC6D7EA</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>龙王战士</comment>
+            <duplicateID/>
+            <description>The King of Dragons is a 1991 side-scrolling hack and slash video game by Capcom that allows players to choose from five characters (Elf, Wizard, Fighter, Cleric, and Dwarf) in order to travel through the kingdom of Malus and defeat the monsters that have taken over, as well as their leader, the red dragon Gildiss. Like Capcom's Knights of the Round, it features a level advancement system, allowing character attributes to be upgraded as players progress through the game. The setting is very similar to that of Dungeons &amp; Dragons and other medieval fantasy worlds, with familiar monsters such as Orcs, Gnolls, Harpies, Wyverns, Cyclopes, and Minotaurs.
+The game was ported to the Super NES and released in 1994. An emulated version of the game was released as part of Capcom Classics Collection Vol. 2 and Capcom Classics Collection: Reloaded.</description>
+            <year>19910101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>19</releaseNumber>
+            <imageNumber>19</imageNumber>
+            <title>kodh</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">7213A589</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>龙王战士 [Hack]</comment>
+            <duplicateID/>
+            <description>The King of Dragons is a 1991 side-scrolling hack and slash video game by Capcom that allows players to choose from five characters (Elf, Wizard, Fighter, Cleric, and Dwarf) in order to travel through the kingdom of Malus and defeat the monsters that have taken over, as well as their leader, the red dragon Gildiss. Like Capcom's Knights of the Round, it features a level advancement system, allowing character attributes to be upgraded as players progress through the game. The setting is very similar to that of Dungeons &amp; Dragons and other medieval fantasy worlds, with familiar monsters such as Orcs, Gnolls, Harpies, Wyverns, Cyclopes, and Minotaurs.
+The game was ported to the Super NES and released in 1994. An emulated version of the game was released as part of Capcom Classics Collection Vol. 2 and Capcom Classics Collection: Reloaded.</description>
+            <year>19910101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>20</releaseNumber>
+            <imageNumber>20</imageNumber>
+            <title>mbombrd</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">0257F31D</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>摔角霸王-最终之战</comment>
+            <duplicateID/>
+            <description>Professional wrestling experienced a sudden increase in popularity during the early 1980s, where many professional wrestling organizations were started all over the world. A severe rivalry existed among the organizations.
+In order to resolve this conflict, 8 organizations combined to form the Capcom Professional Wrestling Association (CPWA), led by Victor Ortega, the CPWA?s first champion.
+One day, Ortega suddenly vanished. He was considered to be the axis of the sport and his unexpected disappearance caused the CPWA to enter an age of confusion and disorder. The BPWA, a dark underground wrestling organization, chose to take advantage of this opportunity and began moving. With &quot;Fighters of Muscle Bomber = Destiny&quot; as the theme, the CPWA chief executives decided to hold a world tour called the ?Crash Carnival,? to decide the new king of the CPWA.
+The gong that determines the new ?Master of Muscle Bomber? is sounded?</description>
+            <year>19930101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>21</releaseNumber>
+            <imageNumber>21</imageNumber>
+            <title>megaman</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">D569F323</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>洛克人-力量之战</comment>
+            <duplicateID/>
+            <description>Have you ever pictured a Rockman or Megaman game that allows to skip all the platform elements and just grapple against the bosses? That's pretty much the main idea in this game! Choose from Rockman/Megaman, Protoman or Bass and battle against classic bosses in the series. Features great 2-D graphics, solid control, and a nice use of strategy (since the right order of weapons will rid you of specific enemies in no time!).</description>
+            <year>19950101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>22</releaseNumber>
+            <imageNumber>22</imageNumber>
+            <title>mercs</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">3DA0B8BF</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>战场之狼II</comment>
+            <duplicateID/>
+            <description>The US faces a grave crisis! The former president has been kidnapped by a group of revolutionaries while on a trip on Central Africa meant to promote world peace. Take control of three highly skilled anti-terrorist soldiers and venture through enemy lines to save the former president &amp; annihilate the rebel army in the process. Features solid graphics &amp; sound, plenty of weapons &amp; vehicles to use and hulking bosses to defeat.</description>
+            <year>19900101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>23</releaseNumber>
+            <imageNumber>23</imageNumber>
+            <title>msword</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">CF246210</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>魔法剑-英雄的幻想</comment>
+            <duplicateID/>
+            <description>The land has been cast in darkness by Drokmar, who has been corrupted by the Black Orb; an artefact that promises immortality to anyone who comes under the influence of the orb's powerful sorcery. Tw</description>
+            <year>19900101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>24</releaseNumber>
+            <imageNumber>24</imageNumber>
+            <title>mtwins</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">37C648BE</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>双麒儿</comment>
+            <duplicateID/>
+            <description>The game features two twins who are attempting to re-take control of their land, Alurea, after a monster unexpectedly attacks, destroying everything in its path. The people of Alurea have lived in peace for a thousand years and have forgotten how to fight, yet the land's only survivors, the twin sons of the king, must take up the challenge and return their kingdom to its former glory. The two twins, aged around 15 at the time the game takes place, venture forth in search of a legendary stone known as &quot;Dragon Blue Eyes&quot;, which is rumored to be able to put everything back to rights.</description>
+            <year>19900101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>25</releaseNumber>
+            <imageNumber>25</imageNumber>
+            <title>nemo</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">2DE12145</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>梦幻冒险</comment>
+            <duplicateID/>
+            <description>One night, as Nemo sleeps, he is visited in a dream by the King of Slumberland, who invites Nemo to come and play with the King's daughter, the Princess. Nemo finds himself unable to find the Princess however, so he and 'Flip', a strange companion who also turns up in the dream, decide to explore Slumberland and find the king.
+Nemo is a colourful and abstract platform shoot-em-up set in the dream world of Slumberland, a surreal world in which childrens' toys are running amok and must be destroyed. Nemo is armed with a magical staff that emits a burst of magic to destroy the many enemies, some of which require multiple hits. A number of power-ups also appear at regular intervals to aid Nemo in his quest through seven tough stages.</description>
+            <year>19900101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>26</releaseNumber>
+            <imageNumber>26</imageNumber>
+            <title>pang3</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">1F1290B3</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>魔鬼气泡3</comment>
+            <duplicateID/>
+            <description>Pang! 3 is the second sequel to the superb 1989 original, Pang! 3 retains the same gameplay of its predecessors but adds vastly improved graphics and a choice of three difficulty levels; Beginner, Normal and Panic. On both the 'Normal' and 'Panic' skill levels, players can choose from 4 different playable characters; each possessing different strengths and weaknesses, such as a double harpoon or quick shots. On the beginner level, players can only use the Mexican character.
+Another notable difference is in the game's use of backdrops: instead of the world landmarks of the first two games, Pang! 3 features classical works of art in the form of paintings and sculptures.</description>
+            <year>19950101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>27</releaseNumber>
+            <imageNumber>27</imageNumber>
+            <title>pnickj</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">051B5DC5</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>魔法方块</comment>
+            <duplicateID/>
+            <description>A falling blocks game released only to arcades. Like-colored blocks merge together and more points are awarded for larger masses.</description>
+            <year>19940101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>28</releaseNumber>
+            <imageNumber>28</imageNumber>
+            <title>punisher</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">44761C39</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>惩罚者</comment>
+            <duplicateID/>
+            <description>A Capcom arcade beat-em-up game similar to games like Double Dragon featuring the Marvel character The Punisher. Nick Fury is also a playable character in this game.</description>
+            <year>19930101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>29</releaseNumber>
+            <imageNumber>29</imageNumber>
+            <title>punisherbz</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">6012CAD2</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>惩罚者 [Hack]</comment>
+            <duplicateID/>
+            <description>A Capcom arcade beat-em-up game similar to games like Double Dragon featuring the Marvel character The Punisher. Nick Fury is also a playable character in this game.</description>
+            <year>19930101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>30</releaseNumber>
+            <imageNumber>30</imageNumber>
+            <title>sf2</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">B62D0BC7</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>街头霸王II-天下斗士</comment>
+            <duplicateID/>
+            <description>GET READY TO RUMBLE!
+From across the globe comes eight of the wildest fighters the world has ever known. Choose your champion, gather your courage and prepare to battle your opponents in a bare knuckle brawl. Face Ken and his devastating &quot;Dragon Punch&quot;! Watch the temperature rise as Dhalsim incinerates you with his mystical Yoga Flame! Hear your spine crack as Zangief smashes you to the pavement with his spinning pile driver! Cover your ears as Guile breaks the sound barrier with the awesome power of the Sonic Boom!
+Annihilate your competition and claim the right to test your skills against the bone-crushing power of the Grand Masters! Can you survive? Can Anyone?</description>
+            <year>19910101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>31</releaseNumber>
+            <imageNumber>31</imageNumber>
+            <title>sf2ce</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">27ED89F8</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>街头霸王II-四大天王</comment>
+            <duplicateID/>
+            <description>From the corners of the globe come twelve of the toughest fighters to ever prowl the streets. Choose your champion and step into the arena as one of the eight original challengers or as one of the four Grand Masters! Pound your opponent as Balrog and knock them out for the count. Tower over your prey as Sagat and daze them with your awesome Tiger Shot. Slash your opponent with Vega's claw and send them running for cover. Or strike fear into your enemies as M. Bison, the greatest Grand Master of them all!</description>
+            <year>19920101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>32</releaseNumber>
+            <imageNumber>32</imageNumber>
+            <title>sf2hf</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">D5758A82</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>街头霸王II-超级格斗</comment>
+            <duplicateID/>
+            <description>Street Fighter II' - Hyper Fighting is the second SFII follow-up. Here's what's new: 
+Gameplay is SIGNIFICANTLY sped up to intensify the pace of the game. 
+More special moves (ie. Chun Li's fireball, Dhalsim's Yoga Teleport) are added for each character except for M. Bison. 
+New color schemes are added for each character (but the color schemes for the stage backgrounds are still the same as they were for Champion Edition). 
+The addition of mid-air special moves for Chun Li, Ryu and Ken are introduced. 
+Platform graphics (resembling the medal ceremonies in the Olympics) are added to each character's ending, featuring the character you completed the game with at the first-place platform, M. Bison at the second-place platform, and Sagat at the third-place platform. The musical setting for this display is the music from the home stage of the character standing on the 1st-place platform (If you completed the game with Sagat or M. Bison, the one you used stands on the 1st-place platform, the other one on the 2nd-place platform, and Vega occupies the 3rd-place platform).</description>
+            <year>19920101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>33</releaseNumber>
+            <imageNumber>33</imageNumber>
+            <title>sf2dongb</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">7831E6E8</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>街头霸王II-东方不败 [Hack]</comment>
+            <duplicateID/>
+            <description>From the corners of the globe come twelve of the toughest fighters to ever prowl the streets. Choose your champion and step into the arena as one of the eight original challengers or as one of the four Grand Masters! Pound your opponent as Balrog and knock them out for the count. Tower over your prey as Sagat and daze them with your awesome Tiger Shot. Slash your opponent with Vega's claw and send them running for cover. Or strike fear into your enemies as M. Bison, the greatest Grand Master of them all!</description>
+            <year>19920101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>34</releaseNumber>
+            <imageNumber>34</imageNumber>
+            <title>sf2koryu</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">2C0088BE</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>街头霸王II-降龙版 [Hack]</comment>
+            <duplicateID/>
+            <description>From the corners of the globe come twelve of the toughest fighters to ever prowl the streets. Choose your champion and step into the arena as one of the eight original challengers or as one of the four Grand Masters! Pound your opponent as Balrog and knock them out for the count. Tower over your prey as Sagat and daze them with your awesome Tiger Shot. Slash your opponent with Vega's claw and send them running for cover. Or strike fear into your enemies as M. Bison, the greatest Grand Master of them all!</description>
+            <year>19920101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>35</releaseNumber>
+            <imageNumber>35</imageNumber>
+            <title>sf2tlona</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">26E3F352</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>街头霸王II-屠龙 [Hack]</comment>
+            <duplicateID/>
+            <description>From the corners of the globe come twelve of the toughest fighters to ever prowl the streets. Choose your champion and step into the arena as one of the eight original challengers or as one of the four Grand Masters! Pound your opponent as Balrog and knock them out for the count. Tower over your prey as Sagat and daze them with your awesome Tiger Shot. Slash your opponent with Vega's claw and send them running for cover. Or strike fear into your enemies as M. Bison, the greatest Grand Master of them all!</description>
+            <year>19920101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>36</releaseNumber>
+            <imageNumber>36</imageNumber>
+            <title>sf2mdt</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">A4FA7D2B</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>街头霸王II-Delta加速版 [Hack]</comment>
+            <duplicateID/>
+            <description>From the corners of the globe come twelve of the toughest fighters to ever prowl the streets. Choose your champion and step into the arena as one of the eight original challengers or as one of the four Grand Masters! Pound your opponent as Balrog and knock them out for the count. Tower over your prey as Sagat and daze them with your awesome Tiger Shot. Slash your opponent with Vega's claw and send them running for cover. Or strike fear into your enemies as M. Bison, the greatest Grand Master of them all!</description>
+            <year>19920101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>37</releaseNumber>
+            <imageNumber>37</imageNumber>
+            <title>sf2rb</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">227BDA79</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>街头霸王II-彩虹版 [Hack]</comment>
+            <duplicateID/>
+            <description>From the corners of the globe come twelve of the toughest fighters to ever prowl the streets. Choose your champion and step into the arena as one of the eight original challengers or as one of the four Grand Masters! Pound your opponent as Balrog and knock them out for the count. Tower over your prey as Sagat and daze them with your awesome Tiger Shot. Slash your opponent with Vega's claw and send them running for cover. Or strike fear into your enemies as M. Bison, the greatest Grand Master of them all!</description>
+            <year>19920101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>38</releaseNumber>
+            <imageNumber>38</imageNumber>
+            <title>sf2red</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">05122ABB</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>街头霸王II-赤色波动 [Hack]</comment>
+            <duplicateID/>
+            <description>From the corners of the globe come twelve of the toughest fighters to ever prowl the streets. Choose your champion and step into the arena as one of the eight original challengers or as one of the four Grand Masters! Pound your opponent as Balrog and knock them out for the count. Tower over your prey as Sagat and daze them with your awesome Tiger Shot. Slash your opponent with Vega's claw and send them running for cover. Or strike fear into your enemies as M. Bison, the greatest Grand Master of them all!</description>
+            <year>19920101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>39</releaseNumber>
+            <imageNumber>39</imageNumber>
+            <title>sfzch</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">F9A2076F</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>少年街霸</comment>
+            <duplicateID/>
+            <description>The game introduces several new features, expanding on the Super Combo system previously featured in Super Street Fighter II Turbo, with graphics drawn in the same cartoonish style Capcom employed in Darkstalkers and X-Men: Children of the Atom.[2][3] The plot of Street Fighter Alpha is set after the original Street Fighter but before Street Fighter II and thus the game features younger versions of established characters, as well as characters from the original Street Fighter and Final Fight, and a few who are new to the series.</description>
+            <year>19950101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>40</releaseNumber>
+            <imageNumber>40</imageNumber>
+            <title>wofch</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">4B2EC8CD</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>三国志II [日]</comment>
+            <duplicateID/>
+            <description>Warriors of Fate is a side-scrolling beat 'em up produced by Capcom, first released as a coin-operated arcade game in 1992 and later ported to the Sega Saturn and Sony PlayStation. It is Capcom's third game based on the Tenchi wo Kurau manga, following Dynasty Wars and Destiny of an Emperor.</description>
+            <year>19920101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>41</releaseNumber>
+            <imageNumber>41</imageNumber>
+            <title>wof</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">A64B117C</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>三国志II [世]</comment>
+            <duplicateID/>
+            <description>Warriors of Fate is a side-scrolling beat 'em up produced by Capcom, first released as a coin-operated arcade game in 1992 and later ported to the Sega Saturn and Sony PlayStation. It is Capcom's third game based on the Tenchi wo Kurau manga, following Dynasty Wars and Destiny of an Emperor.</description>
+            <year>19920101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>42</releaseNumber>
+            <imageNumber>42</imageNumber>
+            <title>sgyxz</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">00843F86</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>三国志II-三国英雄传 [Hack]</comment>
+            <duplicateID/>
+            <description>Warriors of Fate is a side-scrolling beat 'em up produced by Capcom, first released as a coin-operated arcade game in 1992 and later ported to the Sega Saturn and Sony PlayStation. It is Capcom's third game based on the Tenchi wo Kurau manga, following Dynasty Wars and Destiny of an Emperor.</description>
+            <year>19920101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>43</releaseNumber>
+            <imageNumber>43</imageNumber>
+            <title>wofhfh</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">194F7292</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>三国志II-火凤凰 [Hack]</comment>
+            <duplicateID/>
+            <description>Warriors of Fate is a side-scrolling beat 'em up produced by Capcom, first released as a coin-operated arcade game in 1992 and later ported to the Sega Saturn and Sony PlayStation. It is Capcom's third game based on the Tenchi wo Kurau manga, following Dynasty Wars and Destiny of an Emperor.</description>
+            <year>19920101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>44</releaseNumber>
+            <imageNumber>44</imageNumber>
+            <title>slammast</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">E3050F76</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>摔跤霸王</comment>
+            <duplicateID/>
+            <description>A 1-on-1 fighting game in which players choose from 10 different wrestlers and take to the ring to try and defeat their larger-than-life opponents. Each wrestler has an assortment of moves, including his own special 'super slam'. The object of the game is to win and defend the championship by pinning or putting a submission hold on your opponent.</description>
+            <year>19930101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>45</releaseNumber>
+            <imageNumber>45</imageNumber>
+            <title>strider</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">329FB3E2</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>出击飞龙</comment>
+            <duplicateID/>
+            <description>Strider is a multi-directional scrolling platform beat-em-up in which the player takes control of 'Strider Hiryu', a ninja-style warrior who must defeat a legendary being known as 'Grandmaster Meio'. 
+Set in a dystopian future in the year 2048, Meio has been watching Earth from his own distant galaxy and has created a space station (known as 'The Third Moon') between Earth and its moon in order to rule over the Human race.</description>
+            <year>19890101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>46</releaseNumber>
+            <imageNumber>46</imageNumber>
+            <title>unsquad</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">01ADC184</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>战区88</comment>
+            <duplicateID/>
+            <description>U.N. Squadron / Area 88 is a horizontally-scrolling shoot-em-up and is based on the Manga series of the same name. The game features characters from the original Manga and their mission is to battle their way through enemy-packed levels to stop a terrorist group known as 'Project 4'.</description>
+            <year>19890101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>47</releaseNumber>
+            <imageNumber>47</imageNumber>
+            <title>varth</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Capcom</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">B732BB4D</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>威虎战机-雷暴行动</comment>
+            <duplicateID/>
+            <description>Varth: Operation Thunderstorm is an arcade game in the vertical scrolling shooter genre, published in 1992. The game did not see a console port following its initial release, but 14 years later Digital Eclipse Software would port the game onto the PlayStation 2, PSP and Xbox as part of the Capcom Classics Collection Vol. 2.</description>
+            <year>19920101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>48</releaseNumber>
+            <imageNumber>48</imageNumber>
+            <title>willow</title>
+            <saveType/>
+            <romSize/>
+            <publisher>Lucasfilm</publisher>
+            <location/>
+            <sourceRom/>
+            <language/>
+            <files>
+                <romCRC extension=".zip">890E3C76</romCRC>
+            </files>
+            <im1CRC/>
+            <im2CRC/>
+            <comment>威洛之旅</comment>
+            <duplicateID/>
+            <description>Willow is a sideways scrolling platform shoot-em-up game loosely based upon the movie of the same name. Players take on the role of one of two characters: Willow Ufgood or Madmartigan. The hero's mission is to rescue the baby Elora Danan from the evil Queen Bavmorda and bring her back safely. If the quest fails, the Queen will plunge the world into darkness and chaos.
+The game consists of 6 levels, each representing a scene from the movie. Defeated enemies drop gold coins that can be collected by the player. In addition, each level is littered with locked treasure chests that can be shot open and the treasure within collected. The gold can be used to purchase a number of weapons and character power-ups from a nearby shop (represented on screen by a wise old man). All power-ups will stay with the player until all lives are lost and the game is over.</description>
+            <year>19890101T000000</year>
+        </game>
+    </games>
+    <gui>
+        <images height="160" width="520">
+            <image height="160" width="250" x="0" y="0"/>
+            <image height="160" width="240" x="270" y="0"/>
+        </images>
+    </gui>
+</dat>

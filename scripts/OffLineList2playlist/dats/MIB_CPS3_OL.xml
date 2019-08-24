@@ -1,0 +1,302 @@
+<dat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="datas.xsd">
+	<configuration>
+		<datName>MIB_CPS3_OL</datName>
+		<imFolder>MIB_CPS3_OL</imFolder>
+		<datVersion>20190823</datVersion>
+		<system>FB Alpha</system>
+		<screenshotsWidth>240</screenshotsWidth>
+		<screenshotsHeight>160</screenshotsHeight>
+		<infos>
+			<title default="false" inNamingOption="true" visible="false" />
+			<location default="true" inNamingOption="true" visible="true" />
+			<publisher default="true" inNamingOption="true" visible="true" />
+			<sourceRom default="true" inNamingOption="true" visible="true" />
+			<saveType default="true" inNamingOption="true" visible="true" />
+			<romSize default="true" inNamingOption="true" visible="true" />
+			<releaseNumber default="true" inNamingOption="true" visible="true" />
+			<comment default="true" inNamingOption="true" visible="true" />
+			<romCRC default="true" inNamingOption="true" visible="true" />
+			<im1CRC default="false" inNamingOption="true" visible="true" />
+			<im2CRC default="false" inNamingOption="true" visible="true" />
+			<languages default="true" inNamingOption="true" visible="true" />
+		</infos>
+		<canOpen>
+			<extension>.zip</extension>
+		</canOpen>
+		<newDat>
+			<datVersionURL />
+			<datURL fileName="Unofficial No-Intro Nintendo Game Boy Advance Chinese.zip" />
+			<imURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame/imgs/MIB_CPS3_OL</imURL>
+		</newDat>
+		<search>
+			<to auto="true" default="true" value="location" />
+			<to auto="false" default="true" value="romSize">
+				<find operation="&lt;" value="4194304">&lt; 32 MBits</find>
+				<find operation="=" value="4194304">= 32 MBits</find>
+				<find operation="=" value="8388608">= 64 MBits</find>
+				<find operation="=" value="16777216">= 128 MBits</find>
+				<find operation="=" value="33554432">= 256 MBits</find>
+			</to>
+			<to auto="true" default="true" value="languages" />
+			<to auto="false" default="true" value="saveType">
+				<find operation="inNoCase" value="EEPROM">Eeprom</find>
+				<find operation="inNoCase" value="FLASH">Flash</find>
+				<find operation="inNoCase" value="SRAM">SRam</find>
+				<find operation="inNoCase" value="NONE">None</find>
+			</to>
+			<to auto="true" default="true" value="publisher" />
+			<to auto="true" default="true" value="sourceRom" />
+		</search>
+		<romTitle>%u - %n %e %g</romTitle>
+	</configuration>
+	<games>
+		<game>
+			<releaseNumber>1</releaseNumber>
+			<imageNumber>1</imageNumber>
+			<title>jojoj</title>
+			<saveType />
+			<romSize />
+			<publisher>Capcom</publisher>
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">F46679F3</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>乔乔的奇妙冒险 [日]</comment>
+			<duplicateID />
+			<description>JoJo's Venture is a 2D fighting game based off of the hit Japanese manga series JoJo's Bizarre Adventure (famous for over-the-top violence, an intricate plot, and numerous Western rock music references).</description>
+			<year>19980101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>2</releaseNumber>
+			<imageNumber>2</imageNumber>
+			<title>jojo</title>
+			<saveType />
+			<romSize />
+			<publisher>Capcom</publisher>
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">F46679F3</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>乔乔的奇妙冒险 [美]</comment>
+			<duplicateID />
+			<description>JoJo's Venture is a 2D fighting game based off of the hit Japanese manga series JoJo's Bizarre Adventure (famous for over-the-top violence, an intricate plot, and numerous Western rock music references).</description>
+			<year>19980101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>3</releaseNumber>
+			<imageNumber>3</imageNumber>
+			<title>jojoba</title>
+			<saveType />
+			<romSize />
+			<publisher>Capcom</publisher>
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">70ACCE7F</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>乔乔的奇妙冒险-未来遗产 [日]</comment>
+			<duplicateID />
+			<description>The game combines Capcom's trademark anime-inspired graphics, as seen in the Darkstalkers series, with the colorful characters and events of Hirohiko Araki's creation, resulting in a highly stylized and detailed visual style. It also features many of the gameplay mechanics seen on previous Capcom fighting games, such as the use of power gauges for super moves, as well as a brand new Stand Mode. In the game's storyline (based on Stardust Crusaders, the third story arc of the manga), a Stand is a manifestation of the psyche, or a spirit, that accompanies each character and can be summoned or dismissed at will by the player, resulting in variations on the character's move list and abilities. Despite their power, Stands hold one drawback; any damage received by the Stand is transmitted to its user.
+Hirohiko Araki served as a consultant for the game and created exclusive pieces of artwork for its promotion and packaging; most notably, he developed from scratch a new character design for Midler, since Capcom was interested in using her in the game and she had been only vaguely shown in the original manga.</description>
+			<year>19990101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>4</releaseNumber>
+			<imageNumber>4</imageNumber>
+			<title>jojobane</title>
+			<saveType />
+			<romSize />
+			<publisher>Capcom</publisher>
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">70ACCE7F</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>乔乔的奇妙冒险-未来遗产 [欧]</comment>
+			<duplicateID />
+			<description>The game combines Capcom's trademark anime-inspired graphics, as seen in the Darkstalkers series, with the colorful characters and events of Hirohiko Araki's creation, resulting in a highly stylized and detailed visual style. It also features many of the gameplay mechanics seen on previous Capcom fighting games, such as the use of power gauges for super moves, as well as a brand new Stand Mode. In the game's storyline (based on Stardust Crusaders, the third story arc of the manga), a Stand is a manifestation of the psyche, or a spirit, that accompanies each character and can be summoned or dismissed at will by the player, resulting in variations on the character's move list and abilities. Despite their power, Stands hold one drawback; any damage received by the Stand is transmitted to its user.
+Hirohiko Araki served as a consultant for the game and created exclusive pieces of artwork for its promotion and packaging; most notably, he developed from scratch a new character design for Midler, since Capcom was interested in using her in the game and she had been only vaguely shown in the original manga.</description>
+			<year>19990101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>5</releaseNumber>
+			<imageNumber>5</imageNumber>
+			<title>sfiiij</title>
+			<saveType />
+			<romSize />
+			<publisher>Capcom</publisher>
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">8EF486C4</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>街霸III-新的时代 [日]</comment>
+			<duplicateID />
+			<description>Street Fighter III - New Generation is a New Generation of Street Fighters! Features larger characters sprites than previous Street Fighter games with the smoothest, most detailed 2-D animation ever made at the time of its release, a level of quality that is yet to be matched by any other 2-D game outside of the Street Fighter III series as of 2004; some complain that too many things are animated and each animation contains too many frames, slowing down the pace of the game.</description>
+			<year>19970101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>6</releaseNumber>
+			<imageNumber>6</imageNumber>
+			<title>sfiii</title>
+			<saveType />
+			<romSize />
+			<publisher>Capcom</publisher>
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">8EF486C4</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>街霸III-新的时代 [欧]</comment>
+			<duplicateID />
+			<description>Street Fighter III - New Generation is a New Generation of Street Fighters! Features larger characters sprites than previous Street Fighter games with the smoothest, most detailed 2-D animation ever made at the time of its release, a level of quality that is yet to be matched by any other 2-D game outside of the Street Fighter III series as of 2004; some complain that too many things are animated and each animation contains too many frames, slowing down the pace of the game.</description>
+			<year>19970101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>7</releaseNumber>
+			<imageNumber>7</imageNumber>
+			<title>sfiii2j</title>
+			<saveType />
+			<romSize />
+			<publisher>Capcom</publisher>
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">75D64B0F</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>街霸III-二度冲击-巨型攻击 [日]</comment>
+			<duplicateID />
+			<description>Street Fighter III - 2nd Impact: Giant Attack is the sequel to "Street Fighter III - New Generation". Joining the existing Street Fighter III cast are Hugo, Urien and recurring character Akuma (Gouki in the Japanese version). Other improvements include a speed increase, new moves and several damage-related tweaks.</description>
+			<year>19970101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>8</releaseNumber>
+			<imageNumber>8</imageNumber>
+			<title>sfiii2</title>
+			<saveType />
+			<romSize />
+			<publisher>Capcom</publisher>
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">75D64B0F</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>街霸III-二度冲击-巨型攻击 [美]</comment>
+			<duplicateID />
+			<description>Street Fighter III - 2nd Impact: Giant Attack is the sequel to "Street Fighter III - New Generation". Joining the existing Street Fighter III cast are Hugo, Urien and recurring character Akuma (Gouki in the Japanese version). Other improvements include a speed increase, new moves and several damage-related tweaks.</description>
+			<year>19970101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>9</releaseNumber>
+			<imageNumber>9</imageNumber>
+			<title>sfiii3n</title>
+			<saveType />
+			<romSize />
+			<publisher>Capcom</publisher>
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">6EDF6A14</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>街霸III-三度冲击-未来战斗 [日]</comment>
+			<duplicateID />
+			<description>New characters Remy, Makoto, Q, and Twelve join the returning Street Fighter veteran Chun-Li and the existing "Street Fighter III - 2nd Impact: Giant Attack" cast in this third and final installment of Street Fighter III.</description>
+			<year>19990101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>10</releaseNumber>
+			<imageNumber>10</imageNumber>
+			<title>sfiii3</title>
+			<saveType />
+			<romSize />
+			<publisher>Capcom</publisher>
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">6EDF6A14</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>街霸III-三度冲击-未来战斗 [欧]</comment>
+			<duplicateID />
+			<description>New characters Remy, Makoto, Q, and Twelve join the returning Street Fighter veteran Chun-Li and the existing "Street Fighter III - 2nd Impact: Giant Attack" cast in this third and final installment of Street Fighter III.</description>
+			<year>19990101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>11</releaseNumber>
+			<imageNumber>11</imageNumber>
+			<title>warzard</title>
+			<saveType />
+			<romSize />
+			<publisher>Capcom</publisher>
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">F66EA6EF</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>红色大地 [日]</comment>
+			<duplicateID />
+			<description>Red Earth take place in the year 1999 of an alternate Earth, follow the adventures of four heroes as they take on an army of mythical monsters unleashed by Scion to bring about the destruction of the world. Take your pick from Leo the Lion King, Mai-Ling the Martial artist, Tessa the Witch, or Kenji the Ninja as they fight their way across the globe in order to defeat Scion the iron giant.</description>
+			<year>19960101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>12</releaseNumber>
+			<imageNumber>12</imageNumber>
+			<title>redearth</title>
+			<saveType />
+			<romSize />
+			<publisher>Capcom</publisher>
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">F66EA6EF</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>红色大地 [欧]</comment>
+			<duplicateID />
+			<description>Red Earth take place in the year 1999 of an alternate Earth, follow the adventures of four heroes as they take on an army of mythical monsters unleashed by Scion to bring about the destruction of the world. Take your pick from Leo the Lion King, Mai-Ling the Martial artist, Tessa the Witch, or Kenji the Ninja as they fight their way across the globe in order to defeat Scion the iron giant.</description>
+			<year>19960101T000000</year>
+		</game>
+	</games>
+	<gui>
+		<images height="160" width="520">
+			<image height="160" width="250" x="0" y="0" />
+			<image height="160" width="240" x="270" y="0" />
+		</images>
+	</gui>
+</dat>

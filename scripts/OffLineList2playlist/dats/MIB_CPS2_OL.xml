@@ -1,0 +1,1328 @@
+<dat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="datas.xsd">
+    <configuration>
+        <datName>MIB_CPS2_OL</datName>
+        <imFolder>MIB_CPS2_OL</imFolder>
+        <datVersion>20190823</datVersion>
+        <system>FB Alpha</system>
+        <screenshotsWidth>240</screenshotsWidth>
+        <screenshotsHeight>160</screenshotsHeight>
+        <infos>
+            <title default="false" inNamingOption="true" visible="false" />
+            <location default="true" inNamingOption="true" visible="true" />
+            <publisher default="true" inNamingOption="true" visible="true" />
+            <sourceRom default="true" inNamingOption="true" visible="true" />
+            <saveType default="true" inNamingOption="true" visible="true" />
+            <romSize default="true" inNamingOption="true" visible="true" />
+            <releaseNumber default="true" inNamingOption="true" visible="true" />
+            <comment default="true" inNamingOption="true" visible="true" />
+            <romCRC default="true" inNamingOption="true" visible="true" />
+            <im1CRC default="false" inNamingOption="true" visible="true" />
+            <im2CRC default="false" inNamingOption="true" visible="true" />
+            <languages default="true" inNamingOption="true" visible="true" />
+        </infos>
+        <canOpen>
+            <extension>.zip</extension>
+        </canOpen>
+        <newDat>
+            <datVersionURL />
+            <datURL fileName="Unofficial No-Intro Nintendo Game Boy Advance Chinese.zip" />
+            <imURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame/imgs/MIB_CPS2_OL</imURL>
+        </newDat>
+        <search>
+            <to auto="true" default="true" value="location" />
+            <to auto="false" default="true" value="romSize">
+                <find operation="&lt;" value="4194304">&lt; 32 MBits</find>
+                <find operation="=" value="4194304">= 32 MBits</find>
+                <find operation="=" value="8388608">= 64 MBits</find>
+                <find operation="=" value="16777216">= 128 MBits</find>
+                <find operation="=" value="33554432">= 256 MBits</find>
+            </to>
+            <to auto="true" default="true" value="languages" />
+            <to auto="false" default="true" value="saveType">
+                <find operation="inNoCase" value="EEPROM">Eeprom</find>
+                <find operation="inNoCase" value="FLASH">Flash</find>
+                <find operation="inNoCase" value="SRAM">SRam</find>
+                <find operation="inNoCase" value="NONE">None</find>
+            </to>
+            <to auto="true" default="true" value="publisher" />
+            <to auto="true" default="true" value="sourceRom" />
+        </search>
+        <romTitle>%u - %n %e %g</romTitle>
+    </configuration>
+    <games>
+        <game>
+            <releaseNumber>1</releaseNumber>
+            <imageNumber>1</imageNumber>
+            <title>19xx</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">5517C97E</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>19XX-命运否决战</comment>
+            <duplicateID />
+            <description>19XX: The War Against Destiny is a vertical scrolling shooter arcade game made by Capcom in 1995 (copyrighted in 1996). The game is the 4th of a series of World War II vertical shooters made by Capcom. The story takes place before a fictional war (Hence, the 19XX) as a lone pilot tries to defeat an entire army/evil organization from starting another World War, which soon escalates to a nuclear apocalypse.</description>
+            <year>19960101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>2</releaseNumber>
+            <imageNumber>2</imageNumber>
+            <title>1944</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">A36EB66A</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>1944-循环征服者</comment>
+            <duplicateID />
+            <description>The game takes place in the heated battles of 1944 during the Second World War as a super ace pilot attempts to defeat an entire army. The game operates and plays like most standard shooters. The objective of every level is to shoot enemy planes, tanks, trains, turrets, battleships, and defeat the boss after each level. Unlike its predecessor, 19XX: The War Against Destiny, the game plays more like the early games in the series.</description>
+            <year>20000101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>3</releaseNumber>
+            <imageNumber>3</imageNumber>
+            <title>pgear</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">228FE4DC</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>装甲勇士 [日]</comment>
+            <duplicateID />
+            <description>In the year 2281, the war spanning half a century over territory between the United World Forces and the Raian Kingdom had at last come to an end.
+But this peace was not to last. A year after a truce was signed between the two forces, former Raian army captain Azrael, who has converted himself into a cyborg in an attempt to become "the perfect warrior", has marshalled several thousand other cyborgs and declared war against the Raian Kingdom. Robbing mobile weapons from the army, this group of rogues has invaded the Raian capital of Merkid and has begun to abduct the civilians.
+The United World Government, receiving an emergency message from the planet Raia, has but one choice: to organize and dispatch an army formed around its elite corps, a squadron of warriors called "Bloody Armor", to eradicate the enemy forces and rescue the civilians.
+And so, in October 2282, the United World Forces begin to launch its attack upon the planet Raia.
+The most intense battle in human history is about to begin...</description>
+            <year>19940101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>4</releaseNumber>
+            <imageNumber>4</imageNumber>
+            <title>armwar</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">E4CA3E59</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>装甲勇士 [欧]</comment>
+            <duplicateID />
+            <description>In the year 2281, the war spanning half a century over territory between the United World Forces and the Raian Kingdom had at last come to an end.
+But this peace was not to last. A year after a truce was signed between the two forces, former Raian army captain Azrael, who has converted himself into a cyborg in an attempt to become "the perfect warrior", has marshalled several thousand other cyborgs and declared war against the Raian Kingdom. Robbing mobile weapons from the army, this group of rogues has invaded the Raian capital of Merkid and has begun to abduct the civilians.
+The United World Government, receiving an emergency message from the planet Raia, has but one choice: to organize and dispatch an army formed around its elite corps, a squadron of warriors called "Bloody Armor", to eradicate the enemy forces and rescue the civilians.
+And so, in October 2282, the United World Forces begin to launch its attack upon the planet Raia.
+The most intense battle in human history is about to begin...</description>
+            <year>19940101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>5</releaseNumber>
+            <imageNumber>5</imageNumber>
+            <title>avspj</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">85A94632</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>异形对铁血战士 [日]</comment>
+            <duplicateID />
+            <description>San Drad, California, has been overrun by the Aliens, and the cybernetically-enhanced Major Dutch Schaefer and Lieutenant Linn Kurosawa have been abandoned by their superiors and are cornered by a swarm of the Alien drones. Before they can be killed, a pair of the Predators appear and destroy the Aliens. The Predators offer an alliance with the two humans in order to stop the Alien infestation.
+The players take control of up to three of four characters: Dutch, Linn, a Predator hunter, and a Predator warrior, and battle the Aliens through several environments. In the process, the characters discover that the Alien presence on Earth is the result of an experiment headed by a renegade General Bush of the U.S. Colonial Marines in conjunction with the Weyland-Yutani corporation. They destroy the Alien hive by crashing a military ship into San Drad, causing a huge explosion. The Predator warrior then gives his wrist blades to Dutch and Linn in recognition of their skills as warriors, before the Predators depart back into space.</description>
+            <year>19940101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>6</releaseNumber>
+            <imageNumber>6</imageNumber>
+            <title>avsp</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">5BF6F0CA</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>异形对铁血战士 [欧]</comment>
+            <duplicateID />
+            <description>San Drad, California, has been overrun by the Aliens, and the cybernetically-enhanced Major Dutch Schaefer and Lieutenant Linn Kurosawa have been abandoned by their superiors and are cornered by a swarm of the Alien drones. Before they can be killed, a pair of the Predators appear and destroy the Aliens. The Predators offer an alliance with the two humans in order to stop the Alien infestation.
+The players take control of up to three of four characters: Dutch, Linn, a Predator hunter, and a Predator warrior, and battle the Aliens through several environments. In the process, the characters discover that the Alien presence on Earth is the result of an experiment headed by a renegade General Bush of the U.S. Colonial Marines in conjunction with the Weyland-Yutani corporation. They destroy the Alien hive by crashing a military ship into San Drad, causing a huge explosion. The Predator warrior then gives his wrist blades to Dutch and Linn in recognition of their skills as warriors, before the Predators depart back into space.</description>
+            <year>19940101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>7</releaseNumber>
+            <imageNumber>7</imageNumber>
+            <title>batcirj</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">5542ED74</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>战斗回路 [日]</comment>
+            <duplicateID />
+            <description>Battle Circuit take place in an alternate future earth, the game revolves around a group of bounty hunters who must capture the mad scientist Doctor Saturn and secure a sophisticated computer disc carrying a program known as the "Shiva System". Battle Circuit, which was Capcom's last beat 'em game for the arcades, contains comic-like characters in a futuristic science fiction setting and is considered by some to be a cult classic.</description>
+            <year>19970101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>8</releaseNumber>
+            <imageNumber>8</imageNumber>
+            <title>batcir</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">B402FA51</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>战斗回路 [欧]</comment>
+            <duplicateID />
+            <description>Battle Circuit take place in an alternate future earth, the game revolves around a group of bounty hunters who must capture the mad scientist Doctor Saturn and secure a sophisticated computer disc carrying a program known as the "Shiva System". Battle Circuit, which was Capcom's last beat 'em game for the arcades, contains comic-like characters in a futuristic science fiction setting and is considered by some to be a cult classic.</description>
+            <year>19970101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>9</releaseNumber>
+            <imageNumber>9</imageNumber>
+            <title>choko</title>
+            <saveType />
+            <romSize />
+            <publisher>Mitchell (Capcom license)</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">A406029A</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>长江</comment>
+            <duplicateID />
+            <description>An adult shanghai game from Mitchell. The objective is to clear the board of matching tiles before the timer runs out.
+Each level consists a board with two or more columns of tiles and walls slowly moving toward the center of the board.  Every time a matching pair of tiles is cleared from the board the two columns momentarily shift away from the center. The game is lost if the opposing columns of tiles run into each other or into the wall. In order to legally remove matching tiles no walls or other tiles can be in a path with two or fewer bends between the matching tiles. Once per stage, the player can request help and the two columns will shift to their starting positions and matching tiles will be highlighted for a short time. If the player cannot legally remove any more tiles then the board is 'deadlocked', and the game is lost.
+If the player clears the board before the timer runs out, the background girl will change into a more revealing state of undress and this new image of her will be the background for the next stage.  If the timer reaches zero the player can still attempt to clear the board but the background image will not change.  The game features four girls with two background images each and a topless image that is revealed after defeating the girl's second stage within the time limit. 
+If the game is lost, upon continuing the player may select to attempt to clear the same board or try a new board of tiles.</description>
+            <year>20010101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>10</releaseNumber>
+            <imageNumber>10</imageNumber>
+            <title>csclub</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">3CC73D20</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>卡普空运动俱乐部</comment>
+            <duplicateID />
+            <description>Capcom Sports Club is an arcade game released by Capcom in 1997. It is a multi-sport game that consists of Smash Stars (Tennis), Dunk Stars (Basketball), and Kick Stars (Football/Soccer).</description>
+            <year>19970101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>11</releaseNumber>
+            <imageNumber>11</imageNumber>
+            <title>cybotsj</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">B830595F</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>装甲之战全金属狂潮 [日]</comment>
+            <duplicateID />
+            <description>Near the end of the 21st century, Earth begins to become overpopulated, leading to many people living in man-made space colonies. The primary army of Earth called "Earth Corps", has been conducting nefarious experiments and their work, along with the actions of the playable characters, will determine Earth's future.</description>
+            <year>19950101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>12</releaseNumber>
+            <imageNumber>12</imageNumber>
+            <title>cybots</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">7665466C</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>装甲之战全金属狂潮 [欧]</comment>
+            <duplicateID />
+            <description>Near the end of the 21st century, Earth begins to become overpopulated, leading to many people living in man-made space colonies. The primary army of Earth called "Earth Corps", has been conducting nefarious experiments and their work, along with the actions of the playable characters, will determine Earth's future.</description>
+            <year>19950101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>13</releaseNumber>
+            <imageNumber>13</imageNumber>
+            <title>ddsomj</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">3F81262B</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>龙与地下城-暗黑秘影 [日]</comment>
+            <duplicateID />
+            <description>Dungeons &amp; Dragons: Shadow over Mystara is an arcade game developed and published by Capcom in 1996 as a sequel to Dungeons &amp; Dragons: Tower of Doom. It was also released on the Sega Saturn, packaged with Tower of Doom, under the title Dungeons &amp; Dragons Collection. The game is set in the Dungeons &amp; Dragons campaign setting of Mystara. It was one of the last 2-D arcade side-scrollers created by Capcom; only Battle Circuit (1997) came after Shadow over Mystara.</description>
+            <year>19960101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>14</releaseNumber>
+            <imageNumber>14</imageNumber>
+            <title>ddsom</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">8546133B</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>龙与地下城-暗黑秘影 [欧]</comment>
+            <duplicateID />
+            <description>Dungeons &amp; Dragons: Shadow over Mystara is an arcade game developed and published by Capcom in 1996 as a sequel to Dungeons &amp; Dragons: Tower of Doom. It was also released on the Sega Saturn, packaged with Tower of Doom, under the title Dungeons &amp; Dragons Collection. The game is set in the Dungeons &amp; Dragons campaign setting of Mystara. It was one of the last 2-D arcade side-scrollers created by Capcom; only Battle Circuit (1997) came after Shadow over Mystara.</description>
+            <year>19960101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>15</releaseNumber>
+            <imageNumber>15</imageNumber>
+            <title>ddtodj</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">7A395B4E</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>龙与地下城-毁灭之塔 [日]</comment>
+            <duplicateID />
+            <description>Dungeons &amp; Dragons: Tower of Doom is the first of two video games created by Capcom based on the Dungeons &amp; Dragons tabletop role-playing game. The game was also released on the Sega Saturn, packaged with its sequel, Dungeons &amp; Dragons: Shadow over Mystara, under the title Dungeons &amp; Dragons Collection, although the Saturn version limited the gameplay to only 2 players. The game is set in the Mystara campaign setting.</description>
+            <year>19930101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>16</releaseNumber>
+            <imageNumber>16</imageNumber>
+            <title>ddtod</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">3480C0E8</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>龙与地下城-毁灭之塔 [欧]</comment>
+            <duplicateID />
+            <description>Dungeons &amp; Dragons: Tower of Doom is the first of two video games created by Capcom based on the Dungeons &amp; Dragons tabletop role-playing game. The game was also released on the Sega Saturn, packaged with its sequel, Dungeons &amp; Dragons: Shadow over Mystara, under the title Dungeons &amp; Dragons Collection, although the Saturn version limited the gameplay to only 2 players. The game is set in the Mystara campaign setting.</description>
+            <year>19930101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>17</releaseNumber>
+            <imageNumber>17</imageNumber>
+            <title>gmahou</title>
+            <saveType />
+            <romSize />
+            <publisher>Raizing</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">7765EDAA</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>疾风魔法大作战 [日]</comment>
+            <duplicateID />
+            <description>The game is set in a futuristic environment with dragons, little turtles with lasers on their back, and little green goblins with red eyes. The player picks one of four friends to travel with. The two characters fly through the levels in the game and collect items. Each item has a point value and the points are used to fill up a chart at the end. The items include: food, swords, armors, boots, etc. Towards the end of the game, the bosses become incredibly hard. The fast backgrounds create a confusing state of mind for the player.</description>
+            <year>20000101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>18</releaseNumber>
+            <imageNumber>18</imageNumber>
+            <title>dimahoo</title>
+            <saveType />
+            <romSize />
+            <publisher>Raizing</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">72E0E27A</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>疾风魔法大作战 [欧]</comment>
+            <duplicateID />
+            <description>The game is set in a futuristic environment with dragons, little turtles with lasers on their back, and little green goblins with red eyes. The player picks one of four friends to travel with. The two characters fly through the levels in the game and collect items. Each item has a point value and the points are used to fill up a chart at the end. The items include: food, swords, armors, boots, etc. Towards the end of the game, the bosses become incredibly hard. The fast backgrounds create a confusing state of mind for the player.</description>
+            <year>20000101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>19</releaseNumber>
+            <imageNumber>19</imageNumber>
+            <title>vampja</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">982F040B</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>恶魔战士-午夜斗士 [日]</comment>
+            <duplicateID />
+            <description>Vampire / Darkstalkers - The Night Warriors is a one-on-one beat-em-up in which a powerful alien demon called 'Pyron' has invaded Earth to add to his collection of the planets that he has already devoured. Enter the world's most fearsome monsters who, ironically, are Mankind's last line of defense.
+The game features ten playable characters (Demitri Maximoff, Jon Talbain, Victor von Gerdenheim, Lord Raptor, Morrigan Aensland, Anakaris, Felicia, Oboro Bishamon, Rikuo and Sasquatch) with two non-playable boss characters - Huitzil and Pyron - as the final opponents of the single-player game.</description>
+            <year>19940101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>20</releaseNumber>
+            <imageNumber>20</imageNumber>
+            <title>dstlk</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">C31741E5</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>恶魔战士-午夜斗士 [欧]</comment>
+            <duplicateID />
+            <description>Vampire / Darkstalkers - The Night Warriors is a one-on-one beat-em-up in which a powerful alien demon called 'Pyron' has invaded Earth to add to his collection of the planets that he has already devoured. Enter the world's most fearsome monsters who, ironically, are Mankind's last line of defense.
+The game features ten playable characters (Demitri Maximoff, Jon Talbain, Victor von Gerdenheim, Lord Raptor, Morrigan Aensland, Anakaris, Felicia, Oboro Bishamon, Rikuo and Sasquatch) with two non-playable boss characters - Huitzil and Pyron - as the final opponents of the single-player game.</description>
+            <year>19940101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>21</releaseNumber>
+            <imageNumber>21</imageNumber>
+            <title>vhuntj</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">7AF4103F</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>恶魔战士2-恶魔的复仇 [日]</comment>
+            <duplicateID />
+            <description>Night Warriors: Darkstalkers' Revenge is the second game in the Darkstalkers series of gothic horror fighting games. Released in 1995, it is the upgraded version of the original game which introduced several gameplay changes to the game.
+The game introduced two new playable characters, Donovan Baine and Hsien-Ko, who were out to hunt the other Darkstalkers (hence the Japanese title, Vampire Hunter). The two bosses from the first game, Huitzil and Pyron, were now playable characters as well. The game was first released for arcades and later ported to the Sega Saturn. Character art was done by Ikeno.</description>
+            <year>19950101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>22</releaseNumber>
+            <imageNumber>22</imageNumber>
+            <title>nwarr</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">6A9DBB19</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>恶魔战士2-恶魔的复仇 [欧]</comment>
+            <duplicateID />
+            <description>Night Warriors: Darkstalkers' Revenge is the second game in the Darkstalkers series of gothic horror fighting games. Released in 1995, it is the upgraded version of the original game which introduced several gameplay changes to the game.
+The game introduced two new playable characters, Donovan Baine and Hsien-Ko, who were out to hunt the other Darkstalkers (hence the Japanese title, Vampire Hunter). The two bosses from the first game, Huitzil and Pyron, were now playable characters as well. The game was first released for arcades and later ported to the Sega Saturn. Character art was done by Ikeno.</description>
+            <year>19950101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>23</releaseNumber>
+            <imageNumber>23</imageNumber>
+            <title>vsavj</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">EF0F658A</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>恶魔战士3-吸血皇族 [日][R1]</comment>
+            <duplicateID />
+            <description>Jedah, one of the ancient Three Lords of Darkrealm has returned. You play as one of fifteen Darkstalkers. Beat Jedah and take your throne as the Lord of the Darkness.</description>
+            <year>19970101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>24</releaseNumber>
+            <imageNumber>24</imageNumber>
+            <title>vsav2</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">FFED36BB</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>恶魔战士3-吸血皇族 [日][R2]</comment>
+            <duplicateID />
+            <description>Fifteen characters fight to end the reign of Jedah, the Vampire Savior and save their own souls!</description>
+            <year>19970101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>25</releaseNumber>
+            <imageNumber>25</imageNumber>
+            <title>vhunt2</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">24088A4</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>恶魔战士3-吸血皇族 [日][R3]</comment>
+            <duplicateID />
+            <description>Fourteen well-animated creatures from Hell rip, tear and otherwise fight for control of the nether-realms.</description>
+            <year>19970101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>26</releaseNumber>
+            <imageNumber>26</imageNumber>
+            <title>vsav</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">AB46F0EE</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>恶魔战士3-吸血皇族 [欧]</comment>
+            <duplicateID />
+            <description>Jedah, one of the ancient Three Lords of Darkrealm has returned. You play as one of fifteen Darkstalkers. Beat Jedah and take your throne as the Lord of the Darkness.</description>
+            <year>19970101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>27</releaseNumber>
+            <imageNumber>27</imageNumber>
+            <title>ecofghtr</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">F7967835</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>扭转战斗机</comment>
+            <duplicateID />
+            <description>Eco Fighters is a horizontal shooter, where the player controls a ship with a rotating gun. As suggested by both its titles, the game has an "eco-friendly" theme. It was also developed by the same team from two Mega Man arcade titles, The Power Battle and The Power Fighters.</description>
+            <year>19930101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>28</releaseNumber>
+            <imageNumber>28</imageNumber>
+            <title>gigawing</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">AB0228A7</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>雷鸟之翼</comment>
+            <duplicateID />
+            <description>'Medallions' are mystic stones sent from heaven, brought evolution to human technology and lead tremendous progress to the armories. To gain their powers which the 'Stones' hold for the promised victory, many nations fought over the mystic stones and reheated the world of war. Within all the 'Stones' is the 'Medallion of Wisdom', known as the power source of all mystic stones, it had enough energy to terminate humanity. The whole world was in despair. And now, four brave worriers have risen to fly straight into the combat zone! All four had different reasons, but their ultimate goal was the same: to destroy the Medallion of Wisdom! Fight to save the humanity!
+Giga Wing is a shoot-em-up set during a fictional war. The player controls one of four different futuristic aircraft and must destroy enemy aircraft, tanks, ships, and buildings using both guns and missiles mounted on the aircraft and a limited supply of bombs which damage or destroy all enemies on-screen when used.</description>
+            <year>19990101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>29</releaseNumber>
+            <imageNumber>29</imageNumber>
+            <title>ssf2</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">9F57BB3F</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>超级街霸II-新的挑战者</comment>
+            <duplicateID />
+            <description>Super Street Fighter II: The New Challengers is the fourth game in the Street Fighter II sub-series of Street Fighter games, following Street Fighter II: Hyper Fighting. In addition to refining and balancing the existing character roster from the previous installments, Super Street Fighter II also introduced four new characters.
+This game is also known under the name of Super Street Fighter II: The Tournament Battle when 4 Cabinets are connected to play in tournament mode.</description>
+            <year>19930101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>30</releaseNumber>
+            <imageNumber>30</imageNumber>
+            <title>ssf2t</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">92B67A50</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>超级街霸II-Turbo [世]</comment>
+            <duplicateID />
+            <description>Super Street Fighter II Turbo, released in Japan as Super Street Fighter II X: Grand Master Challenge, is a competitive fighting game released for the arcades by Capcom in 1994. It is the fifth arcade installment in the Street Fighter II sub-series of Street Fighter games, following Super Street Fighter II. Like its predecessor, it ran on the CP System II hardware.
+Super Turbo introduced several new play mechanics to the game system from the previous Street Fighter II installments, including the addition of powered-up Special Moves called Super Combos. It also introduced the hidden character of Akuma, who would go on to become a recurring character in later Street Fighter installments and other Capcom fighting games.</description>
+            <year>19940101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>31</releaseNumber>
+            <imageNumber>31</imageNumber>
+            <title>ssf2xj</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">F9DF7A68</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>超级街霸II-Turbo [日]</comment>
+            <duplicateID />
+            <description>Super Street Fighter II Turbo, released in Japan as Super Street Fighter II X: Grand Master Challenge, is a competitive fighting game released for the arcades by Capcom in 1994. It is the fifth arcade installment in the Street Fighter II sub-series of Street Fighter games, following Super Street Fighter II. Like its predecessor, it ran on the CP System II hardware.
+Super Turbo introduced several new play mechanics to the game system from the previous Street Fighter II installments, including the addition of powered-up Special Moves called Super Combos. It also introduced the hidden character of Akuma, who would go on to become a recurring character in later Street Fighter installments and other Capcom fighting games.</description>
+            <year>19940101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>32</releaseNumber>
+            <imageNumber>32</imageNumber>
+            <title>hsf2j</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">983A2937</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>终极街霸II-15周年纪念 [日]</comment>
+            <duplicateID />
+            <description>Hyper Street Fighter II: The Anniversary Edition is a competitive fighting game by Capcom that was originally released for the PlayStation 2 in 2003 in Japan and in 2004 in North America and Asia. Released to commemorate the 15th anniversary of the Street Fighter series, Hyper Street Fighter II is a modified port of Super Street Fighter II Turbo in which players can control any versions of the main characters from the five Street Fighter II games previously released for the arcades. Although, originally released as a home console game, an arcade port was released shortly afterwards in limited quantities, turning it into the sixth and final arcade iteration.</description>
+            <year>20031201T000000</year>
+        </game>
+        <game>
+            <releaseNumber>33</releaseNumber>
+            <imageNumber>33</imageNumber>
+            <title>hsf2</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">673346FD</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>终极街霸II-15周年纪念 [美]</comment>
+            <duplicateID />
+            <description>Hyper Street Fighter II: The Anniversary Edition is a competitive fighting game by Capcom that was originally released for the PlayStation 2 in 2003 in Japan and in 2004 in North America and Asia. Released to commemorate the 15th anniversary of the Street Fighter series, Hyper Street Fighter II is a modified port of Super Street Fighter II Turbo in which players can control any versions of the main characters from the five Street Fighter II games previously released for the arcades. Although, originally released as a home console game, an arcade port was released shortly afterwards in limited quantities, turning it into the sixth and final arcade iteration.</description>
+            <year>20031201T000000</year>
+        </game>
+        <game>
+            <releaseNumber>34</releaseNumber>
+            <imageNumber>34</imageNumber>
+            <title>sfzj</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">3C8F1A69</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>少年街霸 [日]</comment>
+            <duplicateID />
+            <description>It's Street Fighter as you always remember it, with some new moves, characters and combo systems, as well as a more polished look and feel.
+The new moves available for each fighter, called Super moves, allow them to fire off very powerful moves. A bar at the bottom of the screen represents the power that you have to use for the moves. You start the first round on 0, and each attack that you make adds power to the bar. Once you reach level 3, you can unleash the special attacks, that can sometimes KO the opponant.
+The other major change over the Street Fighter 2 series are the Alpha counters. These can be used to counter an on-coming attack after blocking.</description>
+            <year>19950101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>35</releaseNumber>
+            <imageNumber>35</imageNumber>
+            <title>sfa</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">1BF4890D</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>少年街霸 [欧]</comment>
+            <duplicateID />
+            <description>It's Street Fighter as you always remember it, with some new moves, characters and combo systems, as well as a more polished look and feel.
+The new moves available for each fighter, called Super moves, allow them to fire off very powerful moves. A bar at the bottom of the screen represents the power that you have to use for the moves. You start the first round on 0, and each attack that you make adds power to the bar. Once you reach level 3, you can unleash the special attacks, that can sometimes KO the opponant.
+The other major change over the Street Fighter 2 series are the Alpha counters. These can be used to counter an on-coming attack after blocking.</description>
+            <year>19950101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>36</releaseNumber>
+            <imageNumber>36</imageNumber>
+            <title>sfz2j</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">941F9550</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>少年街霸II [日]</comment>
+            <duplicateID />
+            <description>Street Fighter Alpha 2, known as Street Fighter Zero 2 in Japan, Asia and South America, is a 1996 fighting game originally released for the CPS II arcade hardware by Capcom. The game is both a sequel and a remake to the previous year's Street Fighter Alpha: Warriors' Dreams, which is itself a prequel to the Street Fighter II series in terms of plot and setting</description>
+            <year>19960101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>37</releaseNumber>
+            <imageNumber>37</imageNumber>
+            <title>sfa2</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">C8733F2</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>少年街霸II [欧]</comment>
+            <duplicateID />
+            <description>Street Fighter Alpha 2, known as Street Fighter Zero 2 in Japan, Asia and South America, is a 1996 fighting game originally released for the CPS II arcade hardware by Capcom. The game is both a sequel and a remake to the previous year's Street Fighter Alpha: Warriors' Dreams, which is itself a prequel to the Street Fighter II series in terms of plot and setting</description>
+            <year>19960101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>38</releaseNumber>
+            <imageNumber>38</imageNumber>
+            <title>sfz2alj</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">F630105E</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>少年街霸IIAlpha [日]</comment>
+            <duplicateID />
+            <description>Street Fighter Zero 2 Alpha is an enhanced version of "Street Fighter Zero 2" released in arcades in Japan, southeast Asia, Brazil, and Hispanic regions. In North America and Europe, where its predecessor is known as "Street Fighter Alpha 2", this enhanced version appears on home consoles only.</description>
+            <year>19960101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>39</releaseNumber>
+            <imageNumber>39</imageNumber>
+            <title>sfz2al</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">DD9434D2</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>少年街霸IIAlpha [亚]</comment>
+            <duplicateID />
+            <description>Street Fighter Zero 2 Alpha is an enhanced version of "Street Fighter Zero 2" released in arcades in Japan, southeast Asia, Brazil, and Hispanic regions. In North America and Europe, where its predecessor is known as "Street Fighter Alpha 2", this enhanced version appears on home consoles only.</description>
+            <year>19960101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>40</releaseNumber>
+            <imageNumber>40</imageNumber>
+            <title>sfz3j</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">F19546D5</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>少年街霸III [日]</comment>
+            <duplicateID />
+            <description>Street Fighter Alpha 3, the third game in the Alpha series, has a total of 31 fighters, the most in the series so far. New characters include old favorites E. Honda, Blanka, Vega, Cammy, T. Hawk, Dee Jay, Juni and Juli. Some of the newest fighters on the block include a former Final Fight character (Cody, who has been in jail since the last Final Fight game, or so his clothing suggests), Karin Kanzuki and Rainbow Mika. The major difference between this Alpha and the last two are the new play modes World Tour, Arcade, VS, Training and Entry.</description>
+            <year>19980101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>41</releaseNumber>
+            <imageNumber>41</imageNumber>
+            <title>sfa3</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">4492FC52</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>少年街霸III [欧]</comment>
+            <duplicateID />
+            <description>Street Fighter Alpha 3, the third game in the Alpha series, has a total of 31 fighters, the most in the series so far. New characters include old favorites E. Honda, Blanka, Vega, Cammy, T. Hawk, Dee Jay, Juni and Juli. Some of the newest fighters on the block include a former Final Fight character (Cody, who has been in jail since the last Final Fight game, or so his clothing suggests), Karin Kanzuki and Rainbow Mika. The major difference between this Alpha and the last two are the new play modes World Tour, Arcade, VS, Training and Entry.</description>
+            <year>19980101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>42</releaseNumber>
+            <imageNumber>42</imageNumber>
+            <title>spf2t</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">CB27EBA0</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>超级方块战士II-Turbo</comment>
+            <duplicateID />
+            <description>Burst right into the feverish puzzle action that combines irresistible, addictive fun with famous Capcom characters. Beat your opponent to the punch by stacking block after block in strategic patterns and color combinations. Be the first to fill the opponent's screen with blocks and K.O. you win! But get ready for more, because you can't play just once.</description>
+            <year>19960101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>43</releaseNumber>
+            <imageNumber>43</imageNumber>
+            <title>pfghtj</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">C9E1E5A</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>超级口袋战士 [日]</comment>
+            <duplicateID />
+            <description>Super Gem Fighter: Mini Mix / Pocket Fighter is a superb, abstract and humorous fighting game featuring miniaturized renditions from several Capcom fighting games; including the legendary "Street Fighter" series, as well as "Darkstalkers" and the little-known "Red Earth".
+During a bout, players will be able to release coloured gems from successful attacks against their opponent, as well as from wooden chests that regularly appear. Collecting these gems will 'power-up' the player's character, giving them more powerful attacks. There are two bars and three sub-bars in the interface. The two main bars are the life bar and the super bar; the first indicates the player's health and the second their ability to throw super combos. The Super Bar itself can be filled up to nine levels, allowing players to execute more super combos. Each super combo has a level assigned to it, and it uses Super Bars depending on it.</description>
+            <year>19970101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>44</releaseNumber>
+            <imageNumber>44</imageNumber>
+            <title>sgemf</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">3D5EB900</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>超级口袋战士 [美]</comment>
+            <duplicateID />
+            <description>Super Gem Fighter: Mini Mix / Pocket Fighter is a superb, abstract and humorous fighting game featuring miniaturized renditions from several Capcom fighting games; including the legendary "Street Fighter" series, as well as "Darkstalkers" and the little-known "Red Earth".
+During a bout, players will be able to release coloured gems from successful attacks against their opponent, as well as from wooden chests that regularly appear. Collecting these gems will 'power-up' the player's character, giving them more powerful attacks. There are two bars and three sub-bars in the interface. The two main bars are the life bar and the super bar; the first indicates the player's health and the second their ability to throw super combos. The Super Bar itself can be filled up to nine levels, allowing players to execute more super combos. Each super combo has a level assigned to it, and it uses Super Bars depending on it.</description>
+            <year>19970101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>45</releaseNumber>
+            <imageNumber>45</imageNumber>
+            <title>mshj</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">2E195F27</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>超级漫画英雄 [日]</comment>
+            <duplicateID />
+            <description>Play as your favorite Marvel character: Wolverine, Spider-Man, The Incredible Hulk, Captain America, Iron Man, Psylocke, Shuma-Gorath, Blackheart, Juggernaut or Magneto. Power up with an Infinity Gem - Grant your super hero healing power, super attacks and increased strength.</description>
+            <year>19950101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>46</releaseNumber>
+            <imageNumber>46</imageNumber>
+            <title>msh</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">52F31C17</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>超级漫画英雄 [欧]</comment>
+            <duplicateID />
+            <description>Play as your favorite Marvel character: Wolverine, Spider-Man, The Incredible Hulk, Captain America, Iron Man, Psylocke, Shuma-Gorath, Blackheart, Juggernaut or Magneto. Power up with an Infinity Gem - Grant your super hero healing power, super attacks and increased strength.</description>
+            <year>19950101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>47</releaseNumber>
+            <imageNumber>47</imageNumber>
+            <title>xmcota</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">24DE20B9</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>X战警-磁场原子人</comment>
+            <duplicateID />
+            <description>X-MEN UNLEASHED! It's here! Ultimate combat! Mutant mayhem! X-Power! Special moves! Mid-air action! Big characters! Sizzling graphics! Exactly like you played in the arcade! You will need all your mutant powers, all your speed, all your strength... for this is the ultimate combat! Have you got enough to defeat Magneto, Omega Red and the Sentinel? Are you tough enough for Wolverine, powerful enough for Cyclops, cool enough for Iceman... are you good enough to join the new breed of mutant heroes? X-Men Children of the Atom - the fighting game to end them all!</description>
+            <year>19940101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>48</releaseNumber>
+            <imageNumber>48</imageNumber>
+            <title>xmvsf</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">F1A75536</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>X战警对街霸</comment>
+            <duplicateID />
+            <description>X-Men vs. Street Fighter pits Marvel's mighty mutants against Capcom's legendary fighters in a slugfest of epic proportions. Now you can perform outrageous moves and link together amazing Chain Combos. X-Men vs. Street Fighter... the collision of two explosive universes in the world's most amazing fantasy fighter!</description>
+            <year>19960101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>49</releaseNumber>
+            <imageNumber>49</imageNumber>
+            <title>mshvsfj</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">84C6FA28</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>漫威超级英雄对街霸 [日]</comment>
+            <duplicateID />
+            <description>Now you can choose your favorite heroes from the worlds of Street Fighter and Marvel Super Heroes to face off in a head-to-head battle for supremacy. Dive into the action to perform outrageous moves and link together amazing Chain Combos... then delight in their devastating results! Marvel Super Heroes vs. Street Fighter combines two incredible universes to create an entirely new legend of heroic proportions.</description>
+            <year>19970101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>50</releaseNumber>
+            <imageNumber>50</imageNumber>
+            <title>mshvsf</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">5E897C84</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>漫威超级英雄对街霸 [欧]</comment>
+            <duplicateID />
+            <description>Now you can choose your favorite heroes from the worlds of Street Fighter and Marvel Super Heroes to face off in a head-to-head battle for supremacy. Dive into the action to perform outrageous moves and link together amazing Chain Combos... then delight in their devastating results! Marvel Super Heroes vs. Street Fighter combines two incredible universes to create an entirely new legend of heroic proportions.</description>
+            <year>19970101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>51</releaseNumber>
+            <imageNumber>51</imageNumber>
+            <title>mvscj</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">1385921F</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>漫威对卡普空-超级英雄的碰撞 [日]</comment>
+            <duplicateID />
+            <description>Marvel vs. Capcom: Clash of Super Heroes is the fifth Marvel Comics-licensed fighting game by Capcom and the third game in the Marvel vs. Capcom series. In contrast to X-Men vs. Street Fighter and Marvel Super Heroes vs. Street Fighter, the game features characters from numerous Capcom franchises such as Mega Man and Strider, rather than just Street Fighter characters. The game takes place within the Marvel comic continuity, as Professor Charles Xavier calls out for heroes to stop him before he merges with the consciousness of Magneto and becomes the being known as Onslaught, the final boss. The game was developed in late 1997 and first released in January 1998.</description>
+            <year>19980123T000000</year>
+        </game>
+        <game>
+            <releaseNumber>52</releaseNumber>
+            <imageNumber>52</imageNumber>
+            <title>mvsc</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">9302942E</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>漫威对卡普空-超级英雄的碰撞 [欧]</comment>
+            <duplicateID />
+            <description>Marvel vs. Capcom: Clash of Super Heroes is the fifth Marvel Comics-licensed fighting game by Capcom and the third game in the Marvel vs. Capcom series. In contrast to X-Men vs. Street Fighter and Marvel Super Heroes vs. Street Fighter, the game features characters from numerous Capcom franchises such as Mega Man and Strider, rather than just Street Fighter characters. The game takes place within the Marvel comic continuity, as Professor Charles Xavier calls out for heroes to stop him before he merges with the consciousness of Magneto and becomes the being known as Onslaught, the final boss. The game was developed in late 1997 and first released in January 1998.</description>
+            <year>19980123T000000</year>
+        </game>
+        <game>
+            <releaseNumber>53</releaseNumber>
+            <imageNumber>53</imageNumber>
+            <title>jyangoku</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">FD11BC92</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>雀国志-霸王之采牌</comment>
+            <duplicateID />
+            <description>Jangokushi: Haou no Saihai is an other mahjong game from Capcom.</description>
+            <year>19990101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>54</releaseNumber>
+            <imageNumber>54</imageNumber>
+            <title>rmancp2j</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">D7B1EC1D</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>洛克人-力量之战 [日]</comment>
+            <duplicateID />
+            <description>Doctor Wily is up to no good yet again, this time returning with 18 revived and improved Robot Masters. Mega Man and Proto Man proceed to stop him, while Bass destroys the inferior robots to show Wily that he is the only robot he needs.</description>
+            <year>19950101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>55</releaseNumber>
+            <imageNumber>55</imageNumber>
+            <title>mmancp2u</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">62035888</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>洛克人-力量之战 [美]</comment>
+            <duplicateID />
+            <description>Doctor Wily is up to no good yet again, this time returning with 18 revived and improved Robot Masters. Mega Man and Proto Man proceed to stop him, while Bass destroys the inferior robots to show Wily that he is the only robot he needs.</description>
+            <year>19950101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>56</releaseNumber>
+            <imageNumber>56</imageNumber>
+            <title>rockman2j</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">A7FEDA97</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>洛克人2-力量对决 [日]</comment>
+            <duplicateID />
+            <description>Building upon the previous game, you must battle Dr. Wily's evil robot criminals with the help of Megaman, Protoman, Bass &amp; Duo. Features cool 2-D graphics and the same tried &amp; true Mega Man controls. Pay attention to Dr. Light's advice and you may reach Dr. Wily's fortress and come out victorious!</description>
+            <year>19960101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>57</releaseNumber>
+            <imageNumber>57</imageNumber>
+            <title>megaman2</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">F0DD6874</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>洛克人2-力量对决 [美]</comment>
+            <duplicateID />
+            <description>Building upon the previous game, you must battle Dr. Wily's evil robot criminals with the help of Megaman, Protoman, Bass &amp; Duo. Features cool 2-D graphics and the same tried &amp; true Mega Man controls. Pay attention to Dr. Light's advice and you may reach Dr. Wily's fortress and come out victorious!</description>
+            <year>19960101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>58</releaseNumber>
+            <imageNumber>58</imageNumber>
+            <title>mmatrix</title>
+            <saveType />
+            <romSize />
+            <publisher>Takumi</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">D7C6AB6C</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>火星矩阵-终极固体射击</comment>
+            <duplicateID />
+            <description>A prediction is that before human civilization, there was once an advanced civilization on Mars. A sorceress destroyed the civilization and everything that was remembered of it, except a chip called "INFINITY". In 2100, millions of people were starving due to massive food shortages and has caused civil wars around the world. Centuries later, however, the world government had sent colonists to Mars which began to solve these problems. At a nearby farm, the Infinity chip was discovered and it revealed all the technology of the advanced civilization. In 2309, a Declaration of Independence has been sent to Earth. Large armies have been amassed on Mars, and a gigantic armada was waiting for any attack from Earth. The Earth government sends out a fleet of battleships followed by a special air raid unit called ACID; ACID is equipped with a new fighter ship known as the Mosquito. Their mission is to enter Mars, stop the rebel violence, locate and destroy the rebel leader, whoever... or whatever it may be...</description>
+            <year>20000101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>59</releaseNumber>
+            <imageNumber>59</imageNumber>
+            <title>mpang</title>
+            <saveType />
+            <romSize />
+            <publisher>Mitchell</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">87EFFC38</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>超强魔法气泡</comment>
+            <duplicateID />
+            <description>Mighty! Pang is the fourth game in the superb Pang series. While the artistic design has been drastically changed, Mighty! Pang retains the same gameplay of its predecessors. The game features three modes of play: panic, tour and expert modes.</description>
+            <year>20000101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>60</releaseNumber>
+            <imageNumber>60</imageNumber>
+            <title>progear</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">705FF2B3</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>能源之岚</comment>
+            <duplicateID />
+            <description>In a time when the industrialization of the world had just begun, various inventions appeared and changed the life of the peaceful kingdom. One of them was a propeller that evolved from pure wind generation by using the created electricity to re-rotate it. It was called 'The Professional Gear', or just 'Progear'. This invention was the key to conquer the great wide open sky. Another discovery made the ancient dream of the immortal body come true. But it was affordable only by some wealthy elderly. They formed a new council called 'the Motorouin' and declared the current government as a corruptive and greedy establishment and that they want to correct it by a new educational system, in order to create a new race of man. So they built a military force to realize the first step of their plan, which was the takeover of the kingdom. The government decided to stop the aggression by putting it's own army in motion. It was a dreadful battle with many victims. But it was won by the Motorouin. This battle is mentioned in the books of history as 'The Punishment of the Sages'.
+A group of young pilots, actually children whose families were killed in that war, finally decided to fight back. They secretly developed a new powerful weapon which adults were not able to use. They called it 'Gun Flyer' and installed it in all of their planes. The Storm of Progear was about to begin!</description>
+            <year>20010101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>61</releaseNumber>
+            <imageNumber>61</imageNumber>
+            <title>pzloop2</title>
+            <saveType />
+            <romSize />
+            <publisher>Mitchell</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">1CC2DB97</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>智力循环2</comment>
+            <duplicateID />
+            <description>Gameplay is exactly the same as its predecessor, Puzz Loop , with the player needing to deplete all the colored balls before they hit the center of the screen.</description>
+            <year>20010101T000000</year>
+        </game>
+        <game>
+            <releaseNumber>62</releaseNumber>
+            <imageNumber>62</imageNumber>
+            <title>ringdest</title>
+            <saveType />
+            <romSize />
+            <publisher>Capcom</publisher>
+            <location />
+            <sourceRom />
+            <language />
+            <files>
+                <romCRC extension=".zip">10660821</romCRC>
+            </files>
+            <im1CRC />
+            <im2CRC />
+            <comment>超级摔角霸王II-连环爆裂</comment>
+            <duplicateID />
+            <description>Fourteen selectable wrestlers fight to win the belt in this cross over wrestling/2D fighting game.</description>
+            <year>19940101T000000</year>
+        </game>
+    </games>
+    <gui>
+        <images height="160" width="520">
+            <image height="160" width="250" x="0" y="0" />
+            <image height="160" width="240" x="270" y="0" />
+        </images>
+    </gui>
+</dat>

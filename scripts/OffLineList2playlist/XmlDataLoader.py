@@ -152,7 +152,7 @@ class XmlDataLoader:
 
         for extension in tree.iterfind('configuration/canOpen/extension'):
             data['canopen_ext_list'].append(extension.text)
-        print('imURL: %s, imFolder: %s, romTitle: %s' % (imURL, imFolder, romTitle))
+        # print('imURL: %s, imFolder: %s, romTitle: %s' % (imURL, imFolder, romTitle))
 
         index = 0
         for game in tree.iterfind('games/game'):
@@ -184,14 +184,18 @@ class XmlDataLoader:
             releaseNumber = int(releaseNumber)
             language = game.find('language').text
             comment = game.find('comment').text
-            romCRC = ''
-            if game.find('files/romCRC'):
-                romCRC = game.find('files/romCRC').text.upper()
             imageNumber = game.find('imageNumber').text
             imageNumber = int(imageNumber)
+
+            romCRC = ''
             extension = ''
-            if game.find('files/romCRC') and 'extension' in game.find('files/romCRC'):
-                extension = game.find('files/romCRC').attrib['extension']
+            rom_crc_list = game.findall('files/romCRC')
+            for crc in rom_crc_list:
+                if 'extension' not in crc.attrib:
+                    continue
+                if crc.text:
+                    romCRC = crc.text.upper()
+                extension = crc.attrib['extension']
 
             info = {
                 'ori_title': ori_title,
@@ -246,3 +250,8 @@ class XmlDataLoader:
     def genGameCrc(game):
         fmt_game = FmtGame(game)
         return format(fmt_game, '%c')
+
+    @staticmethod
+    def genFromFmt(game, fmt):
+        fmt_game = FmtGame(game)
+        return format(fmt_game, fmt)

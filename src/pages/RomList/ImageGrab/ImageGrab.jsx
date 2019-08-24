@@ -13,7 +13,7 @@ const imgsUrlPrex = '/cdn/RetroGame/imgs';
 const lpLplName = {
   WSC: 'LP_WSC_OL',
   WS: 'LP_WS_OL',
-  'NECPC': 'LP_NECPC_OL',
+  NECPC: 'LP_NECPC_OL',
   N64: 'LP_N64_OL',
   DNS: 'LP_DNS_OL',
   GBA: 'LP_GBA_OL',
@@ -26,6 +26,7 @@ const lpLplName = {
   SGG: 'LP_SGG_OL',
   SGM: 'LP_SGM_OL',
   SMS: 'LP_SMS_OL',
+  FBA: 'LP_FBA_OL',
 }
 
 export default class ImageGrab extends Component {

@@ -1,0 +1,220 @@
+<dat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="datas.xsd">
+	<configuration>
+		<datName>MIB_NEOGEOCD_OL</datName>
+		<imFolder>MIB_NEOGEOCD_OL</imFolder>
+		<datVersion>20190823</datVersion>
+		<system>FB Alpha</system>
+		<screenshotsWidth>240</screenshotsWidth>
+		<screenshotsHeight>160</screenshotsHeight>
+		<infos>
+			<title default="false" inNamingOption="true" visible="false" />
+			<location default="true" inNamingOption="true" visible="true" />
+			<publisher default="true" inNamingOption="true" visible="true" />
+			<sourceRom default="true" inNamingOption="true" visible="true" />
+			<saveType default="true" inNamingOption="true" visible="true" />
+			<romSize default="true" inNamingOption="true" visible="true" />
+			<releaseNumber default="true" inNamingOption="true" visible="true" />
+			<comment default="true" inNamingOption="true" visible="true" />
+			<romCRC default="true" inNamingOption="true" visible="true" />
+			<im1CRC default="false" inNamingOption="true" visible="true" />
+			<im2CRC default="false" inNamingOption="true" visible="true" />
+			<languages default="true" inNamingOption="true" visible="true" />
+		</infos>
+		<canOpen>
+			<extension>.chd</extension>
+		</canOpen>
+		<newDat>
+			<datVersionURL />
+			<datURL fileName="Unofficial No-Intro Nintendo Game Boy Advance Chinese.zip" />
+			<imURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame/imgs/MIB_NEOGEOCD_OL</imURL>
+		</newDat>
+		<search>
+			<to auto="true" default="true" value="location" />
+			<to auto="false" default="true" value="romSize">
+				<find operation="&lt;" value="4194304">&lt; 32 MBits</find>
+				<find operation="=" value="4194304">= 32 MBits</find>
+				<find operation="=" value="8388608">= 64 MBits</find>
+				<find operation="=" value="16777216">= 128 MBits</find>
+				<find operation="=" value="33554432">= 256 MBits</find>
+			</to>
+			<to auto="true" default="true" value="languages" />
+			<to auto="false" default="true" value="saveType">
+				<find operation="inNoCase" value="EEPROM">Eeprom</find>
+				<find operation="inNoCase" value="FLASH">Flash</find>
+				<find operation="inNoCase" value="SRAM">SRam</find>
+				<find operation="inNoCase" value="NONE">None</find>
+			</to>
+			<to auto="true" default="true" value="publisher" />
+			<to auto="true" default="true" value="sourceRom" />
+		</search>
+		<romTitle>%u - %n %e %g</romTitle>
+	</configuration>
+	<games>
+		<game>
+			<releaseNumber>1</releaseNumber>
+			<imageNumber>1</imageNumber>
+			<title>ADK World (JP)</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".chd">2DBFD1CC</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>ADK世界</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>2</releaseNumber>
+			<imageNumber>2</imageNumber>
+			<title>Choutetsu Brikin'ger (JP) - [CDZ patched]</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".chd">F26193A3</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>超铁战机</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>3</releaseNumber>
+			<imageNumber>3</imageNumber>
+			<title>Crossed Swords II (JP)</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".chd">8793DDBD</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>圣十字剑2</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>4</releaseNumber>
+			<imageNumber>4</imageNumber>
+			<title>Idol Mahjong Final Romance 2 (JP)</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".chd">E32D491C</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>偶像麻将最终罗曼史2</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>5</releaseNumber>
+			<imageNumber>5</imageNumber>
+			<title>King of Fighters '96, The - NEOGEO Collection (JP) - [CDZ patched]</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".chd">29E735C3</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>拳皇96收藏版</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>6</releaseNumber>
+			<imageNumber>6</imageNumber>
+			<title>Neo Geo CD Special (JP)</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".chd">7355EE9B</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>Neo-Geo CD特别版</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>7</releaseNumber>
+			<imageNumber>7</imageNumber>
+			<title>Oshidashi Zintrick (JP)</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".chd">CB7D95E7</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>水滴对战气泡</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+		<game>
+			<releaseNumber>8</releaseNumber>
+			<imageNumber>8</imageNumber>
+			<title>Shinsetsu Samurai Spirits - Bushidouretsuden (JP) - [CDZ patched]</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".chd">7B125448</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>真说侍魂武士道列传</comment>
+			<duplicateID />
+			<description />
+			<year />
+		</game>
+	</games>
+	<gui>
+		<images height="160" width="520">
+			<image height="160" width="250" x="0" y="0" />
+			<image height="160" width="240" x="270" y="0" />
+		</images>
+	</gui>
+</dat>

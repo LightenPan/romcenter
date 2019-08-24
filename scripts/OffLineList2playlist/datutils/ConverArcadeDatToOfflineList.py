@@ -28,7 +28,7 @@ def is_valid_image(filename):
 
 if __name__ == "__main__":
     from optparse import OptionParser
-    usage = 'python dict_handle.ConverArcadeDatToOfflineList --arcade_dat= --cover_dat= --output='
+    usage = 'python -m datutils.ConverArcadeDatToOfflineList --arcade_dat= --cover_dat= --output='
     parser = OptionParser(usage)
     parser.add_option("--arcade_dat")
     parser.add_option("--cover_dat")

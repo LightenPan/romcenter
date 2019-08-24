@@ -66,7 +66,7 @@ def load_en2chs(file):
 
 if __name__ == "__main__":
     from optparse import OptionParser
-    usage = 'python dict_handle\GenSimpleDict.py --file= --output='
+    usage = 'python datutils\GenSimpleDict.py --file= --output='
     parser = OptionParser(usage)
     parser.add_option("--file")
     parser.add_option("--output")

@@ -1,0 +1,840 @@
+<dat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="datas.xsd">
+	<configuration>
+		<datName>MIB_MAME_OL</datName>
+		<imFolder>MIB_MAME_OL</imFolder>
+		<datVersion>20190823</datVersion>
+		<system>FB Alpha</system>
+		<screenshotsWidth>240</screenshotsWidth>
+		<screenshotsHeight>160</screenshotsHeight>
+		<infos>
+			<title default="false" inNamingOption="true" visible="false" />
+			<location default="true" inNamingOption="true" visible="true" />
+			<publisher default="true" inNamingOption="true" visible="true" />
+			<sourceRom default="true" inNamingOption="true" visible="true" />
+			<saveType default="true" inNamingOption="true" visible="true" />
+			<romSize default="true" inNamingOption="true" visible="true" />
+			<releaseNumber default="true" inNamingOption="true" visible="true" />
+			<comment default="true" inNamingOption="true" visible="true" />
+			<romCRC default="true" inNamingOption="true" visible="true" />
+			<im1CRC default="false" inNamingOption="true" visible="true" />
+			<im2CRC default="false" inNamingOption="true" visible="true" />
+			<languages default="true" inNamingOption="true" visible="true" />
+		</infos>
+		<canOpen>
+			<extension>.zip</extension>
+		</canOpen>
+		<newDat>
+			<datVersionURL />
+			<datURL fileName="Unofficial No-Intro Nintendo Game Boy Advance Chinese.zip" />
+			<imURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame/imgs/MIB_MAME_OL</imURL>
+		</newDat>
+		<search>
+			<to auto="true" default="true" value="location" />
+			<to auto="false" default="true" value="romSize">
+				<find operation="&lt;" value="4194304">&lt; 32 MBits</find>
+				<find operation="=" value="4194304">= 32 MBits</find>
+				<find operation="=" value="8388608">= 64 MBits</find>
+				<find operation="=" value="16777216">= 128 MBits</find>
+				<find operation="=" value="33554432">= 256 MBits</find>
+			</to>
+			<to auto="true" default="true" value="languages" />
+			<to auto="false" default="true" value="saveType">
+				<find operation="inNoCase" value="EEPROM">Eeprom</find>
+				<find operation="inNoCase" value="FLASH">Flash</find>
+				<find operation="inNoCase" value="SRAM">SRam</find>
+				<find operation="inNoCase" value="NONE">None</find>
+			</to>
+			<to auto="true" default="true" value="publisher" />
+			<to auto="true" default="true" value="sourceRom" />
+		</search>
+		<romTitle>%u - %n %e %g</romTitle>
+	</configuration>
+	<games>
+		<game>
+			<releaseNumber>1</releaseNumber>
+			<imageNumber>1</imageNumber>
+			<title>bgaregga</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">21C4F3F4</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>空战之路</comment>
+			<duplicateID />
+			<description />
+			<year>19960101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>2</releaseNumber>
+			<imageNumber>2</imageNumber>
+			<title>btoads</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">ECA6D740</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>忍者蛙</comment>
+			<duplicateID />
+			<description />
+			<year>19940101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>3</releaseNumber>
+			<imageNumber>3</imageNumber>
+			<title>chinagat</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">85D259E2</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>西游降魔录-流棒妖技之章</comment>
+			<duplicateID />
+			<description />
+			<year>19880101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>4</releaseNumber>
+			<imageNumber>4</imageNumber>
+			<title>denjinmk</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">F7F95900</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>电精</comment>
+			<duplicateID />
+			<description />
+			<year>19940101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>5</releaseNumber>
+			<imageNumber>5</imageNumber>
+			<title>drgninja</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">7906230A</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>龙行忍者</comment>
+			<duplicateID />
+			<description />
+			<year>19880101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>6</releaseNumber>
+			<imageNumber>6</imageNumber>
+			<title>dynagear</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">E72ED8E6</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>森林大王</comment>
+			<duplicateID />
+			<description />
+			<year>19930101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>7</releaseNumber>
+			<imageNumber>7</imageNumber>
+			<title>edrandy</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">6213181E</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>爱德华-蓝迪</comment>
+			<duplicateID />
+			<description />
+			<year>19900101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>8</releaseNumber>
+			<imageNumber>8</imageNumber>
+			<title>elevator</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">421B6545</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>电梯大作战</comment>
+			<duplicateID />
+			<description />
+			<year>19830101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>9</releaseNumber>
+			<imageNumber>9</imageNumber>
+			<title>elvactr</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">D89E457F</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>电梯大作战Return</comment>
+			<duplicateID />
+			<description />
+			<year>19940101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>10</releaseNumber>
+			<imageNumber>10</imageNumber>
+			<title>ga2</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">6EB36DC0</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>战斧-DeathAdder的复仇</comment>
+			<duplicateID />
+			<description />
+			<year>19920101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>11</releaseNumber>
+			<imageNumber>11</imageNumber>
+			<title>garuka</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">938D389D</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>饿流祸</comment>
+			<duplicateID />
+			<description />
+			<year>19880101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>12</releaseNumber>
+			<imageNumber>12</imageNumber>
+			<title>gemini</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">C2BCA389</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>虫虫特工队</comment>
+			<duplicateID />
+			<description />
+			<year>19870101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>13</releaseNumber>
+			<imageNumber>13</imageNumber>
+			<title>gijoeu</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">F6CD240A</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>眼镜蛇部队-特种部队</comment>
+			<duplicateID />
+			<description />
+			<year>19920101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>14</releaseNumber>
+			<imageNumber>14</imageNumber>
+			<title>gondo</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">D995A753</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>魔境战士</comment>
+			<duplicateID />
+			<description />
+			<year>19870101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>15</releaseNumber>
+			<imageNumber>15</imageNumber>
+			<title>gunmast</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">951B3C53</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>枪王</comment>
+			<duplicateID />
+			<description />
+			<year>19940101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>16</releaseNumber>
+			<imageNumber>16</imageNumber>
+			<title>gwarb</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">7FA03FC3</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>古巴战士</comment>
+			<duplicateID />
+			<description />
+			<year>19870101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>17</releaseNumber>
+			<imageNumber>17</imageNumber>
+			<title>hardhea2</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">1E8E1447</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>铁头小子2</comment>
+			<duplicateID />
+			<description />
+			<year>19910101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>18</releaseNumber>
+			<imageNumber>18</imageNumber>
+			<title>heatbrl</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">DFE840D7</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>狂热印第安</comment>
+			<duplicateID />
+			<description />
+			<year>19920101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>19</releaseNumber>
+			<imageNumber>19</imageNumber>
+			<title>hook</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">BE16AA9C</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>铁钩船长</comment>
+			<duplicateID />
+			<description />
+			<year>19920101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>20</releaseNumber>
+			<imageNumber>20</imageNumber>
+			<title>ikari</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">28C12A21</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>怒</comment>
+			<duplicateID />
+			<description />
+			<year>19860101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>21</releaseNumber>
+			<imageNumber>21</imageNumber>
+			<title>jackal</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">D69B5A10</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>赤色要塞</comment>
+			<duplicateID />
+			<description />
+			<year>19860101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>22</releaseNumber>
+			<imageNumber>22</imageNumber>
+			<title>mcatadv</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">AD4860E7</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>魔猫森林</comment>
+			<duplicateID />
+			<description />
+			<year>19930101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>23</releaseNumber>
+			<imageNumber>23</imageNumber>
+			<title>midresbj</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">F70CF06A</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>午夜反击</comment>
+			<duplicateID />
+			<description />
+			<year>19890101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>24</releaseNumber>
+			<imageNumber>24</imageNumber>
+			<title>mwalku</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">110A013C</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>迈克尔杰克逊-月行者</comment>
+			<duplicateID />
+			<description />
+			<year>19900101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>25</releaseNumber>
+			<imageNumber>25</imageNumber>
+			<title>nslasher</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">3C3B407D</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>午夜杀生</comment>
+			<duplicateID />
+			<description />
+			<year>19940101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>26</releaseNumber>
+			<imageNumber>26</imageNumber>
+			<title>plegends</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">568723A</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>豪血寺外传-最强传说</comment>
+			<duplicateID />
+			<description />
+			<year>19950101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>27</releaseNumber>
+			<imageNumber>27</imageNumber>
+			<title>sdgndmps</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">21EF9783</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>机动战士高达</comment>
+			<duplicateID />
+			<description />
+			<year>19910101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>28</releaseNumber>
+			<imageNumber>28</imageNumber>
+			<title>shadfrcejv2</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">8B719D7D</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>变身忍者 [日]</comment>
+			<duplicateID />
+			<description />
+			<year>19930101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>29</releaseNumber>
+			<imageNumber>29</imageNumber>
+			<title>shadfrce</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">160912DE</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>变身忍者 [美]</comment>
+			<duplicateID />
+			<description />
+			<year>19930101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>30</releaseNumber>
+			<imageNumber>30</imageNumber>
+			<title>snowbro2</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">21EF0367</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>雪人兄弟2-新的恶作剧</comment>
+			<duplicateID />
+			<description />
+			<year>19940101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>31</releaseNumber>
+			<imageNumber>31</imageNumber>
+			<title>spdodgeb</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">C6C968E2</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>热血高校躲避球</comment>
+			<duplicateID />
+			<description />
+			<year>19870101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>32</releaseNumber>
+			<imageNumber>32</imageNumber>
+			<title>tankfrce</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">8DE56A8D</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>坦克力量</comment>
+			<duplicateID />
+			<description />
+			<year>19910101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>33</releaseNumber>
+			<imageNumber>33</imageNumber>
+			<title>tdragon</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">8D0FE656</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>雷龙</comment>
+			<duplicateID />
+			<description />
+			<year>19910101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>34</releaseNumber>
+			<imageNumber>34</imageNumber>
+			<title>tndrcadej</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">8B41CFFE</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>特殊部队</comment>
+			<duplicateID />
+			<description />
+			<year>19870101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>35</releaseNumber>
+			<imageNumber>35</imageNumber>
+			<title>tnk3</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">93F80910</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>大坦克3</comment>
+			<duplicateID />
+			<description />
+			<year>19850101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>36</releaseNumber>
+			<imageNumber>36</imageNumber>
+			<title>uccopsar</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">334270E0</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>暴力刑警</comment>
+			<duplicateID />
+			<description />
+			<year>19920101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>37</releaseNumber>
+			<imageNumber>37</imageNumber>
+			<title>vandykejal</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">3656B757</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>神话战士</comment>
+			<duplicateID />
+			<description />
+			<year>19900101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>38</releaseNumber>
+			<imageNumber>38</imageNumber>
+			<title>wofch</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">B336AC4</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>三国志II [日]</comment>
+			<duplicateID />
+			<description />
+			<year>19920101T000000</year>
+		</game>
+		<game>
+			<releaseNumber>39</releaseNumber>
+			<imageNumber>39</imageNumber>
+			<title>wof</title>
+			<saveType />
+			<romSize />
+			<publisher />
+			<location />
+			<sourceRom />
+			<language />
+			<files>
+				<romCRC extension=".zip">D64D53AE</romCRC>
+			</files>
+			<im1CRC />
+			<im2CRC />
+			<comment>三国志II [世]</comment>
+			<duplicateID />
+			<description />
+			<year>19920101T000000</year>
+		</game>
+	</games>
+	<gui>
+		<images height="160" width="520">
+			<image height="160" width="250" x="0" y="0" />
+			<image height="160" width="240" x="270" y="0" />
+		</images>
+	</gui>
+</dat>

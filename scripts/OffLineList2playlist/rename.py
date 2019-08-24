@@ -5,6 +5,7 @@ import os
 import sys
 import json
 import zipfile
+from utils import Utils
 
 
 def load_offlinelist_xml(file):
@@ -42,25 +43,6 @@ def load_offlinelist_xml(file):
         data['title_dict'][title] = info
     return data
 
-
-def calc_file_crc32(filepath):
-    block_size = 1024 * 1024
-    crc = 0
-
-    try:
-        fd = open(filepath, 'rb')
-        while True:
-            buffer = fd.read(block_size)
-            if not buffer: # EOF or file empty. return hashes
-                fd.close()
-                if sys.version_info[0] < 3 and crc < 0:
-                    crc += 2 ** 32
-                hexcrc = hex(crc).replace('0x', '')
-                return hexcrc # 返回的是16进制字符串
-            crc = zlib.crc32(buffer, crc)
-    except Exception:
-        return ''
-
 def calc_zip_crc32(_file, _ext_list):
     hexcrc = ''
     z = zipfile.ZipFile(_file, "r")
@@ -90,9 +72,9 @@ def rename_by_xml_dat(rename, _romPath, _data):
                 continue
 
             if ext == '.zip':
-                romcrc = calc_zip_crc32(path_name, canopen_ext_list)
+                romcrc = Utils.calc_zip_inner_crc32(path_name, canopen_ext_list)
             else:
-                romcrc = calc_file_crc32(path_name)
+                romcrc = Utils.calc_file_crc32(path_name)
             if romcrc not in _data['romcrc_dict']:
                 print('unknow rom: %s, crc: %s' % (path_name, romcrc))
                 continue
