@@ -15,7 +15,7 @@ const lpLplName = {
   WS: 'LP_WS_OL',
   NECPC: 'LP_NECPC_OL',
   N64: 'LP_N64_OL',
-  DNS: 'LP_DNS_OL',
+  NDS: 'LP_NDS_OL',
   GBA: 'LP_GBA_OL',
   GBC: 'LP_GBC_OL',
   GB: 'LP_GB_OL',

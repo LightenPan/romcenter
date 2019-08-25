@@ -3,6 +3,8 @@ python main.py --dat=".\dats\LP_CHS_GB_OL.xml" --lpl=GB中文 --output="output" 
 python main.py --dat=".\dats\LP_CHS_GBC_OL.xml" --lpl=GBC中文 --output="output" --only_lpl=0 --local_imgs_dir="D:\devel\yanjiu\RetroGameDatForOfflineList\imgs" --rom_title="%u %n"
 python main.py --dat=".\dats\LP_CHS_GBA_OL.xml" --lpl=GBA中文 --output="output" --only_lpl=0 --local_imgs_dir="D:\devel\yanjiu\RetroGameDatForOfflineList\imgs" --rom_title="%u - %n %e %g"
 
+python main.py --dat=".\dats\LP_CHS_NDS_OL.xml" --lpl=NDS中文 --output="output" --only_lpl=0 --local_imgs_dir="D:\devel\yanjiu\RetroGameDatForOfflineList\imgs" --rom_title="%u - %n %g"
+
 # python main.py --dat=".\dats\yxjzy_ol_gba_data.xml" --lpl=GBA全集 --output="output" --only_lpl=0 --local_imgs_dir="D:\devel\yanjiu\RetroGameDatForOfflineList\imgs"
 # python main.py --dat=".\dats\NdsBbs_OL_CHINESE.xml" --lpl=NDS中文 --output="output" --only_lpl=0 --local_imgs_dir="D:\devel\yanjiu\RetroGameDatForOfflineList\imgs"
 # python main.py --dat=".\dats\NdsBbs_OL.xml" --lpl=NDS全集 --output="output" --only_lpl=0 --local_imgs_dir="D:\devel\yanjiu\RetroGameDatForOfflineList\imgs"

@@ -7,17 +7,25 @@ import zipfile
 
 class Utils:
     @staticmethod
-    def listdir(dst_dir):  #传入存储的list
+    def listdir(dst_dir, ext_list=None):  #传入存储的list
         xlist = list()
         for root, dirs, files in os.walk(dst_dir):
             # print(root) #当前目录路径
             # print(dirs) #当前路径下所有子目录
             # print(files) #当前路径下所有非目录子文件
-            for file in files:
-                os.path.join(root, file)
-                xlist.append(os.path.join(root, file))
+            if ext_list:
+                for file in files:
+                    ext = os.path.splitext(file)[-1]
+                    if ext not in ext_list:
+                        continue
+                    os.path.join(root, file)
+                    xlist.append(os.path.join(root, file))
+            else:
+                for file in files:
+                    os.path.join(root, file)
+                    xlist.append(os.path.join(root, file))
             for item in dirs:
-                tmp_list = Utils.listdir(item)
+                tmp_list = Utils.listdir(item, ext_list)
                 xlist = xlist + tmp_list
         return xlist
 
@@ -41,12 +49,30 @@ class Utils:
 
     @staticmethod
     def calc_zip_inner_crc32(_file):
-        hexcrc = ''
-        z = zipfile.ZipFile(_file, "r")
-        for filename in z.namelist():
-            ext = os.path.splitext(filename)[-1]
-            zdata = z.read(filename)
-            crc = zlib.crc32(zdata)
-            hexcrc = hex(crc).replace('0x', '')
-            break
-        return hexcrc
+        try:
+            hexcrc = ''
+            z = zipfile.ZipFile(_file, "r")
+            for filename in z.namelist():
+                ext = os.path.splitext(filename)[-1]
+                zdata = z.read(filename)
+                crc = zlib.crc32(zdata)
+                hexcrc = hex(crc).replace('0x', '')
+                break
+            return hexcrc
+        except Exception as excep:
+            return ''
+
+    @staticmethod
+    def genImageFiles(imageNumber, imgsDir):
+        imageNumber = int(imageNumber)
+        image_count = 500
+        calcNumber = imageNumber
+        if calcNumber == 0:
+            calcNumber = 1
+        low_number = ((calcNumber - 1) // image_count) * image_count + 1
+        high_number = ((calcNumber - 1) // image_count) * image_count + image_count
+        number_dir = '%s-%s' % (low_number, high_number)
+        imgs_dir = os.path.join(imgsDir, number_dir)
+        afile = os.path.join(imgs_dir, str(imageNumber) + 'a.png')
+        bfile = os.path.join(imgs_dir, str(imageNumber) + 'b.png')
+        return afile, bfile
