@@ -59,7 +59,7 @@
       <to auto="true" default="true" value="publisher"/>
       <to auto="true" default="true" value="sourceRom"/>
     </search>
-    <romTitle>%u - %n [%g]</romTitle>
+    <romTitle>%u - %e%o(%g)</romTitle>
   </configuration>
   <games>
     <game>

@@ -33,13 +33,14 @@
 			<extension>.exe</extension>
 		</canOpen>
 		<newDat>
-		   <datVersionURL></datVersionURL>
-		   <datURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame//dats/LP_CHS_FC_OL.xml</datURL>
-		   <imURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame//imgs/LP_CHS_FC_OL</imURL>
+            <!-- 新增加的汉化游戏，缺少缩略图 -->
+			<datVersionURL/>
+			<datURL fileName="LP_CHS_FC_OL.zip"/>
+			<imURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame/imgs/LP_CHS_FC_OL</imURL>
 		</newDat>
 		<search>
 			<to value="location" default="true" auto="true"/>
-			<to value="languages" default="false" auto="true"></to>				
+			<to value="languages" default="false" auto="true"></to>
 			<to value="saveType" default="true" auto="false">
 				<find operation="equals" value="ACT">动作游戏</find>
 				<find operation="equals" value="STG">射击游戏</find>

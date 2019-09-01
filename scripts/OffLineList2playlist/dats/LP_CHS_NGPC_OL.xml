@@ -33,9 +33,9 @@
 			<extension>.bin</extension>
 		</canOpen>
 		<newDat>
-		   <datVersionURL></datVersionURL>
-		   <datURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame//dats/LP_CHS_NGPC_OL.xml</datURL>
-		   <imURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame//imgs/LP_CHS_NGPC_OL</imURL>
+			<datVersionURL></datVersionURL>
+			<datURL fileName="LP_CHS_NGPC_OL.zip"/>
+			<imURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame//imgs/LP_CHS_NGPC_OL</imURL>
 		</newDat>
 		<search>
 			<to value="location" default="true" auto="true"></to>

@@ -53,7 +53,6 @@ class Utils:
             hexcrc = ''
             z = zipfile.ZipFile(_file, "r")
             for filename in z.namelist():
-                ext = os.path.splitext(filename)[-1]
                 zdata = z.read(filename)
                 crc = zlib.crc32(zdata)
                 hexcrc = hex(crc).replace('0x', '')
@@ -61,6 +60,22 @@ class Utils:
             return hexcrc
         except Exception as excep:
             return ''
+
+    @staticmethod
+    def rename_zip_inner_file(_file, new_name):
+        try:
+            source = zipfile.ZipFile(_file, 'r')
+            target = zipfile.ZipFile(_file+'.tmp', 'w', zipfile.ZIP_DEFLATED)
+            for file in source.filelist:
+                ext = os.path.splitext(file.filename)[-1]
+                new_filename = new_name + ext
+                target.writestr(new_filename, source.read(file.filename))
+            target.close()
+            source.close()
+            os.remove(_file)
+            os.rename(_file+'.tmp', _file)
+        except Exception as excep:
+            pass
 
     @staticmethod
     def genImageFiles(imageNumber, imgsDir):

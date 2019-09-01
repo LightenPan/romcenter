@@ -120,6 +120,7 @@ if __name__ == "__main__":
     parser.add_option("--core_name")
     parser.add_option("--rom_name_is_number")
     parser.add_option("--rom_name_is_crc")
+    parser.add_option("--thumbnails_is_crc")
 
     (options, args) = parser.parse_args()
 
@@ -159,6 +160,11 @@ if __name__ == "__main__":
     else:
         options.rom_name_is_crc = int(options.rom_name_is_crc)
 
+    if not options.thumbnails_is_crc:
+        options.thumbnails_is_crc = 1
+    else:
+        options.thumbnails_is_crc = int(options.thumbnails_is_crc)
+
     if not options.prex:
         options.prex = '/storage/roms/%s/' % (options.lpl)
     else:
@@ -189,7 +195,7 @@ if __name__ == "__main__":
     # Legend of Zelda, The - Ocarina of Time (USA)
     # DETECT
     # DETECT
-    # DETECT
+    # CRC
     # Nintendo - Nintendo 64.lpl
 
     # 生成游戏列表
@@ -211,7 +217,7 @@ if __name__ == "__main__":
             romlink = '%s%s%s' % (options.prex, xml_data_loader.genGameName(game), options.ext)
             # logging.info('%s\n%s\n%s\n%s\n%s\n%s', romlink, xml_data_loader.genGameNum(game), 'DETECT', 'DETECT', 'DETECT', options.lpl + '.lpl')
         lpl_file.write(
-            '%s\n%s\n%s\n%s\n%s\n%s\n' % (romlink, xml_data_loader.genGameName(game), core_path, options.core_name, 'DETECT', options.lpl + '.lpl')
+            '%s\n%s\n%s\n%s\n%s\n%s\n' % (romlink, xml_data_loader.genGameName(game), core_path, options.core_name, xml_data_loader.genGameCrc(game), options.lpl + '.lpl')
         )
     lpl_file.close()
     pbar.close()
@@ -240,6 +246,11 @@ if __name__ == "__main__":
         else:
             dst_title_file = os.path.join(dst_title_dir, xml_data_loader.genGameName(game) + '.png')
             dst_snaps_file = os.path.join(dst_snaps_dir, xml_data_loader.genGameName(game) + '.png')
+
+        if options.thumbnails_is_crc == 1:
+            dst_title_file = os.path.join(dst_title_dir, xml_data_loader.genGameCrc(game) + '.png')
+            dst_snaps_file = os.path.join(dst_snaps_dir, xml_data_loader.genGameCrc(game) + '.png')
+
         if options.local_imgs_dir:
             copy_local_imgs(game, options.local_imgs_dir, dst_title_file, dst_snaps_file)
         else:

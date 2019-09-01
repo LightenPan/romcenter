@@ -34,13 +34,22 @@ if __name__ == "__main__":
     parser = OptionParser(usage)
     parser.add_option("--dat")
     parser.add_option("--roms")
+    parser.add_option("--calc_crc_by_zip_inner_file")
     parser.add_option("--fmt_filename")
     parser.add_option("--fmt_inner_zip")
 
     (options, args) = parser.parse_args()
 
     if not options.fmt_filename:
-        options.fmt_filename = '%u - %n %e %g'
+        options.fmt_filename = '%c'
+
+    if not options.fmt_inner_zip:
+        options.fmt_inner_zip = '%c'
+
+    if not options.calc_crc_by_zip_inner_file:
+        options.calc_crc_by_zip_inner_file = 1
+    else:
+        options.calc_crc_by_zip_inner_file = int(options.calc_crc_by_zip_inner_file)
 
     # 读取offlinelist数据
     xml_data_loader = XmlDataLoader()
@@ -52,7 +61,7 @@ if __name__ == "__main__":
 
     # 如果是命名zip，则需要读取zip包的crc，这是要求zip包内只有一个文件
     # 否则直接命名文件
-    if options.fmt_inner_zip:
+    if options.calc_crc_by_zip_inner_file == 1:
         rom_file_crc_dict = gen_rom_file_zip_inner_crc_dict(rom_file_list)
     else:
         rom_file_crc_dict =gen_rom_file_crc_dict(rom_file_list)
@@ -68,7 +77,6 @@ if __name__ == "__main__":
         pbar.update()
 
         crc = xml_data_loader.genGameCrc(game)
-        print('crc: ', crc)
         if crc not in rom_file_crc_dict:
             continue
 
@@ -79,11 +87,7 @@ if __name__ == "__main__":
         new_file_name = os.path.join(dirname, format_title + ext)
         if options.fmt_inner_zip:
             zip_inner_name = xml_data_loader.genFromFmt(game, options.fmt_inner_zip)
-            print('rename inner name. old file name: %s, new file name: %s, zip inner name: %s' % (
-                old_file_name, new_file_name, zip_inner_name
-            ))
-        else:
-            print('only rename filename. old file name: %s, new file name: %s' % (
-                old_file_name, new_file_name
-            ))
-        break
+            Utils.rename_zip_inner_file(old_file_name, zip_inner_name)
+
+        if options.fmt_filename:
+            os.rename(old_file_name, new_file_name)

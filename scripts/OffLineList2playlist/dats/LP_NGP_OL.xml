@@ -26,9 +26,9 @@
       <extension>.ngp</extension>
     </canOpen>
     <newDat>
-       <datVersionURL></datVersionURL>
-       <datURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame//dats/LP_NGP_OL.xml</datURL>
-       <imURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame//imgs/LP_NGP_OL</imURL>
+      <datVersionURL/>
+      <datURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame//dats/LP_NGP_OL.xml</datURL>
+      <imURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame//imgs/LP_NGP_OL</imURL>
     </newDat>
     <search>
       <to auto="true" default="true" value="location"/>
@@ -78,7 +78,7 @@
       </files>
       <im1CRC>7696AFB3</im1CRC>
       <im2CRC>C98FE9C5</im2CRC>
-      <comment>(M2)</comment>
+      <comment>棒球明星</comment>
       <duplicateID>0</duplicateID>
     </game>
     <game>
@@ -114,7 +114,7 @@
       </files>
       <im1CRC>79A70697</im1CRC>
       <im2CRC>7B11B271</im2CRC>
-      <comment>(M2)</comment>
+      <comment>拳皇 R-1</comment>
       <duplicateID>0</duplicateID>
     </game>
     <game>
@@ -132,7 +132,7 @@
       </files>
       <im1CRC>1B4EAA51</im1CRC>
       <im2CRC>26A575B6</im2CRC>
-      <comment/>
+      <comment>甜瓜的成长日记</comment>
       <duplicateID>0</duplicateID>
     </game>
     <game>
@@ -150,7 +150,7 @@
       </files>
       <im1CRC>F92E08F4</im1CRC>
       <im2CRC>20ADB979</im2CRC>
-      <comment>(M2)</comment>
+      <comment>新樱桃大师 - 真正的赌场系列</comment>
       <duplicateID>0</duplicateID>
     </game>
     <game>
@@ -168,7 +168,7 @@
       </files>
       <im1CRC>1B715E17</im1CRC>
       <im2CRC>6C3018B8</im2CRC>
-      <comment>(M2)</comment>
+      <comment>98世界杯</comment>
       <duplicateID>0</duplicateID>
     </game>
     <game>
@@ -186,7 +186,7 @@
       </files>
       <im1CRC>A1EBED23</im1CRC>
       <im2CRC>3A3CFA99</im2CRC>
-      <comment>(M2)</comment>
+      <comment>口袋网球 - 口袋运动系列</comment>
       <duplicateID>0</duplicateID>
     </game>
     <game>
@@ -222,7 +222,7 @@
       </files>
       <im1CRC>66434648</im1CRC>
       <im2CRC>3B4EEEAE</im2CRC>
-      <comment>(M2)</comment>
+      <comment>侍魂 六番胜负</comment>
       <duplicateID>0</duplicateID>
     </game>
     <game>
