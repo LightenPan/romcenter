@@ -120,6 +120,8 @@ if __name__ == "__main__":
     parser.add_option("--core_name")
     parser.add_option("--rom_name_is_number")
     parser.add_option("--rom_name_is_crc")
+    parser.add_option("--rom_name_is_ename")
+    parser.add_option("--rom_name_ename_format")
     parser.add_option("--thumbnails_is_crc")
 
     (options, args) = parser.parse_args()
@@ -156,7 +158,7 @@ if __name__ == "__main__":
         options.rom_name_is_number = int(options.rom_name_is_number)
 
     if not options.rom_name_is_crc:
-        options.rom_name_is_crc = 0
+        options.rom_name_is_crc = 1
     else:
         options.rom_name_is_crc = int(options.rom_name_is_crc)
 
@@ -169,6 +171,11 @@ if __name__ == "__main__":
         options.prex = '/storage/roms/%s/' % (options.lpl)
     else:
         options.prex = '%s/%s/' % (options.prex, options.lpl)
+
+    if not options.rom_name_is_ename:
+        options.rom_name_is_ename = 1
+    else:
+        options.rom_name_is_ename = int(options.rom_name_is_ename)
 
     # 计算xml-data文件目录
     parent_path = os.path.dirname(options.dat)
@@ -212,6 +219,9 @@ if __name__ == "__main__":
             # logging.info('%s\n%s\n%s\n%s\n%s\n%s', romlink, xml_data_loader.genGameNum(game), 'DETECT', 'DETECT', 'DETECT', options.lpl + '.lpl')
         elif options.rom_name_is_crc == 1:
             romlink = '%s%s%s' % (options.prex, xml_data_loader.genGameCrc(game), options.ext)
+            # logging.info('%s\n%s\n%s\n%s\n%s\n%s', romlink, xml_data_loader.genGameCrc(game), 'DETECT', 'DETECT', 'DETECT', options.lpl + '.lpl')
+        elif options.rom_name_is_ename == 1:
+            romlink = '%s%s%s' % (options.prex, xml_data_loader.genFromFmt(game, options.rom_name_ename_format), options.ext)
             # logging.info('%s\n%s\n%s\n%s\n%s\n%s', romlink, xml_data_loader.genGameCrc(game), 'DETECT', 'DETECT', 'DETECT', options.lpl + '.lpl')
         else:
             romlink = '%s%s%s' % (options.prex, xml_data_loader.genGameName(game), options.ext)

@@ -132,6 +132,25 @@ export default class ItemEditor extends Component {
           const hexCrc32 = GameUtils.lpad((crc32 >>> 0).toString(16), 8, '0'); // eslint-disable-line no-bitwise
           this.field.setValue('crc32', hexCrc32.toUpperCase());
           this.field.setValue('romSize', romSize);
+        });
+      });
+  }
+
+  onReadRomFileUpdateExt = (fileObj) => {
+    const jszip = require("jszip");
+    jszip.loadAsync(fileObj) // 1) read the Blob
+      .then((zip) => {
+        let count = 0;
+        zip.forEach((_, file) => {  // 2) print entries
+          count++;
+          if (count > 1) {
+            return;
+          }
+          const romSize = file._data.uncompressedSize; // eslint-disable-line no-underscore-dangle
+          const crc32 = file._data.crc32; // eslint-disable-line no-underscore-dangle
+          const hexCrc32 = GameUtils.lpad((crc32 >>> 0).toString(16), 8, '0'); // eslint-disable-line no-bitwise
+          this.field.setValue('crc32', hexCrc32.toUpperCase());
+          this.field.setValue('romSize', romSize);
           this.field.setValue('title', fileObj.name);
           if (!this.field.getValue('imageNumber')) {
             const releaseNumber = this.field.getValue('releaseNumber');
@@ -307,11 +326,26 @@ export default class ItemEditor extends Component {
             accept="application/zip"
             onChange={(files) => {
               const file = files[files.length - 1];
+              this.onReadRomFileUpdateExt(file.originFileObj);
+            }}
+          >
+            <div className={styles.cenGroup}>
+              <span>用来计算crc32和尺寸，更新标题</span>
+              <span>
+                <Button type="primary">选择文件</Button>
+              </span>
+            </div>
+          </Upload>
+          <Upload
+            action=""
+            accept="application/zip"
+            onChange={(files) => {
+              const file = files[files.length - 1];
               this.onReadRomFile(file.originFileObj);
             }}
           >
             <div className={styles.cenGroup}>
-              <span>用来计算crc32和尺寸</span>
+              <span>计算crc32和尺寸，不更新标题</span>
               <span>
                 <Button type="primary">选择文件</Button>
               </span>

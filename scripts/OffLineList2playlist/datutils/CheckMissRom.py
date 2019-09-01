@@ -46,6 +46,6 @@ if __name__ == "__main__":
         if crc not in crc_rom_dict:
             miss_list.append(game_name)
 
-    print('miss rom count: %s' % (len(miss_list)))
     for name in miss_list:
         print('miss rom: %s' % (name))
+    print('miss rom count: %s' % (len(miss_list)))

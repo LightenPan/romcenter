@@ -10973,16 +10973,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>超热血高校 国夫君躲避球部 1.1(axi)(64Mb)</title>
+      <title>超热血高校 国夫君躲避球部 1.1 (64Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>axi</sourceRom>
+      <saveType/>
       <romSize>8388608</romSize>
       <releaseNumber>607</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>607</imageNumber>
       <files>
         <romCRC extension=".nds">9DFA497B</romCRC>
@@ -10991,16 +10991,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>创造职业棒球队(JP)(GV胜利汉化组)(512Mb)</title>
+      <title>创造职业棒球队(JP)(512Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>GV胜利汉化组</sourceRom>
+      <saveType/>
       <romSize>67108864</romSize>
       <releaseNumber>608</releaseNumber>
-      <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>608</imageNumber>
       <files>
         <romCRC extension=".nds">369112DE</romCRC>
@@ -11009,16 +11009,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>夺宝猎人 修正&amp;英文道具(JP)(Lamer汉化组&amp;维希)(512Mb)</title>
+      <title>夺宝猎人 修正&amp;英文道具(JP)(512Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>Lamer汉化组&amp;维希</sourceRom>
+      <saveType/>
       <romSize>49835436</romSize>
       <releaseNumber>609</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>609</imageNumber>
       <files>
         <romCRC extension=".nds">066F5150</romCRC>
@@ -11027,16 +11027,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>夺宝猎人(JP)(Lamer汉化组)(512Mb)</title>
+      <title>夺宝猎人(JP)(512Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>Lamer汉化组</sourceRom>
+      <saveType/>
       <romSize>67108864</romSize>
       <releaseNumber>610</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>610</imageNumber>
       <files>
         <romCRC extension=".nds">F40ECE8A</romCRC>
@@ -11045,16 +11045,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>恶魔幸存者2 V2(JP)(ACG汉化组)(1024Mb)</title>
+      <title>恶魔幸存者2 V2(JP)(1024Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>ACG汉化组</sourceRom>
+      <saveType/>
       <romSize>128180656</romSize>
       <releaseNumber>611</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>611</imageNumber>
       <files>
         <romCRC extension=".nds">43A728FB</romCRC>
@@ -11063,16 +11063,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>风来的西林2：沙漠魔城(JP)(ACG汉化组)(256Mb)</title>
+      <title>风来的西林2：沙漠魔城(JP)(256Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>ACG汉化组</sourceRom>
+      <saveType/>
       <romSize>33153880</romSize>
       <releaseNumber>612</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>612</imageNumber>
       <files>
         <romCRC extension=".nds">5FAA8DE7</romCRC>
@@ -11081,16 +11081,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>高级战争 毁灭日 汉化完善版(US)(空气汉化组&amp;高级战争吧)(512Mb)</title>
+      <title>高级战争 毁灭日 汉化完善版(US)(512Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>空气汉化组&amp;高级战争吧</sourceRom>
+      <saveType/>
       <romSize>53270096</romSize>
       <releaseNumber>613</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>613</imageNumber>
       <files>
         <romCRC extension=".nds">FAAF4A37</romCRC>
@@ -11099,16 +11099,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>高级战争 双重打击 1.0(JP)(高级战争吧汉化组)(256Mb)</title>
+      <title>高级战争 双重打击 1.0(JP)(256Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>高级战争吧汉化组</sourceRom>
+      <saveType/>
       <romSize>28648608</romSize>
       <releaseNumber>614</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>614</imageNumber>
       <files>
         <romCRC extension=".nds">2B5FE245</romCRC>
@@ -11117,16 +11117,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>好想告诉你 传递的感情(JP)(扑家汉化组)(512Mb)</title>
+      <title>好想告诉你 传递的感情(JP)(512Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>扑家汉化组</sourceRom>
+      <saveType/>
       <romSize>55435036</romSize>
       <releaseNumber>615</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>615</imageNumber>
       <files>
         <romCRC extension=".nds">009EDBF9</romCRC>
@@ -11135,16 +11135,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>弧光之源3 瞳 汉化测试版20140129(JP)(小黑屋汉化组)(1024Mb)</title>
+      <title>弧光之源3 瞳 汉化测试版20140129(JP)(1024Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>小黑屋汉化组</sourceRom>
+      <saveType/>
       <romSize>105954624</romSize>
       <releaseNumber>616</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>616</imageNumber>
       <files>
         <romCRC extension=".nds">16EC5070</romCRC>
@@ -11153,16 +11153,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>简单DS系列Vol.35 THE原始人 模拟器版(JP)(APEX汉化组)(256Mb)</title>
+      <title>简单DS系列Vol.35 THE原始人 模拟器版(JP)(256Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>APEX汉化组</sourceRom>
+      <saveType/>
       <romSize>19615360</romSize>
       <releaseNumber>617</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>617</imageNumber>
       <files>
         <romCRC extension=".nds">95721DAE</romCRC>
@@ -11171,16 +11171,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>口袋妖怪 白 V3修正版 模拟器版(简繁)(JP)(ACG汉化组&amp;ykaljshsh)(2048Mb)</title>
+      <title>口袋妖怪 白 V3修正版 模拟器版(简繁)(JP)(2048Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>ACG汉化组&amp;ykaljshsh</sourceRom>
+      <saveType/>
       <romSize>207736892</romSize>
       <releaseNumber>618</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>618</imageNumber>
       <files>
         <romCRC extension=".nds">B2521F2A</romCRC>
@@ -11189,16 +11189,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>口袋妖怪 白2 V2版(简)(JP)(pokemon lover)(4096Mb)</title>
+      <title>口袋妖怪 白2 V2版(简)(JP)(4096Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>pokemon lover</sourceRom>
+      <saveType/>
       <romSize>536870912</romSize>
       <releaseNumber>619</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>619</imageNumber>
       <files>
         <romCRC extension=".nds">A84A30E2</romCRC>
@@ -11207,16 +11207,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>口袋妖怪 黑 V3修正版 模拟器版(简繁)(JP)(ACG汉化组&amp;ykaljshsh)(2048Mb)</title>
+      <title>口袋妖怪 黑 V3修正版 模拟器版(简繁)(JP)(2048Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>ACG汉化组&amp;ykaljshsh</sourceRom>
+      <saveType/>
       <romSize>207732284</romSize>
       <releaseNumber>620</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>620</imageNumber>
       <files>
         <romCRC extension=".nds">3DA45EC1</romCRC>
@@ -11225,16 +11225,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>口袋妖怪 黑2 V2版(简)(JP)(pokemon lover)(4096Mb)</title>
+      <title>口袋妖怪 黑2 V2版(简)(JP)(4096Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>pokemon lover)</sourceRom>
+      <saveType/>
       <romSize>536870912</romSize>
       <releaseNumber>621</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>621</imageNumber>
       <files>
         <romCRC extension=".nds">2CC7937E</romCRC>
@@ -11243,16 +11243,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>洛克人 ZX(JP)([洛克人ZX汉化组])(512Mb)</title>
+      <title>洛克人 ZX(JP)(512Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>洛克人ZX汉化组</sourceRom>
+      <saveType/>
       <romSize>66565632</romSize>
       <releaseNumber>622</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>622</imageNumber>
       <files>
         <romCRC extension=".nds">CD001EA5</romCRC>
@@ -11261,16 +11261,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>迷你四驱ds(JP)(gansyun)(512Mb)</title>
+      <title>迷你四驱ds(JP)(512Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>gansyun</sourceRom>
+      <saveType/>
       <romSize>67108864</romSize>
       <releaseNumber>623</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>623</imageNumber>
       <files>
         <romCRC extension=".nds">635BC929</romCRC>
@@ -11279,16 +11279,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>名侦探柯南 来自过去的前奏曲(JP)(ACG汉化组)(512Mb)</title>
+      <title>名侦探柯南 来自过去的前奏曲(JP)(512Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>ACG汉化组</sourceRom>
+      <saveType/>
       <romSize>58051968</romSize>
       <releaseNumber>624</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>624</imageNumber>
       <files>
         <romCRC extension=".nds">8D1EA568</romCRC>
@@ -11297,16 +11297,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>魔法方块(JP)(GV胜利汉化组)(256Mb)</title>
+      <title>魔法方块(JP)(256Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>GV胜利汉化组</sourceRom>
+      <saveType/>
       <romSize>21035124</romSize>
       <releaseNumber>625</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>625</imageNumber>
       <files>
         <romCRC extension=".nds">CB76C78A</romCRC>
@@ -11315,16 +11315,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>牧场物语 风之集市 2014最终版(JP)(SOMA&amp;YOME汉化组)(1024Mb)</title>
+      <title>牧场物语 风之集市 2014最终版(JP)(1024Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>SOMA&amp;YOME汉化组</sourceRom>
+      <saveType/>
       <romSize>124613180</romSize>
       <releaseNumber>626</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>626</imageNumber>
       <files>
         <romCRC extension=".nds">7832AA80</romCRC>
@@ -11333,16 +11333,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>幕末恋华新选组(JP)(扑家汉化组)(-2048Mb)</title>
+      <title>幕末恋华新选组(JP)(2048Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>扑家汉化组</sourceRom>
+      <saveType/>
       <romSize>211314088</romSize>
       <releaseNumber>627</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>627</imageNumber>
       <files>
         <romCRC extension=".nds">4B1748AC</romCRC>
@@ -11351,16 +11351,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>圈套DS：神隐的官邸(JP)([ACG汉化组])(512Mb)</title>
+      <title>圈套DS：神隐的官邸(JP)(512Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>ACG汉化组</sourceRom>
+      <saveType/>
       <romSize>38657180</romSize>
       <releaseNumber>628</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>628</imageNumber>
       <files>
         <romCRC extension=".nds">0350E8E4</romCRC>
@@ -11369,16 +11369,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>犬神家一族(JP)(ACG汉化组)(256Mb)</title>
+      <title>犬神家一族(JP)(256Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>ACG汉化组</sourceRom>
+      <saveType/>
       <romSize>30505920</romSize>
       <releaseNumber>629</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>629</imageNumber>
       <files>
         <romCRC extension=".nds">41978EB0</romCRC>
@@ -11387,16 +11387,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>天空机器人 飞向CODA(JP)(猫犬协奏曲吧吧友汉化组)(512Mb)</title>
+      <title>天空机器人 飞向CODA(JP)(512Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>猫犬协奏曲吧吧友汉化组</sourceRom>
+      <saveType/>
       <romSize>57154516</romSize>
       <releaseNumber>630</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>630</imageNumber>
       <files>
         <romCRC extension=".nds">68CDC536</romCRC>
@@ -11405,16 +11405,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>王国之心 358／2天 V2(JP)(天幻&amp;扑家&amp;シロ)(-2048Mb)</title>
+      <title>王国之心 358／2天 V2(JP)(2048Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>天幻&amp;扑家&amp;シロ</sourceRom>
+      <saveType/>
       <romSize>268435456</romSize>
       <releaseNumber>631</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>631</imageNumber>
       <files>
         <romCRC extension=".nds">16C99E87</romCRC>
@@ -11423,16 +11423,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>乌龙派出所DS(JP)(Soul Trip汉化组)(512Mb)</title>
+      <title>乌龙派出所DS(JP)(512Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>Soul Trip汉化组</sourceRom>
+      <saveType/>
       <romSize>41788160</romSize>
       <releaseNumber>632</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>632</imageNumber>
       <files>
         <romCRC extension=".nds">C23CC13D</romCRC>
@@ -11441,16 +11441,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>心跳魔女 PLUS 序章汉化版14%(简)(JP)(萌狼计划)(2048Mb)</title>
+      <title>心跳魔女 PLUS 序章汉化版14%(简)(JP)(2048Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>萌狼计划</sourceRom>
+      <saveType/>
       <romSize>268435456</romSize>
       <releaseNumber>633</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>633</imageNumber>
       <files>
         <romCRC extension=".nds">5BF2DB96</romCRC>
@@ -11459,16 +11459,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>心跳魔女神判 文本汉化版35.28%(简)(JP)(萌狼计划)(1024Mb)</title>
+      <title>心跳魔女神判 文本汉化版35.28%(简)(JP)(1024Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>萌狼计划</sourceRom>
+      <saveType/>
       <romSize>134217728</romSize>
       <releaseNumber>634</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>634</imageNumber>
       <files>
         <romCRC extension=".nds">79AFE11A</romCRC>
@@ -11477,16 +11477,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>心跳魔女神判2 图片汉化版v1.1&amp;文本汉化9.82%(简)(JP)(@OREZERO &amp;萌狼计划)(2048Mb)</title>
+      <title>心跳魔女神判2 图片汉化版v1.1&amp;文本汉化9.82%(简)(JP)(2048Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>@OREZERO &amp;萌狼计划</sourceRom>
+      <saveType/>
       <romSize>268435456</romSize>
       <releaseNumber>635</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>635</imageNumber>
       <files>
         <romCRC extension=".nds">87E13C85</romCRC>
@@ -11495,16 +11495,16 @@
     <game>
       <duplicateID>0</duplicateID>
       <language>0</language>
-      <title>星之卡比超究极豪华版(KS)(可伸缩汉化组)(1024Mb)</title>
+      <title>星之卡比超究极豪华版(KS)(1024Mb)</title>
       <location>0</location>
-      <publisher></publisher>
-      <sourceRom></sourceRom>
-      <saveType></saveType>
+      <publisher/>
+      <sourceRom>可伸缩汉化组</sourceRom>
+      <saveType/>
       <romSize>134217728</romSize>
       <releaseNumber>636</releaseNumber>
-            <comment></comment>
-      <im1CRC></im1CRC>
-      <im2CRC></im2CRC>
+      <comment/>
+      <im1CRC/>
+      <im2CRC/>
       <imageNumber>636</imageNumber>
       <files>
         <romCRC extension=".nds">F44AEFBB</romCRC>

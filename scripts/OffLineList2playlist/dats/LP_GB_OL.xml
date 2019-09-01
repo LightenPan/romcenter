@@ -48,7 +48,7 @@
 			<to auto="true" default="true" value="publisher" />
 			<to auto="true" default="true" value="sourceRom" />
 		</search>
-		<romTitle>%n</romTitle>
+		<romTitle>%u - %n</romTitle>
 	</configuration>
 	<games>
 

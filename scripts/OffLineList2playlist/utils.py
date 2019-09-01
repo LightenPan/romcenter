@@ -30,6 +30,17 @@ class Utils:
         return xlist
 
     @staticmethod
+    def __pad_zero_char(crc):
+        if len(crc) < 8:
+            # 前面补齐0
+            pads = ''
+            blank_num = 8 - len(crc)
+            for i in range(0, blank_num):
+                pads = pads + '0'
+            return pads + crc # 返回的是16进制字符串
+        return crc
+
+    @staticmethod
     def calc_file_crc32(filepath):
         block_size = 1024 * 1024
         crc = 0
@@ -42,7 +53,7 @@ class Utils:
                     if sys.version_info[0] < 3 and crc < 0:
                         crc += 2 ** 32
                     hexcrc = hex(crc).replace('0x', '')
-                    return hexcrc # 返回的是16进制字符串
+                    return Utils.__pad_zero_char(hexcrc).upper() # 返回的是16进制字符串
                 crc = zlib.crc32(buffer, crc)
         except Exception as excep:
             return ''
@@ -52,20 +63,37 @@ class Utils:
         try:
             hexcrc = ''
             z = zipfile.ZipFile(_file, "r")
-            for filename in z.namelist():
-                zdata = z.read(filename)
-                crc = zlib.crc32(zdata)
-                hexcrc = hex(crc).replace('0x', '')
+            for info in z.infolist():
+                hexcrc = hex(info.CRC).replace('0x', '')
+                hexcrc = Utils.__pad_zero_char(hexcrc).upper() # 返回的是16进制字符串
                 break
             return hexcrc
         except Exception as excep:
+            import traceback
+            print('traceback: ', traceback.format_exc())
             return ''
 
     @staticmethod
     def rename_zip_inner_file(_file, new_name):
         try:
+            # 检查是否已经一致
+            is_renamed = False
             source = zipfile.ZipFile(_file, 'r')
-            target = zipfile.ZipFile(_file+'.tmp', 'w', zipfile.ZIP_DEFLATED)
+            if len(source.filelist) > 1:
+                return False
+
+            for file in source.filelist:
+                ext = os.path.splitext(file.filename)[-1]
+                new_filename = new_name + ext
+                if file.filename == new_filename:
+                    is_renamed = True
+                    break
+            if is_renamed:
+                return True
+
+            # 改名
+            source = zipfile.ZipFile(_file, 'r')
+            target = zipfile.ZipFile(_file + '.tmp', 'w', zipfile.ZIP_DEFLATED)
             for file in source.filelist:
                 ext = os.path.splitext(file.filename)[-1]
                 new_filename = new_name + ext
@@ -73,9 +101,13 @@ class Utils:
             target.close()
             source.close()
             os.remove(_file)
-            os.rename(_file+'.tmp', _file)
-        except Exception as excep:
-            pass
+            os.rename(_file + '.tmp', _file)
+            return True
+
+        except:
+            import traceback
+            print('traceback: ', traceback.format_exc())
+            return False
 
     @staticmethod
     def genImageFiles(imageNumber, imgsDir):

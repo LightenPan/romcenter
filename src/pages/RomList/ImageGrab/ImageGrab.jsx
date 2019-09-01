@@ -8,8 +8,8 @@ import styles from './ImageGrab.module.scss';
 
 const { Row, Col } = Grid;
 
-const datUrlPrex = `/cdn/RetroGame/dats`;
-const imgsUrlPrex = '/cdn/RetroGame/imgs';
+const datUrlPrex = `http://retrogame.dynamic-dns.net/cdn/RetroGame/dats`;
+const imgsUrlPrex = 'http://retrogame.dynamic-dns.net/cdn/RetroGame/imgs';
 const lpLplName = {
   WSC: 'LP_WSC_OL',
   WS: 'LP_WS_OL',
@@ -29,6 +29,9 @@ const lpLplName = {
   FBA: 'LP_FBA_OL',
 }
 
+let selectLplName = 'LP_GBA_OL';
+let selectQueryText = '';
+
 export default class ImageGrab extends Component {
   static displayName = 'ImageGrab';
 
@@ -37,11 +40,16 @@ export default class ImageGrab extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      lplName: '',
+      lplName: selectLplName,
       allGameList: [],
       showGameList: [],
       searchTypeName: 0,
+      queryText: selectQueryText,
     };
+  }
+
+  componentWillMount = async () => {
+    await this.prepareLplData(selectLplName);
   }
 
   prepareLplData = async (name) => {
@@ -57,6 +65,7 @@ export default class ImageGrab extends Component {
       if (error) throw error;
       const allGameList = xmlData.dat.games.game;
       this.setState({lplName: name, allGameList});
+      selectLplName = name;
     });
   }
 
@@ -76,7 +85,8 @@ export default class ImageGrab extends Component {
         b: `${prex}/${folder}/${item.imageNumber}b.png`,
       }
     })
-    this.setState({showGameList: showGameList.slice(0, 20)});
+    this.setState({queryText, showGameList: showGameList.slice(0, 20)});
+    selectQueryText = queryText;
   }
 
   onClickSaveImage = (imgUrl, name) => {
@@ -104,6 +114,7 @@ export default class ImageGrab extends Component {
           }
           </Radio.Group> */}
           <Select
+            value={this.state.lplName}
             onChange={async (val) => await this.prepareLplData(val)}
             style={{ width: 500 }}
           >
@@ -131,7 +142,7 @@ export default class ImageGrab extends Component {
         </div>
         <h3>搜索</h3>
         <div className={styles.renderedContainer}>
-          <Input onChange={(val) => this.searchName(val)} />
+          <Input value={this.state.queryText} onChange={(val) => this.searchName(val)} />
         </div>
 
         <Row wrap gutter={20}>
