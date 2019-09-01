@@ -43,7 +43,7 @@
 			</to>
 			<to auto="true" default="true" value="languages" />
 		</search>
-		<romTitle>%n</romTitle>
+		<romTitle>%u - %e %n</romTitle>
 	</configuration>
     <games>  
 		<game>

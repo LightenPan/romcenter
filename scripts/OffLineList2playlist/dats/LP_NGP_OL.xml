@@ -42,7 +42,7 @@
       <to auto="true" default="true" value="publisher"/>
       <to auto="true" default="true" value="sourceRom"/>
     </search>
-    <romTitle>%n %o %m %e</romTitle>
+    <romTitle>%u - %n %o %m %e</romTitle>
   </configuration>
   <games>
     <game>
@@ -128,7 +128,7 @@
       <sourceRom>??</sourceRom>
       <language>256</language>
       <files>
-        <romCRC extension=".ngp">4939F933</romCRC>
+        <romCRC extension=".ngp">CB42CFA4</romCRC>
       </files>
       <im1CRC>1B4EAA51</im1CRC>
       <im2CRC>26A575B6</im2CRC>
@@ -200,7 +200,7 @@
       <sourceRom>??</sourceRom>
       <language>256</language>
       <files>
-        <romCRC extension=".ngp">37E79AFC</romCRC>
+        <romCRC extension=".ngp">CE09F534</romCRC>
       </files>
       <im1CRC>0BB108B4</im1CRC>
       <im2CRC>14EAB968</im2CRC>
