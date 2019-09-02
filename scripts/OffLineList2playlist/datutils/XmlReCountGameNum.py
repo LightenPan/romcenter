@@ -59,7 +59,7 @@ if __name__ == "__main__":
         pbar.update()
 
         tree_game = tree_games[index]
-        tree_game.find('releaseNumber').text = str(index)
+        tree_game.find('releaseNumber').text = str(index + 1)
     pbar.close()
 
     if options.output_xml:

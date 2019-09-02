@@ -49,33 +49,18 @@ if __name__ == "__main__":
     tree = xml_data_loader.load_xml_tree(options.dat)
     data = xml_data_loader.load(options.dat)
 
-    count = 0
-    index = 0
+    index = -1
     no_chs_list = list()
+    tree_games = tree.findall('games/game')
     pbar = tqdm(data['game_list'], ascii=True)
     for game in pbar:
+        index = index + 1
         pbar.set_description("处理 %s" % xml_data_loader.genGameName(game))
         pbar.update()
 
-        count = count + 1
-        # if count > 10:
-        #     break
-
-        releaseNumber = game['releaseNumber']
-        try:
-            xpath = "games/game[releaseNumber='%s']" % (releaseNumber)
-            games = tree.findall(xpath)
-        except SyntaxError as e:
-            logging.error('%s', e)
-            continue
-
-        if not games:
-            logging.error('find failed. xpath: %s', xpath)
-            continue
-
-        for item in games:
-            item.find('imageNumber').text = str(releaseNumber)
-            logging.info('imageNumber: %s', item.find('imageNumber').text)
+        tree_game = tree_games[index]
+        releaseNumber = tree_game.find('releaseNumber').text
+        tree_game.find('imageNumber').text = str(releaseNumber)
     pbar.close()
 
     if options.output_xml:
