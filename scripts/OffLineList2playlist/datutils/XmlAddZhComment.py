@@ -102,7 +102,7 @@ def gen_simple_from_en2chs(en2chs):
 
 
 if __name__ == "__main__":
-    usage = 'python XmlAddZhComment.py --dat="endats\noIntro - Nintendo - Super Nintendo Entertainment System .xml" --en2chs=en2chs\sfc.json --output_xml=output\LP_SFC_OL.xml'
+    usage = 'python -m datutils.XmlAddZhComment --dat="output\nointro-fc2.xml" --en2chs=en2chs\crc_fc.json --en2chs_simple=en2chs\simple_fc.json --output_xml=output\LP_FC_OL.xml'
     parser = OptionParser(usage)
     parser.add_option("--dat")
     parser.add_option("--en2chs")
@@ -126,7 +126,9 @@ if __name__ == "__main__":
         en2chs_simple = load_en2chs_simple(options.en2chs_simple)
 
     # 用en2chs里的英文和中文生成简单索引
-    en2chs_simple = dict(en2chs_simple, **tmp_en2chs_simple)
+    for k,v in tmp_en2chs_simple.items():
+        if k not in en2chs_simple:
+            en2chs_simple[k] = v
 
     index = -1
     no_chs_list = list()
@@ -156,6 +158,9 @@ if __name__ == "__main__":
     pbar = tqdm(data['game_list'], ascii=True)
     for game in pbar:
         index = index + 1
+        # if index > 20:
+        #     break
+
         pbar.set_description("处理 %s" % xml_data_loader.genGameName(game))
         pbar.update()
 
@@ -169,7 +174,7 @@ if __name__ == "__main__":
             continue
 
         # 英文匹配替换
-        title = game['title']
+        title = game['title'].lower() # 全部用小写匹配
         if title not in en2chs_simple:
             no_chs = {
                 'crc32': crc,
@@ -177,9 +182,9 @@ if __name__ == "__main__":
             }
             no_chs_list.append(no_chs)
             continue
-        info_simple = en2chs_simple[title]
+        info = en2chs_simple[title]
         tree_game = tree_games[index]
-        tree_game.find('comment').text = str(info_simple['cname'])
+        tree_game.find('comment').text = str(info['cname'])
     pbar.close()
 
     if options.output_xml:
