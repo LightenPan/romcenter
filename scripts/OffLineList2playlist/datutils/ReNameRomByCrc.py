@@ -8,14 +8,14 @@ from utils import Utils
 from XmlDataLoader import XmlDataLoader
 
 
-def gen_rom_file_crc_dict(rom_file_list):
+def gen_rom_file_crc_dict(rom_file_list, start_offset=0):
     xdict = dict()
     pbar = tqdm(rom_file_list, ascii=True)
     for file in pbar:
         pbar.set_description("读取文件CRC %s" % file)
         pbar.update()
 
-        crc = Utils.calc_file_crc32(file)
+        crc = Utils.calc_file_crc32(file, start_offset)
         if crc == '':
             continue
         xdict[crc] = file
@@ -23,14 +23,14 @@ def gen_rom_file_crc_dict(rom_file_list):
     return xdict
 
 
-def gen_rom_file_zip_inner_crc_dict(rom_file_list):
+def gen_rom_file_zip_inner_crc_dict(rom_file_list, start_offset=0):
     xdict = dict()
     pbar = tqdm(rom_file_list, ascii=True)
     for file in pbar:
         pbar.set_description("读取zip内的文件CRC %s" % file)
         pbar.update()
 
-        crc = Utils.calc_zip_inner_crc32(file)
+        crc = Utils.calc_zip_inner_crc32(file, start_offset)
         if crc == '':
             continue
         xdict[crc.upper()] = file
@@ -45,8 +45,7 @@ if __name__ == "__main__":
     parser.add_option("--dat")
     parser.add_option("--roms")
     parser.add_option("--calc_crc_by_zip_inner_file")
-    parser.add_option("--fmt_filename")
-    parser.add_option("--fmt_inner_zip")
+    parser.add_option("--start_offset")
 
     (options, args) = parser.parse_args()
 
@@ -54,6 +53,11 @@ if __name__ == "__main__":
         options.calc_crc_by_zip_inner_file = 1
     else:
         options.calc_crc_by_zip_inner_file = int(options.calc_crc_by_zip_inner_file)
+
+    if not options.start_offset:
+        options.start_offset = 0
+    else:
+        options.start_offset = int(options.start_offset)
 
     # 读取offlinelist数据
     xml_data_loader = XmlDataLoader()
@@ -66,9 +70,9 @@ if __name__ == "__main__":
     # 如果是命名zip，则需要读取zip包的crc，这是要求zip包内只有一个文件
     # 否则直接命名文件
     if options.calc_crc_by_zip_inner_file == 1:
-        rom_file_crc_dict = gen_rom_file_zip_inner_crc_dict(rom_file_list)
+        rom_file_crc_dict = gen_rom_file_zip_inner_crc_dict(rom_file_list, options.start_offset)
     else:
-        rom_file_crc_dict = gen_rom_file_crc_dict(rom_file_list)
+        rom_file_crc_dict = gen_rom_file_crc_dict(rom_file_list, options.start_offset)
 
     # 遍历街机
     fail_list = list()

@@ -13,11 +13,17 @@ if __name__ == "__main__":
     parser.add_option("--dat")
     parser.add_option("--roms")
     parser.add_option("--ext")
+    parser.add_option("--start_offset")
 
     (options, args) = parser.parse_args()
 
     if not options.ext:
         options.ext = '.zip'
+
+    if not options.start_offset:
+        options.start_offset = 0
+    else:
+        options.start_offset = int(options.start_offset)
 
     xml_data_loader = XmlDataLoader()
     data = xml_data_loader.load(options.dat)
@@ -29,7 +35,7 @@ if __name__ == "__main__":
         pbar.set_description("读取文件 %s" % file)
         pbar.update()
 
-        crc = Utils.calc_zip_inner_crc32(file)
+        crc = Utils.calc_zip_inner_crc32(file, options.start_offset)
         crc_rom_dict[crc] = file
 
     miss_list = list()

@@ -34,4 +34,5 @@ python main.py --dat=".\dats\MIB_MAME_OL.xml" --lpl=MIB_MAME_OL --output="output
 python main.py --dat=".\dats\MIB_NEOGEO_OL.xml" --lpl=MIB_NEOGEO_OL --output="output" --only_lpl=1 --local_imgs_dir="D:\devel\yanjiu\RetroGameDatForOfflineList\imgs" --rom_title="%u - %e" --rom_name_is_crc=0 --rom_name_is_ename=1 --rom_name_ename_format="%n"
 python main.py --dat=".\dats\MIB_NEOGEOCD_OL.xml" --lpl=MIB_NEOGEOCD_OL --output="output" --only_lpl=1 --local_imgs_dir="D:\devel\yanjiu\RetroGameDatForOfflineList\imgs" --rom_title="%u - %e" --rom_name_is_crc=0 --rom_name_is_ename=1 --rom_name_ename_format="%n" --ext=".chd"
 python main.py --dat=".\dats\MIB_FBA_OL.xml" --lpl=MIB_FBA_OL --output="output" --only_lpl=1 --local_imgs_dir="D:\devel\yanjiu\RetroGameDatForOfflineList\imgs" --rom_title="%u - %e" --rom_name_is_crc=0 --rom_name_is_ename=1 --rom_name_ename_format="%n"
+python main.py --dat=".\dats\LP_FBA_OL.xml" --lpl=LP_FBA_OL --output="output" --only_lpl=0 --local_imgs_dir="D:\devel\yanjiu\RetroGameDatForOfflineList\imgs" --rom_title="%u - %e" --rom_name_is_crc=0 --rom_name_is_ename=1 --rom_name_ename_format="%n"
 

@@ -2,18 +2,7 @@
 import os
 from tqdm import tqdm
 from PIL import Image
-
-
-def listdir(dst_dir, list_name):  #传入存储的list
-    for root, dirs, files in os.walk(dst_dir):
-        # print(root) #当前目录路径
-        # print(dirs) #当前路径下所有子目录
-        # print(files) #当前路径下所有非目录子文件
-        for file in files:
-            os.path.join(root, file)
-            list_name.append(os.path.join(root, file))
-        for dir in dirs:
-            listdir(dir, list_name)
+from utils import Utils
 
 
 def is_valid_image(filename):
@@ -42,7 +31,7 @@ if __name__ == "__main__":
     ext_list = ['.png', '.jpg']
 
     files = list()
-    listdir(options.imgs, files)
+    Utils.listdir(options.imgs, files)
 
     fail_list = list()
     pbar = tqdm(files, ascii=True)

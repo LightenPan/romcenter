@@ -63,24 +63,6 @@
   </configuration>
   <games>
     <game>
-      <imageNumber>0</imageNumber>
-      <releaseNumber>0</releaseNumber>
-      <title>NdsBBS原创整理</title>
-      <saveType>TBC</saveType>
-      <romSize>134217728</romSize>
-      <publisher>NdsBBS</publisher>
-      <location>3</location>
-      <sourceRom>www.ndsbbs.com</sourceRom>
-      <language>4</language>
-      <files>
-        <romCRC extension=".nds">C5678ADE</romCRC>
-      </files>
-      <im1CRC>26241C7A</im1CRC>
-      <im2CRC>33371CD9</im2CRC>
-      <comment>www.ndsbbs.com</comment>
-      <duplicateID>0000</duplicateID>
-    </game>
-    <game>
       <imageNumber>1</imageNumber>
       <releaseNumber>1</releaseNumber>
       <title>陨石大战修正版</title>
