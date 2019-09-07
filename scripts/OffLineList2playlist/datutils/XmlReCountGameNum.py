@@ -38,7 +38,7 @@ def load_en2chs(file):
 
 
 if __name__ == "__main__":
-    usage = ''
+    usage = 'python -m datutils.XmlReCountGameNum --dat=dats\LP_GB_OL.xml --output_xml=output\LP_GB_OL.xml'
     parser = OptionParser(usage)
     parser.add_option("--dat")
     parser.add_option("--output_xml")

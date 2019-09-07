@@ -34,7 +34,7 @@
 		<newDat>
 			<datVersionURL>http://ol.emu618.org:81/version/PC98xx%20-%20Chinese%20Games.ver</datVersionURL>
 			<datURL fileName="PC98xx - Chinese Games.zip">http://ol.emu618.org:81/dat/PC98xx%20-%20Chinese%20Games.zip</datURL>
-            <imURL>http://retrogame.dynamic-dns.net/cdn/RetroGame/imgs/LP_CHS_PC98xx_OL</imURL>
+            <imURL>http://retrogame.dynamic-dns.net:38080/cdn/RetroGame/imgs/LP_CHS_PC98xx_OL</imURL>
 		</newDat>
 		<search>
 			<to value="location" default="false" auto="true"></to>

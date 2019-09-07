@@ -31,7 +31,7 @@
     <newDat>
       <datVersionURL>http://ndsbbs-ol-chinese.googlecode.com/svn/trunk/NdsBbs_OL_CHINESE_RE.txt</datVersionURL>
       <datURL fileName="NdsBbs_OL_CHINESE_RE.zip">http://ndsbbs-ol-chinese.googlecode.com/svn/trunk/NdsBbs_OL_CHINESE_RE.zip</datURL>
-      <imURL>http://retrogame.dynamic-dns.net/cdn/RetroGame/imgs/LP_CHS_NDS_OL</imURL>
+      <imURL>http://retrogame.dynamic-dns.net:38080/cdn/RetroGame/imgs/LP_CHS_NDS_OL</imURL>
     </newDat>
     <search>
       <to auto="true" default="true" value="location"/>
