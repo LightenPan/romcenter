@@ -36,7 +36,7 @@
 		<newDat>
 			<datVersionURL>http://ol.emu618.org:81/version/Chinese%20Games%20-%20N64.ver</datVersionURL>
 			<datURL fileName="CHS_N64_OL.zip">http://ol.emu618.org:81/dat/CHS_N64_OL.zip</datURL>
-            <imURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame/imgs/LP_CHS_N64_OL</imURL>
+            <imURL>http://retrogame.dynamic-dns.net/cdn/RetroGame/imgs/LP_CHS_N64_OL</imURL>
 		</newDat>
 		<search>
 			<to value="location" default="true" auto="true"></to>

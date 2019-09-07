@@ -1,5 +1,6 @@
 # encoding=utf8
 import os
+import shutil
 from tqdm import tqdm
 
 from XmlDataLoader import XmlDataLoader
@@ -8,10 +9,11 @@ from utils import Utils
 
 if __name__ == "__main__":
     from optparse import OptionParser
-    usage = 'python -m datutils.CheckMissRom --dat= --roms='
+    usage = 'python -m datutils.CopyExistRom --dat= --src= --dst='
     parser = OptionParser(usage)
     parser.add_option("--dat")
-    parser.add_option("--roms")
+    parser.add_option("--src")
+    parser.add_option("--dst")
     parser.add_option("--ext")
     parser.add_option("--by_name")
 
@@ -29,7 +31,7 @@ if __name__ == "__main__":
     data = xml_data_loader.load(options.dat)
 
     crc_rom_dict = dict()
-    rom_list = Utils.listdir(options.roms, [options.ext])
+    rom_list = Utils.listdir(options.src, [options.ext])
     pbar = tqdm(rom_list, ascii=True)
     for file in pbar:
         pbar.set_description("读取文件 %s" % file)
@@ -57,8 +59,17 @@ if __name__ == "__main__":
             crc = game['ori_title']
         else:
             crc = game['romCRC']
+
         if crc not in crc_rom_dict:
             miss_list.append(game_name)
+            continue
+
+        from_file = crc_rom_dict[crc]
+        basename = os.path.basename(from_file)
+        to_file = os.path.join(options.dst, basename)
+        if not os.path.exists(to_file):
+            print('from_file: %s, to_file: %s' % (from_file, to_file))
+            shutil.copyfile(from_file, to_file)
 
     for name in miss_list:
         print('miss rom: %s' % (name))

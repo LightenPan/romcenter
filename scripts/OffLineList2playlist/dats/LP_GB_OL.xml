@@ -26,8 +26,8 @@
 		</canOpen>
 		<newDat>
 		   <datVersionURL />
-		   <datURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame//dats/LP_GB_OL.xml</datURL>
-		   <imURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame//imgs/LP_GB_OL</imURL>
+		   <datURL>http://retrogame.dynamic-dns.net/cdn/RetroGame/dats/LP_GB_OL.xml</datURL>
+		   <imURL>http://retrogame.dynamic-dns.net/cdn/RetroGame/imgs/LP_GB_OL</imURL>
 		</newDat>
 		<search>
 			<to auto="true" default="true" value="location" />
