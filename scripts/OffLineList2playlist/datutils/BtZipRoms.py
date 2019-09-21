@@ -36,7 +36,7 @@ if __name__ == "__main__":
     for file in pbar:
         index = index + 1
 
-        pbar.set_description(u"?? %s" % file)
+        pbar.set_description(u"处理 %s" % file)
         pbar.update()
 
         if options.use_splitext == 1:
