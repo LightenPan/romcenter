@@ -209,7 +209,7 @@ if __name__ == "__main__":
     mkdirs(options.output)
     logging.info('生成游戏列表:')
     lpl_file = open(options.output + os.path.sep + options.lpl + '.lpl', 'w', encoding='utf-8')
-    pbar = tqdm(data['game_list'], ascii=True)
+    pbar = tqdm(data['game_list'])
     for game in pbar:
         pbar.set_description("处理 %s" % xml_data_loader.genGameName(game))
         pbar.update()
@@ -241,7 +241,7 @@ if __name__ == "__main__":
     dst_snaps_dir = options.output + os.path.sep + options.lpl + os.path.sep + 'Named_Snaps'
     mkdirs(dst_title_dir)
     mkdirs(dst_snaps_dir)
-    pbar = tqdm(data['game_list'], ascii=True)
+    pbar = tqdm(data['game_list'])
     for game in pbar:
         pbar.set_description("处理 %s" % xml_data_loader.genGameName(game))
         pbar.update()

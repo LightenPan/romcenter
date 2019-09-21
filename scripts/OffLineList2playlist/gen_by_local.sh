@@ -20,7 +20,7 @@ python main.py --dat=".\dats\LP_GBC_OL.xml" --lpl=LP_GBC_OL --output="output" --
 python main.py --dat=".\dats\LP_NGP_OL.xml" --lpl=LP_NGP_OL --output="output" --only_lpl=1 --local_imgs_dir="D:\devel\yanjiu\RetroGameDatForOfflineList\imgs" --rom_title="%u - %e %n"
 python main.py --dat=".\dats\LP_NGPC_OL.xml" --lpl=LP_NGPC_OL --output="output" --only_lpl=1 --local_imgs_dir="D:\devel\yanjiu\RetroGameDatForOfflineList\imgs" --rom_title="%u - %e %n [%o]"
 python main.py --dat=".\dats\LP_GBA_OL.xml" --lpl=LP_GBA_OL --output="output" --only_lpl=1 --local_imgs_dir="D:\devel\yanjiu\RetroGameDatForOfflineList\imgs" --rom_title="%u - %n %e [%o]"
-python main.py --dat=".\dats\LP_NDS_OL.xml" --lpl=LP_NDS_OL --output="output" --only_lpl=1 --local_imgs_dir="D:\devel\yanjiu\RetroGameDatForOfflineList\imgs" --rom_title="%u - %n %e [%o]"
+python main.py --dat=".\dats\LP_NDS_OL.xml" --lpl=LP_NDS_OL --output="output" --only_lpl=1 --ext=".nds" --local_imgs_dir="D:\devel\yanjiu\RetroGameDatForOfflineList\imgs" --rom_title="%u - %n %e [%o]"
 
 python main.py --dat=".\dats\LP_FC_OL.xml" --lpl=LP_FC_OL --output="output" --only_lpl=1 --local_imgs_dir="D:\devel\yanjiu\RetroGameDatForOfflineList\imgs" --rom_title="%u - %e %n [%o]"
 python main.py --dat=".\dats\LP_SFC_OL.xml" --lpl=LP_SFC_OL --output="output" --only_lpl=1 --local_imgs_dir="D:\devel\yanjiu\RetroGameDatForOfflineList\imgs" --rom_title="%u - %e %n [%o]"

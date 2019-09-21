@@ -21,7 +21,6 @@ class Utils:
                     xlist.append(os.path.join(root, file))
             else:
                 for file in files:
-                    os.path.join(root, file)
                     xlist.append(os.path.join(root, file))
         return xlist
 

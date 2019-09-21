@@ -20,23 +20,29 @@ if __name__ == "__main__":
     parser = OptionParser(usage)
     parser.add_option("--roms")
     parser.add_option("--ext")
+    parser.add_option("--use_splitext")
 
     (options, args) = parser.parse_args()
 
+    if not options.use_splitext:
+        options.use_splitext = 1
+    else:
+        options.use_splitext = int(options.use_splitext)
+
     rom_list = Utils.listdir(options.roms, [options.ext])
 
-    miss_image_list = list()
     index = 0
-    image_count = 500
-    pbar = tqdm(rom_list, ascii=True)
-    threads = []
+    pbar = tqdm(rom_list)
     for file in pbar:
         index = index + 1
 
-        pbar.set_description("处理 %s" % file)
+        pbar.set_description(u"?? %s" % file)
         pbar.update()
 
-        dstname = os.path.splitext(file)[0] + '.zip'
+        if options.use_splitext == 1:
+            dstname = os.path.splitext(file)[0] + '.zip'
+        else:
+            dstname = file + '.zip'
         if os.path.exists(dstname):
             continue
         zip_dir(file, dstname)
