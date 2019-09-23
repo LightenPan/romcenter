@@ -5,27 +5,6 @@ from XmlDataLoader import XmlDataLoader
 import xml.etree.ElementTree as ET
 
 
-def listdir(dst_dir, list_name):  #传入存储的list
-    for root, dirs, files in os.walk(dst_dir):
-        # print(root) #当前目录路径
-        # print(dirs) #当前路径下所有子目录
-        # print(files) #当前路径下所有非目录子文件
-        for file in files:
-            os.path.join(root, file)
-            list_name.append(os.path.join(root, file))
-        for dir in dirs:
-            listdir(dir, list_name)
-
-
-def is_valid_image(filename):
-    valid = True
-    try:
-        Image.open(filename).load()
-    except OSError:
-        valid = False
-    return valid
-
-
 if __name__ == "__main__":
     from optparse import OptionParser
     usage = 'python -m datutils.ConverArcadeDatToOfflineList --arcade_dat= --cover_dat= --output='

@@ -33,7 +33,7 @@
 		<newDat>
 			<datVersionURL>http://ol.emu618.org:81/version/Chinese%20Games%20-%20GBC.ver</datVersionURL>
 			<datURL fileName="CHS_GBC_OL.zip">http://ol.emu618.org:81/dat/CHS_GBC_OL.zip</datURL>
-            <imURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame/imgs/LP_CHS_GBC_OL</imURL>
+            <imURL>http://retrogame.dynamic-dns.net:38080/cdn/RetroGame/imgs/LP_CHS_GBC_OL</imURL>
 		</newDat>
 		<search>
 			<to value="location" default="true" auto="true"/>

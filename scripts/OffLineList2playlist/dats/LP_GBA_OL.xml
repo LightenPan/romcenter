@@ -29,8 +29,8 @@
 		</canOpen>
 		<newDat>
 		   <datVersionURL></datVersionURL>
-		   <datURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame//dats/LP_GBA_OL.xml</datURL>
-		   <imURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame//imgs/LP_GBA_OL</imURL>
+		   <datURL>http://retrogame.dynamic-dns.net:38080/cdn/RetroGame/dats/LP_GBA_OL.xml</datURL>
+		   <imURL>http://retrogame.dynamic-dns.net:38080/cdn/RetroGame/imgs/LP_GBA_OL</imURL>
 		</newDat>
 		<search>
 			<to value="location" default="true" auto="true"/>
@@ -54,22 +54,6 @@
 		<romTitle>%u - %n - %o%i(%g)</romTitle>
 	</configuration>
 	<games>
-		<game>
-			<imageNumber>0</imageNumber>
-			<releaseNumber>0</releaseNumber>
-			<title>游戏集中营原创整理 - 由 (蓝色的积木) 制作</title>
-			<publisher>游戏集中营</publisher>
-			<location>3</location>
-			<sourceRom>www.yxjzy.com</sourceRom>
-			<language>4</language>
-			<files>
-				<romCRC extension=".nds">00000000</romCRC>
-			</files>
-			<im1CRC>F7A86019</im1CRC>
-			<im2CRC>982B8DB1</im2CRC>
-			<comment>(www.yxjzy.com) - 由 蓝色的积木 制作</comment>
-			<duplicateID>0</duplicateID>
-		</game>
 		<game>
 			<imageNumber>1</imageNumber>
 			<releaseNumber>1</releaseNumber>

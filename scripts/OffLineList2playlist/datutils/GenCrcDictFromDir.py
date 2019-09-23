@@ -6,6 +6,7 @@ from tqdm import tqdm
 from optparse import OptionParser
 import binascii
 import os.path
+from utils import Utils
 
 # 利用logging.basicConfig()打印信息到控制台
 import logging
@@ -62,18 +63,6 @@ def load_en2chs(file):
     return xdict
 
 
-def listdir(dst_dir, list_name):  #传入存储的list
-    for root, dirs, files in os.walk(dst_dir):
-        # print(root) #当前目录路径
-        # print(dirs) #当前路径下所有子目录
-        # print(files) #当前路径下所有非目录子文件
-        for file in files:
-            os.path.join(root, file)
-            list_name.append(os.path.join(root, file))
-        for dir in dirs:
-            listdir(dir, list_name)
-
-
 if __name__ == "__main__":
     usage = ''
     parser = OptionParser(usage)
@@ -84,7 +73,7 @@ if __name__ == "__main__":
     (options, args) = parser.parse_args()
 
     files = list()
-    listdir(options.dir, files)
+    Utils.listdir(options.dir, files)
 
     en2chs_dict = dict()
     if options.exist_en2chs:

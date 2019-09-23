@@ -33,7 +33,7 @@
 		<newDat>
 			<datVersionURL></datVersionURL>
 			<datURL fileName="LP_CHS_SFC_OL.zip"/>
-			<imURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame//imgs/LP_CHS_SFC_OL</imURL>
+			<imURL>http://retrogame.dynamic-dns.net:38080/cdn/RetroGame/imgs/LP_CHS_SFC_OL</imURL>
 		</newDat>
 		<search>
 			<to value="location" default="true" auto="true"/>

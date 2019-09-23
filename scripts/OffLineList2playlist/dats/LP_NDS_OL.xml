@@ -28,8 +28,8 @@
 		</canOpen>
 		<newDat>
            <datVersionURL></datVersionURL>
-           <datURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame//dats/LP_NDS_OL.xml</datURL>
-           <imURL>http://retrogame.dynamic-dns.net:8080/cdn/RetroGame//imgs/LP_NDS_OL</imURL>
+           <datURL>http://retrogame.dynamic-dns.net:38080/cdn/RetroGame/dats/LP_NDS_OL.xml</datURL>
+           <imURL>http://retrogame.dynamic-dns.net:38080/cdn/RetroGame/imgs/LP_NDS_OL</imURL>
 		</newDat>
 		<search>
 			<to auto="true" default="true" value="location" />
@@ -56,24 +56,6 @@
 		<romTitle>%u - %n%o(%g)</romTitle>
 	</configuration>
 	<games>
-		<game>
-			<imageNumber>0</imageNumber>
-			<releaseNumber>0000</releaseNumber>
-			<title>NdsBbs原创整理</title>
-			<saveType>TBC</saveType>
-			<romSize>134217728</romSize>
-			<publisher>NdsBbs</publisher>
-			<location>3</location>
-			<sourceRom>www.ndsbbs.com</sourceRom>
-			<language>4</language>
-			<files>
-				<romCRC extension=".nds">C5678ADE</romCRC>
-			</files>
-			<im1CRC>26241C7A</im1CRC>
-			<im2CRC>33371CD9</im2CRC>
-			<comment>www.ndsbbs.com</comment>
-			<duplicateID>0</duplicateID>
-		</game>
 		<game>
 			<imageNumber>5001</imageNumber>
 			<releaseNumber>5001</releaseNumber>

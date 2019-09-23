@@ -8,8 +8,8 @@ import styles from './ImageGrab.module.scss';
 
 const { Row, Col } = Grid;
 
-const datUrlPrex = `http://retrogame.dynamic-dns.net/cdn/RetroGame/dats`;
-const imgsUrlPrex = 'http://retrogame.dynamic-dns.net/cdn/RetroGame/imgs';
+const datUrlPrex = `http://retrogame.dynamic-dns.net:38080/cdn/RetroGame/dats`;
+const imgsUrlPrex = 'http://retrogame.dynamic-dns.net:38080/cdn/RetroGame/imgs';
 const lpLplName = {
   WSC: 'LP_WSC_OL',
   WS: 'LP_WS_OL',

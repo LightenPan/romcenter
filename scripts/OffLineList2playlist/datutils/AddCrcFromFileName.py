@@ -41,7 +41,7 @@ if __name__ == "__main__":
 
     # 获取rom列表
     rom_file_list = Utils.listdir(options.roms)
-    rom_file_crc_dict =gen_rom_file_crc_dict(rom_file_list)
+    rom_file_crc_dict = gen_rom_file_crc_dict(rom_file_list)
 
     # 遍历街机
     failed_list = list()
@@ -56,13 +56,18 @@ if __name__ == "__main__":
         pbar.update()
 
         ename = game['title']
-        cname = game['comment']
         if ename not in rom_file_crc_dict:
             failed_list.append(ename)
             continue
         crc = rom_file_crc_dict[ename]
         tree_game = tree_games[index]
-        tree_game.find('files/romCRC').text = str(crc)
+        if tree_game.find('files/romCRC'):
+            tree_game.find('files/romCRC').text = str(crc)
+        else:
+            files = tree_game.find('files')
+            romCRC = ET.SubElement(files, 'romCRC')
+            romCRC.set('extension', '.zip')
+            romCRC.text = str(crc)
 
     if options.output_xml:
         xml_str = ET.tostring(tree, encoding='utf-8')
