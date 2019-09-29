@@ -8,6 +8,11 @@ const asideMenuConfig = [
     path: '/romlist',
     // icon: 'cascades',
   },
+  {
+    name: '游戏列表',
+    path: '/wikiGameList',
+    // icon: 'cascades',
+  },
   // {
   //   name: '反馈',
   //   path: 'https://github.com/alibaba/ice/issues/new',

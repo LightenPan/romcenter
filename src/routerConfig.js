@@ -5,6 +5,7 @@ import UserLayout from '@/layouts/UserLayout';
 import BasicLayout from '@/layouts/BasicLayout';
 
 import RomList from '@/pages/RomList';
+import WikiGameList from '@/pages/WikiGameList';
 
 const routerConfig = [
   {
@@ -32,6 +33,10 @@ const routerConfig = [
       {
         path: '/romlist',
         component: RomList,
+      },
+      {
+        path: '/wikiGameList',
+        component: WikiGameList,
       },
       {
         path: '/setting',

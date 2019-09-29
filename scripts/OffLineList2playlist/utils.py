@@ -139,6 +139,41 @@ class Utils:
         bfile = os.path.join(imgs_dir, str(imageNumber) + 'b.png')
         return afile, bfile
 
+    @staticmethod
+    def loadLplFile(file):
+        import copy
+        xlist = list()
+        index = 0
+        info = dict()
+        f = open(file, encoding='utf-8') # 返回一个文件对象
+        line = f.readline()             # 调用文件的 readline()方法
+        while line:
+            line = line.strip()
+            # print line,                 # 后面跟 ',' 将忽略换行符
+            # print(line, end = '')　　　# 在 Python 3中使用
+            if index == 0:
+                info['path'] = line
+            elif index == 1:
+                info['label'] = line
+            elif index == 2:
+                info['core_name'] = line
+            elif index == 3:
+                info['core_path'] = line
+            elif index == 4:
+                info['crc'] = line
+            elif index == 5:
+                info['dbname'] = line
+
+            index = index + 1
+            if index >= 6:
+                index = 0
+                xlist.append(copy.deepcopy(info))
+                # print(info)
+
+            line = f.readline()
+        f.close()
+        return xlist
+
 
 if __name__ == "__main__":
     from optparse import OptionParser
