@@ -22,6 +22,7 @@ export default class FilterSelect extends Component {
         <h3>列表条件</h3>
         <div className={styles.renderedContainer}>
           <Radio.Group
+            size="large"
             value={this.state.filterType}
             itemDirection='ver'
             onChange={(val) => {

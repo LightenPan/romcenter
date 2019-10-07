@@ -29,8 +29,13 @@ if __name__ == "__main__":
     parser.add_option("--dat")
     parser.add_option("--roms")
     parser.add_option("--output_xml")
+    parser.add_option("--ext")
 
     (options, args) = parser.parse_args()
+
+    if not options.ext:
+        options.ext = '.zip'
+
 
     # 读取offlinelist数据
     xml_data_loader = XmlDataLoader()
@@ -66,7 +71,7 @@ if __name__ == "__main__":
         else:
             files = tree_game.find('files')
             romCRC = ET.SubElement(files, 'romCRC')
-            romCRC.set('extension', '.zip')
+            romCRC.set('extension', options.ext)
             romCRC.text = str(crc)
 
     if options.output_xml:

@@ -16,7 +16,7 @@ def is_valid_image(filename):
 
 if __name__ == "__main__":
     from optparse import OptionParser
-    usage = ''
+    usage = 'python check_imgs.py --imgs='
     parser = OptionParser(usage)
     parser.add_option("--imgs")
     parser.add_option("--by_del")
@@ -30,14 +30,13 @@ if __name__ == "__main__":
 
     ext_list = ['.png', '.jpg']
 
-    files = list()
-    Utils.listdir(options.imgs, files)
+    files = Utils.listdir(options.imgs)
 
     fail_list = list()
-    pbar = tqdm(files, ascii=True)
+    pbar = tqdm(files)
     threads = []
     for item in pbar:
-        pbar.set_description("处理 %s" % item)
+        pbar.set_description("?? %s" % item)
         pbar.update()
 
         ext = os.path.splitext(item)[-1]

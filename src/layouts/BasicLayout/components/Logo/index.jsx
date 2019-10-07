@@ -6,7 +6,7 @@ export default function Logo() {
   return (
     <div className={styles.container}>
       <Link to="/" className={styles.logoText}>
-        数据编辑器
+        复古游戏Wiki
       </Link>
     </div>
   );

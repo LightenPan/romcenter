@@ -1,11 +1,13 @@
-import UserLogin from '@/pages/UserLogin';
+// import UserLogin from '@/pages/UserLogin';
+import LoginBlock from '@/components/LoginBlock';
 import UserRegister from '@/pages/UserRegister';
-import Setting from '@/pages/Setting';
+// import Setting from '@/pages/Setting';
 import UserLayout from '@/layouts/UserLayout';
 import BasicLayout from '@/layouts/BasicLayout';
 
 import RomList from '@/pages/RomList';
 import WikiGameList from '@/pages/WikiGameList';
+import MenuGameList from '@/pages/WikiGameList/MenuGameList';
 
 const routerConfig = [
   {
@@ -14,7 +16,7 @@ const routerConfig = [
     children: [
       {
         path: '/login',
-        component: UserLogin,
+        component: LoginBlock,
       },
       {
         path: '/register',
@@ -31,20 +33,20 @@ const routerConfig = [
     component: BasicLayout,
     children: [
       {
-        path: '/romlist',
-        component: RomList,
-      },
-      {
         path: '/wikiGameList',
         component: WikiGameList,
       },
       {
-        path: '/setting',
-        component: Setting,
+        path: '/wikiUserMenuList',
+        component: MenuGameList,
+      },
+      {
+        path: '/oleditor',
+        component: RomList,
       },
       {
         path: '/',
-        redirect: '/romlist',
+        redirect: '/wikiGameList',
       },
     ],
   },

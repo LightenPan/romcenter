@@ -64,16 +64,20 @@ def load_en2chs(file):
 
 
 if __name__ == "__main__":
-    usage = ''
+    usage = 'python -m datutils.GenCrcDictFromDIr --dir= --output='
     parser = OptionParser(usage)
     parser.add_option("--dir")
     parser.add_option("--output")
     parser.add_option("--exist_en2chs")
+    parser.add_option("--ext")
 
     (options, args) = parser.parse_args()
 
-    files = list()
-    Utils.listdir(options.dir, files)
+    if not options.ext:
+        print('need ext')
+        exit(1)
+
+    files = Utils.listdir(options.dir, [options.ext])
 
     en2chs_dict = dict()
     if options.exist_en2chs:
@@ -83,12 +87,19 @@ if __name__ == "__main__":
     pbar = tqdm(files, ascii=True)
     threads = []
     for item in pbar:
+
         pbar.set_description("处理 %s" % item)
         pbar.update()
 
-        info = crc32_from_zip_file(item)
-        if not info:
+        basename = os.path.basename(item)
+        filename = os.path.splitext(basename)[0]
+        crc32 = Utils.calc_file_crc32(item)
+        if not crc32:
             continue
+        info = {
+            'crc32': crc32,
+            'cname': filename,
+        }
         crc_list.append(info)
     pbar.close()
 

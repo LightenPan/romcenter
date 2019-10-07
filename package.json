@@ -1,12 +1,12 @@
 {
-  "name": "romcenter",
+  "name": "RetroGameWiki",
   "version": "2.0.9",
-  "description": "该模板适用于数据模型类的管理类后台，内置通用的介绍页和丰富的区块，使用时需要根据需求进行删除和添加",
+  "description": "",
   "keywords": [
     "ice-scaffold"
   ],
   "scripts": {
-    "start": "ice-scripts dev",
+    "start": "ice-scripts dev --host=wekafei.cn --port=80",
     "build": "ice-scripts build",
     "lint": "npm run eslint && npm run stylelint",
     "eslint": "eslint --cache --ext .js,.jsx ./",
@@ -24,15 +24,18 @@
     "@icedesign/layout": "^1.x",
     "@icedesign/notification": "^1.0.5",
     "@icedesign/theme": "^1.x",
+    "axios": "^0.19.0",
     "bizcharts": "^3.2.2",
     "classnames": "^2.2.5",
     "file-saver": "^2.0.2",
     "jsoncomp": "^1.6.1",
     "jszip": "^3.2.2",
+    "md5": "^2.2.1",
     "moment": "^2.23.0",
     "node-sass": "^4.12.0",
     "prop-types": "^15.5.8",
     "react": "^16.4.1",
+    "react-cookies": "^0.1.1",
     "react-dom": "^16.4.1",
     "react-file-picker": "^0.0.6",
     "react-files": "^2.4.8",
@@ -51,7 +54,7 @@
   "scaffoldConfig": {
     "builder": "ice-scripts",
     "name": "ice-algorithm-model-admin",
-    "title": "OfflineList数据编辑器",
+    "title": "复古游戏Wiki",
     "categories": [
       "行业领域"
     ],
@@ -69,5 +72,5 @@
     "type": "git",
     "url": "https://github.com/ice-lab/react-materials/tree/master/scaffolds/ice-algorithm-model-admin"
   },
-  "title": "Rom工具"
+  "title": "复古游戏Wiki"
 }

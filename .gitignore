@@ -22,3 +22,4 @@ yarn-error.log*
 /yarn-error.log
 /romcenter
 /scripts/OffLineList2playlist/datutils/__pycache__
+/scripts/OffLineList2playlist/lpl

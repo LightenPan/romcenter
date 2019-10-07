@@ -4,13 +4,18 @@
 
 const asideMenuConfig = [
   {
-    name: 'Rom列表',
-    path: '/romlist',
+    name: '游戏列表',
+    path: '/wikiGameList',
     // icon: 'cascades',
   },
   {
-    name: '游戏列表',
-    path: '/wikiGameList',
+    name: '游戏单',
+    path: '/wikiUserMenuList',
+    // icon: 'cascades',
+  },
+  {
+    name: 'OL编辑器',
+    path: '/oleditor',
     // icon: 'cascades',
   },
   // {
