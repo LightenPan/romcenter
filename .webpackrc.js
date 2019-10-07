@@ -1,6 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
 
+window.__API_HOST__ = 'http://wekafei.cn';
+
 module.exports = {
   resolve: {
     alias: {
@@ -10,9 +12,9 @@ module.exports = {
   output: {
     path: path.resolve('romcenter'),
   },
-  plugins: [
-    new webpack.DefinePlugin({
-      __API_HOST__: JSON.stringify(config.apiHost),
-    }),
-  ],
+  // plugins: [
+  //   new webpack.DefinePlugin({
+  //     __API_HOST__: 'http://wekafei.cn',
+  //   }),
+  // ],
 };

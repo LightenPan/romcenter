@@ -15,7 +15,7 @@ const Item = Form.Item;
 @DataBinder({
   'login': {
     // AJAX 部分的参数完全继承自 axios ，参数请详见：https://github.com/axios/axios
-    url: '/api/RetroGameWiki/login',
+    url: `${__API_HOST__}/api/RetroGameWiki/login`,
     method: 'POST',
     withCredentials: true,
     // 接口默认数据

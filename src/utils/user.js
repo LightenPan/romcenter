@@ -10,7 +10,7 @@ const loginUser = () => {
 
 
 const isLogin = (cb) => {
-  axios.get('/api/RetroGameWiki/checklogin', {
+  axios.get(`${__API_HOST__}/api/RetroGameWiki/checklogin`, {
     withCredentials: true,
   }).then(() => {
     if (cb) {

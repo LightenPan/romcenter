@@ -13,7 +13,7 @@ const { Row, Col } = Grid;
 @DataBinder({
   'gameList': {
     // AJAX 部分的参数完全继承自 axios ，参数请详见：https://github.com/axios/axios
-    url: '/api/RetroGameWiki/gameList',
+    url: `${__API_HOST__}/api/RetroGameWiki/gameList`,
     method: 'GET',
     withCredentials: true,
     params: {
@@ -29,7 +29,7 @@ const { Row, Col } = Grid;
   },
   'platList': {
     // AJAX 部分的参数完全继承自 axios ，参数请详见：https://github.com/axios/axios
-    url: '/api/RetroGameWiki/platList',
+    url: `${__API_HOST__}/api/RetroGameWiki/platList`,
     method: 'GET',
     withCredentials: true,
     params: {
@@ -41,7 +41,7 @@ const { Row, Col } = Grid;
   },
   'userMenuList': {
     // AJAX 部分的参数完全继承自 axios ，参数请详见：https://github.com/axios/axios
-    url: '/api/RetroGameWiki/usermenu/list',
+    url: `${__API_HOST__}/api/RetroGameWiki/usermenu/list`,
     method: 'GET',
     withCredentials: true,
     params: {

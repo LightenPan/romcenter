@@ -6,7 +6,8 @@
     "ice-scaffold"
   ],
   "scripts": {
-    "start": "ice-scripts dev --host=wekafei.cn --port=80",
+    "start": "ice-scripts dev",
+    "start_host": "ice-scripts dev --host=wekafei.cn --port=80",
     "build": "ice-scripts build",
     "lint": "npm run eslint && npm run stylelint",
     "eslint": "eslint --cache --ext .js,.jsx ./",

@@ -9,7 +9,7 @@ import styles from './GameInfo.module.scss';
 @DataBinder({
   'userMenuOpGame': {
     // AJAX 部分的参数完全继承自 axios ，参数请详见：https://github.com/axios/axios
-    url: '/api/RetroGameWiki/usermenu/opgame',
+    url: `${__API_HOST__}/api/RetroGameWiki/usermenu/opgame`,
     method: 'POST',
     withCredentials: true,
     data: {
