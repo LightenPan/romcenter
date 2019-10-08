@@ -12,8 +12,8 @@ export default class MenuInfo extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: props.name ? props.name : '',
-      desc: props.desc ? props.desc : '',
+      name: props.menu.name ? props.menu.name : '',
+      desc: props.menu.desc ? props.menu.desc : '',
     };
   }
 

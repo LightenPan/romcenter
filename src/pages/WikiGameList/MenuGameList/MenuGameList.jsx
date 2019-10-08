@@ -79,7 +79,7 @@ const { Row, Col } = Grid;
     method: 'POST',
     withCredentials: true,
     data: {
-      oid: '',
+      menuid: '',
       name: '',
       desc: '',
     },
@@ -104,8 +104,8 @@ export default class MenuGameList extends Component {
         menuid: '',
         pageIndex: 0,
         pageCount: 20,
-        menu: null,
       },
+      menus: [],
     };
   }
 
@@ -115,20 +115,28 @@ export default class MenuGameList extends Component {
       if (resp.data.menus.length > 0) {
         const { context } = this.state;
         context.menuid = resp.data.menus[0].oid;
-        this.setState({context});
+        this.setState({context, menus: resp.data.menus});
         this.doGetGameList();
       }
     });
   }
 
   onClickMenuModify() {
+    const menu = this.state.menus.filter(item => {
+      return item.oid === this.state.context.menuid;
+    });
+    if (!menu && !menu[0]) {
+      return;
+    }
     Dialog.confirm({
       isFullScreen: true,
       title: '修改游戏单',
-      content: <MenuInfo ref={(c) => this.menuModify = c} />,
+      content: <MenuInfo
+      menu={menu[0]}
+      ref={(c) => this.menuModify = c} />,
       onOk: () => {
         const data = {
-          oid: this.context.menuid,
+          menuid: this.state.context.menuid,
           name: this.menuModify.state.name,
           desc: this.menuModify.state.desc,
         }
@@ -223,7 +231,7 @@ export default class MenuGameList extends Component {
 
   doGetGameList() {
     const { context } = this.state;
-    if (!context.menuid || context.menuid.length == 0) {
+    if (!context.menuid || context.menuid.length === 0) {
       return;
     }
     const params = {
