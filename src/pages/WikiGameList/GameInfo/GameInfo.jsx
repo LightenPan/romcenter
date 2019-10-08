@@ -32,6 +32,7 @@ export default class GameInfo extends Component {
     super(props);
     this.state = {
       disableRemoveMenuButton: false,
+      showType: this.props.showType,
     };
   }
 
@@ -50,22 +51,25 @@ export default class GameInfo extends Component {
         </div> */}
 
         <div className={styles.body}>
-          <div className={styles.item}>
-            {
-              this.props.game.thumb &&
-              <div className={styles.imgGroup}>
-                <span className={styles.imgItem}>
-                  <Img type="contain" src={this.props.game.thumb.title} width={180} height={180} />
-                </span>
-                <span className={styles.imgItem}>
-                  <Img type="contain" src={this.props.game.thumb.snap} width={180} height={180} />
-                </span>
-                <span className={styles.imgItem}>
-                  <Img type="contain" src={this.props.game.thumb.boxart} width={180} height={180} />
-                </span>
-              </div>
-            }
-          </div>
+          {
+            this.state.showType !== 'simple' &&
+            <div className={styles.item}>
+              {
+                this.props.game.thumb &&
+                <div className={styles.imgGroup}>
+                  <span className={styles.imgItem}>
+                    <Img type="contain" src={this.props.game.thumb.title} width={180} height={180} />
+                  </span>
+                  <span className={styles.imgItem}>
+                    <Img type="contain" src={this.props.game.thumb.snap} width={180} height={180} />
+                  </span>
+                  <span className={styles.imgItem}>
+                    <Img type="contain" src={this.props.game.thumb.boxart} width={180} height={180} />
+                  </span>
+                </div>
+              }
+            </div>
+          }
 
           <div className={styles.item}>
             <span className={styles.label}>英文: </span>
@@ -76,30 +80,42 @@ export default class GameInfo extends Component {
             <span className={styles.value}>{this.props.game.cname}</span>
             {/* <span className={styles.value}>{this.props.game.comment}</span> */}
           </div>
-          <div className={styles.item}>
-            <span className={styles.label}>发行: </span>
-            <span className={styles.value}>{this.props.game.publisher}</span>
-          </div>
           <div className={styles.labelGroup}>
             <div className={styles.labelGroupItem}>
-              <span className={styles.label}>CRC: </span>
-              <span className={styles.value}>{this.props.game.crc32}</span>
+              <span className={styles.label}>平台: </span>
+              <span className={styles.value}>{this.props.game.plat_display}</span>
             </div>
             <div className={styles.labelGroupItem}>
-              <span className={styles.label}>尺寸: </span>
-              <span className={styles.value}>{this.props.game.romsize}</span>
+              <span className={styles.label}>发行: </span>
+              <span className={styles.value}>{this.props.game.publisher}</span>
             </div>
           </div>
-          <div className={styles.labelGroup}>
-            <div className={styles.labelGroupItem}>
-              <span className={styles.label}>地区: </span>
-              <span className={styles.value}>{this.props.game.location}</span>
+          {
+            this.state.showType !== 'simple' &&
+            <div className={styles.labelGroup}>
+              <div className={styles.labelGroupItem}>
+                <span className={styles.label}>CRC: </span>
+                <span className={styles.value}>{this.props.game.crc32}</span>
+              </div>
+              <div className={styles.labelGroupItem}>
+                <span className={styles.label}>尺寸: </span>
+                <span className={styles.value}>{this.props.game.romsize}</span>
+              </div>
             </div>
-            <div className={styles.labelGroupItem}>
-              <span className={styles.label}>语言: </span>
-              <span className={styles.value}>{this.props.game.language}</span>
+          }
+          {
+            this.state.showType !== 'simple' &&
+            <div className={styles.labelGroup}>
+              <div className={styles.labelGroupItem}>
+                <span className={styles.label}>地区: </span>
+                <span className={styles.value}>{this.props.game.location}</span>
+              </div>
+              <div className={styles.labelGroupItem}>
+                <span className={styles.label}>语言: </span>
+                <span className={styles.value}>{this.props.game.language}</span>
+              </div>
             </div>
-          </div>
+          }
         </div>
 
         <div className={styles.footer}>
@@ -109,7 +125,7 @@ export default class GameInfo extends Component {
               {
                 this.props.userMenuList.menus.length > 0 &&
                 <Dropdown
-                  trigger={<Button>加到我的游戏单</Button>}
+                  trigger={<Button type='primary'>加到我的游戏单</Button>}
                   // triggerType={["click", "hover"]}
                   triggerType={["click"]}
                   afterOpen={() => console.log('after open')}>
@@ -139,6 +155,7 @@ export default class GameInfo extends Component {
           {
             this.props.from === 'menuGameList' &&
             <Button
+              type='primary'
               disabled={this.state.disableRemoveMenuButton}
               onClick={() => {
                 const data = {

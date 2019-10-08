@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import { Input } from '@alifd/next';
 
-import styles from './MenuCreat.module.scss';
+import styles from './MenuInfo.module.scss';
 
 
-export default class MenuCreat extends Component {
-  static displayName = 'MenuCreat';
+export default class MenuInfo extends Component {
+  static displayName = 'MenuInfo';
 
   static propTypes = {};
 
   constructor(props) {
     super(props);
     this.state = {
-      name: '',
-      desc: '',
+      name: props.name ? props.name : '',
+      desc: props.desc ? props.desc : '',
     };
   }
 

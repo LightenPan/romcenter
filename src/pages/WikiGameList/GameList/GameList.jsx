@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Loading, Grid, Pagination, Select, Button, Dialog } from '@alifd/next';
+import { Loading, Grid, Pagination, Select, Button, Dialog, Radio } from '@alifd/next';
 import IceContainer from '@icedesign/container';
 import DataBinder from '@icedesign/data-binder';
 
@@ -20,6 +20,11 @@ const { Row, Col } = Grid;
       platform: '',
       offset: 0,
       count: 10,
+      filter: {
+        platform: '',
+        nametype: '',
+        queryText: '',
+      }
     },
     // 接口默认数据
     defaultBindingData: {
@@ -65,17 +70,17 @@ export default class GameList extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      showType: 'full',
       context: {
         platform: 'LP_GBA_OL',
         pageIndex: 0,
         pageCount: 20,
+        filter: {
+          platform: '',
+          nametype: '',
+          queryText: '',
+        },
       },
-      filter: {
-        isuse: false,
-        platform: '',
-        nametype: 'cname',
-        queryText: '',
-      }
     };
   }
 
@@ -93,25 +98,32 @@ export default class GameList extends Component {
   }
 
   onClickFilter() {
+    const { platList } = this.props.bindingData;
     Dialog.confirm({
       isFullScreen: true,
       title: '查找游戏',
       content:
-        <GameFilter
-          filter={this.state.filter}
-          cbChange={(filter) => {
-            const tmpfilter = filter;
-            tmpfilter.isuse = true;
-            this.setState({ filter: tmpfilter });
-          }} />,
+      <GameFilter
+        platList={platList.infos}
+        ref={(c) => this.gameFilter = c} />,
       onOk: () => {
         const { context } = this.state;
         context.pageIndex = 0;
+        context.filter.platform = this.gameFilter.state.platform;
+        context.filter.nametype = this.gameFilter.state.nametype;
+        context.filter.queryText = this.gameFilter.state.queryText;
         this.setState({ context });
         this.doGetGameList();
       },
       // onCancel: () => console.log('cancel')
     });
+  }
+
+  onClickPageSizeChange(size) {
+    const { context } = this.state;
+    context.pageCount = size;
+    this.setState({ context });
+    this.doGetGameList();
   }
 
   getFirstPage(platform) {
@@ -130,17 +142,13 @@ export default class GameList extends Component {
   }
 
   doGetGameList() {
-    const { context, filter } = this.state;
+    const { context } = this.state;
     const params = {
       platform: context.platform,
-      offset: context.pageIndex,
+      offset: context.pageIndex * context.pageCount,
       count: context.pageCount,
+      filter: context.filter
     };
-    if (filter.isuse) {
-      params.platform = filter.platform;
-      params.nametype = filter.nametype;
-      params.queryText = filter.queryText;
-    }
     this.props.updateBindingData('gameList', { params });
   }
 
@@ -149,6 +157,15 @@ export default class GameList extends Component {
     return (
       <div className={styles.cenGroup}>
         <Loading visible={platList.__loading}>
+          <span>列表显示样式：</span>
+          <span>
+            <Radio.Group
+              value={this.state.showType}
+              onChange={(val) => this.setState({showType: val})}>
+              <Radio value="full">完整</Radio>
+              <Radio value="simple">简略</Radio>
+            </Radio.Group>
+          </span>
           <span>机种选择：</span>
           <span>
             <Select
@@ -198,9 +215,10 @@ export default class GameList extends Component {
             <div style={{ paddingLeft: '10px' }}>总数: {total}</div>
           )
         }}
-      // pageSizeSelector='dropdown'
-      // pageSizeList={[10, 20, 30, 40, 50, 100]}
-      // onPageSizeChange={(size) => this.onClickPageSizeChange(size)}
+      pageSizeSelector='dropdown'
+      pageSizePosition="end"
+      pageSizeList={[10, 20, 30, 40, 50, 100]}
+      onPageSizeChange={(size) => this.onClickPageSizeChange(size)}
       />
     );
   }
@@ -216,14 +234,33 @@ export default class GameList extends Component {
         <Loading visible={gameList.__loading}>
           <Row wrap gutter={20}>
             {
+              this.state.showType === 'simple' &&
+              gameList.games.map((game, index) => {
+                return (
+                  <Col span="8" key={index}>
+                    <GameInfo
+                      game={game}
+                      userMenuList={userMenuList}
+                      showType={this.state.showType}
+                      from='gameList'
+                      selectMenuId={this.state.context.menuid}
+                      key={index} />
+                  </Col>
+                );
+              })
+            }
+            {
+              this.state.showType === 'full' &&
               gameList.games.map((game, index) => {
                 return (
                   <Col span="12" key={index}>
                     <GameInfo
-                    game={game}
-                    userMenuList={userMenuList}
-                    from='gameList'
-                    key={index} />
+                      game={game}
+                      userMenuList={userMenuList}
+                      showType={this.state.showType}
+                      from='gameList'
+                      selectMenuId={this.state.context.menuid}
+                      key={index} />
                   </Col>
                 );
               })

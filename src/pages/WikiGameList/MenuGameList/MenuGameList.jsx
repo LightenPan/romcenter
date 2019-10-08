@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Loading, Grid, Pagination, Select, Button, Dialog } from '@alifd/next';
+import { Loading, Grid, Pagination, Select, Button, Dialog, Radio } from '@alifd/next';
 import IceContainer from '@icedesign/container';
 import DataBinder from '@icedesign/data-binder';
 
-import MenuCreat from './MenuCreat';
+import MenuInfo from './MenuInfo';
 import GameInfo from '../GameInfo';
 
 import styles from './MenuGameList.module.scss';
@@ -73,6 +73,21 @@ const { Row, Col } = Grid;
       result: null,
     },
   },
+  'userMenuModify': {
+    // AJAX 部分的参数完全继承自 axios ，参数请详见：https://github.com/axios/axios
+    url: `${__API_HOST__}/api/RetroGameWiki/usermenu/modify`,
+    method: 'POST',
+    withCredentials: true,
+    data: {
+      oid: '',
+      name: '',
+      desc: '',
+    },
+    // 接口默认数据
+    defaultBindingData: {
+      result: null,
+    },
+  },
 })
 
 
@@ -84,6 +99,7 @@ export default class MenuGameList extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      showType: 'full',
       context: {
         menuid: '',
         pageIndex: 0,
@@ -105,11 +121,33 @@ export default class MenuGameList extends Component {
     });
   }
 
+  onClickMenuModify() {
+    Dialog.confirm({
+      isFullScreen: true,
+      title: '修改游戏单',
+      content: <MenuInfo ref={(c) => this.menuModify = c} />,
+      onOk: () => {
+        const data = {
+          oid: this.context.menuid,
+          name: this.menuModify.state.name,
+          desc: this.menuModify.state.desc,
+        }
+        this.props.updateBindingData('userMenuModify', { data }, (resp) => {
+            if (resp.data.result === 0) {
+              this.props.updateBindingData('userMenuList');
+            }
+          }
+        );
+      },
+      // onCancel: () => console.log('cancel')
+    });
+  }
+
   onClickMenuCreat() {
     Dialog.confirm({
       isFullScreen: true,
-      title: '查找游戏',
-      content: <MenuCreat ref={(c) => this.menuCreat = c} />,
+      title: '新建游戏单',
+      content: <MenuInfo ref={(c) => this.menuCreat = c} />,
       onOk: () => {
         const data = {
           name: this.menuCreat.state.name,
@@ -161,6 +199,13 @@ export default class MenuGameList extends Component {
     });
   }
 
+  onClickPageSizeChange(size) {
+    const { context } = this.state;
+    context.pageCount = size;
+    this.setState({ context });
+    this.doGetGameList();
+  }
+
   getFirstPage(menuid) {
     const { context } = this.state;
     context.pageIndex = 0;
@@ -183,7 +228,7 @@ export default class MenuGameList extends Component {
     }
     const params = {
       menuid: context.menuid,
-      offset: context.pageIndex,
+      offset: context.pageIndex * context.pageCount,
       count: context.pageCount,
     };
     this.props.updateBindingData('userMenuGameList', { params });
@@ -194,6 +239,16 @@ export default class MenuGameList extends Component {
     return (
       <div className={styles.cenGroup}>
         <Loading visible={userMenuList.__loading}>
+          <span>列表显示样式：</span>
+          <span>
+            <Radio.Group
+              value={this.state.showType}
+              onChange={(val) => this.setState({showType: val})}>
+              <Radio value="full">完整</Radio>
+              <Radio value="simple">简略</Radio>
+            </Radio.Group>
+          </span>
+
           <span>我的游戏单：</span>
           <span>
             <Select
@@ -216,10 +271,13 @@ export default class MenuGameList extends Component {
           </span>
 
           <span>
-            <Button onClick={() => {this.onClickMenuCreat()}}>新建游戏单</Button>
+            <Button type='primary' onClick={() => {this.onClickMenuModify()}}>修改选择的游戏单</Button>
           </span>
           <span>
-            <Button onClick={() => {this.onClickGenLpl()}}>生成RA列表</Button>
+            <Button type='primary' onClick={() => {this.onClickMenuCreat()}}>新建游戏单</Button>
+          </span>
+          <span>
+            <Button type='primary' onClick={() => {this.onClickGenLpl()}}>生成RA列表</Button>
           </span>
         </Loading>
 
@@ -246,9 +304,10 @@ export default class MenuGameList extends Component {
             <div style={{ paddingLeft: '10px' }}>总数: {total}</div>
           )
         }}
-      // pageSizeSelector='dropdown'
-      // pageSizeList={[10, 20, 30, 40, 50, 100]}
-      // onPageSizeChange={(size) => this.onClickPageSizeChange(size)}
+      pageSizeSelector='dropdown'
+      pageSizePosition="end"
+      pageSizeList={[10, 20, 30, 40, 50, 100]}
+      onPageSizeChange={(size) => this.onClickPageSizeChange(size)}
       />
     );
   }
@@ -264,15 +323,33 @@ export default class MenuGameList extends Component {
         <Loading visible={userMenuGameList.__loading}>
           <Row wrap gutter={20}>
             {
+              this.state.showType === 'simple' &&
+              userMenuGameList.games.map((game, index) => {
+                return (
+                  <Col span="8" key={index}>
+                    <GameInfo
+                      game={game}
+                      userMenuList={userMenuList}
+                      showType={this.state.showType}
+                      from='menuGameList'
+                      selectMenuId={this.state.context.menuid}
+                      key={index} />
+                  </Col>
+                );
+              })
+            }
+            {
+              this.state.showType === 'full' &&
               userMenuGameList.games.map((game, index) => {
                 return (
                   <Col span="12" key={index}>
                     <GameInfo
-                    game={game}
-                    userMenuList={userMenuList}
-                    from='menuGameList'
-                    selectMenuId={this.state.context.menuid}
-                    key={index} />
+                      game={game}
+                      userMenuList={userMenuList}
+                      showType={this.state.showType}
+                      from='menuGameList'
+                      selectMenuId={this.state.context.menuid}
+                      key={index} />
                   </Col>
                 );
               })

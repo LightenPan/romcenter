@@ -1,0 +1,119 @@
+.row {
+  padding: 20px;
+}
+
+.game {
+  // margin-bottom: 40px;
+  margin-bottom: 10px;
+  background: $color-white;
+  border: 1px solid $color-line1-1;
+  border-radius: 4px;
+}
+
+.head {
+  padding: 10px 0;
+  color: $color-white;
+  text-align: center;
+  background: $color-brand1-6;
+  border-radius: 4px 4px 0 0;
+}
+
+.item {
+  display: flex;
+  padding-bottom: 4px;
+}
+
+.label {
+  width: 40px;
+  padding: 0 2px;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.value {
+  // width: 50%;
+  font-size: 13px;
+}
+
+.body {
+  padding: 10px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  border-top: 1px solid $color-fill1-2;
+}
+
+.button {
+  margin-right: 10px;
+  padding: 6px 12px;
+  color: $color-white;
+  font-size: 12px;
+  text-decoration: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &:link,
+  &:hover {
+    color: $color-white;
+  }
+}
+
+.button1 {
+  composes: button;
+  background: $color-success-3;
+}
+
+.button2 {
+  composes: button;
+  background: $color-notice-3;
+}
+
+.imgGroup {
+  display: flex;
+  padding: 2px 0;
+}
+
+.imgItem {
+  // width: 33.33333%;
+  // padding: 0px 3px;
+  margin-right: 3px;
+}
+
+img {
+	width: auto;
+	height: auto;
+	max-width: 200px;
+	max-height: 200px;
+}
+
+.labelGroup {
+  display: flex;
+  // padding-bottom: 15px;
+  // margin-left: 12px;
+}
+
+.labelGroupItem {
+  display: flex;
+  width: 50%;
+}
+
+.cenGroup {
+  display: flex;
+  // padding-bottom: 15px;
+  // margin-left: 12px;
+}
+
+.cenGroup span {
+  text-align: center;
+  align-self: center;
+  padding-right: 10px;
+}

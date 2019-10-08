@@ -1,26 +1,7 @@
 import React, { Component } from 'react';
-import { Input, Radio, Grid } from '@alifd/next';
-import DataBinder from '@icedesign/data-binder';
+import { Input, Radio } from '@alifd/next';
 
 import styles from './GameFilter.module.scss';
-
-const { Row, Col } = Grid;
-
-
-@DataBinder({
-  'platList': {
-    // AJAX 部分的参数完全继承自 axios ，参数请详见：https://github.com/axios/axios
-    url: `${__API_HOST__}/api/RetroGameWiki/platList`,
-    method: 'GET',
-    withCredentials: true,
-    params: {
-    },
-    // 接口默认数据
-    defaultBindingData: {
-      infos: [],
-    },
-  },
-})
 
 
 export default class GameFilter extends Component {
@@ -31,39 +12,26 @@ export default class GameFilter extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      filter: this.props.filter,
+      platform: '',
+      nametype: 'cname',
+      queryText: '',
     };
   }
 
-  // 在组件挂载之前把数据设置进去(可以用initValue替代这种用法)
-  componentWillMount() {
-    this.props.updateBindingData('platList');
-  }
-
   render() {
-    const { platList } = this.props.bindingData;
     return (
       <div>
         <h3>选择平台</h3>
         <div className={styles.renderedContainer}>
           <Radio.Group
-            value={this.state.filter.platform}
+            value={this.state.platform}
             // itemDirection='ver'
             onChange={(val) => {
-              const {filter} = this.state;
-              filter.platform = val;
-              this.setState({ filter });
-              if (this.props.cbChange) {
-                const info = {
-                  platform: val,
-                }
-                this.props.cbChange(info);
-              }
+              this.setState({ platform: val });
             }}
           >
-            <Radio value="" key={-1}>所有平台</Radio>
             {
-              platList.infos.map((info, index) => {
+              this.props.platList.map((info, index) => {
                 return (
                   <Radio value={info.platform} key={index}>{info.display}</Radio>
                 );
@@ -74,18 +42,10 @@ export default class GameFilter extends Component {
         <h3>游戏名类型</h3>
         <div className={styles.renderedContainer}>
           <Radio.Group
-            value={this.state.filter.nametype}
+            value={this.state.nametype}
             itemDirection='ver'
             onChange={(val) => {
-              const {filter} = this.state;
-              filter.nametype = val;
-              this.setState({ filter });
-              if (this.props.cbChange) {
-                const info = {
-                  nametype: val,
-                }
-                this.props.cbChange(info);
-              }
+              this.setState({ nametype: val });
             }}
           >
             <Radio value="cname">中文名</Radio>
@@ -95,17 +55,9 @@ export default class GameFilter extends Component {
         <h3>列表查询数据</h3>
         <div className={styles.renderedContainer}>
           <Input
-            value={this.state.filter.queryText}
+            value={this.state.queryText}
             onChange={(val) => {
-              const {filter} = this.state;
-              filter.queryText = val;
-              this.setState({ filter });
-              if (this.props.cbChange) {
-                const info = {
-                  queryText: val,
-                }
-                this.props.cbChange(info);
-              }
+              this.setState({ queryText: val });
             }} />
         </div>
       </div>
