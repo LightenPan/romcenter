@@ -15,15 +15,16 @@ if __name__ == "__main__":
 
     (options, args) = parser.parse_args()
 
-    if not options.ext:
-        options.ext = '.iso'
-
     if not options.dir:
         print('need dir')
         exit(1)
 
     if not options.dst:
         print('need dst')
+        exit(1)
+
+    if not options.ext:
+        print('need ext')
         exit(1)
 
     # 获取rom列表
