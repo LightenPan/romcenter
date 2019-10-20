@@ -73,7 +73,7 @@ export default class ImageGrab extends Component {
     const { allGameList } = this.state;
     const prex = `${imgsUrlPrex}/${this.state.lplName}`;
     const showGameList = allGameList.filter((item) => {
-      if (this.state.searchTypeName == 1) {
+      if (this.state.searchTypeName === 1) {
         return item.comment.match(queryText);
       }
       return item.title.match(queryText);

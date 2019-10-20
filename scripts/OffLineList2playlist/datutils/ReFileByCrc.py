@@ -38,4 +38,5 @@ if __name__ == "__main__":
         parent_dir, basename = os.path.split(file)
         crc = Utils.calc_file_crc32(file).upper()
         dstfile = os.path.join(parent_dir, crc + options.ext)
-        os.rename(file, dstfile)
+        if not os.path.exists(dstfile):
+            os.rename(file, dstfile)

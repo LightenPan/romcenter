@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from '@alifd/next';
+import { Button, Menu } from '@alifd/next';
 import DataBinder from '@icedesign/data-binder';
 
 import styles from './GameSimpleInfo.module.scss';
