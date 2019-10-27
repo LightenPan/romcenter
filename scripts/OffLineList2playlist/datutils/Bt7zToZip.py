@@ -9,7 +9,7 @@ def zip_dir_files(srcPath, dstName):
     f = zipfile.ZipFile(dstName, 'w', zipfile.ZIP_DEFLATED)
     for root, dirs, files in os.walk(srcPath):
         for file in files:
-            f.write(file)
+            f.write(os.path.join(root, file))
     f.close()
 
 
