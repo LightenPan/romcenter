@@ -128,7 +128,7 @@ if __name__ == "__main__":
         year.text = ''
 
     if options.output_xml:
-        xml_str = ET.tostring(tree, encoding='utf-8')
+        xml_str = ET.tostring(cover_game_tree, encoding='utf-8')
         xml_str = str(xml_str, encoding='utf-8')
         xml_file = open(options.output_xml, 'w', encoding='utf-8')
         xml_file.write(xml_str)
