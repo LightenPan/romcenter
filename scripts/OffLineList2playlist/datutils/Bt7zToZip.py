@@ -1,16 +1,21 @@
 # encoding=utf8
 import os
+import shutil
 from tqdm import tqdm
 from utils import Utils
 
 
-def zip_dir_files(srcPath, dstName):
+def zip_dir_files2(srcPath, dstName):
     import zipfile
     f = zipfile.ZipFile(dstName, 'w', zipfile.ZIP_DEFLATED)
     for root, dirs, files in os.walk(srcPath):
         for file in files:
             f.write(os.path.join(root, file))
     f.close()
+
+def zip_dir_files(rom_dir, dstName):
+    parent_dir, rom_name = os.path.split(rom_dir)
+    os.system('cd "%s/%s" && zip -Dr "%s" "."' % (parent_dir, rom_name, dstName))
 
 
 def extract_7z(file):
@@ -27,7 +32,10 @@ def do_tran(file):
     dst_file = os.path.join(parent_dir, filename + '.zip')
     rom_dir = extract_7z(file)
     zip_dir_files(rom_dir, dst_file)
-    os.rmdir(rom_dir)
+    shutil.rmtree(rom_dir)
+
+    if os.path.exists(dst_file):
+        os.remove(file)
 
 
 if __name__ == "__main__":
