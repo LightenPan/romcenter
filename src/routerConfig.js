@@ -5,6 +5,10 @@ import UserRegister from '@/pages/UserRegister';
 import UserLayout from '@/layouts/UserLayout';
 import BasicLayout from '@/layouts/BasicLayout';
 
+import LbGameList from '@/pages/LbGameList';
+import LbGameInfo from '@/pages/LbGameInfo';
+import FixRomList from '@/pages/FixRomList';
+
 import RomList from '@/pages/RomList';
 import WikiGameList from '@/pages/WikiGameList';
 import MenuGameList from '@/pages/WikiGameList/MenuGameList';
@@ -33,6 +37,18 @@ const routerConfig = [
     component: BasicLayout,
     children: [
       {
+        path: '/LbGameList',
+        component: LbGameList,
+      },
+      {
+        path: '/LbGameInfo/:lbid',
+        component: LbGameInfo,
+      },
+      {
+        path: '/FixRomList',
+        component: FixRomList,
+      },
+      {
         path: '/wikiGameList',
         component: WikiGameList,
       },
@@ -46,7 +62,7 @@ const routerConfig = [
       },
       {
         path: '/',
-        redirect: '/wikiGameList',
+        redirect: '/LbGameList',
       },
     ],
   },

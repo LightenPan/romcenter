@@ -1,6 +1,6 @@
 {
   "name": "RetroGameWiki",
-  "version": "2.0.9",
+  "version": "1.0.0",
   "description": "",
   "keywords": [
     "ice-scaffold"
@@ -40,13 +40,17 @@
     "react-dom": "^16.4.1",
     "react-file-picker": "^0.0.6",
     "react-files": "^2.4.8",
+    "react-image-and-background-image-fade": "^1.0.6",
     "react-router-dom": "^4.2.2",
     "xml2js": "^0.4.19",
-    "zlib": "^1.0.5"
+    "zlib": "^1.0.5",
+    "react-waterfall-gallery": "^1.0.4"
   },
   "devDependencies": {
     "@ice/spec": "^0.1.1",
+    "css-loader": "^5.0.1",
     "eslint": "^6.0.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "ice-plugin-fusion": "^0.1.4",
     "ice-plugin-moment-locales": "^0.1.0",
     "ice-scripts": "^2.1.5",

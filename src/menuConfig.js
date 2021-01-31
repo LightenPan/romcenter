@@ -5,19 +5,29 @@
 const asideMenuConfig = [
   {
     name: '游戏列表',
-    path: '/wikiGameList',
+    path: '/LbGameList',
     // icon: 'cascades',
   },
   {
-    name: '游戏单',
-    path: '/wikiUserMenuList',
+    name: '修护ROM关联游戏',
+    path: '/FixRomList',
     // icon: 'cascades',
   },
-  {
-    name: 'OL编辑器',
-    path: '/oleditor',
-    // icon: 'cascades',
-  },
+  // {
+  //   name: 'ROM列表',
+  //   path: '/wikiGameList',
+  //   // icon: 'cascades',
+  // },
+  // {
+  //   name: '游戏单',
+  //   path: '/wikiUserMenuList',
+  //   // icon: 'cascades',
+  // },
+  // {
+  //   name: 'OL编辑器',
+  //   path: '/oleditor',
+  //   // icon: 'cascades',
+  // },
   // {
   //   name: '反馈',
   //   path: 'https://github.com/alibaba/ice/issues/new',

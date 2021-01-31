@@ -245,7 +245,7 @@ if __name__ == "__main__":
         options.thread_num = int(options.thread_num)
 
     if not options.use_socks5_proxy:
-        options.use_socks5_proxy = 1
+        options.use_socks5_proxy = 0
     else:
         options.use_socks5_proxy = int(options.use_socks5_proxy)
 

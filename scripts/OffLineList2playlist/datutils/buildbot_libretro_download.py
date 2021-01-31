@@ -82,7 +82,7 @@ def mkdirs(path):
 
 if __name__ == "__main__":
     from optparse import OptionParser
-    usage = 'python -m datutils.buildbot_libretro_download --start=/assets'
+    usage = 'python -m datutils.buildbot_libretro_download --start=/assets --output='
     parser = OptionParser(usage)
     parser.add_option("--start")
 

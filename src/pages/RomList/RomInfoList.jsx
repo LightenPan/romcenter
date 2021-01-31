@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import IceContainer from '@icedesign/container';
-import { Grid, Pagination, Button, Dialog, Input, Loading, Radio } from '@alifd/next';
+import { Grid, Pagination, Button, Dialog, Input, Loading } from '@alifd/next';
 import Files from 'react-files'
-import JSONC from 'jsoncomp';
 import GameUtils from '@/utils/GameUtils';
 
 import SingleItem from './SingleItem';
@@ -21,7 +20,8 @@ function B64ZipPackJson(data) {
 }
 
 function B64ZipUnpackJson(data) {
-  const zipString = new Buffer(data, 'base64');
+  // const zipString = new Buffer(data, 'base64');
+  const zipString = Buffer.from(data, 'base64');
   const zlib = require('zlib');
   const jsonString = Buffer.from(zlib.gunzipSync(zipString), 'binary').toString();
   return JSON.parse(jsonString);

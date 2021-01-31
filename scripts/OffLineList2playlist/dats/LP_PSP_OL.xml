@@ -30,7 +30,7 @@
 		<newDat>
 		   <datVersionURL></datVersionURL>
 		   <datURL>http://retrogame.dynamic-dns.net:38080/cdn/RetroGame/dats/LP_PSP_OL.xml</datURL>
-		   <imURL>http://retrogame.dynamic-dns.net:38080/cdn/RetroGame/imgs/LP_PSP_OL</imURL>
+		   <imURL>https://raw.githubusercontent.com/LightenPan/RetroGameDatForOfflineList/master/imgs/LP_PSP_OL/</imURL>
 		</newDat>
 		<search>
 			<to value="location" default="true" auto="true"/>
