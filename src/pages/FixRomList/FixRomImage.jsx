@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Search, Button, Message } from '@alifd/next';
+import { Search, Button } from '@alifd/next';
 import DataBinder from '@icedesign/data-binder';
 import { BackgroundImage } from 'react-image-and-background-image-fade';
 

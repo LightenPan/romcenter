@@ -24,7 +24,7 @@ const { Row, Col } = Grid;
         platform: '',
         nametype: '',
         queryText: '',
-      }
+      },
     },
     // 接口默认数据
     defaultBindingData: {
@@ -147,7 +147,7 @@ export default class GameList extends Component {
       platform: context.platform,
       offset: context.pageIndex * context.pageCount,
       count: context.pageCount,
-      filter: context.filter
+      filter: context.filter,
     };
     this.props.updateBindingData('gameList', { params });
   }

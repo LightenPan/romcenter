@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Input, Radio } from '@alifd/next';
+import { Input, Radio } from '@alifd/next';
 
 import styles from './FilterSelect.module.scss';
 
@@ -30,7 +30,7 @@ export default class FilterSelect extends Component {
               const info = {
                 filterType: val,
                 queryText: this.state.queryText,
-              }
+              };
               this.props.cbChange(info);
             }}
           >
@@ -51,7 +51,7 @@ export default class FilterSelect extends Component {
               const info = {
                 filterType: this.state.filterType,
                 queryText: val,
-              }
+              };
               this.props.cbChange(info);
             }}/>
         </div>

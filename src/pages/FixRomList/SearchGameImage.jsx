@@ -126,6 +126,16 @@ export default class SearchGameImage extends Component {
             <p>
               游戏名相似度：{this.props.game.score}
             </p>
+            {
+              this.props.game.AlternateNames && this.props.game.AlternateNames.length > 1 &&
+              this.props.game.AlternateNames.map((name, index) => {
+                return (
+                  <p>
+                    别名{index + 1}：{ name }
+                  </p>
+                );
+              })
+            }
             <p>
               游戏ID：{this.props.game.DatabaseID}
             </p>

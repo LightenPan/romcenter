@@ -324,7 +324,7 @@ export default class GameList extends Component {
         totalRender={total => {
           return (
             <div style={{ paddingLeft: '10px' }}>总数: {total}</div>
-          )
+          );
         }}
       pageSizeSelector='filter'
       pageSizePosition="end"

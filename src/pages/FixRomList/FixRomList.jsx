@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Loading, Grid, Pagination, Select, Search, Affix, Message} from '@alifd/next';
+import { Loading, Grid, Pagination, Select, Search, Radio, Message} from '@alifd/next';
 import IceContainer from '@icedesign/container';
 import DataBinder from '@icedesign/data-binder';
 
@@ -119,7 +119,7 @@ export default class FixRomList extends Component {
         platform: 'LP_GBA_OL',
         imageTypeName: 'Screenshots',
         orderBy: null,
-        queryText: '',
+        includeSkipRoms: 1,
         pageIndex: 1,
         pageCount: 10,
       },
@@ -161,7 +161,9 @@ export default class FixRomList extends Component {
   getFirstPage(platform) {
     const { context } = this.state;
     context.pageIndex = 1;
-    context.platform = platform;
+    if (platform) {
+      context.platform = platform;
+    }
     this.setState({ context });
     this.doGetFixRomList();
   }
@@ -188,6 +190,7 @@ export default class FixRomList extends Component {
     const params = {
       platform: context.platform,
       query: context.queryText,
+      includeSkipRoms: context.includeSkipRoms === 1 ? 0 : 1,
       offset: (context.pageIndex - 1) * context.pageCount,
       count: context.pageCount,
     };
@@ -233,7 +236,7 @@ export default class FixRomList extends Component {
         totalRender={total => {
           return (
             <div style={{ paddingLeft: '10px' }}>总数: {total}</div>
-          )
+          );
         }}
       pageSizeSelector='filter'
       pageSizePosition="end"
@@ -270,6 +273,18 @@ export default class FixRomList extends Component {
                 }
               </Select>
             </span>
+          </div>
+
+          <div className={styles.menuContainer}>
+          <Radio.Group value={this.state.context.includeSkipRoms} onChange={val => {
+              const { context } = this.state;
+              context.includeSkipRoms = val;
+              this.setState({context});
+              this.getFirstPage();
+            }}>
+            <Radio value={1}>过滤已忽略</Radio>
+            <Radio value={2} >显示所有</Radio>
+          </Radio.Group>
           </div>
 
           <div className={styles.menuContainer}>
